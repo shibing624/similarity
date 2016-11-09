@@ -1,0 +1,1736 @@
+- event|事件
+  ├ static|静态
+  │ ├ relation|关系
+  │ │ ├ isa|是非关系
+  │ │ │ ├ be|是  {relevant,isa}/{relevant,descriptive}
+  │ │ │ │ ├ become|成为  {relevant,isa}/{relevant,descriptive}
+  │ │ │ │ └ mean|指代  {relevant,isa}/{relevant,descriptive}
+  │ │ │ └ BeNot|非  {relevant,isa}/{relevant,descriptive}
+  │ │ ├ possession|领属关系
+  │ │ │ ├ own|有  {possessor,possession}
+  │ │ │ │ ├ obtain|得到  {possessor,possession,source}
+  │ │ │ │ └ receive|收受  {possessor,possession,source}
+  │ │ │ ├ BelongTo|属于  {possessor,possession }
+  │ │ │ ├ OwnNot|无  {possessor,possession}
+  │ │ │ │ └ lose|失去  {possessor,possession}
+  │ │ │ │    └ InDebt|亏损  {possessor,possession}
+  │ │ │ └ owe|欠  {possessor,possession,target}
+  │ │ ├ comparison|相比关系  {relevant,contrast,ContentCompare}
+  │ │ │ ├ BeSame|相同  {relevant,contrast,scope}
+  │ │ │ │ ├ equal|相等  {relevant,contrast,scope}
+  │ │ │ │ └ BeSimilar|相像  {relevant,contrast,degree}
+  │ │ │ ├ differ|不同  {relevant,contrast,scope}
+  │ │ │ ├ worth|值得  {relevant,content}
+  │ │ │ └ WorthNot|不值  {relevant,content}
+  │ │ ├ suit|相适关系
+  │ │ │ ├ fit|适合  {relevant,contrast,scope}
+  │ │ │ ├ ServeAsFoil|陪衬  {relevant,contrast,scope}
+  │ │ │ └ FitNot|不适  {relevant,contrast,scope}
+  │ │ ├ inclusive|蕴涵关系
+  │ │ │ ├ contain|包含  {whole,partof}
+  │ │ │ └ BeMember|隶属  {partof,whole}
+  │ │ ├ connective|关联关系
+  │ │ │ ├ relate|有关  {relevant,partner,~degree}
+  │ │ │ │ └ depend|依靠  {relevant,partner}
+  │ │ │ └ RelateNot|无关  {relevant,partner}
+  │ │ │    ├ BeIndependent|独立  {relevant,partner}
+  │ │ │    └ BeOpposite|对立  {relevant,partner}
+  │ │ ├ CauseResult|因果关系
+  │ │ │ ├ ResultIn|导致  {relevant,result}
+  │ │ │ ├ ResultFrom|缘于  {relevant,cause}
+  │ │ │ ├ BaseOn|基于  {relevant,cause}
+  │ │ │ └ influence|影响  {relevant,scope,target}
+  │ │ ├ TimeOrSpace|时空关系
+  │ │ │ ├ situated|处于  {existent,location}
+  │ │ │ ├ facing|朝向  {existent,direction}
+  │ │ │ ├ LeadTo|通往  {existent,direction}
+  │ │ │ └ from|相距  {existent,range,partner}
+  │ │ │    ├ BeNear|靠近  {existent,range,partner}
+  │ │ │    ├ BeAcross|相交  {existent,location,partner}
+  │ │ │    └ BeBeyond|越界  {existent,partner}
+  │ │ └ arithmetic|数量关系
+  │ │    ├ DoSum|算术  {relevant,partner}
+  │ │    └ AmountTo|总计  {relevant,quantity}
+  │ └ state|状态
+  │    ├ StatePhysical|物理状态
+  │    │ ├ ExistAppear|存现  {existent,~location}
+  │    │ │ ├ exist|存在  {existent,~location}
+  │    │ │ ├ ExistNot|不存在  {existent,~location}
+  │    │ │ ├ appear|出现  {existent,~location}
+  │    │ │ │ └ exposure|露出  {existent,~location}
+  │    │ │ └ happen|发生  {existent,~location}/{existent,~time}
+  │    │ ├ begin|起始  {experiencer,~time}
+  │    │ ├ BeNormal|常态
+  │    │ │ ├ certainty|定或未定态
+  │    │ │ │ ├ fixed|已定  {experiencer}
+  │    │ │ │ └ unfixed|未定  {experiencer}
+  │    │ │ ├ ComeToWorld|问世  {experiencer,~time}
+  │    │ │ ├ alive|活着  {experiencer,~time}
+  │    │ │ │ └ function|活动  {experiencer,~time}
+  │    │ │ ├ grow|成长  {experiencer,StateIni,StateFin}
+  │    │ │ ├ pregnant|怀孕  {experiencer,~DurationAfterEvent}
+  │    │ │ ├ GoOn|继续  {experiencer,content}
+  │    │ │ │ ├ withstand|抗住  {experiencer,content}
+  │    │ │ │ └ WithstandNot|抗不住  {experiencer,content}
+  │    │ │ ├ undergo|经受  {experiencer,content}
+  │    │ │ │ ├ enjoy|享受  {experiencer,content}[desired|良]
+  │    │ │ │ ├ suffer|遭受  {experiencer,content}[undesired|莠]
+  │    │ │ │ ├ AptTo|易于  {experiencer,content}
+  │    │ │ │ ├ endure|忍耐  {experiencer,content}
+  │    │ │ │ └ EndureNot|不忍  {experiencer,content}
+  │    │ │ └ UndergoNot|不经受  {experiencer,content}
+  │    │ ├ BeGood|良态  {experiencer}[desired|良]
+  │    │ │ ├ BeFull|吃饱  {experiencer}
+  │    │ │ ├ BeWell|健壮  {experiencer}
+  │    │ │ ├ lucky|幸运  {experiencer}
+  │    │ │ ├ prosper|发达  {experiencer,scope,StateIni,StateFin}
+  │    │ │ ├ succeed|成功  {experiencer,scope}
+  │    │ │ ├ win|获胜  {experiencer,contrast,scope}
+  │    │ │ ├ surpass|强过  {experiencer,contrast,scope}
+  │    │ │ └ WellKnown|成名  {experiencer}
+  │    │ ├ BeRecovered|复原  {experiencer,StateIni,StateFin}
+  │    │ │ └ awake|醒  {experiencer,StateIni,^StateFin}
+  │    │ ├ change|变  {experiencer,StateIni,StateFin}
+  │    │ │ ├ AppearanceChange|外观变  {experiencer,scope,StateIni,StateFin}
+  │    │ │ │ ├ StateChange|态变  {experiencer,scope,StateIni,StateFin}
+  │    │ │ │ └ FormChange|形变  {experiencer,scope,StateIni,StateFin}
+  │    │ │ ├ QuantityChange|量变  {experiencer,range,StateIni,StateFin}
+  │    │ │ │ ├ BecomeMore|增多 {experiencer,StateIni,StateFin,range,scope}
+  │    │ │ │ ├ surplus|剩余  {experiencer,StateIni,StateFin,range,scope}
+  │    │ │ │ ├ lack|缺少  {experiencer,StateFin,range,scope}
+  │    │ │ │ └ BecomeLess|减少 {experiencer,StateIni,StateFin,range,scope}
+  │    │ │ ├ BeBad|衰变  {experiencer,~scope,~manner}[undesired|莠]
+  │    │ │ │ ├ tired|疲乏  {experiencer,~degree,~StateFin}
+  │    │ │ │ ├ HungryThirsty|饥渴  {experiencer}
+  │    │ │ │ ├ SufferFrom|罹患  {experiencer,content}[undesired|莠,#medical|医]
+  │    │ │ │ │ └ ill|病态  {experiencer}[disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ wounded|受伤  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ disable|残疾  {experiencer,scope,partof} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ labour|临产  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ mad|疯痴  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ paralyse|瘫麻  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ painful|疼痛  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ dizzy|昏迷  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ twitch|抽搐  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ bleed|出血  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ swollen|肿胀  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ fever|寒热  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ StomachTrouble|腹症  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ pant|气喘  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    ├ inflamed|发炎  {experiencer} [disease|疾病,undesired|莠,#medical|医]
+  │    │ │ │ │    └ itch|发痒  {experiencer}
+  │    │ │ │ ├ OutOfOrder|坏掉  {experiencer,content} [undesired|莠]
+  │    │ │ │ ├ decline|衰败  {experiencer} [undesired|莠]
+  │    │ │ │ ├ unfortunate|不幸  {experiencer,scope} [undesired|莠]
+  │    │ │ │ ├ fail|失败  {experiencer,scope} [undesired|莠]
+  │    │ │ │ │ ├ err|出错  {experiencer,scope} [undesired|莠]
+  │    │ │ │ │ └ defeated|输掉  {experiencer,contrast,scope} [undesired|莠]
+  │    │ │ │ └ inferior|不如  {experiencer,contrast,scope} [undesired|莠]
+  │    │ │ ├ end|终结  {experiencer,~DurationAfterEvent}[undesired|莠]
+  │    │ │ │ ├ die|死  {experiencer,~DurationAfterEvent,cause} [undesired|莠]
+  │    │ │ │ ├ finish|完毕  {experiencer,~DurationAfterEvent}
+  │    │ │ │ ├ perish|灭亡  {experiencer,~DurationAfterEvent} [undesired|莠]
+  │    │ │ │ └ due|到期  {experiencer}
+  │    │ │ └ WeatherChange|天变  {experiencer,~duration,~manner}
+  │    │ │    ├ WeatherFine|好天  {experiencer,~duration,~manner}
+  │    │ │    └ WeatherBad|坏天  {experiencer,~duration,~manner}[undesired|莠]
+  │    │ ├ ChangeNot|不变  {experiencer}
+  │    │ └ disappear|消失  {experiencer}
+  │    └ StateMental|精神状态
+  │       ├ feeling|情绪
+  │       │ ├ cherish|心怀  {experiencer,content}
+  │       │ ├ excited|激动  {experiencer,~degree,cause}
+  │       │ ├ FeelingByGood|好情 {experiencer,~degree,cause}[desired|良]
+  │       │ │ ├ AtEase|安心  {experiencer,~degree,cause}
+  │       │ │ │ └ calm|镇静  {experiencer,~degree,cause}
+  │       │ │ ├ joyful|喜悦  {experiencer,~degree,cause}
+  │       │ │ ├ satisfied|满意  {experiencer,~degree,cause}
+  │       │ │ ├ FeelNoQualms|无愧  {experiencer,~degree,cause}
+  │       │ │ └ shameless|没羞  {experiencer,~degree,cause}
+  │       │ └ FeelingByBad|坏情 {experiencer,~degree,cause}[undesired|莠]
+  │       │    ├ uneasy|不安  {experiencer,~degree,cause}
+  │       │    ├ GuiltilyConscious|心虚  {experiencer,~degree,cause}
+  │       │    ├ unsatisfied|不满  {experiencer,target,cause}
+  │       │    ├ melancholy|惆怅  {experiencer,~degree,cause}
+  │       │    ├ upset|烦恼  {experiencer,~degree,cause}
+  │       │    ├ sad|忧愁  {experiencer,~degree,cause}
+  │       │    ├ sorrowful|悲哀  {experiencer,~degree,cause}
+  │       │    ├ fear|害怕  {experiencer,~degree,cause}
+  │       │    ├ surprise|惊奇  {experiencer,~degree,cause}
+  │       │    ├ flurried|惊慌  {experiencer,~degree,cause}
+  │       │    ├ worried|着急  {experiencer,~degree,cause}
+  │       │    ├ angry|生气  {experiencer,~degree,cause}
+  │       │    ├ disheartened|灰心  {experiencer,~degree,cause}
+  │       │    ├ repent|懊悔  {experiencer,~degree,cause}
+  │       │    ├ shy|羞愧  {experiencer,~degree,cause}
+  │       │    ├ embarrassed|为难  {experiencer,~degree,cause}
+  │       │    └ disappointed|失望  {experiencer,~degree,cause}
+  │       ├ Attitude|态度  
+  │       │ ├ AttitudeByGood|好态 {experiencer,target,cause}[desired|良]
+  │       │ │ ├ FondOf|喜欢  {experiencer,target,cause}
+  │       │ │ │ ├ like|爱惜  {experiencer,target,cause}
+  │       │ │ │ └ love|爱恋  {experiencer,target,cause}
+  │       │ │ ├ PayAttention|注意  {experiencer,target,cause}
+  │       │ │ │ └ ParticularAbout|讲求  {experiencer,target,cause}
+  │       │ │ ├ respect|敬佩  {experiencer,target,cause}
+  │       │ │ ├ loyal|忠孝  {experiencer,target,cause}
+  │       │ │ ├ admire|羡慕  {experiencer,target,cause}
+  │       │ │ │ └ jealous|妒忌  {experiencer,target,cause}
+  │       │ │ ├ grateful|感激  {experiencer,target,cause}
+  │       │ │ ├ agree|同意  {experiencer,target,cause}
+  │       │ │ └ ThinkOf|思念  {experiencer,content}
+  │       │ └ AttitudeByBad|坏态 
+  │       │    ├ sorry|惋惜  {experiencer,target,cause}
+  │       │    ├ pity|怜悯  {experiencer,target,cause}
+  │       │    ├ disgust|厌恶  {experiencer,target,cause}
+  │       │    ├ stupefied|木然  {experiencer,cause}
+  │       │    ├ blame|埋怨  {experiencer,target,cause}
+  │       │    ├ hate|仇恨  {experiencer,target,cause}
+  │       │    ├ forgive|原谅  {experiencer,target,cause}
+  │       │    ├ TolerateNot|不容 {experiencer,target,cause}
+  │       │    ├ regret|抱歉  {experiencer,target,cause}
+  │       │    ├ despise|轻视  {experiencer,target,cause}
+  │       │    ├ disloyal|不忠  {experiencer,target,cause}
+  │       │    ├ disagree|不同意  {experiencer,target,cause}
+  │       │    └ doubt|怀疑  {experiencer,content}
+  │       ├ volition|意向
+  │       │ ├ expect|期望  {experiencer,content}
+  │       │ ├ need|需求  {experiencer,content}
+  │       │ ├ willing|愿意  {experiencer,content}
+  │       │ ├ unwilling|不愿  {experiencer,content}
+  │       │ ├ GrudgeNot|舍得  {experiencer,content}
+  │       │ ├ grudge|不舍  {experiencer,content}
+  │       │ ├ dare|敢于  {experiencer,content}
+  │       │ └ hesitate|犹豫  {experiencer,content}
+  │       └ recognition|感知状态
+  │          ├ HaveKnowledge|有知
+  │          │ ├ perception|感知  {experiencer,content}
+  │          │ ├ know|知道  {experiencer,content}
+  │          │ │ └ understand|领会  {experiencer,content}
+  │          │ ├ regard|认为  {experiencer,content}
+  │          │ ├ believe|相信  {experiencer,content}
+  │          │ ├ remember|记得  {experiencer,content}
+  │          │ ├ BeAble|能够  {experiencer,content}
+  │          │ └ dream|做梦  {experiencer,content}
+  │          ├ NoKnowledge|无知
+  │          │ ├ ignorant|不知  {experiencer,content}
+  │          │ └ forget|忘记  {experiencer,content}
+  │          ├ misunderstand|误信  {experiencer,content}
+  │          │ └ confuse|混淆  {experiencer,content}
+  │          └ BeUnable|无能  {experiencer,content}
+  └ act|行动 
+     ├ ActGeneral|泛动 {agent,content}
+     │ ├ start|开始  {agent,content}
+     │ ├ do|做  {agent,content,manner}
+     │ │ ├ try|尝试  {agent,content}
+     │ │ ├ endeavour|卖力  {agent,content}
+     │ │ ├ VieFor|快干  {agent,content}
+     │ │ ├ RashlyAct|蛮干  {agent,content}
+     │ │ │ └ venture|冒险  {agent,content}
+     │ │ ├ cooperate|合作  {agent,content}
+     │ │ ├ repeat|重复  {agent,content}
+     │ │ ├ pretend|假装  {agent,content}
+     │ │ ├ engage|从事  {agent,content}
+     │ │ │ └ bear|承担  {agent,content}
+     │ │ │    └ undertake|担任  {agent,content}
+     │ │ ├ conduct|实施  {agent,content}
+     │ │ ├ prepare|准备  {agent,content}
+     │ │ └ respond|回应 {agent,cause}
+     │ ├ DoNot|不做
+     │ │ ├ refuse|拒做  {agent,content}
+     │ │ │ └ evade|回避  {agent,content}
+     │ │ └ slack|偷懒  {agent,content}
+     │ ├ cease|停做  {agent,content}
+     │ │ ├ GiveUp|戒除  {agent,content}
+     │ │ ├ pause|暂停  {agent,content}
+     │ │ └ rest|休息  {agent}
+     │ │    └ sleep|睡  {agent}
+     │ └ wait|等待  {agent,content,~duration,~TimeIni,~TimeFin}
+     └ ActSpecific|实动
+        ├ AlterGeneral|泛变  {agent,patient,result}
+        │ ├ alter|改变  {agent,patient,StateIni,StateFin}
+        │ ├ control|控制  {agent,patient,ResultEvent}
+        │ │ ├ manage|管理  {agent,patient}
+        │ │ ├ handle|处理  {agent,patient}
+        │ │ └ arrange|安排  {agent,patient}
+        │ └ stabilize|使不变  {agent,patient}
+        └ AlterSpecific|实变
+           ├ AlterRelation|变关系
+           │ ├ AlterPossession|变领属 {agent,possession}
+           │ │ ├ take|取  {agent,possession,source}
+           │ │ │ ├ seek|谋取  {agent,possession,source}
+           │ │ │ │ └ beg|乞求  {agent,possession,source}
+           │ │ │ ├ steal|偷  {agent,possession,source}[crime|罪]
+           │ │ │ ├ rob|抢  {agent,possession,source}[crime|罪]
+           │ │ │ ├ cheat|骗  {agent,possession,source}[crime|罪]
+           │ │ │ ├ earn|赚  {agent,possession,source}
+           │ │ │ ├ buy|买  {agent,possession,source,cost,beneficiary}[commercial|商]
+           │ │ │ ├ collect|收  {agent,possession,source}
+           │ │ │ │ └ levy|征收  {agent,possession,source}
+           │ │ │ ├ borrow|借入  {agent,possession,source}
+           │ │ │ ├ gather|采集  {agent,possession,source}
+           │ │ │ ├ occupy|占领  {agent,possession,source}
+           │ │ │ ├ MarryFrom|娶  {agent,possession,source}[#GetMarried|结婚]
+           │ │ │ └ TakeBack|取回  {agent,possession,source}
+           │ │ │    └ redeem|赎  {agent,possession,source,cost}[commercial|商]
+           │ │ ├ give|给  {agent,possession,target}
+           │ │ │ ├ provide|供  {agent,possession,target}
+           │ │ │ ├ GiveAsGift|赠  {agent,possession,target}
+           │ │ │ │ ├ grant|赐  {agent,possession,target}
+           │ │ │ │ └ donate|捐  {agent,possession,target}
+           │ │ │ ├ submit|交  {agent,possession,target}
+           │ │ │ ├ return|还  {agent,possession,target}
+           │ │ │ │ └ recompense|补偿  {agent,possession,target}
+           │ │ │ ├ issue|分发  {agent,possession,target}
+           │ │ │ ├ sell|卖  {agent,possession,target,cost}[commercial|商]
+           │ │ │ ├ lend|借出  {agent,possession,target}
+           │ │ │ ├ pawn|押给  {agent,possession,target}[commercial|商]
+           │ │ │ ├ PassOn|留给  {agent,possession,target}
+           │ │ │ ├ pay|付  {agent,possession,target}
+           │ │ │ ├ MarryTo|嫁  {agent,possession,target}{agent,target} [#GetMarried|结婚]
+           │ │ │ └ abandon|放弃  {agent,possession}
+           │ │ ├ exchange|交换  {agent,possession,source,cost}
+           │ │ └ OnCredit|赊  {agent,possession,source}[commercial|商]
+           │ ├ AlterIsa|变是非
+           │ │ ├ CauseToBe|使之是  {agent,patient,ResultIsa}
+           │ │ │ ├ RegardAs|当作 {agent,patient,ResultIsa}/{agent,ResultIsa}
+           │ │ │ ├ naming|称作  {agent,patient,ResultIsa}
+           │ │ │ └ replace|代替  {agent,patient,ResultIsa}/{agent,patient}
+           │ │ └ CauseNotToBe|使之非  {agent,patient,ResultIsa}
+           │ │    └ dismiss|罢免  {agent,patient,ResultIsa}
+           │ ├ AlterComparison|变相比
+           │ │ ├ CompareTo|比拟  {agent,patient,contrast}
+           │ │ └ MakeEqual|使相等  {agent,patient,contrast}
+           │ ├ AlterFitness|变相适
+           │ │ ├ obey|遵循  {agent,content} {agent,patient,content}
+           │ │ │ └ surrender|屈服  {agent,target}
+           │ │ ├ coordinate|协调  {agent,content}
+           │ │ └ disobey|违背  {agent,content}
+           │ ├ AlterInclusion|变包含
+           │ │ ├ include|纳入 {agent,patient,ResultWhole}/{agent,ResultWhole}
+           │ │ ├ discharge|开除  {agent,patient,SourceWhole}
+           │ │ ├ withdraw|退出  {agent,SourceWhole}
+           │ │ └ classify|分类  {agent,patient,ResultWhole}
+           │ ├ AlterConnection|变关联
+           │ │ ├ tie|关联  {agent,patient,partner}
+           │ │ │ ├ connect|连接  {agent,patient,partner}
+           │ │ │ │ └ fasten|拴连 {agent,patient,partner}/{agent,patient,LocationFin}
+           │ │ │ ├ mix|混合  {agent,patient,partner}
+           │ │ │ ├ merge|合并  {agent,patient,partner}
+           │ │ │ └ associate|交往  {agent,partner}
+           │ │ │    ├ ally|结盟  {agent,partner}
+           │ │ │    ├ collude|勾结  {agent,partner}
+           │ │ │    ├ reconcile|讲和  {agent,partner}
+           │ │ │    ├ SeekRefuge|投靠  {agent,partner}
+           │ │ │    ├ meet|会面  {agent,partner}
+           │ │ │    ├ GetMarried|结婚]
+           │ │ │    └ mating|交配  {agent,partner}
+           │ │ └ separate|分离  {agent,patient,partner}/{agent,patient,SourceWhole}
+           │ │    ├ disconnect|脱离  {agent,partner}
+           │ │    └ farewell|离别  {agent,partner}
+           │ ├ AlterCauseResult|变因果
+           │ │ ├ CauseAffect|传染  {agent,cause,target}
+           │ │ └ incur|招惹  {agent,result}
+           │ ├ AlterLocation|变空间位置
+           │ │ ├ SelfMove|自移  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ ├ SelfMoveInManner|方式性自移  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ roam|流浪  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ walk|走  {agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚]
+           │ │ │ │ ├ run|跑  {agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚]
+           │ │ │ │ ├ jump|跳  {agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚]
+           │ │ │ │ ├ crawl|爬  {agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚,instrument=hand|手]
+           │ │ │ │ ├ slide|滑  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ roll|滚  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ swim|游  {agent,direction,LocationThru,LocationIni,LocationFin}[location=#liquid|液]
+           │ │ │ │ ├ flow|流  {agent,direction,LocationThru,LocationIni,LocationFin} [#liquid|液]
+           │ │ │ │ ├ fly|飞  {agent,direction,LocationThru,LocationIni,LocationFin}[location=sky|空域]
+           │ │ │ │ ├ float|漂  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ VehicleGo|驶  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ └ circulate|循环  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ ├ SelfMoveInDirection|方向性自移 {agent,direction,LocationThru,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ ToAndFro|来回  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ come|来  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ │ ├ go|去  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ │ └ LeaveFor|前往 {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ ├ GoUp|上去  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ │ ├ rise|上升  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ climb|攀登  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ GoDown|下去  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ fall|掉下  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ sink|下沉  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ GoForward|前进  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ GoBackward|后退  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ ├ GoInto|进入  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ ├ GoOut|出去  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ │ ├ leak|漏出  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ jet|喷出  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ spill|溢出  {agent,direction,LocationThru,direction,LocationIni,LocationFin}
+           │ │ │ │ ├ leave|离开  {agent,direction,LocationThru,LocationIni,LocationFin,~purpose}
+           │ │ │ │ │ ├ flee|逃跑 {agent,direction,LocationThru,direction,LocationIni,LocationFin,~cause}
+           │ │ │ │ │ └ escape|躲避  {agent,direction,LocationThru,LocationIni,LocationFin,~cause}
+           │ │ │ │ ├ approach|接近  {agent,direction,LocationThru,direction,LocationIni,LocationFin}
+           │ │ │ │ │ └ chase|追赶  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │    └ follow|跟随  {agent,direction,LocationThru,LocationIni,LocationFin,partner}
+           │ │ │ │ ├ disperse|散开  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ ComeTogether|集聚  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ GoThrough|经过 {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ cross|越过  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ GoBack|返回  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ └ GoRound|围绕  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │    ├ TurnRound|拐弯 {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │    └ circle|盘旋  {agent,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ ├ MoveInFixedPosition|定位自移
+           │ │ │ │ ├ wave|摆动  {agent,direction}
+           │ │ │ │ ├ shiver|颤动  {agent,direction}
+           │ │ │ │ ├ rotate|转动  {agent,direction}
+           │ │ │ │ ├ twine|打结  {agent,direction}
+           │ │ │ │ └ PartSelfMove|部件自移  {agent,location}
+           │ │ │ │    ├ stand|站立  {agent,location}
+           │ │ │ │    ├ arise|起身  {agent,LocationIni}
+           │ │ │ │    ├ sit|坐蹲  {agent,location}
+           │ │ │ │    ├ LieDown|躺卧  {agent,location}
+           │ │ │ │    ├ FallDown|跌倒  {agent,location}
+           │ │ │ │    ├ kick|踢踩  {agent,direction,location}
+           │ │ │ │    ├ tilt|倾斜  {agent,direction,location}
+           │ │ │ │    │ └ lean|倚靠  {agent,direction,location}
+           │ │ │ │    └ upmove|翘耸  {agent,direction,location}
+           │ │ │ └ CeaseSelfMove|终止自移  {agent,location}
+           │ │ │    ├ stay|停留  {agent,location,TimeIni,TimeFin,duration} //1999/7/23//
+           │ │ │    ├ arrive|到达  {agent,LocationFin}
+           │ │ │    └ reside|住下  {agent,location}
+           │ │ ├ CauseToMove|他移 {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ ├ CauseToMoveInManner|方式性他移  {agent,patient}
+           │ │ │ │ ├ release|释放  {agent,patient,source}
+           │ │ │ │ ├ TakeAway|搬动 {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ put|放置  {agent,patient,LocationIni,LocationFin}
+           │ │ │ │ │ └ pile|堆放  {agent,patient,LocationIni,LocationFin}
+           │ │ │ │ ├ store|保存  {agent,patient,LocationIni,LocationFin}
+           │ │ │ │ │ └ SetAside|留存  {agent,patient,LocationFin}
+           │ │ │ │ ├ install|安装  {agent,patient,LocationIni,LocationFin}
+           │ │ │ │ ├ dismount|拆卸  {agent,patient,LocationIni}
+           │ │ │ │ ├ load|装载  {agent,patient,LocationIni,LocationFin}
+           │ │ │ │ └ drive|驾驭  {agent,patient,LocationIni,LocationFin,direction}
+           │ │ │ ├ CauseToMoveInDirection|方向性他移  {agent,patient}
+           │ │ │ │ ├ pull|拉  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ push|推  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ MoveItUp|上移  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ lift|提升  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ hang|悬挂  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ MoveItDown|下移  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ spray|洒下  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ swallow|咽下  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ drop|投下  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ MoveItBack|回移  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ MoveItInto|内移  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ inhale|吸入  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ insert|插入  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ soak|浸入  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ inlay|嵌入  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ fill|填入  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ bury|埋入  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ MoveItOut|外移{agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ drain|排出  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ vomit|吐出  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ exhale|呼出  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ dump|倒出  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ PickOut|拔出  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ SqueezeOut|挤出  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ MoveItAway|远移{agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ ├ throw|扔  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │ └ send|发送  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │    ├ shoot|发射  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │    ├ transmit|传送 {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │    ├ transport|运送{agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │    ├ post|邮寄  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ │    └ expel|驱赶  {agent,patient,LocationIni,LocationFin,direction}
+           │ │ │ │ │       └ exile|流放{agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ ├ spread|撒  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ │ └ assemble|聚集  {agent,patient,direction,LocationThru,LocationIni,LocationFin}
+           │ │ │ ├ CauseToMoveInFixedPosition|定位他移
+           │ │ │ │ ├ shake|摇动  {agent,patient,direction}
+           │ │ │ │ ├ reverse|颠倒  {agent,patient,direction}
+           │ │ │ │ ├ turn|扭转  {agent,patient,LocationIni,LocationFin,direction}
+           │ │ │ │ ├ coil|缠绕  {agent,patient,direction}
+           │ │ │ │ │ └ surround|包围  {agent,patient,direction}
+           │ │ │ │ └ CausePartMove|部件他移  {agent,PatientPartof,direction}
+           │ │ │ └ OpenShut|开关  {agent,patient}
+           │ │ │    ├ open|打开  {agent,patient,range}
+           │ │ │    └ shut|关闭  {agent,patient,range}
+           │ │ ├ CeaseCauseTOMove|终止他移 {agent,patient}
+           │ │ │ ├ hold|拿  {agent,patient}
+           │ │ │ │ ├ pick|拾起  {agent,patient}
+           │ │ │ │ ├ HoldWithHand|搀扶  {agent,patient}
+           │ │ │ │ ├ PropUp|支撑  {agent,patient}
+           │ │ │ │ ├ bring|携带  {agent,patient}
+           │ │ │ │ ├ HoldInMouth|衔起  {agent,patient}
+           │ │ │ │ ├ HoldInArm|搂抱  {agent,patient}
+           │ │ │ │ ├ CarryOnBack|背起  {agent,patient}
+           │ │ │ │ └ TakeOutOfWater|捞起  {agent,patient}
+           │ │ │ ├ catch|捉住  {agent,patient}
+           │ │ │ ├ detain|扣住  {agent,patient}
+           │ │ │ ├ block|拦住  {agent,patient}
+           │ │ │ ├ fix|定住  {agent,patient}
+           │ │ │ └ SupportWeight|托住  {agent,patient}
+           │ │ └ AimAt|定向  {agent,patient,direction}/{agent,direction}
+           │ ├ AlterTimePosition|变时间位置
+           │ │ └ pass|度过  {agent,patient}
+           │ └ AlterQuantity|变数量
+           │    ├ add|增加  {agent,patient,quantity}
+           │    ├ subtract|削减  {agent,patient,quantity}
+           │    ├ exhaust|损耗  {agent,patient,quantity}
+           │    └ economize|节省  {agent,patient,quantity}
+           └ AlterState|变状态
+              ├ AlterPhysical|变本体
+              │ ├ CauseToExist|使存现 {agent,PatientProduct}
+              │ │ ├ create|创造  {agent,PatientProduct}
+              │ │ │ ├ GiveBirth|生育  {agent,PatientProduct}
+              │ │ │ ├ produce|制造  {agent,PatientProduct}
+              │ │ │ │ ├ cook|烹调  {agent,PatientProduct}
+              │ │ │ │ └ compile|编辑  {agent,ContentProduct}
+              │ │ │ ├ build|建造  {agent,PatientProduct}
+              │ │ │ ├ forming|形成  {agent,PatientProduct}
+              │ │ │ ├ establish|建立  {agent,PatientProduct}
+              │ │ │ └ forge|伪造  {agent,PatientProduct}[undesired|莠]
+              │ │ └ CauseToAppear|显现  {agent,patient}
+              │ │    ├ reveal|揭露  {agent,patient}
+              │ │    └ StripOff|剥去  {agent,patient}
+              │ ├ AlterStateNormal|变常态
+              │ │ ├ CauseToLive|使活  {agent,patient}
+              │ │ │ ├ MakeLiving|谋生  {agent}
+              │ │ │ └ ProvideFor|供养  {agent,patient}
+              │ │ │    ├ foster|饲养  {agent,patient}
+              │ │ │    └ planting|栽植  {agent,patient,LocationFin}
+              │ │ └ CauseToGrow|使成长  {agent,patient,StateIni,StateFin}
+              │ │    ├ metabolize|代谢  {agent,patient}
+              │ │    │ ├ consume|摄取  {agent,patient}
+              │ │    │ │ ├ eat|吃  {agent,patient}
+              │ │    │ │ ├ drink|喝  {agent,patient}
+              │ │    │ │ └ feed|喂  {agent,patient,target}
+              │ │    │ ├ excrete|排泄  {agent,patient}
+              │ │    │ └ respire|呼吸  {agent,+patient}
+              │ │    ├ WhileAway|消闲  {agent,instrument}/{agent}
+              │ │    │ ├ exercise|锻练  {agent,~instrument}/{agent}[sport|体育]
+              │ │    │ ├ tour|旅游  {agent,location,direction,LocationIni,LocationFin}[SelfMove|自移]
+              │ │    │ ├ recreation|娱乐  {agent,~instrument,~partner}
+              │ │    │ ├ addict|嗜好  {agent,patient}[undesired|莠]
+              │ │    │ └ SeekPleasure|寻欢  {agent,~partner}[undesired|莠]
+              │ │    ├ keep|保持  {agent,patient}
+              │ │    │ └ maintain|保养  {agent,patient}
+              │ │    ├ protect|保护  {agent,patient}
+              │ │    ├ TakeCare|照料  {agent,patient}
+              │ │    ├ cultivate|培养  {agent,patient}
+              │ │    ├ help|帮助  {agent,patient,scope}/{agent,patient,purpose}
+              │ │    │ └ rescue|救助  {agent,patient,StateIni}
+              │ │    └ KeepOn|使继续  {agent,patient}
+              │ ├ AlterStateGood|变良态
+              │ │ ├ benefit|便利  {agent,patient}
+              │ │ ├ MakeBetter|优化  {agent,patient}
+              │ │ │ ├ adjust|调整  {agent,patient}
+              │ │ │ ├ PutInOrder|整理  {agent,patient}
+              │ │ │ ├ improve|改良  {agent,patient}
+              │ │ │ │ └ enrich|充实  {agent,patient,material}
+              │ │ │ └ fulfil|实现  {agent,patient}
+              │ │ └ resume|恢复  {agent,patient,StateIni,StateFin}
+              │ │    ├ cure|医治  {agent,patient,content} [medical|医]
+              │ │    ├ repair|修理  {agent,patient,content}
+              │ │    └ amend|改正  {agent,patient,content}
+              │ ├ AlterStateBad|变莠态
+              │ │ └ MakeBad|加害
+              │ │    ├ MakeTrouble|捣乱  {agent,patient}
+              │ │    ├ damage|损害  {agent,patient}
+              │ │    ├ attack|攻打  {agent,patient}
+              │ │    ├ punish|处罚  {agent,patient,ResultContent,cause}
+              │ │    ├ revenge|报复  {agent,patient}
+              │ │    ├ HaveContest|较量  {agent,partner,scope}
+              │ │    │ ├ compete|比赛  {agent,partner,scope}
+              │ │    │ │ └ gamble|赌博  {agent,partner,scope} [#wealth|钱财]
+              │ │    │ ├ fight|争斗  {agent,partner,cause}
+              │ │    │ │ ├ uprise|暴动  {agent,partner,cause}
+              │ │    │ │ └ resist|反抗  {agent,partner,cause}
+              │ │    │ ├ defend|防守  {agent,patient,cause}
+              │ │    │ └ defeat|战胜  {agent,partner}
+              │ │    ├ kill|杀害  {agent,patient}
+              │ │    │ └ suicide|自杀  {agent,+patient}
+              │ │    └ remove|消除  {agent,patient,LocationIni}
+              │ │       └ destroy|消灭 {agent,patient,LocationIni}
+              │ ├ CauseToBeHidden|使消失
+              │ │ ├ hide|藏匿  {agent,patient,LocationFin}
+              │ │ └ cover|遮盖  {agent,patient,instrument}
+              │ │    ├ PutOn|穿戴  {agent,+patient,instrument}/{agent,patient,instrument}
+              │ │    └ wrap|包扎  {agent,patient,instrument}
+              │ └ AlterAttribute|变属性
+              │    ├ MakeHigher|提高  {agent,patient,+PatientAttribute}
+              │    ├ MakeLower|降低  {agent,patient,+PatientAttribute}
+              │    ├ AlterAppearance|变外观{agent,patient,PatientAttribute=appearance|外观}
+              │    │ ├ AlterForm|变形状  {agent,patient,instrument,PatientAttribute}
+              │    │ │ ├ touch|触  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ stroke|抚  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ stab|扎  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ sting|叮  {agent,patient,instrument,instrument,PartOfTouch}
+              │    │ │ ├ beat|打  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ bump|撞  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ firing|射击 {agent,patient,instrument,PartOfTouch,direction,target,LocationFin}
+              │    │ │ ├ break|折断  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ rub|摩擦  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ scratch|抓挠  {agent,patient,instrument,PartOfTouch}
+              │    │ │ ├ press|按压  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ unfold|铺摊  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ grind|研磨  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ split|破开  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ cut|切削  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ bite|啃咬  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ masticate|咀嚼  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ fold|摺叠  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ PlayWith|揉弄  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ ├ weave|辫编  {agent,patient,instrument,PartOfTouch,StateFin}
+              │    │ │ └ dig|挖掘  {agent,PatientProduct,instrument,location}/{agent,patient,instrument}
+              │    │ ├ clean|使净  {agent,patient,instrument,PatientAttribute=spotless|洁}
+              │    │ │ ├ wash|洗涤  {agent,patient,instrument,PatientAttribute=spotless|洁}
+              │    │ │ └ wipe|擦拭  {agent,patient,instrument,PatientAttribute=spotless|洁}
+              │    │ ├ pollute|使脏  {agent,patient,instrument,PatientAttribute=dirty|龊}
+              │    │ ├ apply|涂抹  {agent,patient,instrument,PatientAttribute,material}
+              │    │ ├ beautify|美化  {agent,patient,instrument,PatientAttribute=beautiful|美}
+              │    │ │ ├ decorate|装饰  {agent,patient,instrument,PatientAttribute=beautiful|美}
+              │    │ │ └ MakeUp|化妆  {agent,patient,instrument,PatientAttribute=beautiful|美}
+              │    │ ├ uglify|丑化  {agent,patient,instrument,PatientAttribute=ugly|丑}
+              │    │ ├ illuminate|照射  {agent,patient,instrument,PatientAttribute=bright|明}
+              │    │ ├ AlterColor|变色  {agent,patient,instrument,PatientAttribute=color|颜色}
+              │    │ ├ brighten|使亮  {agent,patient,instrument,PatientAttribute=bright|明}
+              │    │ ├ straighten|拉直  {agent,patient,instrument,PatientAttribute=straight|直}
+              │    │ ├ bend|折弯  {agent,patient,instrument,PatientAttribute=curved|弯}
+              │    │ ├ sharpen|使锋利  {agent,patient,instrument,PatientAttribute=sharp|利}
+              │    │ ├ filter|滤清  {agent,patient,instrument,PatientAttribute=clear|清}
+              │    │ └ lubricate|润滑  {agent,patient,instrument,PatientAttribute=polished|光}
+              │    ├ AlterMeasurement|变量度  {agent,patient,instrument,PatientAttribute=measurement|量度}
+              │    │ ├ WarmUp|加热  {agent,patient,instrument,PatientAttribute=hot|热}
+              │    │ │ ├ lighting|点燃  {agent,patient,instrument,PatientAttribute=hot|热}
+              │    │ │ └ burn|焚烧  {agent,patient,instrument,PatientAttribute=hot|热}
+              │    │ ├ cool|制冷  {agent,patient,instrument,PatientAttribute=cold|冷}
+              │    │ ├ moisten|加湿  {agent,patient,instrument,PatientAttribute=wet|湿}
+              │    │ │ └ irrigate|浇灌  {agent,patient,instrument,PatientAttribute=wet|湿}
+              │    │ ├ dry|干燥  {agent,patient,instrument,PatientAttribute=dried|干}
+              │    │ ├ enlarge|扩大  {agent,patient,instrument,PatientAttribute=big|大}
+              │    │ ├ shrink|缩小  {agent,patient,instrument,PatientAttribute=small|小}
+              │    │ ├ tighten|勒紧  {agent,patient,instrument,PatientAttribute=tight|紧}
+              │    │ ├ loosen|放松  {agent,patient,instrument,PatientAttribute=loose|松}
+              │    │ ├ SpeedUp|加快  {agent,patient,instrument,PatientAttribute=fast|快}
+              │    │ ├ SlowDown|减慢  {agent,patient,instrument,PatientAttribute=slow|慢}
+              │    │ ├ MakeHeavier|加重  {agent,patient,instrument,PatientAttribute=heavy|重}
+              │    │ ├ deepen|加深  {agent,patient,instrument,PatientAttribute=deep|深}
+              │    │ ├ MakeEarlier|提早  {agent,patient,TimeFin,PatientAttribute=TimeShort|暂}
+              │    │ ├ delay|拖延  {agent,patient,TimeFin,PatientAttribute=TimeLong|久}
+              │    │ ├ thicken|加浓  {agent,patient,instrument,PatientAttribute=concentrated|稠}
+              │    │ └ dilute|冲淡  {agent,patient,instrument,PatientAttribute=watery|稀}
+              │    ├ AlterProperty|变特性  {agent,patient,instrument,PatientAttribute=property|特性}
+              │    │ ├ strengthen|加固  {agent,patient,instrument,PatientAttribute=durable|牢}
+              │    │ ├ weaken|削弱  {agent,patient,instrument,PatientAttribute=weak|弱}
+              │    │ ├ dredge|疏通  {agent,patient,instrument,PatientAttribute=^$BlockUp|堵塞}
+              │    │ ├ BlockUp|堵塞
+              │    │ ├ AlterGrade|变级  {agent,patient,PatientAttribute=rank|等级}
+              │    │ │ ├ upgrade|升级  {agent,patient,PatientAttribute=rank|等级}
+              │    │ │ └ degrade|降级  {agent,patient,PatientAttribute=rank|等级}
+              │    │ ├ PlayUp|鼓吹  {agent,patient,instrument,PatientAttribute=glorious|荣}
+              │    │ ├ PlayDown|贬低  {agent,patient,instrument,PatientAttribute=disgraced|辱}
+              │    │ │ └ slander|诽谤  {agent,patient,instrument,PatientAttribute=disgraced|辱}
+              │    │ ├ delimit|划定  {agent,patient,instrument,PatientAttribute=range|幅度}
+              │    │ └ refine|纯化  {agent,patient,instrument,PatientAttribute=pure|纯}
+              │    └ ize|变性态  {agent,patient,instrument,+PatientAttribute}
+              ├ MakeAct|使之动
+              │ ├ CauseToDo|使动  {agent,patient,ResultEvent}
+              │ │ ├ request|要求  {agent,patient,ResultEvent}
+              │ │ ├ call|召唤  {agent,patient,ResultEvent}
+              │ │ ├ invite|邀请  {agent,patient,ResultEvent}
+              │ │ ├ dispatch|差遣  {agent,patient,ResultEvent}
+              │ │ ├ order|命令  {agent,patient,ResultEvent}
+              │ │ ├ entrust|委托  {agent,patient,ResultEvent}
+              │ │ ├ urge|促使  {agent,patient,ResultEvent}
+              │ │ ├ force|强迫  {agent,patient,ResultEvent}
+              │ │ ├ guide|引导  {agent,patient,ResultEvent}
+              │ │ ├ persuade|劝说  {agent,patient,ResultEvent}
+              │ │ │ └ mediate|调解  {agent,patient,^ResultEvent}
+              │ │ ├ mobilize|发动  {agent,patient,ResultEvent}
+              │ │ ├ incite|指使  {agent,patient,ResultEvent}
+              │ │ ├ entice|勾引  {agent,patient,ResultEvent}
+              │ │ ├ indulge|放纵  {agent,patient,ResultEvent}
+              │ │ └ TurnOn|启动  {agent,patient,ResultEvent}
+              │ ├ CauseNotToDo|阻动  {agent,patient,ResultEvent}
+              │ │ ├ restrain|制止  {agent,patient,ResultEvent}
+              │ │ ├ obstruct|阻止  {agent,patient,ResultEvent}
+              │ │ ├ prohibit|禁止  {agent,patient,ResultEvent}
+              │ │ ├ TurnOff|止动  {agent,patient,ResultEvent}
+              │ │ └ exempt|免除 {agent,patient,ResultEvent}
+              │ └ use|利用  {agent,patient,ResultEvent}
+              │    ├ TakeVehicle|搭乘  {agent,patient,ResultEvent}
+              │    ├ employ|雇用  {agent,patient,ResultEvent}
+              │    └ spend|花费  {agent,patient,ResultEvent}
+              │       └ lavish|浪费  {agent,patient}
+              └ AlterMental|变精神
+                 ├ AlterEmotion|变情感
+                 │ ├ soothe|安慰  {agent,target}
+                 │ └ excite|感动 {agent,target}
+                 │    ├ MakeHappy|使喜悦  {agent,target}
+                 │    │ ├ please|取悦  {agent,target}
+                 │    │ └ tease|取乐  {agent,target}
+                 │    ├ irritate|激怒  {agent,target}
+                 │    ├ frighten|吓唬  {agent,target}
+                 │    ├ discourage|泼冷水  {agent,target}
+                 │    ├ offend|得罪  {agent,target}
+                 │    ├ disappoint|辜负  {agent,target}
+                 │    ├ MakeWorried|困扰  {agent,target}
+                 │    └ attract|吸引  {agent,target}
+                 ├ ShowEmotion|表示情感 {agent,content,target}
+                 │ └ treat|对待 {agent,target,manner}
+                 │    ├ ShowGoodEmotion|表示好情感  {agent,^content,target}
+                 │    │ ├ ShowInterest|理睬  {agent,target,cause}
+                 │    │ ├ ShowJoy|示喜  {agent,target,cause}
+                 │    │ │ └ laugh|笑  {agent,target,cause}
+                 │    │ ├ ShowLove|示爱  {agent,target,cause}
+                 │    │ ├ praise|夸奖  {agent,target,cause}
+                 │    │ │ └ reward|奖励  {agent,target,possession,cause}
+                 │    │ ├ congratulate|祝贺  {agent,target,cause}
+                 │    │ ├ thank|致谢  {agent,target,cause}
+                 │    │ ├ apologize|道歉  {agent,target,cause}
+                 │    │ ├ SayHello|问候  {agent,target,cause}
+                 │    │ │ └ visit|看望  {agent,target,cause}
+                 │    │ ├ welcome|欢迎  {agent,target,cause}
+                 │    │ ├ salute|致敬  {agent,target,cause}
+                 │    │ ├ ExpressAgreement|示同意  {agent,content}
+                 │    │ │ ├ accept|接受  {agent,content}
+                 │    │ │ └ appreciate|赞成  {agent,content}
+                 │    │ ├ endorse|拥护  {agent,content}
+                 │    │ ├ guarantee|保证  {agent,target,scope}
+                 │    │ ├ WellTreat|善待  {agent,target,cause}
+                 │    │ │ └ entertain|招待  {agent,target,cause,ResultEvent}
+                 │    │ └ commemorate|示思念 {agent,target,cause}
+                 │    ├ ShowBadEmotion|表示坏情感  {agent,^content,target}
+                 │    │ ├ IllBehave|胡闹  {agent,target,cause}
+                 │    │ └ sigh|叹气  {agent,target,cause}
+                 │    └ condole|致哀  {agent,target,cause}
+                 │       ├ weep|哭泣  {agent,target,cause}
+                 │       ├ ExpressDissatisfaction|示不满  {agent,target,content}
+                 │       │ ├ protest|抗议  {agent,target,content}
+                 │       │ ├ ExpressAgainst|谴责  {agent,target,cause}
+                 │       │ ├ satirize|讽刺  {agent,target,cause}
+                 │       │ ├ LaughAt|笑话  {agent,target,cause}
+                 │       │ └ IllTreat|慢待  {agent,target,cause}
+                 │       ├ ExpressDisagreement|示不同意  {agent,target,content}
+                 │       │ ├ oppose|反对  {agent,target,content}
+                 │       │ └ reject|回绝  {agent,target,content}
+                 │       ├ betray|背叛  {agent,target,cause}
+                 │       └ ExpressAnger|示怒  {agent,target,cause}
+                 └ AlterKnowledge|变感知
+                    ├ MakeOwnKnowledge|使自我感知
+                    │ ├ sense|感觉  {agent,content}
+                    │ │ ├ look|看  {agent,content}
+                    │ │ ├ listen|听  {agent,content}
+                    │ │ ├ smell|闻  {agent,content}
+                    │ │ ├ feel|摸  {agent,content}
+                    │ │ └ savor|舔  {agent,content}
+                    │ ├ GetKnowledge|认知  {agent,content}
+                    │ │ └ TryToKnow|弄懂  {agent,content}
+                    │ │    ├ read|读  {agent,content}
+                    │ │    ├ ask|问  {agent,content,target}
+                    │ │    │ └ interrogate|审问  {agent,content,target}
+                    │ │    ├ LookFor|寻  {agent,location,content}
+                    │ │    ├ check|查  {agent,content}
+                    │ │    │ ├ scout|侦察  {agent,content} [military|军,police|警]
+                    │ │    │ ├ diagnose|诊察  {agent,content} [medical|医]
+                    │ │    │ ├ supervise|监察  {agent,content}
+                    │ │    │ ├ investigate|调查  {agent,content}
+                    │ │    │ └ exam|考试  {agent,content}
+                    │ │    ├ calculate|计算  {agent,content}
+                    │ │    │ ├ count|计数  {agent,content}
+                    │ │    │ └ measure|测量  {agent,content}
+                    │ │    ├ distinguish|分辨  {agent,content}
+                    │ │    ├ think|思考  {agent,content}
+                    │ │    │ ├ deduce|推理  {agent,content}
+                    │ │    │ │ ├ guess|猜测  {agent,content}
+                    │ │    │ │ └ predict|预料  {agent,content}
+                    │ │    │ └ LookBack|回想  {agent,content}
+                    │ │    ├ study|学  {agent,content,source}
+                    │ │    │ ├ drill|练习  {agent,content}
+                    │ │    │ └ imitate|模仿  {agent,content}
+                    │ │    ├ research|研究  {agent,content}
+                    │ │    ├ compare|比较  {agent,content}/{agent,content,contrast}
+                    │ │    ├ analyze|分析  {agent,content}
+                    │ │    └ experiment|实验  {agent,content}
+                    │ ├ prove|证明  {agent,content}
+                    │ ├ decide|决定  {agent,content}
+                    │ │ ├ judge|裁定  {agent,content}
+                    │ │ └ MakeAppointment|约定  {agent,content,partner}
+                    │ ├ estimate|评估  {agent,content}
+                    │ ├ plan|计划  {agent,content}
+                    │ └ choose|选择  {agent,content,whole}
+                    │    └ select|选拔  {agent,content,whole}
+                    ├ MakeOthersKnowledge|使他人感知
+                    │ ├ express|表示  {agent,content,target}
+                    │ │ ├ mention|提及  {agent,content,target}
+                    │ │ ├ MakeSound|发声  {agent,content}
+                    │ │ ├ cry|喊  {agent,content,target}
+                    │ │ ├ speak|说  {agent,content,target}
+                    │ │ ├ boast|夸大  {agent,content,target}
+                    │ │ ├ swear|发誓  {agent,content,target}
+                    │ │ ├ sing|唱  {agent,content,target}
+                    │ │ ├ recite|诵读  {agent,content,target}
+                    │ │ ├ propose|提出  {agent,content,target}
+                    │ │ ├ quote|引用  {agent,content}
+                    │ │ ├ explain|说明  {agent,content,target}
+                    │ │ ├ tell|告诉  {agent,content,target}
+                    │ │ ├ describe|描写  {agent,content,target}
+                    │ │ ├ announce|发表  {agent,content,target}
+                    │ │ ├ disseminate|传播  {agent,content,target}
+                    │ │ ├ accuse|控告  {agent,content,target}
+                    │ │ ├ recommend|推荐  {agent,content,target}
+                    │ │ ├ reply|答  {agent,content,target}
+                    │ │ │ └ refute|反驳  {agent,content,target}
+                    │ │ ├ admit|承认  {agent,content,target}
+                    │ │ ├ deny|否认  {agent,content,target}
+                    │ │ ├ write|写  {agent,ContentProduct,LocationFin}
+                    │ │ │ ├ copy|抄写  {agent,ContentProduct,contrast,LocationFin}
+                    │ │ │ └ sign|题写  {agent,ContentProduct,LocationFin}
+                    │ │ ├ translate|翻译  {agent,content,StateIni,StateFin}
+                    │ │ ├ record|记录  {agent,content,LocationFin}
+                    │ │ │ └ TakePicture|拍摄  {agent,content,@LocationFin}
+                    │ │ ├ draw|画  {agent,ContentProduct,LocationFin}
+                    │ │ ├ carve|雕刻  {agent,ContentProduct,LocationFin}
+                    │ │ ├ print|印刷  {agent,ContentProduct,LocationFin}
+                    │ │ │ └ publish|出版  {agent,ContentProduct,LocationFin}
+                    │ │ └ show|表现  {agent,content,target}
+                    │ │    ├ perform|表演  {agent,content,target}
+                    │ │    ├ display|展示  {agent,content,target}
+                    │ │    └ ShowOff|炫耀  {agent,content,target}
+                    │ ├ teach|教  {agent,content,target}/{agent,patient,ResultEvent}
+                    │ └ communicate|交流  {agent,partner,content}
+                    │    ├ talk|谈话  {agent,partner,content}
+                    │    ├ discuss|商讨  {agent,partner,content}
+                    │    ├ debate|辩论  {agent,partner,content}
+                    │    └ quarrel|争吵  {agent,partner,content}
+                    ├ MakeNoKnowledge|使不知
+                    │ ├ HideTruth|瞒  {agent,target,content}
+                    │ └ KeepSilence|不说  {agent,target,content}
+                    └ MakeMisunderstand|使误知  {agent,target,content}
+                       ├ TalkNonsense|瞎说  {agent,target,content}/{agent,target,scope}
+                       └ deceive|欺骗  {agent,target,content}
+- entity|实体
+  ├ thing|万物 [#time|时间,#space|空间]
+  │ ├ physical|物质 [!appearance|外观]
+  │ │ ├ animate|生物 [*alive|活着,!age|年龄,*die|死,*metabolize|代谢]
+  │ │ │ ├ AnimalHuman|动物 [!sex|性别,*AlterLocation|变空间位置,*StateMental|精神状态]
+  │ │ │ │ ├ human|人 [!name|姓名,!wisdom|智慧,!ability|能力,!occupation|职位,*act|行动]
+  │ │ │ │ │ └ humanized|拟人 [fake|伪]
+  │ │ │ │ └ animal|兽 [^*GetKnowledge|认知]
+  │ │ │ │    ├ beast|走兽 [^*GetKnowledge|认知]
+  │ │ │ │    ├ livestock|牲畜 [$foster|饲养,~$consume|摄取,~?edible|食物]
+  │ │ │ │    ├ bird|禽 [*fly|飞,~$consume|摄取,~?edible|食物]
+  │ │ │ │    ├ InsectWorm|虫 [~undesired|莠]
+  │ │ │ │    └ fish|鱼 [*swim|游,#waters|水域,~$consume|摄取,~?edible|食物]
+  │ │ │ ├ plant|植物 [^*SelfMove|自移,^*StateMental|精神状态]
+  │ │ │ │ ├ crop|庄稼 [$planting|栽植,?material|材料,#edible|食物]
+  │ │ │ │ ├ tree|树 [#wood|木,?material|材料]
+  │ │ │ │ ├ FlowerGrass|花草 [~$planting|栽植,~odor|气味,~color|颜色,~prettiness|美丑,~*decorate|装饰]
+  │ │ │ │ ├ vegetable|蔬菜 [$planting|栽植,?edible|食物,$consume|摄取]
+  │ │ │ │ ├ fruit|水果 [$planting|栽植,$consume|摄取,?edible|食物,#tree|树]
+  │ │ │ │ └ AlgaeFungi|低植 [~?edible|食物]
+  │ │ │ └ bacteria|微生物 [~*CauseToDo|使动,#disease|疾病,#medical|医,~undesired|莠]
+  │ │ ├ inanimate|无生物 [^*alive|活着,^*die|死,^*metabolize|代谢]
+  │ │ │ ├ natural|天然物
+  │ │ │ │ ├ celestial|天体 [space|空间,#lights|光,#WeatherChange|天变]
+  │ │ │ │ ├ earth|大地 [space|空间,#animate|生物,+event|事件]
+  │ │ │ │ │ ├ land|陆地 [#LandVehicle|车,+VehicleGo|驶]
+  │ │ │ │ │ ├ waters|水域 [space|空间,liquid|液,#water|水,#ship|船,+VehicleGo|驶,#fish|鱼,+swim|游]
+  │ │ │ │ │ ├ sky|空域 [space|空间,gas|气,#weather|天象,#aircraft|飞行器,#bird|禽,+fly|飞]
+  │ │ │ │ │ └ place|地方 [space|空间]
+  │ │ │ │ ├ liquid|液 [*flow|流,#waters|水域]
+  │ │ │ │ │ └ water|水
+  │ │ │ │ ├ ice|冰 [cold|冷,#liquid|液,StateChange|态变]
+  │ │ │ │ ├ metal|金属 [material|材料,~heavy|重]
+  │ │ │ │ ├ wood|木 [material|材料,#tree|树,?building|建筑物,?furniture|家具,$burn|焚烧,$lighting|点燃]
+  │ │ │ │ ├ fire|火 [*lighting|点燃,*burn|焚烧,hot|热]
+  │ │ │ │ ├ stone|土石 [~?material|材料]
+  │ │ │ │ ├ weather|天象 [#WeatherChange|天变,#celestial|天体]
+  │ │ │ │ │ ├ RainSnow|雨雪 [liquid|液,#WeatherBad|坏天]
+  │ │ │ │ │ ├ wind|风 [gas|气,#WeatherBad|坏天]
+  │ │ │ │ │ ├ CloudMist|云雾 [gas|气]
+  │ │ │ │ │ └ thunder|雷 [#electricity|电]
+  │ │ │ │ ├ gas|气 [!odor|气味,#smell|闻,gas|气]
+  │ │ │ │ ├ sound|声 [#listen|听,$transmit|传送]
+  │ │ │ │ ├ electricity|电 [?material|材料,$transmit|传送]
+  │ │ │ │ ├ lights|光 [!color|颜色,$transmit|传送,#illuminate|照射,#celestial|天体,#electricity|电,#look|看]
+  │ │ │ │ └ trace|痕 [#lights|光]
+  │ │ │ └ artifact|人工物 [$create|创造,^$GiveBirth|生育!quality|质量,!price|价格,#material|材料,#instrument|工具,#commercial|商]
+  │ │ │    ├ clothing|衣物 [!pattern|样式,!color|颜色,#sex|性别,$PutOn|穿戴,$StripOff|剥去]
+  │ │ │    ├ edible|食物 [!taste|味道,#livestock|牲畜,#fish|鱼,#bird|禽,#vegetable|蔬菜,#fruit|水果,$consume|摄取,*feed|喂]
+  │ │ │    │ ├ food|食品 [$cook|烹调,$eat|吃]
+  │ │ │    │ └ drinks|饮品 [$drink|喝,liquid|液]
+  │ │ │    ├ medicine|药物 [medical|医,*cure|医治,#disease|疾病,#animate|生物]
+  │ │ │    ├ chemical|化学物 [material|材料]
+  │ │ │    ├ addictive|嗜好物 [expensive|贵,undesired|莠,$addict|嗜好,~#crime,|罪,~#police|警]
+  │ │ │    ├ building|建筑物 [$build|建造]
+  │ │ │    │ ├ house|房屋 [space|空间,+reside|住下]
+  │ │ │    │ │ └ room|房间 [%house|房屋]
+  │ │ │    │ └ facilities|设施
+  │ │ │    ├ implement|器具 [$use|利用]
+  │ │ │    │ ├ machine|机器 [~*produce|制造]
+  │ │ │    │ ├ computer|电脑 [*calculate|计算,#information|信息,#software|软件]
+  │ │ │    │ ├ vehicle|交通工具 [space|空间,#route|路,$TakeVehicle|搭乘,$drive|驾驭,*transport|运送,*AlterLocation|变空间位置]
+  │ │ │    │ │ ├ LandVehicle|车 [#land|陆地,*VehicleGo|驶]
+  │ │ │    │ │ ├ ship|船 [#waters|水域,*VehicleGo|驶]
+  │ │ │    │ │ └ aircraft|飞行器 [#sky|空域,*fly|飞]
+  │ │ │    │ ├ furniture|家具 [#family|家,$decorate|装饰]
+  │ │ │    │ ├ stationery|文具
+  │ │ │    │ │ ├ paper|纸张 [!color|颜色,!thickness|厚度,#PenInk|笔墨,~*write|写,~*wrap|包扎]
+  │ │ │    │ │ └ PenInk|笔墨 [#paper|纸张,*write|写,*copy|抄写]
+  │ │ │    │ ├ MusicTool|乐器 [*recreation|娱乐,*perform|表演,#music|音乐,#entertainment|艺]
+  │ │ │    │ ├ SportTool|运动器材 [*exercise|锻练,#compete|比赛,#physique|体格,#sport|体育]
+  │ │ │    │ ├ tool|用具 [$use|利用]
+  │ │ │    │ ├ weapon|武器 [#military|军,#police|警,#country|国,*attack|攻打,*fight|争斗,*resist|反抗,*defend|防守,*kill|杀害,*destroy|消灭]
+  │ │ │    │ └ software|软件 [#computer|电脑,#information|信息,$compile|编辑]
+  │ │ │    ├ material|材料 [*produce|制造,*build|建造,*forge|伪造,#artifact|人工物]
+  │ │ │    ├ wealth|钱财 [#value|价值,#commercial|商]
+  │ │ │    │ ├ fund|资金 [$spend|花费,#money|货币,commercial|商]
+  │ │ │    │ ├ expenditure|费用 [$spend|花费,#money|货币]
+  │ │ │    │ ├ payment|酬金 [$earn|赚,$give|给,$obtain|得到,#money|货币]
+  │ │ │    │ ├ money|货币 [$earn|赚,*buy|买,#sell|卖,$SetAside|留存]
+  │ │ │    │ ├ coupon|票证 [*buy|买]
+  │ │ │    │ └ treasure|珍宝 [precious|珍,expensive|贵,$SetAside|留存]
+  │ │ │    └ readings|读物 [$read|读,$compile|编辑,$write|写,#information|信息]
+  │ │ │       ├ publications|书刊 [$compile|编辑,$publish|出版,$read|读,#time|时间,*disseminate|传播,#information|信息]
+  │ │ │       ├ document|文书 [+record|记录,+write|写,$read|读]
+  │ │ │       ├ bill|票据 [#commercial|商,#buy|买,#sell|卖,#money|货币,wealth|钱财,#price|价格]
+  │ │ │       ├ account|簿册 [+record|记录,+write|写,#wealth|钱财]
+  │ │ │       ├ letter|信件 [$post|邮寄,~#friend|友,~#family|家]
+  │ │ │       └ mark|标志 [*express|表示,#information|信息]
+  │ │ └ shape|物形 [!form]
+  │ ├ mental|精神 [#StateMental|精神状态]
+  │ │ ├ emotion|情感 [$cherish|心怀,#feeling|情绪,#AlterEmotion|变情感,abstract|抽象]
+  │ │ ├ experience|感受 [$undergo|经受,$MakeOwnKnowledge|使自我感知,abstract|抽象]
+  │ │ ├ aspiration|意愿 [#volition|意向,abstract|抽象]
+  │ │ ├ thinking|思想 [$think|思考,abstract|抽象]
+  │ │ │ ├ thought|念头
+  │ │ │ ├ method|方法 [$use|利用,#act|行动,#purpose|目的]
+  │ │ │ │ └ plans|规划 [*act|行动]
+  │ │ │ ├ purpose|目的 [#act|行动]
+  │ │ │ ├ reason|道理
+  │ │ │ ├ standpoint|立场
+  │ │ │ └ knowledge|知识 [#information|信息]
+  │ │ ├ information|信息 [#knowledge|知识,#recognition|感知状态,!content|内容,#AlterKnowledge|变感知,abstract|抽象]
+  │ │ │ ├ language|语言 [$read|读,*express|表示,*teach|教,*communicate|交流,#thinking|思想]
+  │ │ │ │ ├ symbol|符号
+  │ │ │ │ │ └ punc|标点
+  │ │ │ │ ├ character|文字 [%language|语言]
+  │ │ │ │ ├ expression|词语 [%language|语言]
+  │ │ │ │ └ text|语文 [$read|读,$write|写,$compile|编辑,*express|表示]
+  │ │ │ │    └ news|新闻 [text|语文]
+  │ │ │ ├ music|音乐 [$listen|听,$perform|表演,$compile|编辑,$entertainment|艺]
+  │ │ │ ├ image|图像 [$look|看,$draw|画]
+  │ │ │ ├ shows|表演物 [$perform|表演,$compile|编辑,~entertainment|艺]
+  │ │ │ └ example|实例
+  │ │ ├ regulation|规矩 [*control|控制]
+  │ │ │ ├ system|制度
+  │ │ │ ├ law|律法 [$obey|遵循,$disobey|违背,police|警]
+  │ │ │ └ agreement|条约 [$discuss|商讨,$debate|辩论,$decide|决定,$conduct|实施,~#associate|交往]
+  │ │ ├ rights|权利 [$have|领有,*use|利用,abstract|抽象]
+  │ │ └ duty|责任 [$bear|承担,abstract|抽象]
+  │ ├ event|事件 [abstract|抽象]
+  │ │ ├ fact|事情
+  │ │ │ ├ affairs|事务 [$engage|从事]
+  │ │ │ ├ problem|问题
+  │ │ │ ├ cause|原因
+  │ │ │ ├ process|过程
+  │ │ │ └ result|结果
+  │ │ └ phenomena|现象 [abstract|抽象]
+  │ │    └ disease|疾病 [medical|医,$cure|医治,#medicine|药物,undesired|莠,~#die|死,~#bacteria|微生物]
+  │ ├ organization|组织 [#human|人,*ExistAppear|存现,*perish|灭亡,$establish|建立,*ActGeneral|泛动,*AlterGeneral|泛变,^*SelfMove|自移,^*metabolize|代谢,space|空间]
+  │ │ ├ institution|机构 [#official|官]
+  │ │ ├ army|军队 [military|军,#weapon|武器,*fight|争斗,*resist|反抗,*defend|防守,*kill|杀害,*destroy|消灭]
+  │ │ ├ InstitutePlace|场所 [*engage|从事,#affairs|事务]
+  │ │ └ community|团体 [*engage|从事,#affairs|事务]
+  │ └ internet|因特网 [#computer|电脑,+read|读,+communicate|交流,+post|邮寄,#information|信息,commercial|商]
+  ├ time|时间 [+event|事件]
+  ├ space|空间 [+event|事件]
+  │ ├ direction|方向 [abstract|抽象]
+  │ └ location|位置 [abstract|抽象]
+  └ component|部分
+     ├ part|部件 [necessary|要]
+     └ fittings|配件
+- attribute|属性  [abstract|抽象]
+  ├ appearance|外观
+  │ ├ form|形状
+  │ ├ brightness|明暗
+  │ ├ clearness|清浑
+  │ ├ prettiness|美丑
+  │ ├ pattern|样式
+  │ ├ SmoothFinish|光洁度
+  │ ├ color|颜色
+  │ ├ hue|浓淡
+  │ ├ odor|气味
+  │ ├ taste|味道
+  │ ├ posture|姿势
+  │ ├ scene|景象
+  │ ├ cleanness|洁净
+  │ ├ fatness|胖瘦
+  │ ├ bearing|仪态
+  │ ├ PhysicState|物理状态
+  │ ├ attire|装束
+  │ ├ style|风格
+  │ ├ demeanor|风度
+  │ └ countenance|表情
+  ├ measurement|量度
+  │ ├ length|长度
+  │ ├ width|宽度
+  │ ├ height|高度
+  │ ├ depth|深度
+  │ ├ thickness|厚度
+  │ ├ size|尺寸
+  │ ├ fineness|粗细
+  │ ├ weight|重量
+  │ ├ area|面积
+  │ ├ slope|坡度
+  │ ├ density|密度
+  │ ├ tightness|松紧
+  │ ├ hardness|硬度
+  │ ├ concentration|浓度
+  │ ├ distance|距离
+  │ ├ earliness|迟早
+  │ ├ speed|速度
+  │ ├ duration|久暂
+  │ ├ dampness|湿度
+  │ ├ temperature|温度
+  │ ├ price|价格
+  │ ├ stickiness|黏度
+  │ ├ volume|容积
+  │ ├ bulk|体积
+  │ ├ PhysicsPower|功率
+  │ ├ ChargeQuantity|电量
+  │ ├ voltage|电压
+  │ ├ resistance|电阻
+  │ ├ frequency|频率
+  │ ├ heat|热量
+  │ └ SoundVolume|音量
+  ├ property|特性
+  │ ├ newness|新旧
+  │ ├ age|年龄
+  │ ├ trueness|真伪
+  │ ├ GoodBad|好坏
+  │ ├ quality|质量
+  │ ├ intensity|强度
+  │ ├ easiness|难易
+  │ ├ SoundQuality|音质
+  │ ├ content|内容
+  │ ├ correctness|正误
+  │ ├ degree|程度
+  │ ├ reputation|名声
+  │ ├ behavior|举止
+  │ ├ value|价值
+  │ ├ impression|印象
+  │ ├ effect|效用
+  │ ├ will|意志
+  │ ├ courage|胆量
+  │ ├ wisdom|智慧
+  │ ├ ability|能力
+  │ ├ tolerance|气量
+  │ ├ importance|主次
+  │ ├ necessity|必要
+  │ ├ rank|等级
+  │ ├ status|身分
+  │ ├ standard|标准
+  │ ├ occupation|职位
+  │ ├ range|幅度
+  │ ├ power|势力
+  │ ├ strength|力量
+  │ ├ ProsCons|利弊
+  │ ├ relatedness|亲疏
+  │ ├ sex|性别
+  │ ├ origin|出身
+  │ ├ name|姓名
+  │ ├ number|编号
+  │ ├ performance|性能
+  │ ├ interest|趣味
+  │ ├ outlook|前景
+  │ ├ SocialMode|风气
+  │ └ habit|习惯
+  ├ relationship|关系
+  │ ├ attachment|归属
+  │ ├ kind|类型
+  │ ├ source|来源
+  │ ├ location|位置
+  │ ├ direction|方向
+  │ ├ clan|辈分
+  │ ├ divergence|分歧
+  │ ├ boundary|界限
+  │ ├ sequence|次序
+  │ └ contrariness|正反
+  └ situation|状况
+     ├ circumstances|境况
+     ├ richness|贫富
+     ├ similarity|异同
+     ├ occasion|场面
+     ├ physique|体格
+     ├ wholeness|整缺
+     ├ fullness|空满
+     ├ possibility|可能
+     └ environment|情况
+- quantity|数量
+  ├ amount|多少
+  └ rate|比率
+- aValue|属性值
+  ├ appearance|外观
+  │ ├ form|形状
+  │ │ ├ flat|扁
+  │ │ ├ straight|直
+  │ │ ├ curved|弯
+  │ │ ├ level|平
+  │ │ ├ upright|正
+  │ │ ├ slanted|歪
+  │ │ ├ even|匀
+  │ │ ├ dissimilar|差
+  │ │ ├ protruding|凸
+  │ │ ├ dented|凹
+  │ │ ├ smooth|坦
+  │ │ ├ rugged|崎
+  │ │ ├ square|方
+  │ │ ├ round|圆
+  │ │ ├ queer|怪
+  │ │ ├ horizontal|横
+  │ │ ├ blunt|钝
+  │ │ ├ acute|尖
+  │ │ ├ sharp|利
+  │ │ ├ wrinkled|皱
+  │ │ ├ dot|点
+  │ │ ├ linear|线
+  │ │ ├ surfacial|面
+  │ │ ├ cubic|体
+  │ │ └ angular|角
+  │ ├ brightness|明暗
+  │ │ ├ bright|明
+  │ │ └ dark|暗
+  │ ├ clearness|清浑
+  │ │ ├ clear|清
+  │ │ └ blurred|浑
+  │ ├ prettiness|美丑
+  │ │ ├ beautiful|美
+  │ │ └ ugly|丑
+  │ ├ pattern|样式
+  │ │ ├ modern|髦
+  │ │ └ old|陈
+  │ ├ SmoothFinish|光洁度
+  │ │ ├ delicate|娇
+  │ │ ├ coarse|糙
+  │ │ └ polished|光
+  │ ├ color|颜色  -- RGB(x,y,z)
+  │ │ ├ colored|彩
+  │ │ ├ plain|素
+  │ │ ├ red|红  -- RGB(255,0,0)
+  │ │ ├ yellow|黄  -- RGB(255,255,0)
+  │ │ ├ blue|蓝  -- RGB(0,0,255)
+  │ │ ├ green|绿  -- RGB(0,255,0)
+  │ │ ├ purple|紫  -- RGB(128,64,128)
+  │ │ ├ brown|褐  -- RGB(128,64,64)
+  │ │ ├ white|白  -- RGB(255,255,255)
+  │ │ ├ black|黑  -- RGB(0,0,0)
+  │ │ ├ grey|灰  -- RGB(192,192,192)
+  │ │ ├ RedBrown|赭
+  │ │ ├ BlueGreen|青  -- RGB(128,255,128)
+  │ │ └ colorless|无色
+  │ ├ hue|浓淡
+  │ │ ├ NotLight|浓
+  │ │ └ light|淡
+  │ ├ odor|气味
+  │ │ ├ fragrant|香
+  │ │ └ stinky|臭
+  │ ├ taste|味道
+  │ │ ├ sour|酸
+  │ │ ├ sweet|甜
+  │ │ ├ bitter|苦
+  │ │ ├ peppery|辣
+  │ │ └ salty|咸
+  │ ├ posture|姿势
+  │ ├ scene|景象
+  │ │ ├ exuberant|茂
+  │ │ ├ desolate|荒
+  │ │ ├ threatening|险
+  │ │ └ stately|庄
+  │ ├ cleanness|洁净
+  │ │ ├ spotless|洁
+  │ │ └ dirty|龊
+  │ ├ fatness|胖瘦
+  │ │ ├ fat|胖
+  │ │ └ bony|瘦
+  │ ├ bearing|仪态
+  │ │ ├ thrifty|俭
+  │ │ ├ gracious|雅
+  │ │ └ extravagant|奢
+  │ ├ PhysicState|物理状态
+  │ ├ attire|装束
+  │ ├ style|风格
+  │ ├ demeanor|风度
+  │ └ countenance|表情
+  ├ measurement|量度
+  │ ├ length|长度
+  │ │ ├ long|长
+  │ │ └ short|短
+  │ ├ height|高度
+  │ │ ├ tall|高
+  │ │ └ low|矮
+  │ ├ area|面积
+  │ │ ├ big|大
+  │ │ ├ medium|中
+  │ │ ├ small|小
+  │ │ └ broad|广
+  │ ├ size|尺寸
+  │ │ ├ big|大
+  │ │ ├ medium|中
+  │ │ ├ small|小
+  │ │ └ broad|广
+  │ ├ width|宽度
+  │ │ ├ wide|阔
+  │ │ └ narrow|窄
+  │ ├ depth|深度
+  │ │ ├ deep|深
+  │ │ └ shallow|浅
+  │ ├ thickness|厚度
+  │ │ ├ thick|厚
+  │ │ └ thin|薄
+  │ ├ fineness|粗细
+  │ │ ├ fine|纤
+  │ │ └ widediameter|粗
+  │ ├ slope|坡度
+  │ │ └ steep|陡
+  │ ├ density|密度
+  │ │ ├ dense|密
+  │ │ └ sparse|疏
+  │ ├ tightness|松紧
+  │ │ ├ loose|松
+  │ │ └ tight|紧
+  │ ├ hardness|硬度
+  │ │ ├ hard|硬
+  │ │ ├ soft|软
+  │ │ ├ crisp|脆
+  │ │ ├ tender|嫩
+  │ │ └ tough|韧
+  │ ├ concentration|浓度
+  │ │ ├ watery|稀
+  │ │ └ concentrated|稠
+  │ ├ weight|重量
+  │ │ ├ heavy|重
+  │ │ └ NotHeavy|轻
+  │ ├ SoundVolume|音量
+  │ │ └ loud|响
+  │ ├ distance|距离
+  │ │ ├ far|远
+  │ │ └ near|近
+  │ ├ earliness|迟早
+  │ │ ├ early|早
+  │ │ └ late|迟
+  │ ├ speed|速度
+  │ │ ├ fast|快
+  │ │ └ slow|慢
+  │ ├ duration|久暂
+  │ │ ├ TimeLong|久
+  │ │ └ TimeShort|暂
+  │ ├ dampness|湿度
+  │ │ ├ dried|干
+  │ │ ├ wet|湿
+  │ │ ├ waterless|旱
+  │ │ └ waterlogging|涝
+  │ ├ temperature|温度
+  │ │ ├ cold|冷
+  │ │ ├ hot|热
+  │ │ ├ chilly|凉
+  │ │ └ warm|温
+  │ ├ price|价格
+  │ │ ├ cheap|贱
+  │ │ └ expensive|贵
+  │ ├ stickiness|黏度
+  │ │ └ sticky|黏
+  │ └ angle|角度
+  ├ property|特性
+  │ ├ newness|新旧
+  │ │ ├ new|新
+  │ │ └ used|旧
+  │ ├ age|年龄
+  │ │ ├ aged|老
+  │ │ ├ adult|成
+  │ │ └ young|幼
+  │ ├ trueness|真伪
+  │ │ ├ true|真
+  │ │ └ fake|伪
+  │ ├ GoodBad|好坏
+  │ │ ├ good|好
+  │ │ └ bad|坏
+  │ ├ quality|质量
+  │ │ ├ fertile|沃
+  │ │ ├ barren|瘠
+  │ │ ├ refined|精
+  │ │ ├ crude|陋
+  │ │ ├ average|可
+  │ │ ├ great|伟
+  │ │ ├ negligible|渺
+  │ │ └ durable|牢
+  │ ├ intensity|强度
+  │ │ ├ strong|强
+  │ │ └ weak|弱
+  │ ├ easiness|难易
+  │ │ ├ easy|易
+  │ │ └ difficult|难
+  │ ├ SoundQuality|音质
+  │ ├ content|内容
+  │ │ ├ substantial|实
+  │ │ ├ empty|空
+  │ │ ├ profound|奥
+  │ │ ├ NotProfound|浅易
+  │ │ ├ interesting|趣
+  │ │ ├ boring|乏
+  │ │ ├ detailed|详
+  │ │ ├ simple|简
+  │ │ ├ pure|纯
+  │ │ ├ mixed|杂
+  │ │ ├ accurate|准
+  │ │ ├ neat|齐
+  │ │ ├ disorder|乱
+  │ │ ├ concise|谨
+  │ │ ├ unattached|散
+  │ │ ├ trivial|琐
+  │ │ ├ complicated|繁
+  │ │ └ layered|叠
+  │ ├ correctness|正误
+  │ │ ├ correct|正确
+  │ │ └ wrong|误
+  │ ├ degree|程度
+  │ │ ├ extreme|极
+  │ │ ├ insufficiently|欠
+  │ │ ├ very|很
+  │ │ ├ ish|稍
+  │ │ ├ more|较
+  │ │ ├ most|最
+  │ │ └ over|超
+  │ ├ reputation|名声
+  │ │ ├ glorious|荣
+  │ │ ├ Notwellknown|无名
+  │ │ └ disgraced|辱
+  │ ├ behavior|举止
+  │ │ ├ formal|正式
+  │ │ ├ informal|非正式
+  │ │ ├ dexterous|巧
+  │ │ ├ flexible|活
+  │ │ ├ stiff|呆
+  │ │ ├ lasting|恒
+  │ │ ├ secret|秘
+  │ │ ├ opened|显
+  │ │ ├ hidden|隐
+  │ │ ├ forthright|爽
+  │ │ ├ tactful|婉
+  │ │ ├ gentle|柔
+  │ │ ├ suitable|妥
+  │ │ ├ proper|当
+  │ │ ├ BadTemper|坏脾气
+  │ │ ├ convenient|便
+  │ │ ├ inconvenient|碍
+  │ │ ├ improper|不当
+  │ │ ├ vulgar|俗
+  │ │ ├ hasty|慌
+  │ │ ├ sudden|骤
+  │ │ ├ fluent|畅
+  │ │ ├ nimble|捷
+  │ │ ├ strict|严
+  │ │ ├ lenient|宽
+  │ │ ├ fierce|暴
+  │ │ ├ free|自由
+  │ │ ├ restrained|受限
+  │ │ ├ diligent|勤
+  │ │ ├ lazy|懒
+  │ │ ├ biased|偏
+  │ │ ├ kindhearted|善
+  │ │ ├ sly|狡
+  │ │ ├ stubborn|倔
+  │ │ ├ active|愿
+  │ │ ├ passive|被
+  │ │ ├ modest|谦
+  │ │ ├ arrogant|傲
+  │ │ ├ attentive|细心
+  │ │ ├ careless|苟
+  │ │ ├ cautious|慎
+  │ │ ├ flighty|浮
+  │ │ ├ sincere|诚
+  │ │ ├ rash|莽
+  │ │ ├ indifferent|漠
+  │ │ ├ steady|稳
+  │ │ ├ lascivious|淫
+  │ │ ├ honest|廉
+  │ │ ├ fair|公
+  │ │ ├ greedy|贪
+  │ │ ├ eccentric|僻
+  │ │ ├ optimistic|乐观
+  │ │ ├ pessimistic|悲观
+  │ │ ├ evil|恶
+  │ │ ├ faithful|忠
+  │ │ ├ treacherous|逆
+  │ │ ├ mischievous|淘
+  │ │ ├ continuous|续
+  │ │ └ together|共同
+  │ ├ SocialMode|风气
+  │ ├ value|价值
+  │ │ └ precious|珍
+  │ ├ impression|印象
+  │ ├ effect|效用
+  │ │ ├ useless|劣
+  │ │ └ superior|优
+  │ ├ will|意志
+  │ ├ courage|胆量
+  │ │ ├ brave|勇
+  │ │ └ timid|怯
+  │ ├ wisdom|智慧
+  │ │ ├ wise|智
+  │ │ ├ foolish|愚
+  │ │ ├ clever|灵
+  │ │ └ NotQuick|讷
+  │ ├ ability|能力
+  │ │ ├ able|能
+  │ │ └ unable|庸
+  │ ├ tolerance|气量
+  │ │ ├ generous|慷
+  │ │ └ miser|吝
+  │ ├ habit|习惯
+  │ ├ importance|主次
+  │ │ ├ important|主
+  │ │ ├ secondary|次
+  │ │ ├ main|总
+  │ │ └ branch|支
+  │ ├ necessity|必要
+  │ │ ├ necessary|要
+  │ │ └ redundant|余
+  │ ├ rank|等级
+  │ │ ├ HighRank|高等
+  │ │ ├ LowRank|低等
+  │ │ └ elementary|初
+  │ ├ standard|标准
+  │ │ └ passed|合格
+  │ ├ status|身分
+  │ ├ occupation|职位
+  │ ├ range|幅度
+  │ │ ├ extensive|泛
+  │ │ ├ nonextensive|狭
+  │ │ ├ all|全
+  │ │ └ pieced|片
+  │ ├ frequency|频率
+  │ │ ├ often|经常
+  │ │ ├ rarely|偶尔
+  │ │ ├ again|再
+  │ │ └ regular|定期
+  │ ├ power|势力
+  │ ├ strength|力量
+  │ ├ ProsCons|利弊
+  │ │ ├ pros|益
+  │ │ └ cons|弊
+  │ ├ relatedness|亲疏
+  │ │ ├ intimate|亲
+  │ │ ├ unfamiliar|隙
+  │ │ └ opposed|反
+  │ ├ sex|性别
+  │ │ ├ male|男
+  │ │ └ female|女
+  │ ├ origin|出身
+  │ ├ name|姓名
+  │ ├ number|编号
+  │ ├ performance|性能
+  │ ├ interest|趣味
+  │ └ outlook|前景
+  ├ relationship|关系
+  │ ├ attachment|归属
+  │ │ ├ public|共
+  │ │ └ private|私
+  │ ├ kind|类型
+  │ │ ├ certain|某
+  │ │ ├ other|另
+  │ │ ├ special|特
+  │ │ └ ordinary|普
+  │ ├ source|来源
+  │ │ ├ original|原
+  │ │ ├ foreign|洋
+  │ │ └ artificial|造
+  │ ├ location|位置
+  │ │ ├ internal|内
+  │ │ └ external|外
+  │ ├ direction|方向
+  │ │ ├ east|东
+  │ │ ├ west|西
+  │ │ ├ south|南
+  │ │ └ north|北
+  │ ├ clan|辈分
+  │ ├ divergence|分歧
+  │ ├ boundary|界限
+  │ ├ sequence|次序
+  │ │ ├ InSequence|有序
+  │ │ └ OutOfOrder|无序
+  │ └ contrariness|正反
+  │    ├ positive|正面
+  │    └ negative|反面
+  └ situation|状况
+     ├ circumstances|境况
+     │ ├ urgent|急
+     │ ├ peaceful|宁
+     │ ├ relax|弛
+     │ ├ lonely|孤
+     │ ├ flourishing|兴
+     │ ├ wane|衰
+     │ ├ tranquil|恬
+     │ ├ hardship|艰
+     │ ├ safe|安
+     │ ├ dangerous|危
+     │ ├ happy|福
+     │ ├ miserable|惨
+     │ ├ busy|忙
+     │ └ idle|闲
+     ├ richness|贫富
+     │ ├ rich|富
+     │ └ poor|穷
+     ├ similarity|异同
+     │ ├ alike|似
+     │ └ different|异
+     ├ occasion|场面
+     │ ├ bustling|闹
+     │ ├ crowded|挤
+     │ ├ quiet|静
+     │ ├ stuffy|闷
+     │ └ cosy|惬
+     ├ physique|体格
+     │ ├ unripe|生
+     │ └ ripe|熟
+     ├ wholeness|整缺
+     │ ├ complete|整
+     │ └ incomplete|缺
+     ├ fullness|空满
+     │ └ full|满
+     ├ possibility|可能
+     │ ├ possible|会
+     │ ├ impossible|不会
+     │ └ almost|几乎
+     └ environment|情况
+- qValue|数量值
+  ├ amount|多少
+  │ ├ many|多
+  │ ├ few|少
+  │ ├ single|单
+  │ ├ double|复
+  │ ├ fragment|部
+  │ ├ some|些
+  │ ├ sufficient|足
+  │ ├ half|半
+  │ ├ only|仅
+  │ └ over|超
+  └ rate|比率
+- Secondary Feature|第二特征
+  ├ ProperName|专
+  ├ mass|众
+  ├ official|官       [#organization|组织,#employee|员]
+  ├ employee|员       [$employ|雇用]
+  ├ industrial|工     [#produce|制造,#repair|修理]
+  ├ mine|矿           [#dig|挖掘,#produce|制造,industrial|工]
+  ├ factory|厂        [#organization|组织,#employee|员,+produce|制造,+repair|修理,industrial|工]
+  ├ agricultural|农   [#plant|植物,#planting|栽植]
+  ├ commercial|商     [#money|货币,#buy|买,#sell|卖]
+  ├ education|教育    [#teach|教,#study|学]
+  ├ medical|医        [#cure|医治,#disease|疾病]
+  ├ literature|文     [#compile|编辑,#translate|翻译]
+  ├ entertainment|艺  [#perform|表演,#draw|画,#carve|雕刻,#TakePicture|拍摄]
+  ├ sport|体育        [#exercise|锻练,~#SportTool|运动器材,~#compete|比赛]
+  ├ religion|宗教
+  ├ politics|政       [~#manage|管理,~#country|国家]
+  ├ diplomatic|外交   [#politics|政]
+  ├ police|警         [#crime|罪]
+  ├ military|军       [~#attack|攻打,#fight|争斗,#defend|防守]
+  ├ royal|皇
+  ├ family|家         [+alive|活着,~$ProvideFor|供养]
+  ├ friend|友         [~$FondOf|喜欢,~$loyal|忠孝]
+  ├ enemy|敌          [~$hate|仇恨]
+  ├ crime|罪          [#police|警]
+  ├ waste|废
+  ├ poison|毒
+  ├ desired|良
+  ├ undesired|莠
+  ├ abstract|抽象
+  ├ generic|统称
+  ├ question|疑问
+  ├ country|国家      [place|地方,#human|人,#politics|政]
+  ├ capital|国都      [#country|国家,#organization|组织]
+  ├ provincial|省
+  ├ city|市
+  ├ village|乡        [#agricultural|农]
+  ├ route|路          [space|空间,linear|线]
+  ├ surname|姓        [character|文字]
+  ├ firstPerson|我
+  ├ SecondPerson|你
+  ├ ThirdPerson|他
+  ├ it|它
+  ├ self|己
+  ├ EachOther|相互
+  ├ head|头
+  ├ heart|心
+  ├ body|身
+  ├ bone|骨
+  ├ base|根
+  ├ limb|肢           [*crawl|爬,*swim|游]
+  ├ arm|臂            [*HoldInArm|搂抱]
+  ├ hand|手           [*pick|拾起,*HoldWithHand|搀扶,*crawl|爬,*catch|捉住]
+  ├ leg|腿            [*walk|走,*run|跑,*jump|跳,*swim|游,*kick|踢踩,*stand|站立]
+  ├ foot|脚           [*walk|走,*run|跑,*jump|跳,*crawl|爬,*swim|游,*kick|踢踩,*stand|站立]
+  ├ wing|翅           [*fly|飞]
+  ├ edge|边           [linear|线]
+  ├ mouth|口          [*HoldInMouth|衔起,+consume|摄取,+GoInto|进入,+GoOut|出去,+GoThrough|经过]
+  ├ eye|眼            [*look|看]
+  ├ viscera|脏
+  ├ nerve|络
+  ├ tail|尾
+  ├ embryo|胚         [$GiveBirth|生育]
+  ├ skin|皮
+  ├ flesh|肉          [$consume|摄取]
+  ├ hair|毛
+  ├ aspect|侧         [abstract|抽象]
+  ├ upper|上
+  ├ beneath|下
+  ├ InFront|前
+  ├ hind|后
+  ├ surrounding|周围
+  ├ festival|节
+  ├ year|年
+  ├ season|季
+  ├ spring|春         [season|季,warm|温,~beautiful|美,#weather|天象,#planting|栽植]
+  ├ summer|夏         [season|季,hot|热,#weather|天象,#RainSnow|雨雪]
+  ├ autumn|秋         [season|季,chilly|凉,~beautiful|美,#weather|天象,gather|采集,#crop|庄稼]
+  ├ winter|冬         [season|季,cold|冷,#weather|天象,#RainSnow|雨雪]
+  ├ month|月
+  ├ TenDays|旬
+  ├ week|周
+  ├ day|日
+  ├ hour|时
+  ├ minute|分钟
+  ├ morning|晨
+  ├ afternoon|午
+  ├ night|晚
+  ├ middle|间
+  ├ ending|末
+  ├ now|今
+  ├ past|昔
+  ├ future|将
+  ├ immediate|即
+  ├ finally|终
+  ├ already|已
+  ├ also|也
+  ├ ordinal|第
+  ├ cardinal|基
+  └ approximate|概
+- syntax
+  ├ ADV adverbial|副状
+  │ ├ manner|方式
+  │ ├ accompaniment|伴随
+  │ ├ comment|评论
+  │ ├ modality|语气
+  │ ├ neg|否
+  │ ├ emphasis|强调
+  │ └ tense|时态
+  ├ COOR conjunction|并列
+  │ ├ and|和
+  │ ├ or|或
+  │ └ but|但
+  ├ CONJ whword|主从
+  │ ├ concession|让步
+  │ ├ supplement|递进
+  │ ├ condition|条件
+  │ ├ cause|原因
+  │ ├ EventResult|事件结局
+  │ ├ transition|转折
+  │ └ result|结果
+  ├ STRU particle|助词
+  │ ├ DeChinese|构助 - 结构助词
+  │ ├ LeChinese|动助 - 动态助词
+  │ │ ├ Vdirection|动趋
+  │ │ ├ Vprocess|动程
+  │ │ │ ├ Vsuppose|假定
+  │ │ │ ├ Vstart|发端
+  │ │ │ ├ Vgoingon|进展
+  │ │ │ ├ Vcontinue|延续
+  │ │ │ └ Vend|完结
+  │ │ └ Vresult|动果
+  │ │    ├ Vachieve|达成
+  │ │    ├ Vable|能力
+  │ │    ├ Vpossible|可能
+  │ │    └ Vtry|试试
+  │ └ MaChinese|语助
+  └ CLAS classifier|单位词
+     ├ unit|单位 
+     ├ NounUnit|名量
+     └ ActUnit|动量
+- Event Role and Features
+  ├ Event Role|动态角色
+  │ ├ relevant|关系主体
+  │ ├ existent|存现体
+  │ ├ experiencer|经验者
+  │ ├ agent|施事
+  │ ├ coagent|合作施事
+  │ ├ possession|占有物
+  │ ├ patient|受事
+  │ ├ PatientPartof|部件受事
+  │ ├ PatientProduct|成品受事
+  │ ├ PatientAttribute|受事属性
+  │ ├ PartOfTouch|触及部件
+  │ ├ content|内容
+  │ ├ ContentProduct|内容成品
+  │ ├ ResultContent|结果内容
+  │ ├ isa|类指
+  │ ├ partof|部分
+  │ ├ whole|整体
+  │ ├ descriptive|描写体
+  │ ├ result|结果
+  │ ├ ResultEvent|结果事件
+  │ ├ ResultIsa|结果类指
+  │ ├ ResultWhole|结果整体
+  │ ├ cause|原因
+  │ ├ partner|相伴体
+  │ ├ contrast|参照体
+  │ ├ ContentCompare|比较内容
+  │ ├ source|来源
+  │ ├ SourceWhole|来源整体
+  │ ├ target|目标
+  │ ├ cost|代价
+  │ ├ beneficiary|受益者
+  │ ├ StateIni|原状态
+  │ ├ StateFin|终状态
+  │ ├ location|处所
+  │ ├ LocationIni|原处所
+  │ ├ LocationFin|终处所
+  │ ├ LocationThru|通过处所
+  │ ├ direction|方向
+  │ ├ time|时间
+  │ ├ TimeIni|起始时间
+  │ ├ TimeFin|终止时间
+  │ ├ duration|进程时段
+  │ ├ DurationAfterEvent|后延时段
+  │ ├ EventProcess|事件过程
+  │ ├ means|手段
+  │ ├ instrument|工具
+  │ ├ material|材料
+  │ ├ degree|程度
+  │ ├ range|幅度
+  │ ├ manner|方式
+  │ ├ TimeRange|时距
+  │ ├ frequency|频率
+  │ ├ times|动量
+  │ ├ purpose|目的
+  │ ├ scope|范围
+  │ ├ AccordingTo|根据
+  │ ├ condition|条件
+  │ ├ concession|让步
+  │ ├ comment|评论
+  │ ├ succeeding|接续
+  │ ├ besides|递进
+  │ ├ except|除了
+  │ ├ accompaniment|伴随
+  │ ├ modifier|描述
+  │ ├ restrictive|限定
+  │ ├ quantity|数量
+  │ ├ QuantityCompare|比较量
+  │ ├ possessor|领有者
+  │ └ concerning|关于
+  └ Event Features|动态属性
+     ├ topic|主题
+     └ focus|焦点
