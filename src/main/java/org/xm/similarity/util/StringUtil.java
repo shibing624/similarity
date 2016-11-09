@@ -315,8 +315,13 @@ public class StringUtil {
      * @param input
      * @return
      */
-    public static List<String> matcherAllResult(String regex, String input) {
-        return Arrays.asList(input.split(regex));
+    public static Map<Integer, String> matcherAll2Map(String regex, String input) {
+        Map<Integer, String> result = new HashMap<Integer, String>();
+        Matcher matcher = Pattern.compile(regex).matcher(input);
+        for (int i = 0; matcher.find(); i++) {
+            result.put(i, matcher.group());
+        }
+        return result;
     }
 
     /**
@@ -335,16 +340,13 @@ public class StringUtil {
         }
     }
 
-    public static void main(String[] args) {
-        List<String> list = matcherAll(",", "i,loveyo,u");
-        for (String s : list) {
-            System.out.println(s);
-        }
 
-        List<String> listLast = matcherAllResult(",", "i,loveyo,u");
-        System.out.println(listLast);
-        for (String s : listLast) {
-            System.out.println(s);
-        }
+    public static String getLongString(String word1, String word2) {
+        return word1.length() >= word2.length() ? word1 : word2;
     }
+
+    public static String getShortString(String word1, String word2) {
+        return word1.length() < word2.length() ? word1 : word2;
+    }
+
 }
