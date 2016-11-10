@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.xm.Similarity;
 import org.xm.similarity.util.FileUtil;
 import org.xm.similarity.util.StringUtil;
+import org.xm.similarity.util.TraverseEvent;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.xm.similarity.dictionary;
+package org.xm.similarity.util;
 
 /**
  * 遍历接口
