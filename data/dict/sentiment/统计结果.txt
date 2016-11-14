@@ -1,0 +1,74 @@
+对正面情感词语统计结果，格式为义原出现次数：义原名称列表
+
+1: adjust|调整    eccentric|僻 occasion|场面 install|安装  SayHello|问候 research|研究 discuss|商讨  duration|久暂 fill|填入 recompense|补偿   due|到期  record|记录   outlook|前景  lights|光    NotHeavy|轻  correct|正确  VieFor|快干   GrudgeNot|舍得    decline|衰败  sharp|利 ^disgust|厌恶 fit|适合  tall|高  able|能  turn|扭转 upper|上 thing|万物    pass|度过 delay|拖延    beneficiary shape|物形    protect|保护  WhileAway|消闲    choose|选择   fullness|空满 HoldInArm|搂抱    soothe|安慰   ComeTogether|集聚 body|身  treat|对待    religion|宗教 mad|疯痴  boast|夸大    height|高度   name|姓名 easiness|难易 opened|显    all|全   ResultIn|导致 measure|测量  together|共同 guarantee|保证    teach|教 TimeFin ability|能力  Vcontinue|延续    regard|认为   attachment|归属   LocationFin expenditure|费用  farewell|离别 thinking|思想 endeavour|卖力    rich|富  evade|回避    shiver|颤动   study|学 many|多  publications|书刊 provincial|省    undergo|经受  select|选拔   recite|诵读   control|控制  perform|表演  trueness|真伪 queer|怪 rank|等级 result|结果   music|音乐    guide|引导    clever|灵    BeNear|靠近   extravagant|奢   own|有   naming|称作   foolish|愚   head|头  police|警    attract|吸引  TakeCare|照料 Kazakhstan|哈萨克斯坦)   contain|包含  physique|体格 influence|影响    event|事件    community|团体    mobilize|发动 precious|珍  arrogant|傲  again|再 condition|条件    source  defeat|战胜   form|形状 deduce|推理   early|早 OwnNot|无    obey|遵循 range|幅度    angry|生气    education|教育    relax|弛 know|知道 kindhearted|善   ShowInterest|理睬 submit|交    GoForward|前进    seek|谋取 surpass|强过  beg|乞求  direction|方向    exhale|呼出   day|日   gather|采集   worried|着急  prettiness|美丑   generic|统称  effect|效用   AnimalHuman|动物  beat|打  sound|声 richness|贫富 painful|疼痛  future|将    beautiful|美 Greece|希腊)  investigate|调查  push|推  courage|胆量  refuse|拒做   revenge|报复  modest|谦    upright|正   easy|易  experience|感受   implement|器具    earliness|迟早    Palestine|巴勒斯坦) exhaust|损耗  handle|处理   TakeAway|搬动 eat|吃   safe|安  give|给  consume|摄取  over|超  upmove|翘耸   affairs|事务  scratch|抓挠  spray|洒下    value|价值    distinguish|分辨  sigh|叹气 MakeMisunderstand|使误知   tease|取乐    wait|等待 Pakistan|巴基斯坦)  true|真  brave|勇 full|满  StateFin    understand|领会   wealth|钱财   means   intensity|强度    stay|停留 decorate|装饰 GiveUp|戒除   treasure|珍宝 temperature|温度  warm|温  direction   unit|单位 HighRank|高等 accurate|准  celestial|天体    frequency|频率    ignorant|不知 gamble|赌博   heavy|重 brightness|明暗   fulfil|实现   TimeShort|暂 medical|医   relate|有关   urge|促使 separate|分离 apologize|道歉    repeat|重复   crowded|挤   SupportWeight|托住    spend|花费    instrument  perception|感知   nimble|捷    almost|几乎   depend|依靠   bright|明    MusicTool|乐器    target  shake|摇动    grant|赐 
+2: cross|越过 physical|物质 importance|主次   appreciate|赞成   CausePartMove|部件他移  electricity|电   receive|收受  China|中国)   artifact|人工物    help|帮助 FeelingByGood|好情    text|语文 quality|质量  very|很  reputation|名声   facing|朝向   speak|说 pregnant|怀孕 enjoy|享受    special|特   laugh|笑 NounUnit|名量 refined|精   endure|忍耐   bear|承担 average|可   thought|念头  expression|词语   organization|组织 sweet|甜 kind|类型 cubic|体 check|查 few|少   ShowLove|示爱 wrong|误 Vgoingon|进展 sincere|诚   wisdom|智慧   assemble|聚集 fast|快  tell|告诉 important|主 accept|接受   modality|语气 speed|速度    provide|供   US|美国)  admit|承认    AptTo|易于    excite|感动   RegardAs|当作 KeepOn|使继续  attentive|细心    fear|害怕 reply|答 use|利用  request|要求  empty|空 property|特性 sorry|惋惜    grudge|不舍   urgent|急    explain|说明  think|思考    comment|评论  
+3: AtEase|安心    taste|味道    cherish|心怀  BeWell|健壮   put|放置  catch|捉住    forthright|爽    intimate|亲  ShowJoy|示喜  dare|敢于 weight|重量   correctness|正误  strong|强    manage|管理   PutOn|穿戴    entity|实体   standard|标准 GoodBad|好坏  relatedness|亲疏  believe|相信  
+4: good|好   degree|程度   loyal|忠孝    amount|多少   time|时间 gentle|柔    fact|事情 please|取悦   look|看  visit|看望    ParticularAbout|讲求  part|部件 
+5: GiveAsGift|赠 qValue|数量值  peaceful|宁  FeelNoQualms|无愧 
+6: tool|用具  country|国家  emotion|情感  active|愿    place|地方    ExpressAgreement|示同意    aspiration|意愿   extreme|极   
+7: undesired|莠  attribute|属性    
+8: love|爱恋  grateful|感激 admire|羡慕   
+9: greedy|贪 
+10: thank|致谢    jealous|妒忌  welcome|欢迎  
+11: reward|奖励   
+12: need|需求 
+16: happy|福 
+17: congratulate|祝贺 
+18: endorse|拥护  
+19: ThinkOf|思念  
+20: willing|愿意  
+23: character|文字    surname|姓   
+24: behavior|举止 circumstances|境况    
+26: like|爱惜 human|人 
+29: agree|同意    
+30: respect|敬佩  
+31: ProperName|专    
+36: FondOf|喜欢   salute|致敬   
+49: PayAttention|注意 
+50: expect|期望   
+51: satisfied|满意    
+54: praise|夸奖   
+66: joyful|喜悦   
+68: desired|良   
+101: aValue|属性值 
+wordCount:832
+conceptCount:988
+
+
+loading sememes....................
+complete!. time elapsed: 0s
+loading concepts.......................................................................................................................................
+complete!. time elapsed: 1s
+1: improper|不当  offend|得罪   hardness|硬度 discuss|商讨  MakeAppointment|约定  write|写 MarryFrom|娶 roam|流浪 respect|敬佩  recompense|补偿   enjoy|享受    record|记录   uprise|暴动   NotHeavy|轻  fertile|沃   MakeSound|发声    VieFor|快干   decline|衰败  WarmUp|加热   wisdom|智慧   passive|被   tall|高  important|主 shape|物形    dark|暗  dangerous|危 WhileAway|消闲    insufficiently|欠    flat|扁  fullness|空满 change|变    cool|制冷 body|身  building|建筑物    punish|处罚   empty|空 bitter|苦    religion|宗教 height|高度   lend|借出 agricultural|农  AlterColor|变色   explain|说明  biased|偏    all|全   ResultIn|导致 bearing|仪态  ExpressDisagreement|示不同意    cease|停做    inferior|不如 incite|指使   facilities|设施   lighting|点燃 disappoint|辜负   CauseToDo|使动    EachOther|相互    very|很  ish|稍   complicated|繁   thinking|思想 thickness|厚度    rugged|崎    many|多  willing|愿意  OutOfOrder|坏掉   provincial|省    merge|合并    organization|组织 happen|发生   exuberant|茂 recite|诵读   stately|庄   dismiss|罢免  few|少   thin|薄  wrong|误 kill|杀害 queer|怪 unfixed|未定  music|音乐    HungryThirsty|饥渴    barren|瘠    remove|消除   head|头  place|地方    light|淡 vulgar|俗    material|材料 attentive|细心    SufferFrom|罹患   contain|包含  size|尺寸 physique|体格 event|事件    time|时间 AppearanceChange|外观变    leak|漏出 age|年龄  arrogant|傲  recreation|娱乐   image|图像    bustling|闹  ugly|丑  unfamiliar|隙    grudge|不舍   spread|撒    range|幅度    comment|评论  wave|摆动 BeNot|非 stinky|臭    education|教育    reveal|揭露   fact|事情 importance|主次   hard|硬  volume|容积   beg|乞求  degrade|降级  special|特   performance|性能  borrow|借入   blunt|钝 small|小 SportTool|运动器材  entertainment|艺 effect|效用   AnimalHuman|动物  extreme|极   QuantityChange|量变   BlockUp|堵塞  be|是    suffer|遭受   sparse|疏    admit|承认    tolerance|气量    modest|谦    hand|手  jealous|妒忌  possibility|可能  calculate|计算    useless|劣   crime|罪 treacherous|逆   NotProfound|浅易  give|给  mix|混合  standard|标准 over|超  end|终结  relatedness|亲疏  upmove|翘耸   affairs|事务  trace|痕 inanimate|无生物   NotQuick|讷  weaken|削弱   jump|跳  throw|扔 scene|景象    eye|眼   China|中国)   text|语文 hasty|慌 wounded|受伤  quarrel|争吵  mean|指代 straighten|拉直   clothing|衣物 young|幼 disobey|违背  humanized|拟人    skin|皮  deceive|欺骗  GiveUp|戒除   hide|藏匿 animate|生物  linear|线    unit|单位 strict|严    wood|木  liquid|液    celestial|天体    hardship|艰  provide|供   deny|否认 brightness|明暗   amend|改正    cook|烹调 aspiration|意愿   exile|流放    relate|有关   miser|吝 dredge|疏通   guess|猜测    knowledge|知识    weapon|武器   discharge|开除    weight|重量   perception|感知   depend|依靠   density|密度  MusicTool|乐器    negligible|渺    
+2: InstitutePlace|场所    tool|用具 different|异 communicate|交流  ask|问   amount|多少   MakeWorried|困扰  cheat|骗 boring|乏    physical|物质 LandVehicle|车   indifferent|漠   fight|争斗    CausePartMove|部件他移  sigh|叹气 entity|实体   restrain|制止 odor|气味 speak|说 exhale|呼出   understand|领会   like|爱惜 compete|比赛  hang|悬挂 NounUnit|名量 shiver|颤动   intensity|强度    attack|攻打   damage|损害   thought|念头  flighty|浮   past|昔  sour|酸  SelfMove|自移 weak|弱  undergo|经受  kind|类型 beat|打  temperature|温度  qValue|数量值  fast|快  PayAttention|注意 cold|冷  irritate|激怒 duty|责任 surfacial|面 wane|衰  fierce|暴    medical|医   similarity|异同   flee|逃跑 chilly|凉    land|陆地 stuffy|闷    oppose|反对   SoundVolume|音量  uneasy|不安   careless|苟  strength|力量 SocialMode|风气   FormChange|形变   fire|火  property|特性 gentle|柔    form|形状 stiff|呆 politics|政  think|思考    easiness|难易 
+3: disorder|乱   pant|气喘 gas|气   firing|射击   evil|恶  painful|疼痛  BadTemper|坏脾气   estimate|评估 speed|速度    flurried|惊慌 self|己  quality|质量  GoodBad|好坏  GuiltilyConscious|心虚    accuse|控告   endeavour|卖力    ExpressDissatisfaction|示不满  military|军  evade|回避    stay|停留 difficult|难 degree|程度   cover|遮盖    GoThrough|经过    slander|诽谤  impression|印象   BeUnable|无能 disloyal|不忠 
+4: strong|强 courage|胆量  timid|怯 richness|贫富 phenomena|现象    frighten|吓唬 poor|穷  tactful|婉   ill|病态  fasten|拴连   
+5: persuade|劝说  content|内容  occasion|场面 MakeTrouble|捣乱  ability|能力  unable|庸    desolate|荒  disease|疾病  attribute|属性    miserable|惨 disagree|不同意    commercial|商    urgent|急    experience|感受   
+6: ThinkOf|思念   taste|味道    unfortunate|不幸  melancholy|惆怅   
+7: character|文字 regret|抱歉   sorry|惋惜    surname|姓   part|部件 
+8: unwilling|不愿 protest|抗议  ProperName|专    IllTreat|慢待 satirize|讽刺 
+9: bad|坏    ShowBadEmotion|表示坏情感    human|人 
+11: disappointed|失望 desired|良   
+12: FeelingByBad|坏情 blame|埋怨    
+13: hate|仇恨 stupefied|木然    surprise|惊奇 
+15: emotion|情感  circumstances|境况    unsatisfied|不满  ExpressAnger|示怒 
+16: sad|忧愁  forgive|原谅  
+17: pity|怜悯 
+18: doubt|怀疑    
+21: disgust|厌恶  
+23: repent|懊悔   
+24: hesitate|犹豫 embarrassed|为难  
+26: disheartened|灰心 
+29: behavior|举止 
+33: upset|烦恼    
+35: shy|羞愧  
+42: despise|轻视  
+45: worried|着急  
+49: sorrowful|悲哀    
+53: angry|生气    
+63: fear|害怕 
+86: ExpressAgainst|谴责   
+97: undesired|莠 
+127: aValue|属性值 
+wordCount:1233
+conceptCount:1137

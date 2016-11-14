@@ -73,6 +73,14 @@ public class StringUtil {
     }
 
     /**
+     * 判断集合
+     *
+     */
+    public static boolean isNotBlank(Collection<? extends Object> array) {
+        return !isBlank(array);
+
+    }
+    /**
      * 判断所有的集合是否都为空
      *
      * @param collections

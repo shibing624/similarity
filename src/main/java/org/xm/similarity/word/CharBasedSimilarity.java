@@ -23,7 +23,7 @@ public class CharBasedSimilarity implements ISimilarity {
         return instance;
     }
 
-    public CharBasedSimilarity() {
+    private CharBasedSimilarity() {
 
     }
 

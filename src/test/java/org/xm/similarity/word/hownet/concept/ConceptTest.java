@@ -21,6 +21,7 @@ public class ConceptTest {
         Collection<Concept> collection = CONCEPTS.get("打");
         for (Concept c : collection) {
             System.out.println(c);
+
         }
 
         Multimap<String, Integer> map = HashMultimap.create();

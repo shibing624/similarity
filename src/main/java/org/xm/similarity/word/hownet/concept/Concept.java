@@ -1,6 +1,6 @@
 package org.xm.similarity.word.hownet.concept;
 
-import org.xm.similarity.word.hownet.HownetMeta;
+import org.xm.similarity.word.hownet.IHownetMeta;
 
 import java.util.*;
 
@@ -10,7 +10,7 @@ import java.util.*;
  *
  * @author xuming
  */
-public class Concept implements HownetMeta {
+public class Concept implements IHownetMeta {
     // 概念名称
     protected String word;
     // 词性 part of speech
@@ -184,11 +184,11 @@ public class Concept implements HownetMeta {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("name=");
+        sb.append("名称=");
         sb.append(this.word);
-        sb.append("; pos=");
+        sb.append("; 词性=");
         sb.append(this.pos);
-        sb.append("; define=");
+        sb.append("; 定义=");
         sb.append(this.define);
         sb.append("; 第一基本义元:[" + mainSememe);
 

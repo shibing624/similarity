@@ -10,7 +10,7 @@ import org.junit.Test;
 public class CharBasedSimilarityTest {
     @Test
     public void getSimilarity() throws Exception {
-        CharBasedSimilarity sim = new CharBasedSimilarity();
+        CharBasedSimilarity sim = CharBasedSimilarity.getInstance();
         String s1 = "手机";
         String s2 = "飞机";
         System.out.println(sim.getSimilarity(s1, s2)+" :"+s1+","+s2);
