@@ -1,0 +1,6 @@
+{
+  "name": "Similarity",
+  "tagline": "词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算。",
+  "body": "# similarity\r\n用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算。\r\n\r\n**similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。\r\n\r\n**similarity**提供下列功能：\r\n\r\n> * 词语相似度计算\r\n  * 词林编码法相似度\r\n  * 汉语语义法相似度\r\n  * 知网词语相似度\r\n  * 字面编辑距离法\r\n> * 短语相似度计算\r\n  * 简单短语相似度\r\n> * 句子相似度计算\r\n  * 词性和词序结合法\r\n  * 编辑距离算法\r\n  * Gregor编辑距离法\r\n  * 优化编辑距离法\r\n> * 词法分析\r\n  * xmnlp中文分词\r\n  * 分词词性标注\r\n> * 知网义原\r\n  * 义原树\r\n> * 情感分析\r\n  * 正面倾向程度\r\n  * 负面倾向程度\r\n  * 情感倾向性\r\n> * 近似词\r\n  * word2vec\r\n\r\n\r\n\r\n在提供丰富功能的同时，**similarity**内部模块坚持低耦合、模型坚持惰性加载、词典坚持明文发布，使用方便，帮助用户训练自己的语料。\r\n\r\n------\r\n\r\n### Authors and Contributors\r\n#### author: xuming\r\n#### contributors:xiatian , hanlp\r\n\r\n\r\n### Support or Contact\r\nHaving trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.\r\n#### contact: 507153809@qq.com\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
