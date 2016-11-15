@@ -74,10 +74,10 @@ public abstract class ConceptParser implements IHownetMeta, IWordSimilarity {
     private static void load(InputStream inputStream) throws IOException {
         System.out.println("load concepts..");
         long start = System.currentTimeMillis();
+        int count = 0;
         try {
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             XMLEventReader xmlEventReader = inputFactory.createXMLEventReader(inputStream);
-            int count = 0;
             while (xmlEventReader.hasNext()) {
                 XMLEvent event = xmlEventReader.nextEvent();
                 if (event.isStartElement()) {
@@ -88,9 +88,6 @@ public abstract class ConceptParser implements IHownetMeta, IWordSimilarity {
                         String pos = startElement.getAttributeByName(QName.valueOf("p")).getValue();
                         CONCEPTS.put(word, new Concept(word, pos, define));
                         count++;
-                        if (count % 1500 == 0) {
-                            System.out.print(".");
-                        }
                     }
                 }
             }
@@ -98,7 +95,7 @@ public abstract class ConceptParser implements IHownetMeta, IWordSimilarity {
         } catch (Exception e) {
             throw new IOException(e);
         }
-        logger.info("\ncomplete.time spend:" + ((System.currentTimeMillis() - start) / 1000) + "s");
+        logger.info("\ncomplete! count num:" + count +"，time spend:" + (System.currentTimeMillis() - start) + "ms");
     }
 
     /**

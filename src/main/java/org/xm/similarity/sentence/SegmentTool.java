@@ -13,9 +13,11 @@ import java.util.stream.Collectors;
  *
  * @author xuming
  */
-public class Segment {
+public class SegmentTool {
     public static class Word {
+        // 词名
         private String word;
+        // 词性
         private String pos;
 
         public Word(String word, String pos) {

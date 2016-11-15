@@ -65,7 +65,7 @@ public class CilinDictionary {
         logger.info("loading cilin dictionary...");
         long start = System.currentTimeMillis();
         FileUtil.traverseLines(inputStream, "UTF-8", event);
-        logger.info("loading ciling dictionary completely.time spend:{}", System.currentTimeMillis() - start);
+        logger.info("loading ciling dictionary complete! time spend:{}", System.currentTimeMillis() - start + "ms");
     }
 
     /**

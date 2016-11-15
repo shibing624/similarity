@@ -44,10 +44,11 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
     private void load(InputStream inputStream) throws IOException {
         System.out.println("loading sememes...");
         long time = System.currentTimeMillis();
+        int count = 0;
         try {
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             XMLEventReader xmlEventReader = inputFactory.createXMLEventReader(inputStream);
-            int count = 0;
+
             while (xmlEventReader.hasNext()) {
                 XMLEvent event = xmlEventReader.nextEvent();
                 if (event.isStartElement()) {
@@ -57,9 +58,6 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
                         String id = startElement.getAttributeByName(QName.valueOf("id")).getValue();
                         SEMEMES.put(cnWord, id);
                         count++;
-                        if (count % 100 == 0) {
-                            System.out.print(".");
-                        }
                     }
                 }
             }
@@ -69,7 +67,7 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
             e.printStackTrace();
         }
         time = System.currentTimeMillis() - time;
-        logger.info("\ncomplete! time spend:" + (time / 1000) + "s");
+        logger.info("\ncomplete! count num:"+ count + ". time spend:" + time + "ms");
     }
 
     /**

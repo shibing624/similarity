@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * 查找汉字对应的拼音工具
@@ -74,9 +75,7 @@ public class PinyinDictionary {
             }
             Set<String> tempSet = new HashSet<>();
             for (String s : set) {
-                for (String p : pinyinSet) {
-                    tempSet.add(s + p);
-                }
+                tempSet.addAll(pinyinSet.stream().map(p -> s + p).collect(Collectors.toList()));
             }
             set = tempSet;
         }

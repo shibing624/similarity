@@ -3,8 +3,15 @@ package org.xm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.similarity.phrase.PhraseSimilarity;
+import org.xm.similarity.sentence.editdistance.EditDistance;
+import org.xm.similarity.sentence.editdistance.EditDistanceSimilarity;
+import org.xm.similarity.sentence.editdistance.GregorEditDistanceSimilarity;
+import org.xm.similarity.sentence.editdistance.StandardEditDistanceSimilarity;
+import org.xm.similarity.sentence.morphology.MorphoSimilarity;
 import org.xm.similarity.word.CharBasedSimilarity;
 import org.xm.similarity.word.clin.CilinSimilarity;
+import org.xm.similarity.word.hownet.concept.ConceptSimilarity;
+import org.xm.tendency.word.HownetWordTendency;
 
 /**
  * Similarity 相似度计算工具包
@@ -59,6 +66,18 @@ public class Similarity {
 
     /**
      * 词语相似度
+     * 计算拼音相似度
+     *
+     * @param word1
+     * @param word2
+     * @return
+     */
+    public static double pinyinSimilarity(String word1, String word2) {
+        return PhraseSimilarity.getInstance().getSimilarity(word1, word2);
+    }
+
+    /**
+     * 词语相似度
      * 计算字面相似度
      *
      * @param word1
@@ -78,8 +97,7 @@ public class Similarity {
      * @return
      */
     public static double conceptSimilarity(String word1, String word2) {
-        return 0.0;
-//                ConceptSimilarity.getInstance().getSimilarity(word1, word2);
+        return ConceptSimilarity.getInstance().getSimilarity(word1, word2);
     }
 
     /**
@@ -102,21 +120,20 @@ public class Similarity {
      * @return
      */
     public static double morphoSimilarity(String sentence1, String sentence2) {
-        return 0.0;
-//                MorphoSimilarity.getInstance().getSimilarity(sentence1, sentence2);
+        return MorphoSimilarity.getInstance().getSimilarity(sentence1, sentence2);
     }
 
     /**
      * 句子相似度
-     * 标准编辑距离法
+     * 夏天编辑距离法
      *
      * @param sentence1
      * @param sentence2
      * @return
      */
     public static double editDistanceSimilarity(String sentence1, String sentence2) {
-        return 0.0;
-//                EditDistanceSimilarity.getInstance().getSimilarity(sentence1, sentence2);
+        EditDistance ed = new EditDistanceSimilarity();
+        return ed.getSimilarity(sentence1, sentence2);
     }
 
     /**
@@ -128,8 +145,21 @@ public class Similarity {
      * @return
      */
     public static double gregorEditDistanceSimilarity(String sentence1, String sentence2) {
-        return 0.0;
-//                GregorEditDistanceSimilarity.getInstance().getSimilarity(sentence1, sentence2);
+        EditDistance ed = new GregorEditDistanceSimilarity();
+        return  ed.getSimilarity(sentence1, sentence2);
+    }
+
+    /**
+     * 句子相似度
+     * 标准编辑距离算法
+     *
+     * @param sentence1
+     * @param sentence2
+     * @return
+     */
+    public static double standardEditDistanceSimilarity(String sentence1, String sentence2) {
+        EditDistance ed = new StandardEditDistanceSimilarity();
+        return  ed.getSimilarity(sentence1, sentence2);
     }
 
     /**
@@ -139,8 +169,8 @@ public class Similarity {
      * @return
      */
     public static double Tendency(String word) {
-        return 0.0;
-//                HownetWordTendency.getInstance().getSentiment(word);
+        HownetWordTendency hownetWordTendency = new HownetWordTendency();
+        return hownetWordTendency.getTendency(word);
     }
 
 }

@@ -5,7 +5,7 @@ package org.xm.similarity.sentence.editdistance;
  *
  * @author xuming
  */
-public class StandardEditDistance extends EditDistance {
+public class StandardEditDistanceSimilarity extends EditDistance {
 
     /**
      * 获取两个串的编辑距离

@@ -43,10 +43,8 @@ public class SememeSimilarity extends SememeParser {
         if (sememeName1.equals(sememeName2)) {
             return 1.0;
         }
-
         Collection<String> sememeIds1 = SEMEMES.get(sememeName1);
         Collection<String> sememeIds2 = SEMEMES.get(sememeName2);
-
         // 如果sememe1或者sememe2不是义元,则返回0
         if (sememeIds1.size() == 0 || sememeIds1.size() == 0) {
             return 0.0;

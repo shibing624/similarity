@@ -8,6 +8,7 @@ import java.util.Set;
 
 /**
  * 词林编码
+ *
  * @author xuming
  */
 public class CilinSimilarity implements ISimilarity {

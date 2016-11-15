@@ -11,7 +11,7 @@ package org.xm.similarity.sentence.editdistance;
  * 编辑代价为2，但实际上，当由“什么是计算机病毒”变为“计算机病毒什么是”后，由于"什么是"与“是什么”的替换代价只有0.2，
  * 因而不再进行交互，故总的编辑距离为1.2
  */
-public class GregorEditDistance extends EditDistance {
+public class GregorEditDistanceSimilarity extends EditDistance {
 
     /**
      * 块交换代价

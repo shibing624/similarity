@@ -24,7 +24,7 @@ public class ChunkEditUnit extends EditUnit {
 			return 0.0;
 
 		ChunkEditUnit other = (ChunkEditUnit) otherUnit;
-		return new StandardEditDistance().getEditDistance(chunk, other.chunk);
+		return new StandardEditDistanceSimilarity().getEditDistance(chunk, other.chunk);
 	}
 
 	/**
