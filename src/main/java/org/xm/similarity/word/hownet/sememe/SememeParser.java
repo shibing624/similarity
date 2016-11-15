@@ -42,7 +42,6 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
      * 文件加载义原
      */
     private void load(InputStream inputStream) throws IOException {
-        System.out.println("loading sememes...");
         long time = System.currentTimeMillis();
         int count = 0;
         try {
@@ -67,7 +66,7 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
             e.printStackTrace();
         }
         time = System.currentTimeMillis() - time;
-        logger.info("\ncomplete! count num:"+ count + ". time spend:" + time + "ms");
+        logger.info("complete! count num:"+ count + ". time spend:" + time + "ms");
     }
 
     /**
