@@ -6,7 +6,7 @@ import org.junit.Test;
  * @author xuming
  */
 public class SegmentToolTest {
-    String sentence = "什么是球体和服装？一个伟大的国家，中国";
+    String sentence = "什么是球体和服装？一个伟大的国家，中国，电脑病毒会传染给人吗？";
     String s2 = "中国是一个伟大的国家";
 
     @Test

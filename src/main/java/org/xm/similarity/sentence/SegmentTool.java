@@ -1,7 +1,7 @@
 package org.xm.similarity.sentence;
 
-import org.xm.xmnlp.seg.domain.Term;
-import org.xm.xmnlp.tokenizer.StandardTokenizer;
+import org.xm.ansj.domain.Term;
+import org.xm.ansj.segmentation.StandardSegmentation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,10 +44,10 @@ public class SegmentTool {
 
     public static List<Word> segment(String sentence) {
         List<Word> results = new ArrayList<>();
-        List<Term> termList = StandardTokenizer.segment(sentence);
+        List<Term> termList = StandardSegmentation.parse(sentence).getTerms();
         results.addAll(termList
                 .stream()
-                .map(term -> new Word(term.word, term.getNature().name()))
+                .map(term -> new Word(term.getName(), term.getNature().natureStr))
                 .collect(Collectors.toList())
         );
         return results;

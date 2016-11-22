@@ -3,7 +3,6 @@ package org.xm.similarity.word.pinyin;
 import org.xm.similarity.ISimilarity;
 import org.xm.similarity.util.EditDistance;
 import org.xm.similarity.util.MathUtil;
-import org.xm.similarity.dictionary.PinyinDictionary;
 
 import java.util.Set;
 

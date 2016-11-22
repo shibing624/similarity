@@ -2,6 +2,7 @@ package org.xm.similarity.dictionary;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.xm.similarity.word.clin.CilinDictionary;
 
 /**
  * @author xuming

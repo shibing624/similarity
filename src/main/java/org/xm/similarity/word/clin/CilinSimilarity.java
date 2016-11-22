@@ -1,7 +1,6 @@
 package org.xm.similarity.word.clin;
 
 import org.xm.similarity.ISimilarity;
-import org.xm.similarity.dictionary.CilinDictionary;
 import org.xm.similarity.util.StringUtil;
 
 import java.util.Set;

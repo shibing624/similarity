@@ -2,6 +2,7 @@ package org.xm.similarity.dictionary;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.xm.similarity.word.pinyin.PinyinDictionary;
 import org.xm.xmnlp.Xmnlp;
 import org.xm.xmnlp.dictionary.pinyin.Pinyin;
 

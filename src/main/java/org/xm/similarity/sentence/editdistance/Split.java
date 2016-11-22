@@ -16,8 +16,8 @@ public class Split {
         while (LX.getPrev() != null) {
             LX = LX.getPrev();
         }
-        List<ChunkEditUnit> first = new ArrayList<ChunkEditUnit>();
-        List<ChunkEditUnit> second = new ArrayList<ChunkEditUnit>();
+        List<ChunkEditUnit> first = new ArrayList<>();
+        List<ChunkEditUnit> second = new ArrayList<>();
         while (LX != null) {
             first.add(new ChunkEditUnit(LX.getData()));
             LX = LX.getNext();
@@ -27,8 +27,8 @@ public class Split {
             second.add(new ChunkEditUnit(LY.getData()));
             LY = LY.getNext();
         }
-        SuperString<ChunkEditUnit> s1 = new SuperString<ChunkEditUnit>(first);
-        SuperString<ChunkEditUnit> s2 = new SuperString<ChunkEditUnit>(second);
+        SuperString<ChunkEditUnit> s1 = new SuperString<>(first);
+        SuperString<ChunkEditUnit> s2 = new SuperString<>(second);
         Object[] obj = new Object[]{s1, s2};
         return obj;
     }
