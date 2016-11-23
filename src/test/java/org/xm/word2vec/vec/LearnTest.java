@@ -1,5 +1,6 @@
 package org.xm.word2vec.vec;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
@@ -15,6 +16,7 @@ public class LearnTest {
         learn.learnFile(new File("data/seg_result.txt"));
         System.out.println("use time " + (System.currentTimeMillis() - start));
         learn.saveModel(new File("data/seg_result_model"));
+        Assert.assertTrue(learn != null);
     }
 
 }
