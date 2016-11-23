@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sememes>
+<sememe cn="事件" en="event" id="1"/>
+<sememe cn="静态" en="static" id="1-1"/>
+<sememe cn="关系" en="relation" id="1-1-1"/>
+<sememe cn="是非关系" en="isa" id="1-1-1-1"/>
+<sememe cn="是" define="{relevant,isa}/{relevant,descriptive}" en="be" id="1-1-1-1-1"/>
+<sememe cn="成为" define="{relevant,isa}/{relevant,descriptive}" en="become" id="1-1-1-1-1-1"/>
+<sememe cn="指代" define="{relevant,isa}/{relevant,descriptive}" en="mean" id="1-1-1-1-1-2"/>
+<sememe cn="非" define="{relevant,isa}/{relevant,descriptive}" en="BeNot" id="1-1-1-1-2"/>
+<sememe cn="领属关系" en="possession" id="1-1-1-2"/>
+<sememe cn="有" define="{possessor,possession}" en="own" id="1-1-1-2-1"/>
+<sememe cn="得到" define="{possessor,possession,source}" en="obtain" id="1-1-1-2-1-1"/>
+<sememe cn="收受" define="{possessor,possession,source}" en="receive" id="1-1-1-2-1-2"/>
+<sememe cn="属于" define="{possessor,possession }" en="BelongTo" id="1-1-1-2-2"/>
+<sememe cn="无" define="{possessor,possession}" en="OwnNot" id="1-1-1-2-3"/>
+<sememe cn="失去" define="{possessor,possession}" en="lose" id="1-1-1-2-3-1"/>
+<sememe cn="亏损" define="{possessor,possession}" en="InDebt" id="1-1-1-2-3-1-1"/>
+<sememe cn="欠" define="{possessor,possession,target}" en="owe" id="1-1-1-2-4"/>
+<sememe cn="相比关系" define="{relevant,contrast,ContentCompare}" en="comparison" id="1-1-1-3"/>
+<sememe cn="相同" define="{relevant,contrast,scope}" en="BeSame" id="1-1-1-3-1"/>
+<sememe cn="相等" define="{relevant,contrast,scope}" en="equal" id="1-1-1-3-1-1"/>
+<sememe cn="相像" define="{relevant,contrast,degree}" en="BeSimilar" id="1-1-1-3-1-2"/>
+<sememe cn="不同" define="{relevant,contrast,scope}" en="differ" id="1-1-1-3-2"/>
+<sememe cn="值得" define="{relevant,content}" en="worth" id="1-1-1-3-3"/>
+<sememe cn="不值" define="{relevant,content}" en="WorthNot" id="1-1-1-3-4"/>
+<sememe cn="相适关系" en="suit" id="1-1-1-4"/>
+<sememe cn="适合" define="{relevant,contrast,scope}" en="fit" id="1-1-1-4-1"/>
+<sememe cn="陪衬" define="{relevant,contrast,scope}" en="ServeAsFoil" id="1-1-1-4-2"/>
+<sememe cn="不适" define="{relevant,contrast,scope}" en="FitNot" id="1-1-1-4-3"/>
+<sememe cn="蕴涵关系" en="inclusive" id="1-1-1-5"/>
+<sememe cn="包含" define="{whole,partof}" en="contain" id="1-1-1-5-1"/>
+<sememe cn="隶属" define="{partof,whole}" en="BeMember" id="1-1-1-5-2"/>
+<sememe cn="关联关系" en="connective" id="1-1-1-6"/>
+<sememe cn="有关" define="{relevant,partner,~degree}" en="relate" id="1-1-1-6-1"/>
+<sememe cn="依靠" define="{relevant,partner}" en="depend" id="1-1-1-6-1-1"/>
+<sememe cn="无关" define="{relevant,partner}" en="RelateNot" id="1-1-1-6-2"/>
+<sememe cn="独立" define="{relevant,partner}" en="BeIndependent" id="1-1-1-6-2-1"/>
+<sememe cn="对立" define="{relevant,partner}" en="BeOpposite" id="1-1-1-6-2-2"/>
+<sememe cn="因果关系" en="CauseResult" id="1-1-1-7"/>
+<sememe cn="导致" define="{relevant,result}" en="ResultIn" id="1-1-1-7-1"/>
+<sememe cn="缘于" define="{relevant,cause}" en="ResultFrom" id="1-1-1-7-2"/>
+<sememe cn="基于" define="{relevant,cause}" en="BaseOn" id="1-1-1-7-3"/>
+<sememe cn="影响" define="{relevant,scope,target}" en="influence" id="1-1-1-7-4"/>
+<sememe cn="时空关系" en="TimeOrSpace" id="1-1-1-8"/>
+<sememe cn="处于" define="{existent,location}" en="situated" id="1-1-1-8-1"/>
+<sememe cn="朝向" define="{existent,direction}" en="facing" id="1-1-1-8-2"/>
+<sememe cn="通往" define="{existent,direction}" en="LeadTo" id="1-1-1-8-3"/>
+<sememe cn="相距" define="{existent,range,partner}" en="from" id="1-1-1-8-4"/>
+<sememe cn="靠近" define="{existent,range,partner}" en="BeNear" id="1-1-1-8-4-1"/>
+<sememe cn="相交" define="{existent,location,partner}" en="BeAcross" id="1-1-1-8-4-2"/>
+<sememe cn="越界" define="{existent,partner}" en="BeBeyond" id="1-1-1-8-4-3"/>
+<sememe cn="数量关系" en="arithmetic" id="1-1-1-9"/>
+<sememe cn="算术" define="{relevant,partner}" en="DoSum" id="1-1-1-9-1"/>
+<sememe cn="总计" define="{relevant,quantity}" en="AmountTo" id="1-1-1-9-2"/>
+<sememe cn="状态" en="state" id="1-1-2"/>
+<sememe cn="物理状态" en="StatePhysical" id="1-1-2-1"/>
+<sememe cn="存现" define="{existent,~location}" en="ExistAppear" id="1-1-2-1-1"/>
+<sememe cn="存在" define="{existent,~location}" en="exist" id="1-1-2-1-1-1"/>
+<sememe cn="不存在" define="{existent,~location}" en="ExistNot" id="1-1-2-1-1-2"/>
+<sememe cn="出现" define="{existent,~location}" en="appear" id="1-1-2-1-1-3"/>
+<sememe cn="露出" define="{existent,~location}" en="exposure" id="1-1-2-1-1-3-1"/>
+<sememe cn="发生" define="{existent,~location}/{existent,~time}" en="happen" id="1-1-2-1-1-4"/>
+<sememe cn="起始" define="{experiencer,~time}" en="begin" id="1-1-2-1-2"/>
+<sememe cn="常态" en="BeNormal" id="1-1-2-1-3"/>
+<sememe cn="定或未定态" en="certainty" id="1-1-2-1-3-1"/>
+<sememe cn="已定" define="{experiencer}" en="fixed" id="1-1-2-1-3-1-1"/>
+<sememe cn="未定" define="{experiencer}" en="unfixed" id="1-1-2-1-3-1-2"/>
+<sememe cn="问世" define="{experiencer,~time}" en="ComeToWorld" id="1-1-2-1-3-2"/>
+<sememe cn="活着" define="{experiencer,~time}" en="alive" id="1-1-2-1-3-3"/>
+<sememe cn="活动" define="{experiencer,~time}" en="function" id="1-1-2-1-3-3-1"/>
+<sememe cn="成长" define="{experiencer,StateIni,StateFin}" en="grow" id="1-1-2-1-3-4"/>
+<sememe cn="怀孕" define="{experiencer,~DurationAfterEvent}" en="pregnant" id="1-1-2-1-3-5"/>
+<sememe cn="继续" define="{experiencer,content}" en="GoOn" id="1-1-2-1-3-6"/>
+<sememe cn="抗住" define="{experiencer,content}" en="withstand" id="1-1-2-1-3-6-1"/>
+<sememe cn="抗不住" define="{experiencer,content}" en="WithstandNot" id="1-1-2-1-3-6-2"/>
+<sememe cn="经受" define="{experiencer,content}" en="undergo" id="1-1-2-1-3-7"/>
+<sememe cn="享受" define="{experiencer,content}[desired|良]" en="enjoy" id="1-1-2-1-3-7-1"/>
+<sememe cn="遭受" define="{experiencer,content}[undesired|莠]" en="suffer" id="1-1-2-1-3-7-2"/>
+<sememe cn="易于" define="{experiencer,content}" en="AptTo" id="1-1-2-1-3-7-3"/>
+<sememe cn="忍耐" define="{experiencer,content}" en="endure" id="1-1-2-1-3-7-4"/>
+<sememe cn="不忍" define="{experiencer,content}" en="EndureNot" id="1-1-2-1-3-7-5"/>
+<sememe cn="不经受" define="{experiencer,content}" en="UndergoNot" id="1-1-2-1-3-8"/>
+<sememe cn="良态" define="{experiencer}[desired|良]" en="BeGood" id="1-1-2-1-4"/>
+<sememe cn="吃饱" define="{experiencer}" en="BeFull" id="1-1-2-1-4-1"/>
+<sememe cn="健壮" define="{experiencer}" en="BeWell" id="1-1-2-1-4-2"/>
+<sememe cn="幸运" define="{experiencer}" en="lucky" id="1-1-2-1-4-3"/>
+<sememe cn="发达" define="{experiencer,scope,StateIni,StateFin}" en="prosper" id="1-1-2-1-4-4"/>
+<sememe cn="成功" define="{experiencer,scope}" en="succeed" id="1-1-2-1-4-5"/>
+<sememe cn="获胜" define="{experiencer,contrast,scope}" en="win" id="1-1-2-1-4-6"/>
+<sememe cn="强过" define="{experiencer,contrast,scope}" en="surpass" id="1-1-2-1-4-7"/>
+<sememe cn="成名" define="{experiencer}" en="WellKnown" id="1-1-2-1-4-8"/>
+<sememe cn="复原" define="{experiencer,StateIni,StateFin}" en="BeRecovered" id="1-1-2-1-5"/>
+<sememe cn="醒" define="{experiencer,StateIni,^StateFin}" en="awake" id="1-1-2-1-5-1"/>
+<sememe cn="变" define="{experiencer,StateIni,StateFin}" en="change" id="1-1-2-1-6"/>
+<sememe cn="外观变" define="{experiencer,scope,StateIni,StateFin}" en="AppearanceChange" id="1-1-2-1-6-1"/>
+<sememe cn="态变" define="{experiencer,scope,StateIni,StateFin}" en="StateChange" id="1-1-2-1-6-1-1"/>
+<sememe cn="形变" define="{experiencer,scope,StateIni,StateFin}" en="FormChange" id="1-1-2-1-6-1-2"/>
+<sememe cn="量变" define="{experiencer,range,StateIni,StateFin}" en="QuantityChange" id="1-1-2-1-6-2"/>
+<sememe cn="增多" define="{experiencer,StateIni,StateFin,range,scope}" en="BecomeMore" id="1-1-2-1-6-2-1"/>
+<sememe cn="剩余" define="{experiencer,StateIni,StateFin,range,scope}" en="surplus" id="1-1-2-1-6-2-2"/>
+<sememe cn="缺少" define="{experiencer,StateFin,range,scope}" en="lack" id="1-1-2-1-6-2-3"/>
+<sememe cn="减少" define="{experiencer,StateIni,StateFin,range,scope}" en="BecomeLess" id="1-1-2-1-6-2-4"/>
+<sememe cn="衰变" define="{experiencer,~scope,~manner}[undesired|莠]" en="BeBad" id="1-1-2-1-6-3"/>
+<sememe cn="疲乏" define="{experiencer,~degree,~StateFin}" en="tired" id="1-1-2-1-6-3-1"/>
+<sememe cn="饥渴" define="{experiencer}" en="HungryThirsty" id="1-1-2-1-6-3-2"/>
+<sememe cn="罹患" define="{experiencer,content}[undesired|莠,#medical|医]" en="SufferFrom" id="1-1-2-1-6-3-3"/>
+<sememe cn="病态" define="{experiencer}[disease|疾病,undesired|莠,#medical|医]" en="ill" id="1-1-2-1-6-3-3-1"/>
+<sememe cn="受伤" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="wounded" id="1-1-2-1-6-3-3-1-1"/>
+<sememe cn="残疾" define="{experiencer,scope,partof} [disease|疾病,undesired|莠,#medical|医]" en="disable" id="1-1-2-1-6-3-3-1-2"/>
+<sememe cn="临产" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="labour" id="1-1-2-1-6-3-3-1-3"/>
+<sememe cn="疯痴" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="mad" id="1-1-2-1-6-3-3-1-4"/>
+<sememe cn="瘫麻" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="paralyse" id="1-1-2-1-6-3-3-1-5"/>
+<sememe cn="疼痛" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="painful" id="1-1-2-1-6-3-3-1-6"/>
+<sememe cn="昏迷" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="dizzy" id="1-1-2-1-6-3-3-1-7"/>
+<sememe cn="抽搐" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="twitch" id="1-1-2-1-6-3-3-1-8"/>
+<sememe cn="出血" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="bleed" id="1-1-2-1-6-3-3-1-9"/>
+<sememe cn="肿胀" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="swollen" id="1-1-2-1-6-3-3-1-10"/>
+<sememe cn="寒热" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="fever" id="1-1-2-1-6-3-3-1-11"/>
+<sememe cn="腹症" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="StomachTrouble" id="1-1-2-1-6-3-3-1-12"/>
+<sememe cn="气喘" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="pant" id="1-1-2-1-6-3-3-1-13"/>
+<sememe cn="发炎" define="{experiencer} [disease|疾病,undesired|莠,#medical|医]" en="inflamed" id="1-1-2-1-6-3-3-1-14"/>
+<sememe cn="发痒" define="{experiencer}" en="itch" id="1-1-2-1-6-3-3-1-15"/>
+<sememe cn="坏掉" define="{experiencer,content} [undesired|莠]" en="OutOfOrder" id="1-1-2-1-6-3-4"/>
+<sememe cn="衰败" define="{experiencer} [undesired|莠]" en="decline" id="1-1-2-1-6-3-5"/>
+<sememe cn="不幸" define="{experiencer,scope} [undesired|莠]" en="unfortunate" id="1-1-2-1-6-3-6"/>
+<sememe cn="失败" define="{experiencer,scope} [undesired|莠]" en="fail" id="1-1-2-1-6-3-7"/>
+<sememe cn="出错" define="{experiencer,scope} [undesired|莠]" en="err" id="1-1-2-1-6-3-7-1"/>
+<sememe cn="输掉" define="{experiencer,contrast,scope} [undesired|莠]" en="defeated" id="1-1-2-1-6-3-7-2"/>
+<sememe cn="不如" define="{experiencer,contrast,scope} [undesired|莠]" en="inferior" id="1-1-2-1-6-3-8"/>
+<sememe cn="终结" define="{experiencer,~DurationAfterEvent}[undesired|莠]" en="end" id="1-1-2-1-6-4"/>
+<sememe cn="死" define="{experiencer,~DurationAfterEvent,cause} [undesired|莠]" en="die" id="1-1-2-1-6-4-1"/>
+<sememe cn="完毕" define="{experiencer,~DurationAfterEvent}" en="finish" id="1-1-2-1-6-4-2"/>
+<sememe cn="灭亡" define="{experiencer,~DurationAfterEvent} [undesired|莠]" en="perish" id="1-1-2-1-6-4-3"/>
+<sememe cn="到期" define="{experiencer}" en="due" id="1-1-2-1-6-4-4"/>
+<sememe cn="天变" define="{experiencer,~duration,~manner}" en="WeatherChange" id="1-1-2-1-6-5"/>
+<sememe cn="好天" define="{experiencer,~duration,~manner}" en="WeatherFine" id="1-1-2-1-6-5-1"/>
+<sememe cn="坏天" define="{experiencer,~duration,~manner}[undesired|莠]" en="WeatherBad" id="1-1-2-1-6-5-2"/>
+<sememe cn="不变" define="{experiencer}" en="ChangeNot" id="1-1-2-1-7"/>
+<sememe cn="消失" define="{experiencer}" en="disappear" id="1-1-2-1-8"/>
+<sememe cn="精神状态" en="StateMental" id="1-1-2-2"/>
+<sememe cn="情绪" en="feeling" id="1-1-2-2-1"/>
+<sememe cn="心怀" define="{experiencer,content}" en="cherish" id="1-1-2-2-1-1"/>
+<sememe cn="激动" define="{experiencer,~degree,cause}" en="excited" id="1-1-2-2-1-2"/>
+<sememe cn="好情" define="{experiencer,~degree,cause}[desired|良]" en="FeelingByGood" id="1-1-2-2-1-3"/>
+<sememe cn="安心" define="{experiencer,~degree,cause}" en="AtEase" id="1-1-2-2-1-3-1"/>
+<sememe cn="镇静" define="{experiencer,~degree,cause}" en="calm" id="1-1-2-2-1-3-1-1"/>
+<sememe cn="喜悦" define="{experiencer,~degree,cause}" en="joyful" id="1-1-2-2-1-3-2"/>
+<sememe cn="满意" define="{experiencer,~degree,cause}" en="satisfied" id="1-1-2-2-1-3-3"/>
+<sememe cn="无愧" define="{experiencer,~degree,cause}" en="FeelNoQualms" id="1-1-2-2-1-3-4"/>
+<sememe cn="没羞" define="{experiencer,~degree,cause}" en="shameless" id="1-1-2-2-1-3-5"/>
+<sememe cn="坏情" define="{experiencer,~degree,cause}[undesired|莠]" en="FeelingByBad" id="1-1-2-2-1-4"/>
+<sememe cn="不安" define="{experiencer,~degree,cause}" en="uneasy" id="1-1-2-2-1-4-1"/>
+<sememe cn="心虚" define="{experiencer,~degree,cause}" en="GuiltilyConscious" id="1-1-2-2-1-4-2"/>
+<sememe cn="不满" define="{experiencer,target,cause}" en="unsatisfied" id="1-1-2-2-1-4-3"/>
+<sememe cn="惆怅" define="{experiencer,~degree,cause}" en="melancholy" id="1-1-2-2-1-4-4"/>
+<sememe cn="烦恼" define="{experiencer,~degree,cause}" en="upset" id="1-1-2-2-1-4-5"/>
+<sememe cn="忧愁" define="{experiencer,~degree,cause}" en="sad" id="1-1-2-2-1-4-6"/>
+<sememe cn="悲哀" define="{experiencer,~degree,cause}" en="sorrowful" id="1-1-2-2-1-4-7"/>
+<sememe cn="害怕" define="{experiencer,~degree,cause}" en="fear" id="1-1-2-2-1-4-8"/>
+<sememe cn="惊奇" define="{experiencer,~degree,cause}" en="surprise" id="1-1-2-2-1-4-9"/>
+<sememe cn="惊慌" define="{experiencer,~degree,cause}" en="flurried" id="1-1-2-2-1-4-10"/>
+<sememe cn="着急" define="{experiencer,~degree,cause}" en="worried" id="1-1-2-2-1-4-11"/>
+<sememe cn="生气" define="{experiencer,~degree,cause}" en="angry" id="1-1-2-2-1-4-12"/>
+<sememe cn="灰心" define="{experiencer,~degree,cause}" en="disheartened" id="1-1-2-2-1-4-13"/>
+<sememe cn="懊悔" define="{experiencer,~degree,cause}" en="repent" id="1-1-2-2-1-4-14"/>
+<sememe cn="羞愧" define="{experiencer,~degree,cause}" en="shy" id="1-1-2-2-1-4-15"/>
+<sememe cn="为难" define="{experiencer,~degree,cause}" en="embarrassed" id="1-1-2-2-1-4-16"/>
+<sememe cn="失望" define="{experiencer,~degree,cause}" en="disappointed" id="1-1-2-2-1-4-17"/>
+<sememe cn="态度" en="Attitude" id="1-1-2-2-2"/>
+<sememe cn="好态" define="{experiencer,target,cause}[desired|良]" en="AttitudeByGood" id="1-1-2-2-2-1"/>
+<sememe cn="喜欢" define="{experiencer,target,cause}" en="FondOf" id="1-1-2-2-2-1-1"/>
+<sememe cn="爱惜" define="{experiencer,target,cause}" en="like" id="1-1-2-2-2-1-1-1"/>
+<sememe cn="爱恋" define="{experiencer,target,cause}" en="love" id="1-1-2-2-2-1-1-2"/>
+<sememe cn="注意" define="{experiencer,target,cause}" en="PayAttention" id="1-1-2-2-2-1-2"/>
+<sememe cn="讲求" define="{experiencer,target,cause}" en="ParticularAbout" id="1-1-2-2-2-1-2-1"/>
+<sememe cn="敬佩" define="{experiencer,target,cause}" en="respect" id="1-1-2-2-2-1-3"/>
+<sememe cn="忠孝" define="{experiencer,target,cause}" en="loyal" id="1-1-2-2-2-1-4"/>
+<sememe cn="羡慕" define="{experiencer,target,cause}" en="admire" id="1-1-2-2-2-1-5"/>
+<sememe cn="妒忌" define="{experiencer,target,cause}" en="jealous" id="1-1-2-2-2-1-5-1"/>
+<sememe cn="感激" define="{experiencer,target,cause}" en="grateful" id="1-1-2-2-2-1-6"/>
+<sememe cn="同意" define="{experiencer,target,cause}" en="agree" id="1-1-2-2-2-1-7"/>
+<sememe cn="思念" define="{experiencer,content}" en="ThinkOf" id="1-1-2-2-2-1-8"/>
+<sememe cn="坏态" en="AttitudeByBad" id="1-1-2-2-2-2"/>
+<sememe cn="惋惜" define="{experiencer,target,cause}" en="sorry" id="1-1-2-2-2-2-1"/>
+<sememe cn="怜悯" define="{experiencer,target,cause}" en="pity" id="1-1-2-2-2-2-2"/>
+<sememe cn="厌恶" define="{experiencer,target,cause}" en="disgust" id="1-1-2-2-2-2-3"/>
+<sememe cn="木然" define="{experiencer,cause}" en="stupefied" id="1-1-2-2-2-2-4"/>
+<sememe cn="埋怨" define="{experiencer,target,cause}" en="blame" id="1-1-2-2-2-2-5"/>
+<sememe cn="仇恨" define="{experiencer,target,cause}" en="hate" id="1-1-2-2-2-2-6"/>
+<sememe cn="原谅" define="{experiencer,target,cause}" en="forgive" id="1-1-2-2-2-2-7"/>
+<sememe cn="不容" define="{experiencer,target,cause}" en="TolerateNot" id="1-1-2-2-2-2-8"/>
+<sememe cn="抱歉" define="{experiencer,target,cause}" en="regret" id="1-1-2-2-2-2-9"/>
+<sememe cn="轻视" define="{experiencer,target,cause}" en="despise" id="1-1-2-2-2-2-10"/>
+<sememe cn="不忠" define="{experiencer,target,cause}" en="disloyal" id="1-1-2-2-2-2-11"/>
+<sememe cn="不同意" define="{experiencer,target,cause}" en="disagree" id="1-1-2-2-2-2-12"/>
+<sememe cn="怀疑" define="{experiencer,content}" en="doubt" id="1-1-2-2-2-2-13"/>
+<sememe cn="意向" en="volition" id="1-1-2-2-3"/>
+<sememe cn="期望" define="{experiencer,content}" en="expect" id="1-1-2-2-3-1"/>
+<sememe cn="需求" define="{experiencer,content}" en="need" id="1-1-2-2-3-2"/>
+<sememe cn="愿意" define="{experiencer,content}" en="willing" id="1-1-2-2-3-3"/>
+<sememe cn="不愿" define="{experiencer,content}" en="unwilling" id="1-1-2-2-3-4"/>
+<sememe cn="舍得" define="{experiencer,content}" en="GrudgeNot" id="1-1-2-2-3-5"/>
+<sememe cn="不舍" define="{experiencer,content}" en="grudge" id="1-1-2-2-3-6"/>
+<sememe cn="敢于" define="{experiencer,content}" en="dare" id="1-1-2-2-3-7"/>
+<sememe cn="犹豫" define="{experiencer,content}" en="hesitate" id="1-1-2-2-3-8"/>
+<sememe cn="感知状态" en="recognition" id="1-1-2-2-4"/>
+<sememe cn="有知" en="HaveKnowledge" id="1-1-2-2-4-1"/>
+<sememe cn="感知" define="{experiencer,content}" en="perception" id="1-1-2-2-4-1-1"/>
+<sememe cn="知道" define="{experiencer,content}" en="know" id="1-1-2-2-4-1-2"/>
+<sememe cn="领会" define="{experiencer,content}" en="understand" id="1-1-2-2-4-1-2-1"/>
+<sememe cn="认为" define="{experiencer,content}" en="regard" id="1-1-2-2-4-1-3"/>
+<sememe cn="相信" define="{experiencer,content}" en="believe" id="1-1-2-2-4-1-4"/>
+<sememe cn="记得" define="{experiencer,content}" en="remember" id="1-1-2-2-4-1-5"/>
+<sememe cn="能够" define="{experiencer,content}" en="BeAble" id="1-1-2-2-4-1-6"/>
+<sememe cn="做梦" define="{experiencer,content}" en="dream" id="1-1-2-2-4-1-7"/>
+<sememe cn="无知" en="NoKnowledge" id="1-1-2-2-4-2"/>
+<sememe cn="不知" define="{experiencer,content}" en="ignorant" id="1-1-2-2-4-2-1"/>
+<sememe cn="忘记" define="{experiencer,content}" en="forget" id="1-1-2-2-4-2-2"/>
+<sememe cn="误信" define="{experiencer,content}" en="misunderstand" id="1-1-2-2-4-3"/>
+<sememe cn="混淆" define="{experiencer,content}" en="confuse" id="1-1-2-2-4-3-1"/>
+<sememe cn="无能" define="{experiencer,content}" en="BeUnable" id="1-1-2-2-4-4"/>
+<sememe cn="行动" en="act" id="1-2"/>
+<sememe cn="泛动" define="{agent,content}" en="ActGeneral" id="1-2-1"/>
+<sememe cn="开始" define="{agent,content}" en="start" id="1-2-1-1"/>
+<sememe cn="做" define="{agent,content,manner}" en="do" id="1-2-1-2"/>
+<sememe cn="尝试" define="{agent,content}" en="try" id="1-2-1-2-1"/>
+<sememe cn="卖力" define="{agent,content}" en="endeavour" id="1-2-1-2-2"/>
+<sememe cn="快干" define="{agent,content}" en="VieFor" id="1-2-1-2-3"/>
+<sememe cn="蛮干" define="{agent,content}" en="RashlyAct" id="1-2-1-2-4"/>
+<sememe cn="冒险" define="{agent,content}" en="venture" id="1-2-1-2-4-1"/>
+<sememe cn="合作" define="{agent,content}" en="cooperate" id="1-2-1-2-5"/>
+<sememe cn="重复" define="{agent,content}" en="repeat" id="1-2-1-2-6"/>
+<sememe cn="假装" define="{agent,content}" en="pretend" id="1-2-1-2-7"/>
+<sememe cn="从事" define="{agent,content}" en="engage" id="1-2-1-2-8"/>
+<sememe cn="承担" define="{agent,content}" en="bear" id="1-2-1-2-8-1"/>
+<sememe cn="担任" define="{agent,content}" en="undertake" id="1-2-1-2-8-1-1"/>
+<sememe cn="实施" define="{agent,content}" en="conduct" id="1-2-1-2-9"/>
+<sememe cn="准备" define="{agent,content}" en="prepare" id="1-2-1-2-10"/>
+<sememe cn="回应" define="{agent,cause}" en="respond" id="1-2-1-2-11"/>
+<sememe cn="不做" en="DoNot" id="1-2-1-3"/>
+<sememe cn="拒做" define="{agent,content}" en="refuse" id="1-2-1-3-1"/>
+<sememe cn="回避" define="{agent,content}" en="evade" id="1-2-1-3-1-1"/>
+<sememe cn="偷懒" define="{agent,content}" en="slack" id="1-2-1-3-2"/>
+<sememe cn="停做" define="{agent,content}" en="cease" id="1-2-1-4"/>
+<sememe cn="戒除" define="{agent,content}" en="GiveUp" id="1-2-1-4-1"/>
+<sememe cn="暂停" define="{agent,content}" en="pause" id="1-2-1-4-2"/>
+<sememe cn="休息" define="{agent}" en="rest" id="1-2-1-4-3"/>
+<sememe cn="睡" define="{agent}" en="sleep" id="1-2-1-4-3-1"/>
+<sememe cn="等待" define="{agent,content,~duration,~TimeIni,~TimeFin}" en="wait" id="1-2-1-5"/>
+<sememe cn="实动" en="ActSpecific" id="1-2-2"/>
+<sememe cn="泛变" define="{agent,patient,result}" en="AlterGeneral" id="1-2-2-1"/>
+<sememe cn="改变" define="{agent,patient,StateIni,StateFin}" en="alter" id="1-2-2-1-1"/>
+<sememe cn="控制" define="{agent,patient,ResultEvent}" en="control" id="1-2-2-1-2"/>
+<sememe cn="管理" define="{agent,patient}" en="manage" id="1-2-2-1-2-1"/>
+<sememe cn="处理" define="{agent,patient}" en="handle" id="1-2-2-1-2-2"/>
+<sememe cn="安排" define="{agent,patient}" en="arrange" id="1-2-2-1-2-3"/>
+<sememe cn="使不变" define="{agent,patient}" en="stabilize" id="1-2-2-1-3"/>
+<sememe cn="实变" en="AlterSpecific" id="1-2-2-2"/>
+<sememe cn="变关系" en="AlterRelation" id="1-2-2-2-1"/>
+<sememe cn="变领属" define="{agent,possession}" en="AlterPossession" id="1-2-2-2-1-1"/>
+<sememe cn="取" define="{agent,possession,source}" en="take" id="1-2-2-2-1-1-1"/>
+<sememe cn="谋取" define="{agent,possession,source}" en="seek" id="1-2-2-2-1-1-1-1"/>
+<sememe cn="乞求" define="{agent,possession,source}" en="beg" id="1-2-2-2-1-1-1-1-1"/>
+<sememe cn="偷" define="{agent,possession,source}[crime|罪]" en="steal" id="1-2-2-2-1-1-1-2"/>
+<sememe cn="抢" define="{agent,possession,source}[crime|罪]" en="rob" id="1-2-2-2-1-1-1-3"/>
+<sememe cn="骗" define="{agent,possession,source}[crime|罪]" en="cheat" id="1-2-2-2-1-1-1-4"/>
+<sememe cn="赚" define="{agent,possession,source}" en="earn" id="1-2-2-2-1-1-1-5"/>
+<sememe cn="买" define="{agent,possession,source,cost,beneficiary}[commercial|商]" en="buy" id="1-2-2-2-1-1-1-6"/>
+<sememe cn="收" define="{agent,possession,source}" en="collect" id="1-2-2-2-1-1-1-7"/>
+<sememe cn="征收" define="{agent,possession,source}" en="levy" id="1-2-2-2-1-1-1-7-1"/>
+<sememe cn="借入" define="{agent,possession,source}" en="borrow" id="1-2-2-2-1-1-1-8"/>
+<sememe cn="采集" define="{agent,possession,source}" en="gather" id="1-2-2-2-1-1-1-9"/>
+<sememe cn="占领" define="{agent,possession,source}" en="occupy" id="1-2-2-2-1-1-1-10"/>
+<sememe cn="娶" define="{agent,possession,source}[#GetMarried|结婚]" en="MarryFrom" id="1-2-2-2-1-1-1-11"/>
+<sememe cn="取回" define="{agent,possession,source}" en="TakeBack" id="1-2-2-2-1-1-1-12"/>
+<sememe cn="赎" define="{agent,possession,source,cost}[commercial|商]" en="redeem" id="1-2-2-2-1-1-1-12-1"/>
+<sememe cn="给" define="{agent,possession,target}" en="give" id="1-2-2-2-1-1-2"/>
+<sememe cn="供" define="{agent,possession,target}" en="provide" id="1-2-2-2-1-1-2-1"/>
+<sememe cn="赠" define="{agent,possession,target}" en="GiveAsGift" id="1-2-2-2-1-1-2-2"/>
+<sememe cn="赐" define="{agent,possession,target}" en="grant" id="1-2-2-2-1-1-2-2-1"/>
+<sememe cn="捐" define="{agent,possession,target}" en="donate" id="1-2-2-2-1-1-2-2-2"/>
+<sememe cn="交" define="{agent,possession,target}" en="submit" id="1-2-2-2-1-1-2-3"/>
+<sememe cn="还" define="{agent,possession,target}" en="return" id="1-2-2-2-1-1-2-4"/>
+<sememe cn="补偿" define="{agent,possession,target}" en="recompense" id="1-2-2-2-1-1-2-4-1"/>
+<sememe cn="分发" define="{agent,possession,target}" en="issue" id="1-2-2-2-1-1-2-5"/>
+<sememe cn="卖" define="{agent,possession,target,cost}[commercial|商]" en="sell" id="1-2-2-2-1-1-2-6"/>
+<sememe cn="借出" define="{agent,possession,target}" en="lend" id="1-2-2-2-1-1-2-7"/>
+<sememe cn="押给" define="{agent,possession,target}[commercial|商]" en="pawn" id="1-2-2-2-1-1-2-8"/>
+<sememe cn="留给" define="{agent,possession,target}" en="PassOn" id="1-2-2-2-1-1-2-9"/>
+<sememe cn="付" define="{agent,possession,target}" en="pay" id="1-2-2-2-1-1-2-10"/>
+<sememe cn="嫁" define="{agent,possession,target}{agent,target} [#GetMarried|结婚]" en="MarryTo" id="1-2-2-2-1-1-2-11"/>
+<sememe cn="放弃" define="{agent,possession}" en="abandon" id="1-2-2-2-1-1-2-12"/>
+<sememe cn="交换" define="{agent,possession,source,cost}" en="exchange" id="1-2-2-2-1-1-3"/>
+<sememe cn="赊" define="{agent,possession,source}[commercial|商]" en="OnCredit" id="1-2-2-2-1-1-4"/>
+<sememe cn="变是非" en="AlterIsa" id="1-2-2-2-1-2"/>
+<sememe cn="使之是" define="{agent,patient,ResultIsa}" en="CauseToBe" id="1-2-2-2-1-2-1"/>
+<sememe cn="当作" define="{agent,patient,ResultIsa}/{agent,ResultIsa}" en="RegardAs" id="1-2-2-2-1-2-1-1"/>
+<sememe cn="称作" define="{agent,patient,ResultIsa}" en="naming" id="1-2-2-2-1-2-1-2"/>
+<sememe cn="代替" define="{agent,patient,ResultIsa}/{agent,patient}" en="replace" id="1-2-2-2-1-2-1-3"/>
+<sememe cn="使之非" define="{agent,patient,ResultIsa}" en="CauseNotToBe" id="1-2-2-2-1-2-2"/>
+<sememe cn="罢免" define="{agent,patient,ResultIsa}" en="dismiss" id="1-2-2-2-1-2-2-1"/>
+<sememe cn="变相比" en="AlterComparison" id="1-2-2-2-1-3"/>
+<sememe cn="比拟" define="{agent,patient,contrast}" en="CompareTo" id="1-2-2-2-1-3-1"/>
+<sememe cn="使相等" define="{agent,patient,contrast}" en="MakeEqual" id="1-2-2-2-1-3-2"/>
+<sememe cn="变相适" en="AlterFitness" id="1-2-2-2-1-4"/>
+<sememe cn="遵循" define="{agent,content} {agent,patient,content}" en="obey" id="1-2-2-2-1-4-1"/>
+<sememe cn="屈服" define="{agent,target}" en="surrender" id="1-2-2-2-1-4-1-1"/>
+<sememe cn="协调" define="{agent,content}" en="coordinate" id="1-2-2-2-1-4-2"/>
+<sememe cn="违背" define="{agent,content}" en="disobey" id="1-2-2-2-1-4-3"/>
+<sememe cn="变包含" en="AlterInclusion" id="1-2-2-2-1-5"/>
+<sememe cn="纳入" define="{agent,patient,ResultWhole}/{agent,ResultWhole}" en="include" id="1-2-2-2-1-5-1"/>
+<sememe cn="开除" define="{agent,patient,SourceWhole}" en="discharge" id="1-2-2-2-1-5-2"/>
+<sememe cn="退出" define="{agent,SourceWhole}" en="withdraw" id="1-2-2-2-1-5-3"/>
+<sememe cn="分类" define="{agent,patient,ResultWhole}" en="classify" id="1-2-2-2-1-5-4"/>
+<sememe cn="变关联" en="AlterConnection" id="1-2-2-2-1-6"/>
+<sememe cn="关联" define="{agent,patient,partner}" en="tie" id="1-2-2-2-1-6-1"/>
+<sememe cn="连接" define="{agent,patient,partner}" en="connect" id="1-2-2-2-1-6-1-1"/>
+<sememe cn="拴连" define="{agent,patient,partner}/{agent,patient,LocationFin}" en="fasten" id="1-2-2-2-1-6-1-1-1"/>
+<sememe cn="混合" define="{agent,patient,partner}" en="mix" id="1-2-2-2-1-6-1-2"/>
+<sememe cn="合并" define="{agent,patient,partner}" en="merge" id="1-2-2-2-1-6-1-3"/>
+<sememe cn="交往" define="{agent,partner}" en="associate" id="1-2-2-2-1-6-1-4"/>
+<sememe cn="结盟" define="{agent,partner}" en="ally" id="1-2-2-2-1-6-1-4-1"/>
+<sememe cn="勾结" define="{agent,partner}" en="collude" id="1-2-2-2-1-6-1-4-2"/>
+<sememe cn="讲和" define="{agent,partner}" en="reconcile" id="1-2-2-2-1-6-1-4-3"/>
+<sememe cn="投靠" define="{agent,partner}" en="SeekRefuge" id="1-2-2-2-1-6-1-4-4"/>
+<sememe cn="会面" define="{agent,partner}" en="meet" id="1-2-2-2-1-6-1-4-5"/>
+<sememe cn="结婚]" en="GetMarried" id="1-2-2-2-1-6-1-4-6"/>
+<sememe cn="交配" define="{agent,partner}" en="mating" id="1-2-2-2-1-6-1-4-7"/>
+<sememe cn="分离" define="{agent,patient,partner}/{agent,patient,SourceWhole}" en="separate" id="1-2-2-2-1-6-2"/>
+<sememe cn="脱离" define="{agent,partner}" en="disconnect" id="1-2-2-2-1-6-2-1"/>
+<sememe cn="离别" define="{agent,partner}" en="farewell" id="1-2-2-2-1-6-2-2"/>
+<sememe cn="变因果" en="AlterCauseResult" id="1-2-2-2-1-7"/>
+<sememe cn="传染" define="{agent,cause,target}" en="CauseAffect" id="1-2-2-2-1-7-1"/>
+<sememe cn="招惹" define="{agent,result}" en="incur" id="1-2-2-2-1-7-2"/>
+<sememe cn="变空间位置" en="AlterLocation" id="1-2-2-2-1-8"/>
+<sememe cn="自移" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="SelfMove" id="1-2-2-2-1-8-1"/>
+<sememe cn="方式性自移" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="SelfMoveInManner" id="1-2-2-2-1-8-1-1"/>
+<sememe cn="流浪" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="roam" id="1-2-2-2-1-8-1-1-1"/>
+<sememe cn="走" define="{agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚]" en="walk" id="1-2-2-2-1-8-1-1-2"/>
+<sememe cn="跑" define="{agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚]" en="run" id="1-2-2-2-1-8-1-1-3"/>
+<sememe cn="跳" define="{agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚]" en="jump" id="1-2-2-2-1-8-1-1-4"/>
+<sememe cn="爬" define="{agent,direction,LocationThru,LocationIni,LocationFin}[instrument=leg|腿,instrument=foot|脚,instrument=hand|手]" en="crawl" id="1-2-2-2-1-8-1-1-5"/>
+<sememe cn="滑" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="slide" id="1-2-2-2-1-8-1-1-6"/>
+<sememe cn="滚" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="roll" id="1-2-2-2-1-8-1-1-7"/>
+<sememe cn="游" define="{agent,direction,LocationThru,LocationIni,LocationFin}[location=#liquid|液]" en="swim" id="1-2-2-2-1-8-1-1-8"/>
+<sememe cn="流" define="{agent,direction,LocationThru,LocationIni,LocationFin} [#liquid|液]" en="flow" id="1-2-2-2-1-8-1-1-9"/>
+<sememe cn="飞" define="{agent,direction,LocationThru,LocationIni,LocationFin}[location=sky|空域]" en="fly" id="1-2-2-2-1-8-1-1-10"/>
+<sememe cn="漂" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="float" id="1-2-2-2-1-8-1-1-11"/>
+<sememe cn="驶" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="VehicleGo" id="1-2-2-2-1-8-1-1-12"/>
+<sememe cn="循环" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="circulate" id="1-2-2-2-1-8-1-1-13"/>
+<sememe cn="方向性自移" define="{agent,direction,LocationThru,LocationThru,LocationIni,LocationFin}" en="SelfMoveInDirection" id="1-2-2-2-1-8-1-2"/>
+<sememe cn="来回" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="ToAndFro" id="1-2-2-2-1-8-1-2-1"/>
+<sememe cn="来" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="come" id="1-2-2-2-1-8-1-2-1-1"/>
+<sememe cn="去" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="go" id="1-2-2-2-1-8-1-2-1-2"/>
+<sememe cn="前往" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="LeaveFor" id="1-2-2-2-1-8-1-2-1-3"/>
+<sememe cn="上去" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="GoUp" id="1-2-2-2-1-8-1-2-2"/>
+<sememe cn="上升" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="rise" id="1-2-2-2-1-8-1-2-2-1"/>
+<sememe cn="攀登" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="climb" id="1-2-2-2-1-8-1-2-2-2"/>
+<sememe cn="下去" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="GoDown" id="1-2-2-2-1-8-1-2-3"/>
+<sememe cn="掉下" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="fall" id="1-2-2-2-1-8-1-2-3-1"/>
+<sememe cn="下沉" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="sink" id="1-2-2-2-1-8-1-2-3-2"/>
+<sememe cn="前进" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="GoForward" id="1-2-2-2-1-8-1-2-4"/>
+<sememe cn="后退" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="GoBackward" id="1-2-2-2-1-8-1-2-5"/>
+<sememe cn="进入" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="GoInto" id="1-2-2-2-1-8-1-2-6"/>
+<sememe cn="出去" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="GoOut" id="1-2-2-2-1-8-1-2-7"/>
+<sememe cn="漏出" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="leak" id="1-2-2-2-1-8-1-2-7-1"/>
+<sememe cn="喷出" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="jet" id="1-2-2-2-1-8-1-2-7-2"/>
+<sememe cn="溢出" define="{agent,direction,LocationThru,direction,LocationIni,LocationFin}" en="spill" id="1-2-2-2-1-8-1-2-7-3"/>
+<sememe cn="离开" define="{agent,direction,LocationThru,LocationIni,LocationFin,~purpose}" en="leave" id="1-2-2-2-1-8-1-2-8"/>
+<sememe cn="逃跑" define="{agent,direction,LocationThru,direction,LocationIni,LocationFin,~cause}" en="flee" id="1-2-2-2-1-8-1-2-8-1"/>
+<sememe cn="躲避" define="{agent,direction,LocationThru,LocationIni,LocationFin,~cause}" en="escape" id="1-2-2-2-1-8-1-2-8-2"/>
+<sememe cn="接近" define="{agent,direction,LocationThru,direction,LocationIni,LocationFin}" en="approach" id="1-2-2-2-1-8-1-2-9"/>
+<sememe cn="追赶" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="chase" id="1-2-2-2-1-8-1-2-9-1"/>
+<sememe cn="跟随" define="{agent,direction,LocationThru,LocationIni,LocationFin,partner}" en="follow" id="1-2-2-2-1-8-1-2-9-1-1"/>
+<sememe cn="散开" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="disperse" id="1-2-2-2-1-8-1-2-10"/>
+<sememe cn="集聚" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="ComeTogether" id="1-2-2-2-1-8-1-2-11"/>
+<sememe cn="经过" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="GoThrough" id="1-2-2-2-1-8-1-2-12"/>
+<sememe cn="越过" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="cross" id="1-2-2-2-1-8-1-2-12-1"/>
+<sememe cn="返回" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="GoBack" id="1-2-2-2-1-8-1-2-13"/>
+<sememe cn="围绕" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="GoRound" id="1-2-2-2-1-8-1-2-14"/>
+<sememe cn="拐弯" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="TurnRound" id="1-2-2-2-1-8-1-2-14-1"/>
+<sememe cn="盘旋" define="{agent,direction,LocationThru,LocationIni,LocationFin}" en="circle" id="1-2-2-2-1-8-1-2-14-2"/>
+<sememe cn="定位自移" en="MoveInFixedPosition" id="1-2-2-2-1-8-1-3"/>
+<sememe cn="摆动" define="{agent,direction}" en="wave" id="1-2-2-2-1-8-1-3-1"/>
+<sememe cn="颤动" define="{agent,direction}" en="shiver" id="1-2-2-2-1-8-1-3-2"/>
+<sememe cn="转动" define="{agent,direction}" en="rotate" id="1-2-2-2-1-8-1-3-3"/>
+<sememe cn="打结" define="{agent,direction}" en="twine" id="1-2-2-2-1-8-1-3-4"/>
+<sememe cn="部件自移" define="{agent,location}" en="PartSelfMove" id="1-2-2-2-1-8-1-3-5"/>
+<sememe cn="站立" define="{agent,location}" en="stand" id="1-2-2-2-1-8-1-3-5-1"/>
+<sememe cn="起身" define="{agent,LocationIni}" en="arise" id="1-2-2-2-1-8-1-3-5-2"/>
+<sememe cn="坐蹲" define="{agent,location}" en="sit" id="1-2-2-2-1-8-1-3-5-3"/>
+<sememe cn="躺卧" define="{agent,location}" en="LieDown" id="1-2-2-2-1-8-1-3-5-4"/>
+<sememe cn="跌倒" define="{agent,location}" en="FallDown" id="1-2-2-2-1-8-1-3-5-5"/>
+<sememe cn="踢踩" define="{agent,direction,location}" en="kick" id="1-2-2-2-1-8-1-3-5-6"/>
+<sememe cn="倾斜" define="{agent,direction,location}" en="tilt" id="1-2-2-2-1-8-1-3-5-7"/>
+<sememe cn="倚靠" define="{agent,direction,location}" en="lean" id="1-2-2-2-1-8-1-3-5-7-1"/>
+<sememe cn="翘耸" define="{agent,direction,location}" en="upmove" id="1-2-2-2-1-8-1-3-5-8"/>
+<sememe cn="终止自移" define="{agent,location}" en="CeaseSelfMove" id="1-2-2-2-1-8-1-4"/>
+<sememe cn="停留" define="{agent,location,TimeIni,TimeFin,duration} //1999/7/23//" en="stay" id="1-2-2-2-1-8-1-4-1"/>
+<sememe cn="到达" define="{agent,LocationFin}" en="arrive" id="1-2-2-2-1-8-1-4-2"/>
+<sememe cn="住下" define="{agent,location}" en="reside" id="1-2-2-2-1-8-1-4-3"/>
+<sememe cn="他移" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="CauseToMove" id="1-2-2-2-1-8-2"/>
+<sememe cn="方式性他移" define="{agent,patient}" en="CauseToMoveInManner" id="1-2-2-2-1-8-2-1"/>
+<sememe cn="释放" define="{agent,patient,source}" en="release" id="1-2-2-2-1-8-2-1-1"/>
+<sememe cn="搬动" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="TakeAway" id="1-2-2-2-1-8-2-1-2"/>
+<sememe cn="放置" define="{agent,patient,LocationIni,LocationFin}" en="put" id="1-2-2-2-1-8-2-1-3"/>
+<sememe cn="堆放" define="{agent,patient,LocationIni,LocationFin}" en="pile" id="1-2-2-2-1-8-2-1-3-1"/>
+<sememe cn="保存" define="{agent,patient,LocationIni,LocationFin}" en="store" id="1-2-2-2-1-8-2-1-4"/>
+<sememe cn="留存" define="{agent,patient,LocationFin}" en="SetAside" id="1-2-2-2-1-8-2-1-4-1"/>
+<sememe cn="安装" define="{agent,patient,LocationIni,LocationFin}" en="install" id="1-2-2-2-1-8-2-1-5"/>
+<sememe cn="拆卸" define="{agent,patient,LocationIni}" en="dismount" id="1-2-2-2-1-8-2-1-6"/>
+<sememe cn="装载" define="{agent,patient,LocationIni,LocationFin}" en="load" id="1-2-2-2-1-8-2-1-7"/>
+<sememe cn="驾驭" define="{agent,patient,LocationIni,LocationFin,direction}" en="drive" id="1-2-2-2-1-8-2-1-8"/>
+<sememe cn="方向性他移" define="{agent,patient}" en="CauseToMoveInDirection" id="1-2-2-2-1-8-2-2"/>
+<sememe cn="拉" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="pull" id="1-2-2-2-1-8-2-2-1"/>
+<sememe cn="推" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="push" id="1-2-2-2-1-8-2-2-2"/>
+<sememe cn="上移" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="MoveItUp" id="1-2-2-2-1-8-2-2-3"/>
+<sememe cn="提升" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="lift" id="1-2-2-2-1-8-2-2-3-1"/>
+<sememe cn="悬挂" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="hang" id="1-2-2-2-1-8-2-2-3-2"/>
+<sememe cn="下移" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="MoveItDown" id="1-2-2-2-1-8-2-2-4"/>
+<sememe cn="洒下" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="spray" id="1-2-2-2-1-8-2-2-4-1"/>
+<sememe cn="咽下" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="swallow" id="1-2-2-2-1-8-2-2-4-2"/>
+<sememe cn="投下" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="drop" id="1-2-2-2-1-8-2-2-4-3"/>
+<sememe cn="回移" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="MoveItBack" id="1-2-2-2-1-8-2-2-5"/>
+<sememe cn="内移" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="MoveItInto" id="1-2-2-2-1-8-2-2-6"/>
+<sememe cn="吸入" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="inhale" id="1-2-2-2-1-8-2-2-6-1"/>
+<sememe cn="插入" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="insert" id="1-2-2-2-1-8-2-2-6-2"/>
+<sememe cn="浸入" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="soak" id="1-2-2-2-1-8-2-2-6-3"/>
+<sememe cn="嵌入" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="inlay" id="1-2-2-2-1-8-2-2-6-4"/>
+<sememe cn="填入" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="fill" id="1-2-2-2-1-8-2-2-6-5"/>
+<sememe cn="埋入" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="bury" id="1-2-2-2-1-8-2-2-6-6"/>
+<sememe cn="外移{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="MoveItOut" id="1-2-2-2-1-8-2-2-7"/>
+<sememe cn="排出" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="drain" id="1-2-2-2-1-8-2-2-7-1"/>
+<sememe cn="吐出" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="vomit" id="1-2-2-2-1-8-2-2-7-2"/>
+<sememe cn="呼出" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="exhale" id="1-2-2-2-1-8-2-2-7-3"/>
+<sememe cn="倒出" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="dump" id="1-2-2-2-1-8-2-2-7-4"/>
+<sememe cn="拔出" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="PickOut" id="1-2-2-2-1-8-2-2-7-5"/>
+<sememe cn="挤出" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="SqueezeOut" id="1-2-2-2-1-8-2-2-7-6"/>
+<sememe cn="远移{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="MoveItAway" id="1-2-2-2-1-8-2-2-8"/>
+<sememe cn="扔" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="throw" id="1-2-2-2-1-8-2-2-8-1"/>
+<sememe cn="发送" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="send" id="1-2-2-2-1-8-2-2-8-2"/>
+<sememe cn="发射" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="shoot" id="1-2-2-2-1-8-2-2-8-2-1"/>
+<sememe cn="传送" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="transmit" id="1-2-2-2-1-8-2-2-8-2-2"/>
+<sememe cn="运送{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="transport" id="1-2-2-2-1-8-2-2-8-2-3"/>
+<sememe cn="邮寄" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="post" id="1-2-2-2-1-8-2-2-8-2-4"/>
+<sememe cn="驱赶" define="{agent,patient,LocationIni,LocationFin,direction}" en="expel" id="1-2-2-2-1-8-2-2-8-2-5"/>
+<sememe cn="流放{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="exile" id="1-2-2-2-1-8-2-2-8-2-5-1"/>
+<sememe cn="撒" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="spread" id="1-2-2-2-1-8-2-2-9"/>
+<sememe cn="聚集" define="{agent,patient,direction,LocationThru,LocationIni,LocationFin}" en="assemble" id="1-2-2-2-1-8-2-2-10"/>
+<sememe cn="定位他移" en="CauseToMoveInFixedPosition" id="1-2-2-2-1-8-2-3"/>
+<sememe cn="摇动" define="{agent,patient,direction}" en="shake" id="1-2-2-2-1-8-2-3-1"/>
+<sememe cn="颠倒" define="{agent,patient,direction}" en="reverse" id="1-2-2-2-1-8-2-3-2"/>
+<sememe cn="扭转" define="{agent,patient,LocationIni,LocationFin,direction}" en="turn" id="1-2-2-2-1-8-2-3-3"/>
+<sememe cn="缠绕" define="{agent,patient,direction}" en="coil" id="1-2-2-2-1-8-2-3-4"/>
+<sememe cn="包围" define="{agent,patient,direction}" en="surround" id="1-2-2-2-1-8-2-3-4-1"/>
+<sememe cn="部件他移" define="{agent,PatientPartof,direction}" en="CausePartMove" id="1-2-2-2-1-8-2-3-5"/>
+<sememe cn="开关" define="{agent,patient}" en="OpenShut" id="1-2-2-2-1-8-2-4"/>
+<sememe cn="打开" define="{agent,patient,range}" en="open" id="1-2-2-2-1-8-2-4-1"/>
+<sememe cn="关闭" define="{agent,patient,range}" en="shut" id="1-2-2-2-1-8-2-4-2"/>
+<sememe cn="终止他移" define="{agent,patient}" en="CeaseCauseTOMove" id="1-2-2-2-1-8-3"/>
+<sememe cn="拿" define="{agent,patient}" en="hold" id="1-2-2-2-1-8-3-1"/>
+<sememe cn="拾起" define="{agent,patient}" en="pick" id="1-2-2-2-1-8-3-1-1"/>
+<sememe cn="搀扶" define="{agent,patient}" en="HoldWithHand" id="1-2-2-2-1-8-3-1-2"/>
+<sememe cn="支撑" define="{agent,patient}" en="PropUp" id="1-2-2-2-1-8-3-1-3"/>
+<sememe cn="携带" define="{agent,patient}" en="bring" id="1-2-2-2-1-8-3-1-4"/>
+<sememe cn="衔起" define="{agent,patient}" en="HoldInMouth" id="1-2-2-2-1-8-3-1-5"/>
+<sememe cn="搂抱" define="{agent,patient}" en="HoldInArm" id="1-2-2-2-1-8-3-1-6"/>
+<sememe cn="背起" define="{agent,patient}" en="CarryOnBack" id="1-2-2-2-1-8-3-1-7"/>
+<sememe cn="捞起" define="{agent,patient}" en="TakeOutOfWater" id="1-2-2-2-1-8-3-1-8"/>
+<sememe cn="捉住" define="{agent,patient}" en="catch" id="1-2-2-2-1-8-3-2"/>
+<sememe cn="扣住" define="{agent,patient}" en="detain" id="1-2-2-2-1-8-3-3"/>
+<sememe cn="拦住" define="{agent,patient}" en="block" id="1-2-2-2-1-8-3-4"/>
+<sememe cn="定住" define="{agent,patient}" en="fix" id="1-2-2-2-1-8-3-5"/>
+<sememe cn="托住" define="{agent,patient}" en="SupportWeight" id="1-2-2-2-1-8-3-6"/>
+<sememe cn="定向" define="{agent,patient,direction}/{agent,direction}" en="AimAt" id="1-2-2-2-1-8-4"/>
+<sememe cn="变时间位置" en="AlterTimePosition" id="1-2-2-2-1-9"/>
+<sememe cn="度过" define="{agent,patient}" en="pass" id="1-2-2-2-1-9-1"/>
+<sememe cn="变数量" en="AlterQuantity" id="1-2-2-2-1-10"/>
+<sememe cn="增加" define="{agent,patient,quantity}" en="add" id="1-2-2-2-1-10-1"/>
+<sememe cn="削减" define="{agent,patient,quantity}" en="subtract" id="1-2-2-2-1-10-2"/>
+<sememe cn="损耗" define="{agent,patient,quantity}" en="exhaust" id="1-2-2-2-1-10-3"/>
+<sememe cn="节省" define="{agent,patient,quantity}" en="economize" id="1-2-2-2-1-10-4"/>
+<sememe cn="变状态" en="AlterState" id="1-2-2-2-2"/>
+<sememe cn="变本体" en="AlterPhysical" id="1-2-2-2-2-1"/>
+<sememe cn="使存现" define="{agent,PatientProduct}" en="CauseToExist" id="1-2-2-2-2-1-1"/>
+<sememe cn="创造" define="{agent,PatientProduct}" en="create" id="1-2-2-2-2-1-1-1"/>
+<sememe cn="生育" define="{agent,PatientProduct}" en="GiveBirth" id="1-2-2-2-2-1-1-1-1"/>
+<sememe cn="制造" define="{agent,PatientProduct}" en="produce" id="1-2-2-2-2-1-1-1-2"/>
+<sememe cn="烹调" define="{agent,PatientProduct}" en="cook" id="1-2-2-2-2-1-1-1-2-1"/>
+<sememe cn="编辑" define="{agent,ContentProduct}" en="compile" id="1-2-2-2-2-1-1-1-2-2"/>
+<sememe cn="建造" define="{agent,PatientProduct}" en="build" id="1-2-2-2-2-1-1-1-3"/>
+<sememe cn="形成" define="{agent,PatientProduct}" en="forming" id="1-2-2-2-2-1-1-1-4"/>
+<sememe cn="建立" define="{agent,PatientProduct}" en="establish" id="1-2-2-2-2-1-1-1-5"/>
+<sememe cn="伪造" define="{agent,PatientProduct}[undesired|莠]" en="forge" id="1-2-2-2-2-1-1-1-6"/>
+<sememe cn="显现" define="{agent,patient}" en="CauseToAppear" id="1-2-2-2-2-1-1-2"/>
+<sememe cn="揭露" define="{agent,patient}" en="reveal" id="1-2-2-2-2-1-1-2-1"/>
+<sememe cn="剥去" define="{agent,patient}" en="StripOff" id="1-2-2-2-2-1-1-2-2"/>
+<sememe cn="变常态" en="AlterStateNormal" id="1-2-2-2-2-1-2"/>
+<sememe cn="使活" define="{agent,patient}" en="CauseToLive" id="1-2-2-2-2-1-2-1"/>
+<sememe cn="谋生" define="{agent}" en="MakeLiving" id="1-2-2-2-2-1-2-1-1"/>
+<sememe cn="供养" define="{agent,patient}" en="ProvideFor" id="1-2-2-2-2-1-2-1-2"/>
+<sememe cn="饲养" define="{agent,patient}" en="foster" id="1-2-2-2-2-1-2-1-2-1"/>
+<sememe cn="栽植" define="{agent,patient,LocationFin}" en="planting" id="1-2-2-2-2-1-2-1-2-2"/>
+<sememe cn="使成长" define="{agent,patient,StateIni,StateFin}" en="CauseToGrow" id="1-2-2-2-2-1-2-2"/>
+<sememe cn="代谢" define="{agent,patient}" en="metabolize" id="1-2-2-2-2-1-2-2-1"/>
+<sememe cn="摄取" define="{agent,patient}" en="consume" id="1-2-2-2-2-1-2-2-1-1"/>
+<sememe cn="吃" define="{agent,patient}" en="eat" id="1-2-2-2-2-1-2-2-1-1-1"/>
+<sememe cn="喝" define="{agent,patient}" en="drink" id="1-2-2-2-2-1-2-2-1-1-2"/>
+<sememe cn="喂" define="{agent,patient,target}" en="feed" id="1-2-2-2-2-1-2-2-1-1-3"/>
+<sememe cn="排泄" define="{agent,patient}" en="excrete" id="1-2-2-2-2-1-2-2-1-2"/>
+<sememe cn="呼吸" define="{agent,+patient}" en="respire" id="1-2-2-2-2-1-2-2-1-3"/>
+<sememe cn="消闲" define="{agent,instrument}/{agent}" en="WhileAway" id="1-2-2-2-2-1-2-2-2"/>
+<sememe cn="锻练" define="{agent,~instrument}/{agent}[sport|体育]" en="exercise" id="1-2-2-2-2-1-2-2-2-1"/>
+<sememe cn="旅游" define="{agent,location,direction,LocationIni,LocationFin}[SelfMove|自移]" en="tour" id="1-2-2-2-2-1-2-2-2-2"/>
+<sememe cn="娱乐" define="{agent,~instrument,~partner}" en="recreation" id="1-2-2-2-2-1-2-2-2-3"/>
+<sememe cn="嗜好" define="{agent,patient}[undesired|莠]" en="addict" id="1-2-2-2-2-1-2-2-2-4"/>
+<sememe cn="寻欢" define="{agent,~partner}[undesired|莠]" en="SeekPleasure" id="1-2-2-2-2-1-2-2-2-5"/>
+<sememe cn="保持" define="{agent,patient}" en="keep" id="1-2-2-2-2-1-2-2-3"/>
+<sememe cn="保养" define="{agent,patient}" en="maintain" id="1-2-2-2-2-1-2-2-3-1"/>
+<sememe cn="保护" define="{agent,patient}" en="protect" id="1-2-2-2-2-1-2-2-4"/>
+<sememe cn="照料" define="{agent,patient}" en="TakeCare" id="1-2-2-2-2-1-2-2-5"/>
+<sememe cn="培养" define="{agent,patient}" en="cultivate" id="1-2-2-2-2-1-2-2-6"/>
+<sememe cn="帮助" define="{agent,patient,scope}/{agent,patient,purpose}" en="help" id="1-2-2-2-2-1-2-2-7"/>
+<sememe cn="救助" define="{agent,patient,StateIni}" en="rescue" id="1-2-2-2-2-1-2-2-7-1"/>
+<sememe cn="使继续" define="{agent,patient}" en="KeepOn" id="1-2-2-2-2-1-2-2-8"/>
+<sememe cn="变良态" en="AlterStateGood" id="1-2-2-2-2-1-3"/>
+<sememe cn="便利" define="{agent,patient}" en="benefit" id="1-2-2-2-2-1-3-1"/>
+<sememe cn="优化" define="{agent,patient}" en="MakeBetter" id="1-2-2-2-2-1-3-2"/>
+<sememe cn="调整" define="{agent,patient}" en="adjust" id="1-2-2-2-2-1-3-2-1"/>
+<sememe cn="整理" define="{agent,patient}" en="PutInOrder" id="1-2-2-2-2-1-3-2-2"/>
+<sememe cn="改良" define="{agent,patient}" en="improve" id="1-2-2-2-2-1-3-2-3"/>
+<sememe cn="充实" define="{agent,patient,material}" en="enrich" id="1-2-2-2-2-1-3-2-3-1"/>
+<sememe cn="实现" define="{agent,patient}" en="fulfil" id="1-2-2-2-2-1-3-2-4"/>
+<sememe cn="恢复" define="{agent,patient,StateIni,StateFin}" en="resume" id="1-2-2-2-2-1-3-3"/>
+<sememe cn="医治" define="{agent,patient,content} [medical|医]" en="cure" id="1-2-2-2-2-1-3-3-1"/>
+<sememe cn="修理" define="{agent,patient,content}" en="repair" id="1-2-2-2-2-1-3-3-2"/>
+<sememe cn="改正" define="{agent,patient,content}" en="amend" id="1-2-2-2-2-1-3-3-3"/>
+<sememe cn="变莠态" en="AlterStateBad" id="1-2-2-2-2-1-4"/>
+<sememe cn="加害" en="MakeBad" id="1-2-2-2-2-1-4-1"/>
+<sememe cn="捣乱" define="{agent,patient}" en="MakeTrouble" id="1-2-2-2-2-1-4-1-1"/>
+<sememe cn="损害" define="{agent,patient}" en="damage" id="1-2-2-2-2-1-4-1-2"/>
+<sememe cn="攻打" define="{agent,patient}" en="attack" id="1-2-2-2-2-1-4-1-3"/>
+<sememe cn="处罚" define="{agent,patient,ResultContent,cause}" en="punish" id="1-2-2-2-2-1-4-1-4"/>
+<sememe cn="报复" define="{agent,patient}" en="revenge" id="1-2-2-2-2-1-4-1-5"/>
+<sememe cn="较量" define="{agent,partner,scope}" en="HaveContest" id="1-2-2-2-2-1-4-1-6"/>
+<sememe cn="比赛" define="{agent,partner,scope}" en="compete" id="1-2-2-2-2-1-4-1-6-1"/>
+<sememe cn="赌博" define="{agent,partner,scope} [#wealth|钱财]" en="gamble" id="1-2-2-2-2-1-4-1-6-1-1"/>
+<sememe cn="争斗" define="{agent,partner,cause}" en="fight" id="1-2-2-2-2-1-4-1-6-2"/>
+<sememe cn="暴动" define="{agent,partner,cause}" en="uprise" id="1-2-2-2-2-1-4-1-6-2-1"/>
+<sememe cn="反抗" define="{agent,partner,cause}" en="resist" id="1-2-2-2-2-1-4-1-6-2-2"/>
+<sememe cn="防守" define="{agent,patient,cause}" en="defend" id="1-2-2-2-2-1-4-1-6-3"/>
+<sememe cn="战胜" define="{agent,partner}" en="defeat" id="1-2-2-2-2-1-4-1-6-4"/>
+<sememe cn="杀害" define="{agent,patient}" en="kill" id="1-2-2-2-2-1-4-1-7"/>
+<sememe cn="自杀" define="{agent,+patient}" en="suicide" id="1-2-2-2-2-1-4-1-7-1"/>
+<sememe cn="消除" define="{agent,patient,LocationIni}" en="remove" id="1-2-2-2-2-1-4-1-8"/>
+<sememe cn="消灭" define="{agent,patient,LocationIni}" en="destroy" id="1-2-2-2-2-1-4-1-8-1"/>
+<sememe cn="使消失" en="CauseToBeHidden" id="1-2-2-2-2-1-5"/>
+<sememe cn="藏匿" define="{agent,patient,LocationFin}" en="hide" id="1-2-2-2-2-1-5-1"/>
+<sememe cn="遮盖" define="{agent,patient,instrument}" en="cover" id="1-2-2-2-2-1-5-2"/>
+<sememe cn="穿戴" define="{agent,+patient,instrument}/{agent,patient,instrument}" en="PutOn" id="1-2-2-2-2-1-5-2-1"/>
+<sememe cn="包扎" define="{agent,patient,instrument}" en="wrap" id="1-2-2-2-2-1-5-2-2"/>
+<sememe cn="变属性" en="AlterAttribute" id="1-2-2-2-2-1-6"/>
+<sememe cn="提高" define="{agent,patient,+PatientAttribute}" en="MakeHigher" id="1-2-2-2-2-1-6-1"/>
+<sememe cn="降低" define="{agent,patient,+PatientAttribute}" en="MakeLower" id="1-2-2-2-2-1-6-2"/>
+<sememe cn="变外观{agent,patient,PatientAttribute=appearance|外观}" en="AlterAppearance" id="1-2-2-2-2-1-6-3"/>
+<sememe cn="变形状" define="{agent,patient,instrument,PatientAttribute}" en="AlterForm" id="1-2-2-2-2-1-6-3-1"/>
+<sememe cn="触" define="{agent,patient,instrument,PartOfTouch}" en="touch" id="1-2-2-2-2-1-6-3-1-1"/>
+<sememe cn="抚" define="{agent,patient,instrument,PartOfTouch}" en="stroke" id="1-2-2-2-2-1-6-3-1-2"/>
+<sememe cn="扎" define="{agent,patient,instrument,PartOfTouch}" en="stab" id="1-2-2-2-2-1-6-3-1-3"/>
+<sememe cn="叮" define="{agent,patient,instrument,instrument,PartOfTouch}" en="sting" id="1-2-2-2-2-1-6-3-1-4"/>
+<sememe cn="打" define="{agent,patient,instrument,PartOfTouch}" en="beat" id="1-2-2-2-2-1-6-3-1-5"/>
+<sememe cn="撞" define="{agent,patient,instrument,PartOfTouch}" en="bump" id="1-2-2-2-2-1-6-3-1-6"/>
+<sememe cn="射击" define="{agent,patient,instrument,PartOfTouch,direction,target,LocationFin}" en="firing" id="1-2-2-2-2-1-6-3-1-7"/>
+<sememe cn="折断" define="{agent,patient,instrument,PartOfTouch}" en="break" id="1-2-2-2-2-1-6-3-1-8"/>
+<sememe cn="摩擦" define="{agent,patient,instrument,PartOfTouch}" en="rub" id="1-2-2-2-2-1-6-3-1-9"/>
+<sememe cn="抓挠" define="{agent,patient,instrument,PartOfTouch}" en="scratch" id="1-2-2-2-2-1-6-3-1-10"/>
+<sememe cn="按压" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="press" id="1-2-2-2-2-1-6-3-1-11"/>
+<sememe cn="铺摊" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="unfold" id="1-2-2-2-2-1-6-3-1-12"/>
+<sememe cn="研磨" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="grind" id="1-2-2-2-2-1-6-3-1-13"/>
+<sememe cn="破开" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="split" id="1-2-2-2-2-1-6-3-1-14"/>
+<sememe cn="切削" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="cut" id="1-2-2-2-2-1-6-3-1-15"/>
+<sememe cn="啃咬" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="bite" id="1-2-2-2-2-1-6-3-1-16"/>
+<sememe cn="咀嚼" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="masticate" id="1-2-2-2-2-1-6-3-1-17"/>
+<sememe cn="摺叠" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="fold" id="1-2-2-2-2-1-6-3-1-18"/>
+<sememe cn="揉弄" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="PlayWith" id="1-2-2-2-2-1-6-3-1-19"/>
+<sememe cn="辫编" define="{agent,patient,instrument,PartOfTouch,StateFin}" en="weave" id="1-2-2-2-2-1-6-3-1-20"/>
+<sememe cn="挖掘" define="{agent,PatientProduct,instrument,location}/{agent,patient,instrument}" en="dig" id="1-2-2-2-2-1-6-3-1-21"/>
+<sememe cn="使净" define="{agent,patient,instrument,PatientAttribute=spotless|洁}" en="clean" id="1-2-2-2-2-1-6-3-2"/>
+<sememe cn="洗涤" define="{agent,patient,instrument,PatientAttribute=spotless|洁}" en="wash" id="1-2-2-2-2-1-6-3-2-1"/>
+<sememe cn="擦拭" define="{agent,patient,instrument,PatientAttribute=spotless|洁}" en="wipe" id="1-2-2-2-2-1-6-3-2-2"/>
+<sememe cn="使脏" define="{agent,patient,instrument,PatientAttribute=dirty|龊}" en="pollute" id="1-2-2-2-2-1-6-3-3"/>
+<sememe cn="涂抹" define="{agent,patient,instrument,PatientAttribute,material}" en="apply" id="1-2-2-2-2-1-6-3-4"/>
+<sememe cn="美化" define="{agent,patient,instrument,PatientAttribute=beautiful|美}" en="beautify" id="1-2-2-2-2-1-6-3-5"/>
+<sememe cn="装饰" define="{agent,patient,instrument,PatientAttribute=beautiful|美}" en="decorate" id="1-2-2-2-2-1-6-3-5-1"/>
+<sememe cn="化妆" define="{agent,patient,instrument,PatientAttribute=beautiful|美}" en="MakeUp" id="1-2-2-2-2-1-6-3-5-2"/>
+<sememe cn="丑化" define="{agent,patient,instrument,PatientAttribute=ugly|丑}" en="uglify" id="1-2-2-2-2-1-6-3-6"/>
+<sememe cn="照射" define="{agent,patient,instrument,PatientAttribute=bright|明}" en="illuminate" id="1-2-2-2-2-1-6-3-7"/>
+<sememe cn="变色" define="{agent,patient,instrument,PatientAttribute=color|颜色}" en="AlterColor" id="1-2-2-2-2-1-6-3-8"/>
+<sememe cn="使亮" define="{agent,patient,instrument,PatientAttribute=bright|明}" en="brighten" id="1-2-2-2-2-1-6-3-9"/>
+<sememe cn="拉直" define="{agent,patient,instrument,PatientAttribute=straight|直}" en="straighten" id="1-2-2-2-2-1-6-3-10"/>
+<sememe cn="折弯" define="{agent,patient,instrument,PatientAttribute=curved|弯}" en="bend" id="1-2-2-2-2-1-6-3-11"/>
+<sememe cn="使锋利" define="{agent,patient,instrument,PatientAttribute=sharp|利}" en="sharpen" id="1-2-2-2-2-1-6-3-12"/>
+<sememe cn="滤清" define="{agent,patient,instrument,PatientAttribute=clear|清}" en="filter" id="1-2-2-2-2-1-6-3-13"/>
+<sememe cn="润滑" define="{agent,patient,instrument,PatientAttribute=polished|光}" en="lubricate" id="1-2-2-2-2-1-6-3-14"/>
+<sememe cn="变量度" define="{agent,patient,instrument,PatientAttribute=measurement|量度}" en="AlterMeasurement" id="1-2-2-2-2-1-6-4"/>
+<sememe cn="加热" define="{agent,patient,instrument,PatientAttribute=hot|热}" en="WarmUp" id="1-2-2-2-2-1-6-4-1"/>
+<sememe cn="点燃" define="{agent,patient,instrument,PatientAttribute=hot|热}" en="lighting" id="1-2-2-2-2-1-6-4-1-1"/>
+<sememe cn="焚烧" define="{agent,patient,instrument,PatientAttribute=hot|热}" en="burn" id="1-2-2-2-2-1-6-4-1-2"/>
+<sememe cn="制冷" define="{agent,patient,instrument,PatientAttribute=cold|冷}" en="cool" id="1-2-2-2-2-1-6-4-2"/>
+<sememe cn="加湿" define="{agent,patient,instrument,PatientAttribute=wet|湿}" en="moisten" id="1-2-2-2-2-1-6-4-3"/>
+<sememe cn="浇灌" define="{agent,patient,instrument,PatientAttribute=wet|湿}" en="irrigate" id="1-2-2-2-2-1-6-4-3-1"/>
+<sememe cn="干燥" define="{agent,patient,instrument,PatientAttribute=dried|干}" en="dry" id="1-2-2-2-2-1-6-4-4"/>
+<sememe cn="扩大" define="{agent,patient,instrument,PatientAttribute=big|大}" en="enlarge" id="1-2-2-2-2-1-6-4-5"/>
+<sememe cn="缩小" define="{agent,patient,instrument,PatientAttribute=small|小}" en="shrink" id="1-2-2-2-2-1-6-4-6"/>
+<sememe cn="勒紧" define="{agent,patient,instrument,PatientAttribute=tight|紧}" en="tighten" id="1-2-2-2-2-1-6-4-7"/>
+<sememe cn="放松" define="{agent,patient,instrument,PatientAttribute=loose|松}" en="loosen" id="1-2-2-2-2-1-6-4-8"/>
+<sememe cn="加快" define="{agent,patient,instrument,PatientAttribute=fast|快}" en="SpeedUp" id="1-2-2-2-2-1-6-4-9"/>
+<sememe cn="减慢" define="{agent,patient,instrument,PatientAttribute=slow|慢}" en="SlowDown" id="1-2-2-2-2-1-6-4-10"/>
+<sememe cn="加重" define="{agent,patient,instrument,PatientAttribute=heavy|重}" en="MakeHeavier" id="1-2-2-2-2-1-6-4-11"/>
+<sememe cn="加深" define="{agent,patient,instrument,PatientAttribute=deep|深}" en="deepen" id="1-2-2-2-2-1-6-4-12"/>
+<sememe cn="提早" define="{agent,patient,TimeFin,PatientAttribute=TimeShort|暂}" en="MakeEarlier" id="1-2-2-2-2-1-6-4-13"/>
+<sememe cn="拖延" define="{agent,patient,TimeFin,PatientAttribute=TimeLong|久}" en="delay" id="1-2-2-2-2-1-6-4-14"/>
+<sememe cn="加浓" define="{agent,patient,instrument,PatientAttribute=concentrated|稠}" en="thicken" id="1-2-2-2-2-1-6-4-15"/>
+<sememe cn="冲淡" define="{agent,patient,instrument,PatientAttribute=watery|稀}" en="dilute" id="1-2-2-2-2-1-6-4-16"/>
+<sememe cn="变特性" define="{agent,patient,instrument,PatientAttribute=property|特性}" en="AlterProperty" id="1-2-2-2-2-1-6-5"/>
+<sememe cn="加固" define="{agent,patient,instrument,PatientAttribute=durable|牢}" en="strengthen" id="1-2-2-2-2-1-6-5-1"/>
+<sememe cn="削弱" define="{agent,patient,instrument,PatientAttribute=weak|弱}" en="weaken" id="1-2-2-2-2-1-6-5-2"/>
+<sememe cn="疏通" define="{agent,patient,instrument,PatientAttribute=^$BlockUp|堵塞}" en="dredge" id="1-2-2-2-2-1-6-5-3"/>
+<sememe cn="堵塞" en="BlockUp" id="1-2-2-2-2-1-6-5-4"/>
+<sememe cn="变级" define="{agent,patient,PatientAttribute=rank|等级}" en="AlterGrade" id="1-2-2-2-2-1-6-5-5"/>
+<sememe cn="升级" define="{agent,patient,PatientAttribute=rank|等级}" en="upgrade" id="1-2-2-2-2-1-6-5-5-1"/>
+<sememe cn="降级" define="{agent,patient,PatientAttribute=rank|等级}" en="degrade" id="1-2-2-2-2-1-6-5-5-2"/>
+<sememe cn="鼓吹" define="{agent,patient,instrument,PatientAttribute=glorious|荣}" en="PlayUp" id="1-2-2-2-2-1-6-5-6"/>
+<sememe cn="贬低" define="{agent,patient,instrument,PatientAttribute=disgraced|辱}" en="PlayDown" id="1-2-2-2-2-1-6-5-7"/>
+<sememe cn="诽谤" define="{agent,patient,instrument,PatientAttribute=disgraced|辱}" en="slander" id="1-2-2-2-2-1-6-5-7-1"/>
+<sememe cn="划定" define="{agent,patient,instrument,PatientAttribute=range|幅度}" en="delimit" id="1-2-2-2-2-1-6-5-8"/>
+<sememe cn="纯化" define="{agent,patient,instrument,PatientAttribute=pure|纯}" en="refine" id="1-2-2-2-2-1-6-5-9"/>
+<sememe cn="变性态" define="{agent,patient,instrument,+PatientAttribute}" en="ize" id="1-2-2-2-2-1-6-6"/>
+<sememe cn="使之动" en="MakeAct" id="1-2-2-2-2-2"/>
+<sememe cn="使动" define="{agent,patient,ResultEvent}" en="CauseToDo" id="1-2-2-2-2-2-1"/>
+<sememe cn="要求" define="{agent,patient,ResultEvent}" en="request" id="1-2-2-2-2-2-1-1"/>
+<sememe cn="召唤" define="{agent,patient,ResultEvent}" en="call" id="1-2-2-2-2-2-1-2"/>
+<sememe cn="邀请" define="{agent,patient,ResultEvent}" en="invite" id="1-2-2-2-2-2-1-3"/>
+<sememe cn="差遣" define="{agent,patient,ResultEvent}" en="dispatch" id="1-2-2-2-2-2-1-4"/>
+<sememe cn="命令" define="{agent,patient,ResultEvent}" en="order" id="1-2-2-2-2-2-1-5"/>
+<sememe cn="委托" define="{agent,patient,ResultEvent}" en="entrust" id="1-2-2-2-2-2-1-6"/>
+<sememe cn="促使" define="{agent,patient,ResultEvent}" en="urge" id="1-2-2-2-2-2-1-7"/>
+<sememe cn="强迫" define="{agent,patient,ResultEvent}" en="force" id="1-2-2-2-2-2-1-8"/>
+<sememe cn="引导" define="{agent,patient,ResultEvent}" en="guide" id="1-2-2-2-2-2-1-9"/>
+<sememe cn="劝说" define="{agent,patient,ResultEvent}" en="persuade" id="1-2-2-2-2-2-1-10"/>
+<sememe cn="调解" define="{agent,patient,^ResultEvent}" en="mediate" id="1-2-2-2-2-2-1-10-1"/>
+<sememe cn="发动" define="{agent,patient,ResultEvent}" en="mobilize" id="1-2-2-2-2-2-1-11"/>
+<sememe cn="指使" define="{agent,patient,ResultEvent}" en="incite" id="1-2-2-2-2-2-1-12"/>
+<sememe cn="勾引" define="{agent,patient,ResultEvent}" en="entice" id="1-2-2-2-2-2-1-13"/>
+<sememe cn="放纵" define="{agent,patient,ResultEvent}" en="indulge" id="1-2-2-2-2-2-1-14"/>
+<sememe cn="启动" define="{agent,patient,ResultEvent}" en="TurnOn" id="1-2-2-2-2-2-1-15"/>
+<sememe cn="阻动" define="{agent,patient,ResultEvent}" en="CauseNotToDo" id="1-2-2-2-2-2-2"/>
+<sememe cn="制止" define="{agent,patient,ResultEvent}" en="restrain" id="1-2-2-2-2-2-2-1"/>
+<sememe cn="阻止" define="{agent,patient,ResultEvent}" en="obstruct" id="1-2-2-2-2-2-2-2"/>
+<sememe cn="禁止" define="{agent,patient,ResultEvent}" en="prohibit" id="1-2-2-2-2-2-2-3"/>
+<sememe cn="止动" define="{agent,patient,ResultEvent}" en="TurnOff" id="1-2-2-2-2-2-2-4"/>
+<sememe cn="免除" define="{agent,patient,ResultEvent}" en="exempt" id="1-2-2-2-2-2-2-5"/>
+<sememe cn="利用" define="{agent,patient,ResultEvent}" en="use" id="1-2-2-2-2-2-3"/>
+<sememe cn="搭乘" define="{agent,patient,ResultEvent}" en="TakeVehicle" id="1-2-2-2-2-2-3-1"/>
+<sememe cn="雇用" define="{agent,patient,ResultEvent}" en="employ" id="1-2-2-2-2-2-3-2"/>
+<sememe cn="花费" define="{agent,patient,ResultEvent}" en="spend" id="1-2-2-2-2-2-3-3"/>
+<sememe cn="浪费" define="{agent,patient}" en="lavish" id="1-2-2-2-2-2-3-3-1"/>
+<sememe cn="变精神" en="AlterMental" id="1-2-2-2-2-3"/>
+<sememe cn="变情感" en="AlterEmotion" id="1-2-2-2-2-3-1"/>
+<sememe cn="安慰" define="{agent,target}" en="soothe" id="1-2-2-2-2-3-1-1"/>
+<sememe cn="感动" define="{agent,target}" en="excite" id="1-2-2-2-2-3-1-2"/>
+<sememe cn="使喜悦" define="{agent,target}" en="MakeHappy" id="1-2-2-2-2-3-1-2-1"/>
+<sememe cn="取悦" define="{agent,target}" en="please" id="1-2-2-2-2-3-1-2-1-1"/>
+<sememe cn="取乐" define="{agent,target}" en="tease" id="1-2-2-2-2-3-1-2-1-2"/>
+<sememe cn="激怒" define="{agent,target}" en="irritate" id="1-2-2-2-2-3-1-2-2"/>
+<sememe cn="吓唬" define="{agent,target}" en="frighten" id="1-2-2-2-2-3-1-2-3"/>
+<sememe cn="泼冷水" define="{agent,target}" en="discourage" id="1-2-2-2-2-3-1-2-4"/>
+<sememe cn="得罪" define="{agent,target}" en="offend" id="1-2-2-2-2-3-1-2-5"/>
+<sememe cn="辜负" define="{agent,target}" en="disappoint" id="1-2-2-2-2-3-1-2-6"/>
+<sememe cn="困扰" define="{agent,target}" en="MakeWorried" id="1-2-2-2-2-3-1-2-7"/>
+<sememe cn="吸引" define="{agent,target}" en="attract" id="1-2-2-2-2-3-1-2-8"/>
+<sememe cn="表示情感" define="{agent,content,target}" en="ShowEmotion" id="1-2-2-2-2-3-2"/>
+<sememe cn="对待" define="{agent,target,manner}" en="treat" id="1-2-2-2-2-3-2-1"/>
+<sememe cn="表示好情感" define="{agent,^content,target}" en="ShowGoodEmotion" id="1-2-2-2-2-3-2-1-1"/>
+<sememe cn="理睬" define="{agent,target,cause}" en="ShowInterest" id="1-2-2-2-2-3-2-1-1-1"/>
+<sememe cn="示喜" define="{agent,target,cause}" en="ShowJoy" id="1-2-2-2-2-3-2-1-1-2"/>
+<sememe cn="笑" define="{agent,target,cause}" en="laugh" id="1-2-2-2-2-3-2-1-1-2-1"/>
+<sememe cn="示爱" define="{agent,target,cause}" en="ShowLove" id="1-2-2-2-2-3-2-1-1-3"/>
+<sememe cn="夸奖" define="{agent,target,cause}" en="praise" id="1-2-2-2-2-3-2-1-1-4"/>
+<sememe cn="奖励" define="{agent,target,possession,cause}" en="reward" id="1-2-2-2-2-3-2-1-1-4-1"/>
+<sememe cn="祝贺" define="{agent,target,cause}" en="congratulate" id="1-2-2-2-2-3-2-1-1-5"/>
+<sememe cn="致谢" define="{agent,target,cause}" en="thank" id="1-2-2-2-2-3-2-1-1-6"/>
+<sememe cn="道歉" define="{agent,target,cause}" en="apologize" id="1-2-2-2-2-3-2-1-1-7"/>
+<sememe cn="问候" define="{agent,target,cause}" en="SayHello" id="1-2-2-2-2-3-2-1-1-8"/>
+<sememe cn="看望" define="{agent,target,cause}" en="visit" id="1-2-2-2-2-3-2-1-1-8-1"/>
+<sememe cn="欢迎" define="{agent,target,cause}" en="welcome" id="1-2-2-2-2-3-2-1-1-9"/>
+<sememe cn="致敬" define="{agent,target,cause}" en="salute" id="1-2-2-2-2-3-2-1-1-10"/>
+<sememe cn="示同意" define="{agent,content}" en="ExpressAgreement" id="1-2-2-2-2-3-2-1-1-11"/>
+<sememe cn="接受" define="{agent,content}" en="accept" id="1-2-2-2-2-3-2-1-1-11-1"/>
+<sememe cn="赞成" define="{agent,content}" en="appreciate" id="1-2-2-2-2-3-2-1-1-11-2"/>
+<sememe cn="拥护" define="{agent,content}" en="endorse" id="1-2-2-2-2-3-2-1-1-12"/>
+<sememe cn="保证" define="{agent,target,scope}" en="guarantee" id="1-2-2-2-2-3-2-1-1-13"/>
+<sememe cn="善待" define="{agent,target,cause}" en="WellTreat" id="1-2-2-2-2-3-2-1-1-14"/>
+<sememe cn="招待" define="{agent,target,cause,ResultEvent}" en="entertain" id="1-2-2-2-2-3-2-1-1-14-1"/>
+<sememe cn="示思念" define="{agent,target,cause}" en="commemorate" id="1-2-2-2-2-3-2-1-1-15"/>
+<sememe cn="表示坏情感" define="{agent,^content,target}" en="ShowBadEmotion" id="1-2-2-2-2-3-2-1-2"/>
+<sememe cn="胡闹" define="{agent,target,cause}" en="IllBehave" id="1-2-2-2-2-3-2-1-2-1"/>
+<sememe cn="叹气" define="{agent,target,cause}" en="sigh" id="1-2-2-2-2-3-2-1-2-2"/>
+<sememe cn="致哀" define="{agent,target,cause}" en="condole" id="1-2-2-2-2-3-2-1-3"/>
+<sememe cn="哭泣" define="{agent,target,cause}" en="weep" id="1-2-2-2-2-3-2-1-3-1"/>
+<sememe cn="示不满" define="{agent,target,content}" en="ExpressDissatisfaction" id="1-2-2-2-2-3-2-1-3-2"/>
+<sememe cn="抗议" define="{agent,target,content}" en="protest" id="1-2-2-2-2-3-2-1-3-2-1"/>
+<sememe cn="谴责" define="{agent,target,cause}" en="ExpressAgainst" id="1-2-2-2-2-3-2-1-3-2-2"/>
+<sememe cn="讽刺" define="{agent,target,cause}" en="satirize" id="1-2-2-2-2-3-2-1-3-2-3"/>
+<sememe cn="笑话" define="{agent,target,cause}" en="LaughAt" id="1-2-2-2-2-3-2-1-3-2-4"/>
+<sememe cn="慢待" define="{agent,target,cause}" en="IllTreat" id="1-2-2-2-2-3-2-1-3-2-5"/>
+<sememe cn="示不同意" define="{agent,target,content}" en="ExpressDisagreement" id="1-2-2-2-2-3-2-1-3-3"/>
+<sememe cn="反对" define="{agent,target,content}" en="oppose" id="1-2-2-2-2-3-2-1-3-3-1"/>
+<sememe cn="回绝" define="{agent,target,content}" en="reject" id="1-2-2-2-2-3-2-1-3-3-2"/>
+<sememe cn="背叛" define="{agent,target,cause}" en="betray" id="1-2-2-2-2-3-2-1-3-4"/>
+<sememe cn="示怒" define="{agent,target,cause}" en="ExpressAnger" id="1-2-2-2-2-3-2-1-3-5"/>
+<sememe cn="变感知" en="AlterKnowledge" id="1-2-2-2-2-3-3"/>
+<sememe cn="使自我感知" en="MakeOwnKnowledge" id="1-2-2-2-2-3-3-1"/>
+<sememe cn="感觉" define="{agent,content}" en="sense" id="1-2-2-2-2-3-3-1-1"/>
+<sememe cn="看" define="{agent,content}" en="look" id="1-2-2-2-2-3-3-1-1-1"/>
+<sememe cn="听" define="{agent,content}" en="listen" id="1-2-2-2-2-3-3-1-1-2"/>
+<sememe cn="闻" define="{agent,content}" en="smell" id="1-2-2-2-2-3-3-1-1-3"/>
+<sememe cn="摸" define="{agent,content}" en="feel" id="1-2-2-2-2-3-3-1-1-4"/>
+<sememe cn="舔" define="{agent,content}" en="savor" id="1-2-2-2-2-3-3-1-1-5"/>
+<sememe cn="认知" define="{agent,content}" en="GetKnowledge" id="1-2-2-2-2-3-3-1-2"/>
+<sememe cn="弄懂" define="{agent,content}" en="TryToKnow" id="1-2-2-2-2-3-3-1-2-1"/>
+<sememe cn="读" define="{agent,content}" en="read" id="1-2-2-2-2-3-3-1-2-1-1"/>
+<sememe cn="问" define="{agent,content,target}" en="ask" id="1-2-2-2-2-3-3-1-2-1-2"/>
+<sememe cn="审问" define="{agent,content,target}" en="interrogate" id="1-2-2-2-2-3-3-1-2-1-2-1"/>
+<sememe cn="寻" define="{agent,location,content}" en="LookFor" id="1-2-2-2-2-3-3-1-2-1-3"/>
+<sememe cn="查" define="{agent,content}" en="check" id="1-2-2-2-2-3-3-1-2-1-4"/>
+<sememe cn="侦察" define="{agent,content} [military|军,police|警]" en="scout" id="1-2-2-2-2-3-3-1-2-1-4-1"/>
+<sememe cn="诊察" define="{agent,content} [medical|医]" en="diagnose" id="1-2-2-2-2-3-3-1-2-1-4-2"/>
+<sememe cn="监察" define="{agent,content}" en="supervise" id="1-2-2-2-2-3-3-1-2-1-4-3"/>
+<sememe cn="调查" define="{agent,content}" en="investigate" id="1-2-2-2-2-3-3-1-2-1-4-4"/>
+<sememe cn="考试" define="{agent,content}" en="exam" id="1-2-2-2-2-3-3-1-2-1-4-5"/>
+<sememe cn="计算" define="{agent,content}" en="calculate" id="1-2-2-2-2-3-3-1-2-1-5"/>
+<sememe cn="计数" define="{agent,content}" en="count" id="1-2-2-2-2-3-3-1-2-1-5-1"/>
+<sememe cn="测量" define="{agent,content}" en="measure" id="1-2-2-2-2-3-3-1-2-1-5-2"/>
+<sememe cn="分辨" define="{agent,content}" en="distinguish" id="1-2-2-2-2-3-3-1-2-1-6"/>
+<sememe cn="思考" define="{agent,content}" en="think" id="1-2-2-2-2-3-3-1-2-1-7"/>
+<sememe cn="推理" define="{agent,content}" en="deduce" id="1-2-2-2-2-3-3-1-2-1-7-1"/>
+<sememe cn="猜测" define="{agent,content}" en="guess" id="1-2-2-2-2-3-3-1-2-1-7-1-1"/>
+<sememe cn="预料" define="{agent,content}" en="predict" id="1-2-2-2-2-3-3-1-2-1-7-1-2"/>
+<sememe cn="回想" define="{agent,content}" en="LookBack" id="1-2-2-2-2-3-3-1-2-1-7-2"/>
+<sememe cn="学" define="{agent,content,source}" en="study" id="1-2-2-2-2-3-3-1-2-1-8"/>
+<sememe cn="练习" define="{agent,content}" en="drill" id="1-2-2-2-2-3-3-1-2-1-8-1"/>
+<sememe cn="模仿" define="{agent,content}" en="imitate" id="1-2-2-2-2-3-3-1-2-1-8-2"/>
+<sememe cn="研究" define="{agent,content}" en="research" id="1-2-2-2-2-3-3-1-2-1-9"/>
+<sememe cn="比较" define="{agent,content}/{agent,content,contrast}" en="compare" id="1-2-2-2-2-3-3-1-2-1-10"/>
+<sememe cn="分析" define="{agent,content}" en="analyze" id="1-2-2-2-2-3-3-1-2-1-11"/>
+<sememe cn="实验" define="{agent,content}" en="experiment" id="1-2-2-2-2-3-3-1-2-1-12"/>
+<sememe cn="证明" define="{agent,content}" en="prove" id="1-2-2-2-2-3-3-1-3"/>
+<sememe cn="决定" define="{agent,content}" en="decide" id="1-2-2-2-2-3-3-1-4"/>
+<sememe cn="裁定" define="{agent,content}" en="judge" id="1-2-2-2-2-3-3-1-4-1"/>
+<sememe cn="约定" define="{agent,content,partner}" en="MakeAppointment" id="1-2-2-2-2-3-3-1-4-2"/>
+<sememe cn="评估" define="{agent,content}" en="estimate" id="1-2-2-2-2-3-3-1-5"/>
+<sememe cn="计划" define="{agent,content}" en="plan" id="1-2-2-2-2-3-3-1-6"/>
+<sememe cn="选择" define="{agent,content,whole}" en="choose" id="1-2-2-2-2-3-3-1-7"/>
+<sememe cn="选拔" define="{agent,content,whole}" en="select" id="1-2-2-2-2-3-3-1-7-1"/>
+<sememe cn="使他人感知" en="MakeOthersKnowledge" id="1-2-2-2-2-3-3-2"/>
+<sememe cn="表示" define="{agent,content,target}" en="express" id="1-2-2-2-2-3-3-2-1"/>
+<sememe cn="提及" define="{agent,content,target}" en="mention" id="1-2-2-2-2-3-3-2-1-1"/>
+<sememe cn="发声" define="{agent,content}" en="MakeSound" id="1-2-2-2-2-3-3-2-1-2"/>
+<sememe cn="喊" define="{agent,content,target}" en="cry" id="1-2-2-2-2-3-3-2-1-3"/>
+<sememe cn="说" define="{agent,content,target}" en="speak" id="1-2-2-2-2-3-3-2-1-4"/>
+<sememe cn="夸大" define="{agent,content,target}" en="boast" id="1-2-2-2-2-3-3-2-1-5"/>
+<sememe cn="发誓" define="{agent,content,target}" en="swear" id="1-2-2-2-2-3-3-2-1-6"/>
+<sememe cn="唱" define="{agent,content,target}" en="sing" id="1-2-2-2-2-3-3-2-1-7"/>
+<sememe cn="诵读" define="{agent,content,target}" en="recite" id="1-2-2-2-2-3-3-2-1-8"/>
+<sememe cn="提出" define="{agent,content,target}" en="propose" id="1-2-2-2-2-3-3-2-1-9"/>
+<sememe cn="引用" define="{agent,content}" en="quote" id="1-2-2-2-2-3-3-2-1-10"/>
+<sememe cn="说明" define="{agent,content,target}" en="explain" id="1-2-2-2-2-3-3-2-1-11"/>
+<sememe cn="告诉" define="{agent,content,target}" en="tell" id="1-2-2-2-2-3-3-2-1-12"/>
+<sememe cn="描写" define="{agent,content,target}" en="describe" id="1-2-2-2-2-3-3-2-1-13"/>
+<sememe cn="发表" define="{agent,content,target}" en="announce" id="1-2-2-2-2-3-3-2-1-14"/>
+<sememe cn="传播" define="{agent,content,target}" en="disseminate" id="1-2-2-2-2-3-3-2-1-15"/>
+<sememe cn="控告" define="{agent,content,target}" en="accuse" id="1-2-2-2-2-3-3-2-1-16"/>
+<sememe cn="推荐" define="{agent,content,target}" en="recommend" id="1-2-2-2-2-3-3-2-1-17"/>
+<sememe cn="答" define="{agent,content,target}" en="reply" id="1-2-2-2-2-3-3-2-1-18"/>
+<sememe cn="反驳" define="{agent,content,target}" en="refute" id="1-2-2-2-2-3-3-2-1-18-1"/>
+<sememe cn="承认" define="{agent,content,target}" en="admit" id="1-2-2-2-2-3-3-2-1-19"/>
+<sememe cn="否认" define="{agent,content,target}" en="deny" id="1-2-2-2-2-3-3-2-1-20"/>
+<sememe cn="写" define="{agent,ContentProduct,LocationFin}" en="write" id="1-2-2-2-2-3-3-2-1-21"/>
+<sememe cn="抄写" define="{agent,ContentProduct,contrast,LocationFin}" en="copy" id="1-2-2-2-2-3-3-2-1-21-1"/>
+<sememe cn="题写" define="{agent,ContentProduct,LocationFin}" en="sign" id="1-2-2-2-2-3-3-2-1-21-2"/>
+<sememe cn="翻译" define="{agent,content,StateIni,StateFin}" en="translate" id="1-2-2-2-2-3-3-2-1-22"/>
+<sememe cn="记录" define="{agent,content,LocationFin}" en="record" id="1-2-2-2-2-3-3-2-1-23"/>
+<sememe cn="拍摄" define="{agent,content,@LocationFin}" en="TakePicture" id="1-2-2-2-2-3-3-2-1-23-1"/>
+<sememe cn="画" define="{agent,ContentProduct,LocationFin}" en="draw" id="1-2-2-2-2-3-3-2-1-24"/>
+<sememe cn="雕刻" define="{agent,ContentProduct,LocationFin}" en="carve" id="1-2-2-2-2-3-3-2-1-25"/>
+<sememe cn="印刷" define="{agent,ContentProduct,LocationFin}" en="print" id="1-2-2-2-2-3-3-2-1-26"/>
+<sememe cn="出版" define="{agent,ContentProduct,LocationFin}" en="publish" id="1-2-2-2-2-3-3-2-1-26-1"/>
+<sememe cn="表现" define="{agent,content,target}" en="show" id="1-2-2-2-2-3-3-2-1-27"/>
+<sememe cn="表演" define="{agent,content,target}" en="perform" id="1-2-2-2-2-3-3-2-1-27-1"/>
+<sememe cn="展示" define="{agent,content,target}" en="display" id="1-2-2-2-2-3-3-2-1-27-2"/>
+<sememe cn="炫耀" define="{agent,content,target}" en="ShowOff" id="1-2-2-2-2-3-3-2-1-27-3"/>
+<sememe cn="教" define="{agent,content,target}/{agent,patient,ResultEvent}" en="teach" id="1-2-2-2-2-3-3-2-2"/>
+<sememe cn="交流" define="{agent,partner,content}" en="communicate" id="1-2-2-2-2-3-3-2-3"/>
+<sememe cn="谈话" define="{agent,partner,content}" en="talk" id="1-2-2-2-2-3-3-2-3-1"/>
+<sememe cn="商讨" define="{agent,partner,content}" en="discuss" id="1-2-2-2-2-3-3-2-3-2"/>
+<sememe cn="辩论" define="{agent,partner,content}" en="debate" id="1-2-2-2-2-3-3-2-3-3"/>
+<sememe cn="争吵" define="{agent,partner,content}" en="quarrel" id="1-2-2-2-2-3-3-2-3-4"/>
+<sememe cn="使不知" en="MakeNoKnowledge" id="1-2-2-2-2-3-3-3"/>
+<sememe cn="瞒" define="{agent,target,content}" en="HideTruth" id="1-2-2-2-2-3-3-3-1"/>
+<sememe cn="不说" define="{agent,target,content}" en="KeepSilence" id="1-2-2-2-2-3-3-3-2"/>
+<sememe cn="使误知" define="{agent,target,content}" en="MakeMisunderstand" id="1-2-2-2-2-3-3-4"/>
+<sememe cn="瞎说" define="{agent,target,content}/{agent,target,scope}" en="TalkNonsense" id="1-2-2-2-2-3-3-4-1"/>
+<sememe cn="欺骗" define="{agent,target,content}" en="deceive" id="1-2-2-2-2-3-3-4-2"/>
+<sememe cn="实体" en="entity" id="2"/>
+<sememe cn="万物" define="[#time|时间,#space|空间]" en="thing" id="2-1"/>
+<sememe cn="物质" define="[!appearance|外观]" en="physical" id="2-1-1"/>
+<sememe cn="生物" define="[*alive|活着,!age|年龄,*die|死,*metabolize|代谢]" en="animate" id="2-1-1-1"/>
+<sememe cn="动物" define="[!sex|性别,*AlterLocation|变空间位置,*StateMental|精神状态]" en="AnimalHuman" id="2-1-1-1-1"/>
+<sememe cn="人" define="[!name|姓名,!wisdom|智慧,!ability|能力,!occupation|职位,*act|行动]" en="human" id="2-1-1-1-1-1"/>
+<sememe cn="拟人" define="[fake|伪]" en="humanized" id="2-1-1-1-1-1-1"/>
+<sememe cn="兽" define="[^*GetKnowledge|认知]" en="animal" id="2-1-1-1-1-2"/>
+<sememe cn="走兽" define="[^*GetKnowledge|认知]" en="beast" id="2-1-1-1-1-2-1"/>
+<sememe cn="牲畜" define="[$foster|饲养,~$consume|摄取,~?edible|食物]" en="livestock" id="2-1-1-1-1-2-2"/>
+<sememe cn="禽" define="[*fly|飞,~$consume|摄取,~?edible|食物]" en="bird" id="2-1-1-1-1-2-3"/>
+<sememe cn="虫" define="[~undesired|莠]" en="InsectWorm" id="2-1-1-1-1-2-4"/>
+<sememe cn="鱼" define="[*swim|游,#waters|水域,~$consume|摄取,~?edible|食物]" en="fish" id="2-1-1-1-1-2-5"/>
+<sememe cn="植物" define="[^*SelfMove|自移,^*StateMental|精神状态]" en="plant" id="2-1-1-1-2"/>
+<sememe cn="庄稼" define="[$planting|栽植,?material|材料,#edible|食物]" en="crop" id="2-1-1-1-2-1"/>
+<sememe cn="树" define="[#wood|木,?material|材料]" en="tree" id="2-1-1-1-2-2"/>
+<sememe cn="花草" define="[~$planting|栽植,~odor|气味,~color|颜色,~prettiness|美丑,~*decorate|装饰]" en="FlowerGrass" id="2-1-1-1-2-3"/>
+<sememe cn="蔬菜" define="[$planting|栽植,?edible|食物,$consume|摄取]" en="vegetable" id="2-1-1-1-2-4"/>
+<sememe cn="水果" define="[$planting|栽植,$consume|摄取,?edible|食物,#tree|树]" en="fruit" id="2-1-1-1-2-5"/>
+<sememe cn="低植" define="[~?edible|食物]" en="AlgaeFungi" id="2-1-1-1-2-6"/>
+<sememe cn="微生物" define="[~*CauseToDo|使动,#disease|疾病,#medical|医,~undesired|莠]" en="bacteria" id="2-1-1-1-3"/>
+<sememe cn="无生物" define="[^*alive|活着,^*die|死,^*metabolize|代谢]" en="inanimate" id="2-1-1-2"/>
+<sememe cn="天然物" en="natural" id="2-1-1-2-1"/>
+<sememe cn="天体" define="[space|空间,#lights|光,#WeatherChange|天变]" en="celestial" id="2-1-1-2-1-1"/>
+<sememe cn="大地" define="[space|空间,#animate|生物,+event|事件]" en="earth" id="2-1-1-2-1-2"/>
+<sememe cn="陆地" define="[#LandVehicle|车,+VehicleGo|驶]" en="land" id="2-1-1-2-1-2-1"/>
+<sememe cn="水域" define="[space|空间,liquid|液,#water|水,#ship|船,+VehicleGo|驶,#fish|鱼,+swim|游]" en="waters" id="2-1-1-2-1-2-2"/>
+<sememe cn="空域" define="[space|空间,gas|气,#weather|天象,#aircraft|飞行器,#bird|禽,+fly|飞]" en="sky" id="2-1-1-2-1-2-3"/>
+<sememe cn="地方" define="[space|空间]" en="place" id="2-1-1-2-1-2-4"/>
+<sememe cn="液" define="[*flow|流,#waters|水域]" en="liquid" id="2-1-1-2-1-3"/>
+<sememe cn="水" en="water" id="2-1-1-2-1-3-1"/>
+<sememe cn="冰" define="[cold|冷,#liquid|液,StateChange|态变]" en="ice" id="2-1-1-2-1-4"/>
+<sememe cn="金属" define="[material|材料,~heavy|重]" en="metal" id="2-1-1-2-1-5"/>
+<sememe cn="木" define="[material|材料,#tree|树,?building|建筑物,?furniture|家具,$burn|焚烧,$lighting|点燃]" en="wood" id="2-1-1-2-1-6"/>
+<sememe cn="火" define="[*lighting|点燃,*burn|焚烧,hot|热]" en="fire" id="2-1-1-2-1-7"/>
+<sememe cn="土石" define="[~?material|材料]" en="stone" id="2-1-1-2-1-8"/>
+<sememe cn="天象" define="[#WeatherChange|天变,#celestial|天体]" en="weather" id="2-1-1-2-1-9"/>
+<sememe cn="雨雪" define="[liquid|液,#WeatherBad|坏天]" en="RainSnow" id="2-1-1-2-1-9-1"/>
+<sememe cn="风" define="[gas|气,#WeatherBad|坏天]" en="wind" id="2-1-1-2-1-9-2"/>
+<sememe cn="云雾" define="[gas|气]" en="CloudMist" id="2-1-1-2-1-9-3"/>
+<sememe cn="雷" define="[#electricity|电]" en="thunder" id="2-1-1-2-1-9-4"/>
+<sememe cn="气" define="[!odor|气味,#smell|闻,gas|气]" en="gas" id="2-1-1-2-1-10"/>
+<sememe cn="声" define="[#listen|听,$transmit|传送]" en="sound" id="2-1-1-2-1-11"/>
+<sememe cn="电" define="[?material|材料,$transmit|传送]" en="electricity" id="2-1-1-2-1-12"/>
+<sememe cn="光" define="[!color|颜色,$transmit|传送,#illuminate|照射,#celestial|天体,#electricity|电,#look|看]" en="lights" id="2-1-1-2-1-13"/>
+<sememe cn="痕" define="[#lights|光]" en="trace" id="2-1-1-2-1-14"/>
+<sememe cn="人工物" define="[$create|创造,^$GiveBirth|生育!quality|质量,!price|价格,#material|材料,#instrument|工具,#commercial|商]" en="artifact" id="2-1-1-2-2"/>
+<sememe cn="衣物" define="[!pattern|样式,!color|颜色,#sex|性别,$PutOn|穿戴,$StripOff|剥去]" en="clothing" id="2-1-1-2-2-1"/>
+<sememe cn="食物" define="[!taste|味道,#livestock|牲畜,#fish|鱼,#bird|禽,#vegetable|蔬菜,#fruit|水果,$consume|摄取,*feed|喂]" en="edible" id="2-1-1-2-2-2"/>
+<sememe cn="食品" define="[$cook|烹调,$eat|吃]" en="food" id="2-1-1-2-2-2-1"/>
+<sememe cn="饮品" define="[$drink|喝,liquid|液]" en="drinks" id="2-1-1-2-2-2-2"/>
+<sememe cn="药物" define="[medical|医,*cure|医治,#disease|疾病,#animate|生物]" en="medicine" id="2-1-1-2-2-3"/>
+<sememe cn="化学物" define="[material|材料]" en="chemical" id="2-1-1-2-2-4"/>
+<sememe cn="嗜好物" define="[expensive|贵,undesired|莠,$addict|嗜好,~#crime,|罪,~#police|警]" en="addictive" id="2-1-1-2-2-5"/>
+<sememe cn="建筑物" define="[$build|建造]" en="building" id="2-1-1-2-2-6"/>
+<sememe cn="房屋" define="[space|空间,+reside|住下]" en="house" id="2-1-1-2-2-6-1"/>
+<sememe cn="房间" define="[%house|房屋]" en="room" id="2-1-1-2-2-6-1-1"/>
+<sememe cn="设施" en="facilities" id="2-1-1-2-2-6-2"/>
+<sememe cn="器具" define="[$use|利用]" en="implement" id="2-1-1-2-2-7"/>
+<sememe cn="机器" define="[~*produce|制造]" en="machine" id="2-1-1-2-2-7-1"/>
+<sememe cn="电脑" define="[*calculate|计算,#information|信息,#software|软件]" en="computer" id="2-1-1-2-2-7-2"/>
+<sememe cn="交通工具" define="[space|空间,#route|路,$TakeVehicle|搭乘,$drive|驾驭,*transport|运送,*AlterLocation|变空间位置]" en="vehicle" id="2-1-1-2-2-7-3"/>
+<sememe cn="车" define="[#land|陆地,*VehicleGo|驶]" en="LandVehicle" id="2-1-1-2-2-7-3-1"/>
+<sememe cn="船" define="[#waters|水域,*VehicleGo|驶]" en="ship" id="2-1-1-2-2-7-3-2"/>
+<sememe cn="飞行器" define="[#sky|空域,*fly|飞]" en="aircraft" id="2-1-1-2-2-7-3-3"/>
+<sememe cn="家具" define="[#family|家,$decorate|装饰]" en="furniture" id="2-1-1-2-2-7-4"/>
+<sememe cn="文具" en="stationery" id="2-1-1-2-2-7-5"/>
+<sememe cn="纸张" define="[!color|颜色,!thickness|厚度,#PenInk|笔墨,~*write|写,~*wrap|包扎]" en="paper" id="2-1-1-2-2-7-5-1"/>
+<sememe cn="笔墨" define="[#paper|纸张,*write|写,*copy|抄写]" en="PenInk" id="2-1-1-2-2-7-5-2"/>
+<sememe cn="乐器" define="[*recreation|娱乐,*perform|表演,#music|音乐,#entertainment|艺]" en="MusicTool" id="2-1-1-2-2-7-6"/>
+<sememe cn="运动器材" define="[*exercise|锻练,#compete|比赛,#physique|体格,#sport|体育]" en="SportTool" id="2-1-1-2-2-7-7"/>
+<sememe cn="用具" define="[$use|利用]" en="tool" id="2-1-1-2-2-7-8"/>
+<sememe cn="武器" define="[#military|军,#police|警,#country|国,*attack|攻打,*fight|争斗,*resist|反抗,*defend|防守,*kill|杀害,*destroy|消灭]" en="weapon" id="2-1-1-2-2-7-9"/>
+<sememe cn="软件" define="[#computer|电脑,#information|信息,$compile|编辑]" en="software" id="2-1-1-2-2-7-10"/>
+<sememe cn="材料" define="[*produce|制造,*build|建造,*forge|伪造,#artifact|人工物]" en="material" id="2-1-1-2-2-8"/>
+<sememe cn="钱财" define="[#value|价值,#commercial|商]" en="wealth" id="2-1-1-2-2-9"/>
+<sememe cn="资金" define="[$spend|花费,#money|货币,commercial|商]" en="fund" id="2-1-1-2-2-9-1"/>
+<sememe cn="费用" define="[$spend|花费,#money|货币]" en="expenditure" id="2-1-1-2-2-9-2"/>
+<sememe cn="酬金" define="[$earn|赚,$give|给,$obtain|得到,#money|货币]" en="payment" id="2-1-1-2-2-9-3"/>
+<sememe cn="货币" define="[$earn|赚,*buy|买,#sell|卖,$SetAside|留存]" en="money" id="2-1-1-2-2-9-4"/>
+<sememe cn="票证" define="[*buy|买]" en="coupon" id="2-1-1-2-2-9-5"/>
+<sememe cn="珍宝" define="[precious|珍,expensive|贵,$SetAside|留存]" en="treasure" id="2-1-1-2-2-9-6"/>
+<sememe cn="读物" define="[$read|读,$compile|编辑,$write|写,#information|信息]" en="readings" id="2-1-1-2-2-10"/>
+<sememe cn="书刊" define="[$compile|编辑,$publish|出版,$read|读,#time|时间,*disseminate|传播,#information|信息]" en="publications" id="2-1-1-2-2-10-1"/>
+<sememe cn="文书" define="[+record|记录,+write|写,$read|读]" en="document" id="2-1-1-2-2-10-2"/>
+<sememe cn="票据" define="[#commercial|商,#buy|买,#sell|卖,#money|货币,wealth|钱财,#price|价格]" en="bill" id="2-1-1-2-2-10-3"/>
+<sememe cn="簿册" define="[+record|记录,+write|写,#wealth|钱财]" en="account" id="2-1-1-2-2-10-4"/>
+<sememe cn="信件" define="[$post|邮寄,~#friend|友,~#family|家]" en="letter" id="2-1-1-2-2-10-5"/>
+<sememe cn="标志" define="[*express|表示,#information|信息]" en="mark" id="2-1-1-2-2-10-6"/>
+<sememe cn="物形" define="[!form]" en="shape" id="2-1-1-3"/>
+<sememe cn="精神" define="[#StateMental|精神状态]" en="mental" id="2-1-2"/>
+<sememe cn="情感" define="[$cherish|心怀,#feeling|情绪,#AlterEmotion|变情感,abstract|抽象]" en="emotion" id="2-1-2-1"/>
+<sememe cn="感受" define="[$undergo|经受,$MakeOwnKnowledge|使自我感知,abstract|抽象]" en="experience" id="2-1-2-2"/>
+<sememe cn="意愿" define="[#volition|意向,abstract|抽象]" en="aspiration" id="2-1-2-3"/>
+<sememe cn="思想" define="[$think|思考,abstract|抽象]" en="thinking" id="2-1-2-4"/>
+<sememe cn="念头" en="thought" id="2-1-2-4-1"/>
+<sememe cn="方法" define="[$use|利用,#act|行动,#purpose|目的]" en="method" id="2-1-2-4-2"/>
+<sememe cn="规划" define="[*act|行动]" en="plans" id="2-1-2-4-2-1"/>
+<sememe cn="目的" define="[#act|行动]" en="purpose" id="2-1-2-4-3"/>
+<sememe cn="道理" en="reason" id="2-1-2-4-4"/>
+<sememe cn="立场" en="standpoint" id="2-1-2-4-5"/>
+<sememe cn="知识" define="[#information|信息]" en="knowledge" id="2-1-2-4-6"/>
+<sememe cn="信息" define="[#knowledge|知识,#recognition|感知状态,!content|内容,#AlterKnowledge|变感知,abstract|抽象]" en="information" id="2-1-2-5"/>
+<sememe cn="语言" define="[$read|读,*express|表示,*teach|教,*communicate|交流,#thinking|思想]" en="language" id="2-1-2-5-1"/>
+<sememe cn="符号" en="symbol" id="2-1-2-5-1-1"/>
+<sememe cn="标点" en="punc" id="2-1-2-5-1-1-1"/>
+<sememe cn="文字" define="[%language|语言]" en="character" id="2-1-2-5-1-2"/>
+<sememe cn="词语" define="[%language|语言]" en="expression" id="2-1-2-5-1-3"/>
+<sememe cn="语文" define="[$read|读,$write|写,$compile|编辑,*express|表示]" en="text" id="2-1-2-5-1-4"/>
+<sememe cn="新闻" define="[text|语文]" en="news" id="2-1-2-5-1-4-1"/>
+<sememe cn="音乐" define="[$listen|听,$perform|表演,$compile|编辑,$entertainment|艺]" en="music" id="2-1-2-5-2"/>
+<sememe cn="图像" define="[$look|看,$draw|画]" en="image" id="2-1-2-5-3"/>
+<sememe cn="表演物" define="[$perform|表演,$compile|编辑,~entertainment|艺]" en="shows" id="2-1-2-5-4"/>
+<sememe cn="实例" en="example" id="2-1-2-5-5"/>
+<sememe cn="规矩" define="[*control|控制]" en="regulation" id="2-1-2-6"/>
+<sememe cn="制度" en="system" id="2-1-2-6-1"/>
+<sememe cn="律法" define="[$obey|遵循,$disobey|违背,police|警]" en="law" id="2-1-2-6-2"/>
+<sememe cn="条约" define="[$discuss|商讨,$debate|辩论,$decide|决定,$conduct|实施,~#associate|交往]" en="agreement" id="2-1-2-6-3"/>
+<sememe cn="权利" define="[$have|领有,*use|利用,abstract|抽象]" en="rights" id="2-1-2-7"/>
+<sememe cn="责任" define="[$bear|承担,abstract|抽象]" en="duty" id="2-1-2-8"/>
+<sememe cn="事件" define="[abstract|抽象]" en="event" id="2-1-3"/>
+<sememe cn="事情" en="fact" id="2-1-3-1"/>
+<sememe cn="事务" define="[$engage|从事]" en="affairs" id="2-1-3-1-1"/>
+<sememe cn="问题" en="problem" id="2-1-3-1-2"/>
+<sememe cn="原因" en="cause" id="2-1-3-1-3"/>
+<sememe cn="过程" en="process" id="2-1-3-1-4"/>
+<sememe cn="结果" en="result" id="2-1-3-1-5"/>
+<sememe cn="现象" define="[abstract|抽象]" en="phenomena" id="2-1-3-2"/>
+<sememe cn="疾病" define="[medical|医,$cure|医治,#medicine|药物,undesired|莠,~#die|死,~#bacteria|微生物]" en="disease" id="2-1-3-2-1"/>
+<sememe cn="组织" define="[#human|人,*ExistAppear|存现,*perish|灭亡,$establish|建立,*ActGeneral|泛动,*AlterGeneral|泛变,^*SelfMove|自移,^*metabolize|代谢,space|空间]" en="organization" id="2-1-4"/>
+<sememe cn="机构" define="[#official|官]" en="institution" id="2-1-4-1"/>
+<sememe cn="军队" define="[military|军,#weapon|武器,*fight|争斗,*resist|反抗,*defend|防守,*kill|杀害,*destroy|消灭]" en="army" id="2-1-4-2"/>
+<sememe cn="场所" define="[*engage|从事,#affairs|事务]" en="InstitutePlace" id="2-1-4-3"/>
+<sememe cn="团体" define="[*engage|从事,#affairs|事务]" en="community" id="2-1-4-4"/>
+<sememe cn="因特网" define="[#computer|电脑,+read|读,+communicate|交流,+post|邮寄,#information|信息,commercial|商]" en="internet" id="2-1-5"/>
+<sememe cn="时间" define="[+event|事件]" en="time" id="2-2"/>
+<sememe cn="空间" define="[+event|事件]" en="space" id="2-3"/>
+<sememe cn="方向" define="[abstract|抽象]" en="direction" id="2-3-1"/>
+<sememe cn="位置" define="[abstract|抽象]" en="location" id="2-3-2"/>
+<sememe cn="部分" en="component" id="2-4"/>
+<sememe cn="部件" define="[necessary|要]" en="part" id="2-4-1"/>
+<sememe cn="配件" en="fittings" id="2-4-2"/>
+<sememe cn="属性" define="[abstract|抽象]" en="attribute" id="3"/>
+<sememe cn="外观" en="appearance" id="3-1"/>
+<sememe cn="形状" en="form" id="3-1-1"/>
+<sememe cn="明暗" en="brightness" id="3-1-2"/>
+<sememe cn="清浑" en="clearness" id="3-1-3"/>
+<sememe cn="美丑" en="prettiness" id="3-1-4"/>
+<sememe cn="样式" en="pattern" id="3-1-5"/>
+<sememe cn="光洁度" en="SmoothFinish" id="3-1-6"/>
+<sememe cn="颜色" en="color" id="3-1-7"/>
+<sememe cn="浓淡" en="hue" id="3-1-8"/>
+<sememe cn="气味" en="odor" id="3-1-9"/>
+<sememe cn="味道" en="taste" id="3-1-10"/>
+<sememe cn="姿势" en="posture" id="3-1-11"/>
+<sememe cn="景象" en="scene" id="3-1-12"/>
+<sememe cn="洁净" en="cleanness" id="3-1-13"/>
+<sememe cn="胖瘦" en="fatness" id="3-1-14"/>
+<sememe cn="仪态" en="bearing" id="3-1-15"/>
+<sememe cn="物理状态" en="PhysicState" id="3-1-16"/>
+<sememe cn="装束" en="attire" id="3-1-17"/>
+<sememe cn="风格" en="style" id="3-1-18"/>
+<sememe cn="风度" en="demeanor" id="3-1-19"/>
+<sememe cn="表情" en="countenance" id="3-1-20"/>
+<sememe cn="量度" en="measurement" id="3-2"/>
+<sememe cn="长度" en="length" id="3-2-1"/>
+<sememe cn="宽度" en="width" id="3-2-2"/>
+<sememe cn="高度" en="height" id="3-2-3"/>
+<sememe cn="深度" en="depth" id="3-2-4"/>
+<sememe cn="厚度" en="thickness" id="3-2-5"/>
+<sememe cn="尺寸" en="size" id="3-2-6"/>
+<sememe cn="粗细" en="fineness" id="3-2-7"/>
+<sememe cn="重量" en="weight" id="3-2-8"/>
+<sememe cn="面积" en="area" id="3-2-9"/>
+<sememe cn="坡度" en="slope" id="3-2-10"/>
+<sememe cn="密度" en="density" id="3-2-11"/>
+<sememe cn="松紧" en="tightness" id="3-2-12"/>
+<sememe cn="硬度" en="hardness" id="3-2-13"/>
+<sememe cn="浓度" en="concentration" id="3-2-14"/>
+<sememe cn="距离" en="distance" id="3-2-15"/>
+<sememe cn="迟早" en="earliness" id="3-2-16"/>
+<sememe cn="速度" en="speed" id="3-2-17"/>
+<sememe cn="久暂" en="duration" id="3-2-18"/>
+<sememe cn="湿度" en="dampness" id="3-2-19"/>
+<sememe cn="温度" en="temperature" id="3-2-20"/>
+<sememe cn="价格" en="price" id="3-2-21"/>
+<sememe cn="黏度" en="stickiness" id="3-2-22"/>
+<sememe cn="容积" en="volume" id="3-2-23"/>
+<sememe cn="体积" en="bulk" id="3-2-24"/>
+<sememe cn="功率" en="PhysicsPower" id="3-2-25"/>
+<sememe cn="电量" en="ChargeQuantity" id="3-2-26"/>
+<sememe cn="电压" en="voltage" id="3-2-27"/>
+<sememe cn="电阻" en="resistance" id="3-2-28"/>
+<sememe cn="频率" en="frequency" id="3-2-29"/>
+<sememe cn="热量" en="heat" id="3-2-30"/>
+<sememe cn="音量" en="SoundVolume" id="3-2-31"/>
+<sememe cn="特性" en="property" id="3-3"/>
+<sememe cn="新旧" en="newness" id="3-3-1"/>
+<sememe cn="年龄" en="age" id="3-3-2"/>
+<sememe cn="真伪" en="trueness" id="3-3-3"/>
+<sememe cn="好坏" en="GoodBad" id="3-3-4"/>
+<sememe cn="质量" en="quality" id="3-3-5"/>
+<sememe cn="强度" en="intensity" id="3-3-6"/>
+<sememe cn="难易" en="easiness" id="3-3-7"/>
+<sememe cn="音质" en="SoundQuality" id="3-3-8"/>
+<sememe cn="内容" en="content" id="3-3-9"/>
+<sememe cn="正误" en="correctness" id="3-3-10"/>
+<sememe cn="程度" en="degree" id="3-3-11"/>
+<sememe cn="名声" en="reputation" id="3-3-12"/>
+<sememe cn="举止" en="behavior" id="3-3-13"/>
+<sememe cn="价值" en="value" id="3-3-14"/>
+<sememe cn="印象" en="impression" id="3-3-15"/>
+<sememe cn="效用" en="effect" id="3-3-16"/>
+<sememe cn="意志" en="will" id="3-3-17"/>
+<sememe cn="胆量" en="courage" id="3-3-18"/>
+<sememe cn="智慧" en="wisdom" id="3-3-19"/>
+<sememe cn="能力" en="ability" id="3-3-20"/>
+<sememe cn="气量" en="tolerance" id="3-3-21"/>
+<sememe cn="主次" en="importance" id="3-3-22"/>
+<sememe cn="必要" en="necessity" id="3-3-23"/>
+<sememe cn="等级" en="rank" id="3-3-24"/>
+<sememe cn="身分" en="status" id="3-3-25"/>
+<sememe cn="标准" en="standard" id="3-3-26"/>
+<sememe cn="职位" en="occupation" id="3-3-27"/>
+<sememe cn="幅度" en="range" id="3-3-28"/>
+<sememe cn="势力" en="power" id="3-3-29"/>
+<sememe cn="力量" en="strength" id="3-3-30"/>
+<sememe cn="利弊" en="ProsCons" id="3-3-31"/>
+<sememe cn="亲疏" en="relatedness" id="3-3-32"/>
+<sememe cn="性别" en="sex" id="3-3-33"/>
+<sememe cn="出身" en="origin" id="3-3-34"/>
+<sememe cn="姓名" en="name" id="3-3-35"/>
+<sememe cn="编号" en="number" id="3-3-36"/>
+<sememe cn="性能" en="performance" id="3-3-37"/>
+<sememe cn="趣味" en="interest" id="3-3-38"/>
+<sememe cn="前景" en="outlook" id="3-3-39"/>
+<sememe cn="风气" en="SocialMode" id="3-3-40"/>
+<sememe cn="习惯" en="habit" id="3-3-41"/>
+<sememe cn="关系" en="relationship" id="3-4"/>
+<sememe cn="归属" en="attachment" id="3-4-1"/>
+<sememe cn="类型" en="kind" id="3-4-2"/>
+<sememe cn="来源" en="source" id="3-4-3"/>
+<sememe cn="位置" en="location" id="3-4-4"/>
+<sememe cn="方向" en="direction" id="3-4-5"/>
+<sememe cn="辈分" en="clan" id="3-4-6"/>
+<sememe cn="分歧" en="divergence" id="3-4-7"/>
+<sememe cn="界限" en="boundary" id="3-4-8"/>
+<sememe cn="次序" en="sequence" id="3-4-9"/>
+<sememe cn="正反" en="contrariness" id="3-4-10"/>
+<sememe cn="状况" en="situation" id="3-5"/>
+<sememe cn="境况" en="circumstances" id="3-5-1"/>
+<sememe cn="贫富" en="richness" id="3-5-2"/>
+<sememe cn="异同" en="similarity" id="3-5-3"/>
+<sememe cn="场面" en="occasion" id="3-5-4"/>
+<sememe cn="体格" en="physique" id="3-5-5"/>
+<sememe cn="整缺" en="wholeness" id="3-5-6"/>
+<sememe cn="空满" en="fullness" id="3-5-7"/>
+<sememe cn="可能" en="possibility" id="3-5-8"/>
+<sememe cn="情况" en="environment" id="3-5-9"/>
+<sememe cn="数量" en="quantity" id="4"/>
+<sememe cn="多少" en="amount" id="4-1"/>
+<sememe cn="比率" en="rate" id="4-2"/>
+<sememe cn="属性值" en="aValue" id="5"/>
+<sememe cn="外观" en="appearance" id="5-1"/>
+<sememe cn="形状" en="form" id="5-1-1"/>
+<sememe cn="扁" en="flat" id="5-1-1-1"/>
+<sememe cn="直" en="straight" id="5-1-1-2"/>
+<sememe cn="弯" en="curved" id="5-1-1-3"/>
+<sememe cn="平" en="level" id="5-1-1-4"/>
+<sememe cn="正" en="upright" id="5-1-1-5"/>
+<sememe cn="歪" en="slanted" id="5-1-1-6"/>
+<sememe cn="匀" en="even" id="5-1-1-7"/>
+<sememe cn="差" en="dissimilar" id="5-1-1-8"/>
+<sememe cn="凸" en="protruding" id="5-1-1-9"/>
+<sememe cn="凹" en="dented" id="5-1-1-10"/>
+<sememe cn="坦" en="smooth" id="5-1-1-11"/>
+<sememe cn="崎" en="rugged" id="5-1-1-12"/>
+<sememe cn="方" en="square" id="5-1-1-13"/>
+<sememe cn="圆" en="round" id="5-1-1-14"/>
+<sememe cn="怪" en="queer" id="5-1-1-15"/>
+<sememe cn="横" en="horizontal" id="5-1-1-16"/>
+<sememe cn="钝" en="blunt" id="5-1-1-17"/>
+<sememe cn="尖" en="acute" id="5-1-1-18"/>
+<sememe cn="利" en="sharp" id="5-1-1-19"/>
+<sememe cn="皱" en="wrinkled" id="5-1-1-20"/>
+<sememe cn="点" en="dot" id="5-1-1-21"/>
+<sememe cn="线" en="linear" id="5-1-1-22"/>
+<sememe cn="面" en="surfacial" id="5-1-1-23"/>
+<sememe cn="体" en="cubic" id="5-1-1-24"/>
+<sememe cn="角" en="angular" id="5-1-1-25"/>
+<sememe cn="明暗" en="brightness" id="5-1-2"/>
+<sememe cn="明" en="bright" id="5-1-2-1"/>
+<sememe cn="暗" en="dark" id="5-1-2-2"/>
+<sememe cn="清浑" en="clearness" id="5-1-3"/>
+<sememe cn="清" en="clear" id="5-1-3-1"/>
+<sememe cn="浑" en="blurred" id="5-1-3-2"/>
+<sememe cn="美丑" en="prettiness" id="5-1-4"/>
+<sememe cn="美" en="beautiful" id="5-1-4-1"/>
+<sememe cn="丑" en="ugly" id="5-1-4-2"/>
+<sememe cn="样式" en="pattern" id="5-1-5"/>
+<sememe cn="髦" en="modern" id="5-1-5-1"/>
+<sememe cn="陈" en="old" id="5-1-5-2"/>
+<sememe cn="光洁度" en="SmoothFinish" id="5-1-6"/>
+<sememe cn="娇" en="delicate" id="5-1-6-1"/>
+<sememe cn="糙" en="coarse" id="5-1-6-2"/>
+<sememe cn="光" en="polished" id="5-1-6-3"/>
+<sememe cn="颜色" define="-- RGB(x,y,z)" en="color" id="5-1-7"/>
+<sememe cn="彩" en="colored" id="5-1-7-1"/>
+<sememe cn="素" en="plain" id="5-1-7-2"/>
+<sememe cn="红" define="-- RGB(255,0,0)" en="red" id="5-1-7-3"/>
+<sememe cn="黄" define="-- RGB(255,255,0)" en="yellow" id="5-1-7-4"/>
+<sememe cn="蓝" define="-- RGB(0,0,255)" en="blue" id="5-1-7-5"/>
+<sememe cn="绿" define="-- RGB(0,255,0)" en="green" id="5-1-7-6"/>
+<sememe cn="紫" define="-- RGB(128,64,128)" en="purple" id="5-1-7-7"/>
+<sememe cn="褐" define="-- RGB(128,64,64)" en="brown" id="5-1-7-8"/>
+<sememe cn="白" define="-- RGB(255,255,255)" en="white" id="5-1-7-9"/>
+<sememe cn="黑" define="-- RGB(0,0,0)" en="black" id="5-1-7-10"/>
+<sememe cn="灰" define="-- RGB(192,192,192)" en="grey" id="5-1-7-11"/>
+<sememe cn="赭" en="RedBrown" id="5-1-7-12"/>
+<sememe cn="青" define="-- RGB(128,255,128)" en="BlueGreen" id="5-1-7-13"/>
+<sememe cn="无色" en="colorless" id="5-1-7-14"/>
+<sememe cn="浓淡" en="hue" id="5-1-8"/>
+<sememe cn="浓" en="NotLight" id="5-1-8-1"/>
+<sememe cn="淡" en="light" id="5-1-8-2"/>
+<sememe cn="气味" en="odor" id="5-1-9"/>
+<sememe cn="香" en="fragrant" id="5-1-9-1"/>
+<sememe cn="臭" en="stinky" id="5-1-9-2"/>
+<sememe cn="味道" en="taste" id="5-1-10"/>
+<sememe cn="酸" en="sour" id="5-1-10-1"/>
+<sememe cn="甜" en="sweet" id="5-1-10-2"/>
+<sememe cn="苦" en="bitter" id="5-1-10-3"/>
+<sememe cn="辣" en="peppery" id="5-1-10-4"/>
+<sememe cn="咸" en="salty" id="5-1-10-5"/>
+<sememe cn="姿势" en="posture" id="5-1-11"/>
+<sememe cn="景象" en="scene" id="5-1-12"/>
+<sememe cn="茂" en="exuberant" id="5-1-12-1"/>
+<sememe cn="荒" en="desolate" id="5-1-12-2"/>
+<sememe cn="险" en="threatening" id="5-1-12-3"/>
+<sememe cn="庄" en="stately" id="5-1-12-4"/>
+<sememe cn="洁净" en="cleanness" id="5-1-13"/>
+<sememe cn="洁" en="spotless" id="5-1-13-1"/>
+<sememe cn="龊" en="dirty" id="5-1-13-2"/>
+<sememe cn="胖瘦" en="fatness" id="5-1-14"/>
+<sememe cn="胖" en="fat" id="5-1-14-1"/>
+<sememe cn="瘦" en="bony" id="5-1-14-2"/>
+<sememe cn="仪态" en="bearing" id="5-1-15"/>
+<sememe cn="俭" en="thrifty" id="5-1-15-1"/>
+<sememe cn="雅" en="gracious" id="5-1-15-2"/>
+<sememe cn="奢" en="extravagant" id="5-1-15-3"/>
+<sememe cn="物理状态" en="PhysicState" id="5-1-16"/>
+<sememe cn="装束" en="attire" id="5-1-17"/>
+<sememe cn="风格" en="style" id="5-1-18"/>
+<sememe cn="风度" en="demeanor" id="5-1-19"/>
+<sememe cn="表情" en="countenance" id="5-1-20"/>
+<sememe cn="量度" en="measurement" id="5-2"/>
+<sememe cn="长度" en="length" id="5-2-1"/>
+<sememe cn="长" en="long" id="5-2-1-1"/>
+<sememe cn="短" en="short" id="5-2-1-2"/>
+<sememe cn="高度" en="height" id="5-2-2"/>
+<sememe cn="高" en="tall" id="5-2-2-1"/>
+<sememe cn="矮" en="low" id="5-2-2-2"/>
+<sememe cn="面积" en="area" id="5-2-3"/>
+<sememe cn="大" en="big" id="5-2-3-1"/>
+<sememe cn="中" en="medium" id="5-2-3-2"/>
+<sememe cn="小" en="small" id="5-2-3-3"/>
+<sememe cn="广" en="broad" id="5-2-3-4"/>
+<sememe cn="尺寸" en="size" id="5-2-4"/>
+<sememe cn="大" en="big" id="5-2-4-1"/>
+<sememe cn="中" en="medium" id="5-2-4-2"/>
+<sememe cn="小" en="small" id="5-2-4-3"/>
+<sememe cn="广" en="broad" id="5-2-4-4"/>
+<sememe cn="宽度" en="width" id="5-2-5"/>
+<sememe cn="阔" en="wide" id="5-2-5-1"/>
+<sememe cn="窄" en="narrow" id="5-2-5-2"/>
+<sememe cn="深度" en="depth" id="5-2-6"/>
+<sememe cn="深" en="deep" id="5-2-6-1"/>
+<sememe cn="浅" en="shallow" id="5-2-6-2"/>
+<sememe cn="厚度" en="thickness" id="5-2-7"/>
+<sememe cn="厚" en="thick" id="5-2-7-1"/>
+<sememe cn="薄" en="thin" id="5-2-7-2"/>
+<sememe cn="粗细" en="fineness" id="5-2-8"/>
+<sememe cn="纤" en="fine" id="5-2-8-1"/>
+<sememe cn="粗" en="widediameter" id="5-2-8-2"/>
+<sememe cn="坡度" en="slope" id="5-2-9"/>
+<sememe cn="陡" en="steep" id="5-2-9-1"/>
+<sememe cn="密度" en="density" id="5-2-10"/>
+<sememe cn="密" en="dense" id="5-2-10-1"/>
+<sememe cn="疏" en="sparse" id="5-2-10-2"/>
+<sememe cn="松紧" en="tightness" id="5-2-11"/>
+<sememe cn="松" en="loose" id="5-2-11-1"/>
+<sememe cn="紧" en="tight" id="5-2-11-2"/>
+<sememe cn="硬度" en="hardness" id="5-2-12"/>
+<sememe cn="硬" en="hard" id="5-2-12-1"/>
+<sememe cn="软" en="soft" id="5-2-12-2"/>
+<sememe cn="脆" en="crisp" id="5-2-12-3"/>
+<sememe cn="嫩" en="tender" id="5-2-12-4"/>
+<sememe cn="韧" en="tough" id="5-2-12-5"/>
+<sememe cn="浓度" en="concentration" id="5-2-13"/>
+<sememe cn="稀" en="watery" id="5-2-13-1"/>
+<sememe cn="稠" en="concentrated" id="5-2-13-2"/>
+<sememe cn="重量" en="weight" id="5-2-14"/>
+<sememe cn="重" en="heavy" id="5-2-14-1"/>
+<sememe cn="轻" en="NotHeavy" id="5-2-14-2"/>
+<sememe cn="音量" en="SoundVolume" id="5-2-15"/>
+<sememe cn="响" en="loud" id="5-2-15-1"/>
+<sememe cn="距离" en="distance" id="5-2-16"/>
+<sememe cn="远" en="far" id="5-2-16-1"/>
+<sememe cn="近" en="near" id="5-2-16-2"/>
+<sememe cn="迟早" en="earliness" id="5-2-17"/>
+<sememe cn="早" en="early" id="5-2-17-1"/>
+<sememe cn="迟" en="late" id="5-2-17-2"/>
+<sememe cn="速度" en="speed" id="5-2-18"/>
+<sememe cn="快" en="fast" id="5-2-18-1"/>
+<sememe cn="慢" en="slow" id="5-2-18-2"/>
+<sememe cn="久暂" en="duration" id="5-2-19"/>
+<sememe cn="久" en="TimeLong" id="5-2-19-1"/>
+<sememe cn="暂" en="TimeShort" id="5-2-19-2"/>
+<sememe cn="湿度" en="dampness" id="5-2-20"/>
+<sememe cn="干" en="dried" id="5-2-20-1"/>
+<sememe cn="湿" en="wet" id="5-2-20-2"/>
+<sememe cn="旱" en="waterless" id="5-2-20-3"/>
+<sememe cn="涝" en="waterlogging" id="5-2-20-4"/>
+<sememe cn="温度" en="temperature" id="5-2-21"/>
+<sememe cn="冷" en="cold" id="5-2-21-1"/>
+<sememe cn="热" en="hot" id="5-2-21-2"/>
+<sememe cn="凉" en="chilly" id="5-2-21-3"/>
+<sememe cn="温" en="warm" id="5-2-21-4"/>
+<sememe cn="价格" en="price" id="5-2-22"/>
+<sememe cn="贱" en="cheap" id="5-2-22-1"/>
+<sememe cn="贵" en="expensive" id="5-2-22-2"/>
+<sememe cn="黏度" en="stickiness" id="5-2-23"/>
+<sememe cn="黏" en="sticky" id="5-2-23-1"/>
+<sememe cn="角度" en="angle" id="5-2-24"/>
+<sememe cn="特性" en="property" id="5-3"/>
+<sememe cn="新旧" en="newness" id="5-3-1"/>
+<sememe cn="新" en="new" id="5-3-1-1"/>
+<sememe cn="旧" en="used" id="5-3-1-2"/>
+<sememe cn="年龄" en="age" id="5-3-2"/>
+<sememe cn="老" en="aged" id="5-3-2-1"/>
+<sememe cn="成" en="adult" id="5-3-2-2"/>
+<sememe cn="幼" en="young" id="5-3-2-3"/>
+<sememe cn="真伪" en="trueness" id="5-3-3"/>
+<sememe cn="真" en="true" id="5-3-3-1"/>
+<sememe cn="伪" en="fake" id="5-3-3-2"/>
+<sememe cn="好坏" en="GoodBad" id="5-3-4"/>
+<sememe cn="好" en="good" id="5-3-4-1"/>
+<sememe cn="坏" en="bad" id="5-3-4-2"/>
+<sememe cn="质量" en="quality" id="5-3-5"/>
+<sememe cn="沃" en="fertile" id="5-3-5-1"/>
+<sememe cn="瘠" en="barren" id="5-3-5-2"/>
+<sememe cn="精" en="refined" id="5-3-5-3"/>
+<sememe cn="陋" en="crude" id="5-3-5-4"/>
+<sememe cn="可" en="average" id="5-3-5-5"/>
+<sememe cn="伟" en="great" id="5-3-5-6"/>
+<sememe cn="渺" en="negligible" id="5-3-5-7"/>
+<sememe cn="牢" en="durable" id="5-3-5-8"/>
+<sememe cn="强度" en="intensity" id="5-3-6"/>
+<sememe cn="强" en="strong" id="5-3-6-1"/>
+<sememe cn="弱" en="weak" id="5-3-6-2"/>
+<sememe cn="难易" en="easiness" id="5-3-7"/>
+<sememe cn="易" en="easy" id="5-3-7-1"/>
+<sememe cn="难" en="difficult" id="5-3-7-2"/>
+<sememe cn="音质" en="SoundQuality" id="5-3-8"/>
+<sememe cn="内容" en="content" id="5-3-9"/>
+<sememe cn="实" en="substantial" id="5-3-9-1"/>
+<sememe cn="空" en="empty" id="5-3-9-2"/>
+<sememe cn="奥" en="profound" id="5-3-9-3"/>
+<sememe cn="浅易" en="NotProfound" id="5-3-9-4"/>
+<sememe cn="趣" en="interesting" id="5-3-9-5"/>
+<sememe cn="乏" en="boring" id="5-3-9-6"/>
+<sememe cn="详" en="detailed" id="5-3-9-7"/>
+<sememe cn="简" en="simple" id="5-3-9-8"/>
+<sememe cn="纯" en="pure" id="5-3-9-9"/>
+<sememe cn="杂" en="mixed" id="5-3-9-10"/>
+<sememe cn="准" en="accurate" id="5-3-9-11"/>
+<sememe cn="齐" en="neat" id="5-3-9-12"/>
+<sememe cn="乱" en="disorder" id="5-3-9-13"/>
+<sememe cn="谨" en="concise" id="5-3-9-14"/>
+<sememe cn="散" en="unattached" id="5-3-9-15"/>
+<sememe cn="琐" en="trivial" id="5-3-9-16"/>
+<sememe cn="繁" en="complicated" id="5-3-9-17"/>
+<sememe cn="叠" en="layered" id="5-3-9-18"/>
+<sememe cn="正误" en="correctness" id="5-3-10"/>
+<sememe cn="正确" en="correct" id="5-3-10-1"/>
+<sememe cn="误" en="wrong" id="5-3-10-2"/>
+<sememe cn="程度" en="degree" id="5-3-11"/>
+<sememe cn="极" en="extreme" id="5-3-11-1"/>
+<sememe cn="欠" en="insufficiently" id="5-3-11-2"/>
+<sememe cn="很" en="very" id="5-3-11-3"/>
+<sememe cn="稍" en="ish" id="5-3-11-4"/>
+<sememe cn="较" en="more" id="5-3-11-5"/>
+<sememe cn="最" en="most" id="5-3-11-6"/>
+<sememe cn="超" en="over" id="5-3-11-7"/>
+<sememe cn="名声" en="reputation" id="5-3-12"/>
+<sememe cn="荣" en="glorious" id="5-3-12-1"/>
+<sememe cn="无名" en="Notwellknown" id="5-3-12-2"/>
+<sememe cn="辱" en="disgraced" id="5-3-12-3"/>
+<sememe cn="举止" en="behavior" id="5-3-13"/>
+<sememe cn="正式" en="formal" id="5-3-13-1"/>
+<sememe cn="非正式" en="informal" id="5-3-13-2"/>
+<sememe cn="巧" en="dexterous" id="5-3-13-3"/>
+<sememe cn="活" en="flexible" id="5-3-13-4"/>
+<sememe cn="呆" en="stiff" id="5-3-13-5"/>
+<sememe cn="恒" en="lasting" id="5-3-13-6"/>
+<sememe cn="秘" en="secret" id="5-3-13-7"/>
+<sememe cn="显" en="opened" id="5-3-13-8"/>
+<sememe cn="隐" en="hidden" id="5-3-13-9"/>
+<sememe cn="爽" en="forthright" id="5-3-13-10"/>
+<sememe cn="婉" en="tactful" id="5-3-13-11"/>
+<sememe cn="柔" en="gentle" id="5-3-13-12"/>
+<sememe cn="妥" en="suitable" id="5-3-13-13"/>
+<sememe cn="当" en="proper" id="5-3-13-14"/>
+<sememe cn="坏脾气" en="BadTemper" id="5-3-13-15"/>
+<sememe cn="便" en="convenient" id="5-3-13-16"/>
+<sememe cn="碍" en="inconvenient" id="5-3-13-17"/>
+<sememe cn="不当" en="improper" id="5-3-13-18"/>
+<sememe cn="俗" en="vulgar" id="5-3-13-19"/>
+<sememe cn="慌" en="hasty" id="5-3-13-20"/>
+<sememe cn="骤" en="sudden" id="5-3-13-21"/>
+<sememe cn="畅" en="fluent" id="5-3-13-22"/>
+<sememe cn="捷" en="nimble" id="5-3-13-23"/>
+<sememe cn="严" en="strict" id="5-3-13-24"/>
+<sememe cn="宽" en="lenient" id="5-3-13-25"/>
+<sememe cn="暴" en="fierce" id="5-3-13-26"/>
+<sememe cn="自由" en="free" id="5-3-13-27"/>
+<sememe cn="受限" en="restrained" id="5-3-13-28"/>
+<sememe cn="勤" en="diligent" id="5-3-13-29"/>
+<sememe cn="懒" en="lazy" id="5-3-13-30"/>
+<sememe cn="偏" en="biased" id="5-3-13-31"/>
+<sememe cn="善" en="kindhearted" id="5-3-13-32"/>
+<sememe cn="狡" en="sly" id="5-3-13-33"/>
+<sememe cn="倔" en="stubborn" id="5-3-13-34"/>
+<sememe cn="愿" en="active" id="5-3-13-35"/>
+<sememe cn="被" en="passive" id="5-3-13-36"/>
+<sememe cn="谦" en="modest" id="5-3-13-37"/>
+<sememe cn="傲" en="arrogant" id="5-3-13-38"/>
+<sememe cn="细心" en="attentive" id="5-3-13-39"/>
+<sememe cn="苟" en="careless" id="5-3-13-40"/>
+<sememe cn="慎" en="cautious" id="5-3-13-41"/>
+<sememe cn="浮" en="flighty" id="5-3-13-42"/>
+<sememe cn="诚" en="sincere" id="5-3-13-43"/>
+<sememe cn="莽" en="rash" id="5-3-13-44"/>
+<sememe cn="漠" en="indifferent" id="5-3-13-45"/>
+<sememe cn="稳" en="steady" id="5-3-13-46"/>
+<sememe cn="淫" en="lascivious" id="5-3-13-47"/>
+<sememe cn="廉" en="honest" id="5-3-13-48"/>
+<sememe cn="公" en="fair" id="5-3-13-49"/>
+<sememe cn="贪" en="greedy" id="5-3-13-50"/>
+<sememe cn="僻" en="eccentric" id="5-3-13-51"/>
+<sememe cn="乐观" en="optimistic" id="5-3-13-52"/>
+<sememe cn="悲观" en="pessimistic" id="5-3-13-53"/>
+<sememe cn="恶" en="evil" id="5-3-13-54"/>
+<sememe cn="忠" en="faithful" id="5-3-13-55"/>
+<sememe cn="逆" en="treacherous" id="5-3-13-56"/>
+<sememe cn="淘" en="mischievous" id="5-3-13-57"/>
+<sememe cn="续" en="continuous" id="5-3-13-58"/>
+<sememe cn="共同" en="together" id="5-3-13-59"/>
+<sememe cn="风气" en="SocialMode" id="5-3-14"/>
+<sememe cn="价值" en="value" id="5-3-15"/>
+<sememe cn="珍" en="precious" id="5-3-15-1"/>
+<sememe cn="印象" en="impression" id="5-3-16"/>
+<sememe cn="效用" en="effect" id="5-3-17"/>
+<sememe cn="劣" en="useless" id="5-3-17-1"/>
+<sememe cn="优" en="superior" id="5-3-17-2"/>
+<sememe cn="意志" en="will" id="5-3-18"/>
+<sememe cn="胆量" en="courage" id="5-3-19"/>
+<sememe cn="勇" en="brave" id="5-3-19-1"/>
+<sememe cn="怯" en="timid" id="5-3-19-2"/>
+<sememe cn="智慧" en="wisdom" id="5-3-20"/>
+<sememe cn="智" en="wise" id="5-3-20-1"/>
+<sememe cn="愚" en="foolish" id="5-3-20-2"/>
+<sememe cn="灵" en="clever" id="5-3-20-3"/>
+<sememe cn="讷" en="NotQuick" id="5-3-20-4"/>
+<sememe cn="能力" en="ability" id="5-3-21"/>
+<sememe cn="能" en="able" id="5-3-21-1"/>
+<sememe cn="庸" en="unable" id="5-3-21-2"/>
+<sememe cn="气量" en="tolerance" id="5-3-22"/>
+<sememe cn="慷" en="generous" id="5-3-22-1"/>
+<sememe cn="吝" en="miser" id="5-3-22-2"/>
+<sememe cn="习惯" en="habit" id="5-3-23"/>
+<sememe cn="主次" en="importance" id="5-3-24"/>
+<sememe cn="主" en="important" id="5-3-24-1"/>
+<sememe cn="次" en="secondary" id="5-3-24-2"/>
+<sememe cn="总" en="main" id="5-3-24-3"/>
+<sememe cn="支" en="branch" id="5-3-24-4"/>
+<sememe cn="必要" en="necessity" id="5-3-25"/>
+<sememe cn="要" en="necessary" id="5-3-25-1"/>
+<sememe cn="余" en="redundant" id="5-3-25-2"/>
+<sememe cn="等级" en="rank" id="5-3-26"/>
+<sememe cn="高等" en="HighRank" id="5-3-26-1"/>
+<sememe cn="低等" en="LowRank" id="5-3-26-2"/>
+<sememe cn="初" en="elementary" id="5-3-26-3"/>
+<sememe cn="标准" en="standard" id="5-3-27"/>
+<sememe cn="合格" en="passed" id="5-3-27-1"/>
+<sememe cn="身分" en="status" id="5-3-28"/>
+<sememe cn="职位" en="occupation" id="5-3-29"/>
+<sememe cn="幅度" en="range" id="5-3-30"/>
+<sememe cn="泛" en="extensive" id="5-3-30-1"/>
+<sememe cn="狭" en="nonextensive" id="5-3-30-2"/>
+<sememe cn="全" en="all" id="5-3-30-3"/>
+<sememe cn="片" en="pieced" id="5-3-30-4"/>
+<sememe cn="频率" en="frequency" id="5-3-31"/>
+<sememe cn="经常" en="often" id="5-3-31-1"/>
+<sememe cn="偶尔" en="rarely" id="5-3-31-2"/>
+<sememe cn="再" en="again" id="5-3-31-3"/>
+<sememe cn="定期" en="regular" id="5-3-31-4"/>
+<sememe cn="势力" en="power" id="5-3-32"/>
+<sememe cn="力量" en="strength" id="5-3-33"/>
+<sememe cn="利弊" en="ProsCons" id="5-3-34"/>
+<sememe cn="益" en="pros" id="5-3-34-1"/>
+<sememe cn="弊" en="cons" id="5-3-34-2"/>
+<sememe cn="亲疏" en="relatedness" id="5-3-35"/>
+<sememe cn="亲" en="intimate" id="5-3-35-1"/>
+<sememe cn="隙" en="unfamiliar" id="5-3-35-2"/>
+<sememe cn="反" en="opposed" id="5-3-35-3"/>
+<sememe cn="性别" en="sex" id="5-3-36"/>
+<sememe cn="男" en="male" id="5-3-36-1"/>
+<sememe cn="女" en="female" id="5-3-36-2"/>
+<sememe cn="出身" en="origin" id="5-3-37"/>
+<sememe cn="姓名" en="name" id="5-3-38"/>
+<sememe cn="编号" en="number" id="5-3-39"/>
+<sememe cn="性能" en="performance" id="5-3-40"/>
+<sememe cn="趣味" en="interest" id="5-3-41"/>
+<sememe cn="前景" en="outlook" id="5-3-42"/>
+<sememe cn="关系" en="relationship" id="5-4"/>
+<sememe cn="归属" en="attachment" id="5-4-1"/>
+<sememe cn="共" en="public" id="5-4-1-1"/>
+<sememe cn="私" en="private" id="5-4-1-2"/>
+<sememe cn="类型" en="kind" id="5-4-2"/>
+<sememe cn="某" en="certain" id="5-4-2-1"/>
+<sememe cn="另" en="other" id="5-4-2-2"/>
+<sememe cn="特" en="special" id="5-4-2-3"/>
+<sememe cn="普" en="ordinary" id="5-4-2-4"/>
+<sememe cn="来源" en="source" id="5-4-3"/>
+<sememe cn="原" en="original" id="5-4-3-1"/>
+<sememe cn="洋" en="foreign" id="5-4-3-2"/>
+<sememe cn="造" en="artificial" id="5-4-3-3"/>
+<sememe cn="位置" en="location" id="5-4-4"/>
+<sememe cn="内" en="internal" id="5-4-4-1"/>
+<sememe cn="外" en="external" id="5-4-4-2"/>
+<sememe cn="方向" en="direction" id="5-4-5"/>
+<sememe cn="东" en="east" id="5-4-5-1"/>
+<sememe cn="西" en="west" id="5-4-5-2"/>
+<sememe cn="南" en="south" id="5-4-5-3"/>
+<sememe cn="北" en="north" id="5-4-5-4"/>
+<sememe cn="辈分" en="clan" id="5-4-6"/>
+<sememe cn="分歧" en="divergence" id="5-4-7"/>
+<sememe cn="界限" en="boundary" id="5-4-8"/>
+<sememe cn="次序" en="sequence" id="5-4-9"/>
+<sememe cn="有序" en="InSequence" id="5-4-9-1"/>
+<sememe cn="无序" en="OutOfOrder" id="5-4-9-2"/>
+<sememe cn="正反" en="contrariness" id="5-4-10"/>
+<sememe cn="正面" en="positive" id="5-4-10-1"/>
+<sememe cn="反面" en="negative" id="5-4-10-2"/>
+<sememe cn="状况" en="situation" id="5-5"/>
+<sememe cn="境况" en="circumstances" id="5-5-1"/>
+<sememe cn="急" en="urgent" id="5-5-1-1"/>
+<sememe cn="宁" en="peaceful" id="5-5-1-2"/>
+<sememe cn="弛" en="relax" id="5-5-1-3"/>
+<sememe cn="孤" en="lonely" id="5-5-1-4"/>
+<sememe cn="兴" en="flourishing" id="5-5-1-5"/>
+<sememe cn="衰" en="wane" id="5-5-1-6"/>
+<sememe cn="恬" en="tranquil" id="5-5-1-7"/>
+<sememe cn="艰" en="hardship" id="5-5-1-8"/>
+<sememe cn="安" en="safe" id="5-5-1-9"/>
+<sememe cn="危" en="dangerous" id="5-5-1-10"/>
+<sememe cn="福" en="happy" id="5-5-1-11"/>
+<sememe cn="惨" en="miserable" id="5-5-1-12"/>
+<sememe cn="忙" en="busy" id="5-5-1-13"/>
+<sememe cn="闲" en="idle" id="5-5-1-14"/>
+<sememe cn="贫富" en="richness" id="5-5-2"/>
+<sememe cn="富" en="rich" id="5-5-2-1"/>
+<sememe cn="穷" en="poor" id="5-5-2-2"/>
+<sememe cn="异同" en="similarity" id="5-5-3"/>
+<sememe cn="似" en="alike" id="5-5-3-1"/>
+<sememe cn="异" en="different" id="5-5-3-2"/>
+<sememe cn="场面" en="occasion" id="5-5-4"/>
+<sememe cn="闹" en="bustling" id="5-5-4-1"/>
+<sememe cn="挤" en="crowded" id="5-5-4-2"/>
+<sememe cn="静" en="quiet" id="5-5-4-3"/>
+<sememe cn="闷" en="stuffy" id="5-5-4-4"/>
+<sememe cn="惬" en="cosy" id="5-5-4-5"/>
+<sememe cn="体格" en="physique" id="5-5-5"/>
+<sememe cn="生" en="unripe" id="5-5-5-1"/>
+<sememe cn="熟" en="ripe" id="5-5-5-2"/>
+<sememe cn="整缺" en="wholeness" id="5-5-6"/>
+<sememe cn="整" en="complete" id="5-5-6-1"/>
+<sememe cn="缺" en="incomplete" id="5-5-6-2"/>
+<sememe cn="空满" en="fullness" id="5-5-7"/>
+<sememe cn="满" en="full" id="5-5-7-1"/>
+<sememe cn="可能" en="possibility" id="5-5-8"/>
+<sememe cn="会" en="possible" id="5-5-8-1"/>
+<sememe cn="不会" en="impossible" id="5-5-8-2"/>
+<sememe cn="几乎" en="almost" id="5-5-8-3"/>
+<sememe cn="情况" en="environment" id="5-5-9"/>
+<sememe cn="数量值" en="qValue" id="6"/>
+<sememe cn="多少" en="amount" id="6-1"/>
+<sememe cn="多" en="many" id="6-1-1"/>
+<sememe cn="少" en="few" id="6-1-2"/>
+<sememe cn="单" en="single" id="6-1-3"/>
+<sememe cn="复" en="double" id="6-1-4"/>
+<sememe cn="部" en="fragment" id="6-1-5"/>
+<sememe cn="些" en="some" id="6-1-6"/>
+<sememe cn="足" en="sufficient" id="6-1-7"/>
+<sememe cn="半" en="half" id="6-1-8"/>
+<sememe cn="仅" en="only" id="6-1-9"/>
+<sememe cn="超" en="over" id="6-1-10"/>
+<sememe cn="比率" en="rate" id="6-2"/>
+<sememe cn="第二特征" en="Secondary Feature" id="7"/>
+<sememe cn="专" en="ProperName" id="7-1"/>
+<sememe cn="众" en="mass" id="7-2"/>
+<sememe cn="官" define="[#organization|组织,#employee|员]" en="official" id="7-3"/>
+<sememe cn="员" define="[$employ|雇用]" en="employee" id="7-4"/>
+<sememe cn="工" define="[#produce|制造,#repair|修理]" en="industrial" id="7-5"/>
+<sememe cn="矿" define="[#dig|挖掘,#produce|制造,industrial|工]" en="mine" id="7-6"/>
+<sememe cn="厂" define="[#organization|组织,#employee|员,+produce|制造,+repair|修理,industrial|工]" en="factory" id="7-7"/>
+<sememe cn="农" define="[#plant|植物,#planting|栽植]" en="agricultural" id="7-8"/>
+<sememe cn="商" define="[#money|货币,#buy|买,#sell|卖]" en="commercial" id="7-9"/>
+<sememe cn="教育" define="[#teach|教,#study|学]" en="education" id="7-10"/>
+<sememe cn="医" define="[#cure|医治,#disease|疾病]" en="medical" id="7-11"/>
+<sememe cn="文" define="[#compile|编辑,#translate|翻译]" en="literature" id="7-12"/>
+<sememe cn="艺" define="[#perform|表演,#draw|画,#carve|雕刻,#TakePicture|拍摄]" en="entertainment" id="7-13"/>
+<sememe cn="体育" define="[#exercise|锻练,~#SportTool|运动器材,~#compete|比赛]" en="sport" id="7-14"/>
+<sememe cn="宗教" en="religion" id="7-15"/>
+<sememe cn="政" define="[~#manage|管理,~#country|国家]" en="politics" id="7-16"/>
+<sememe cn="外交" define="[#politics|政]" en="diplomatic" id="7-17"/>
+<sememe cn="警" define="[#crime|罪]" en="police" id="7-18"/>
+<sememe cn="军" define="[~#attack|攻打,#fight|争斗,#defend|防守]" en="military" id="7-19"/>
+<sememe cn="皇" en="royal" id="7-20"/>
+<sememe cn="家" define="[+alive|活着,~$ProvideFor|供养]" en="family" id="7-21"/>
+<sememe cn="友" define="[~$FondOf|喜欢,~$loyal|忠孝]" en="friend" id="7-22"/>
+<sememe cn="敌" define="[~$hate|仇恨]" en="enemy" id="7-23"/>
+<sememe cn="罪" define="[#police|警]" en="crime" id="7-24"/>
+<sememe cn="废" en="waste" id="7-25"/>
+<sememe cn="毒" en="poison" id="7-26"/>
+<sememe cn="良" en="desired" id="7-27"/>
+<sememe cn="莠" en="undesired" id="7-28"/>
+<sememe cn="抽象" en="abstract" id="7-29"/>
+<sememe cn="统称" en="generic" id="7-30"/>
+<sememe cn="疑问" en="question" id="7-31"/>
+<sememe cn="国家" define="[place|地方,#human|人,#politics|政]" en="country" id="7-32"/>
+<sememe cn="国都" define="[#country|国家,#organization|组织]" en="capital" id="7-33"/>
+<sememe cn="省" en="provincial" id="7-34"/>
+<sememe cn="市" en="city" id="7-35"/>
+<sememe cn="乡" define="[#agricultural|农]" en="village" id="7-36"/>
+<sememe cn="路" define="[space|空间,linear|线]" en="route" id="7-37"/>
+<sememe cn="姓" define="[character|文字]" en="surname" id="7-38"/>
+<sememe cn="我" en="firstPerson" id="7-39"/>
+<sememe cn="你" en="SecondPerson" id="7-40"/>
+<sememe cn="他" en="ThirdPerson" id="7-41"/>
+<sememe cn="它" en="it" id="7-42"/>
+<sememe cn="己" en="self" id="7-43"/>
+<sememe cn="相互" en="EachOther" id="7-44"/>
+<sememe cn="头" en="head" id="7-45"/>
+<sememe cn="心" en="heart" id="7-46"/>
+<sememe cn="身" en="body" id="7-47"/>
+<sememe cn="骨" en="bone" id="7-48"/>
+<sememe cn="根" en="base" id="7-49"/>
+<sememe cn="肢" define="[*crawl|爬,*swim|游]" en="limb" id="7-50"/>
+<sememe cn="臂" define="[*HoldInArm|搂抱]" en="arm" id="7-51"/>
+<sememe cn="手" define="[*pick|拾起,*HoldWithHand|搀扶,*crawl|爬,*catch|捉住]" en="hand" id="7-52"/>
+<sememe cn="腿" define="[*walk|走,*run|跑,*jump|跳,*swim|游,*kick|踢踩,*stand|站立]" en="leg" id="7-53"/>
+<sememe cn="脚" define="[*walk|走,*run|跑,*jump|跳,*crawl|爬,*swim|游,*kick|踢踩,*stand|站立]" en="foot" id="7-54"/>
+<sememe cn="翅" define="[*fly|飞]" en="wing" id="7-55"/>
+<sememe cn="边" define="[linear|线]" en="edge" id="7-56"/>
+<sememe cn="口" define="[*HoldInMouth|衔起,+consume|摄取,+GoInto|进入,+GoOut|出去,+GoThrough|经过]" en="mouth" id="7-57"/>
+<sememe cn="眼" define="[*look|看]" en="eye" id="7-58"/>
+<sememe cn="脏" en="viscera" id="7-59"/>
+<sememe cn="络" en="nerve" id="7-60"/>
+<sememe cn="尾" en="tail" id="7-61"/>
+<sememe cn="胚" define="[$GiveBirth|生育]" en="embryo" id="7-62"/>
+<sememe cn="皮" en="skin" id="7-63"/>
+<sememe cn="肉" define="[$consume|摄取]" en="flesh" id="7-64"/>
+<sememe cn="毛" en="hair" id="7-65"/>
+<sememe cn="侧" define="[abstract|抽象]" en="aspect" id="7-66"/>
+<sememe cn="上" en="upper" id="7-67"/>
+<sememe cn="下" en="beneath" id="7-68"/>
+<sememe cn="前" en="InFront" id="7-69"/>
+<sememe cn="后" en="hind" id="7-70"/>
+<sememe cn="周围" en="surrounding" id="7-71"/>
+<sememe cn="节" en="festival" id="7-72"/>
+<sememe cn="年" en="year" id="7-73"/>
+<sememe cn="季" en="season" id="7-74"/>
+<sememe cn="春" define="[season|季,warm|温,~beautiful|美,#weather|天象,#planting|栽植]" en="spring" id="7-75"/>
+<sememe cn="夏" define="[season|季,hot|热,#weather|天象,#RainSnow|雨雪]" en="summer" id="7-76"/>
+<sememe cn="秋" define="[season|季,chilly|凉,~beautiful|美,#weather|天象,gather|采集,#crop|庄稼]" en="autumn" id="7-77"/>
+<sememe cn="冬" define="[season|季,cold|冷,#weather|天象,#RainSnow|雨雪]" en="winter" id="7-78"/>
+<sememe cn="月" en="month" id="7-79"/>
+<sememe cn="旬" en="TenDays" id="7-80"/>
+<sememe cn="周" en="week" id="7-81"/>
+<sememe cn="日" en="day" id="7-82"/>
+<sememe cn="时" en="hour" id="7-83"/>
+<sememe cn="分钟" en="minute" id="7-84"/>
+<sememe cn="晨" en="morning" id="7-85"/>
+<sememe cn="午" en="afternoon" id="7-86"/>
+<sememe cn="晚" en="night" id="7-87"/>
+<sememe cn="间" en="middle" id="7-88"/>
+<sememe cn="末" en="ending" id="7-89"/>
+<sememe cn="今" en="now" id="7-90"/>
+<sememe cn="昔" en="past" id="7-91"/>
+<sememe cn="将" en="future" id="7-92"/>
+<sememe cn="即" en="immediate" id="7-93"/>
+<sememe cn="终" en="finally" id="7-94"/>
+<sememe cn="已" en="already" id="7-95"/>
+<sememe cn="也" en="also" id="7-96"/>
+<sememe cn="第" en="ordinal" id="7-97"/>
+<sememe cn="基" en="cardinal" id="7-98"/>
+<sememe cn="概" en="approximate" id="7-99"/>
+<sememe cn="syntax" en="syntax" id="8"/>
+<sememe cn="副状" en="ADV adverbial" id="8-1"/>
+<sememe cn="方式" en="manner" id="8-1-1"/>
+<sememe cn="伴随" en="accompaniment" id="8-1-2"/>
+<sememe cn="评论" en="comment" id="8-1-3"/>
+<sememe cn="语气" en="modality" id="8-1-4"/>
+<sememe cn="否" en="neg" id="8-1-5"/>
+<sememe cn="强调" en="emphasis" id="8-1-6"/>
+<sememe cn="时态" en="tense" id="8-1-7"/>
+<sememe cn="并列" en="COOR conjunction" id="8-2"/>
+<sememe cn="和" en="and" id="8-2-1"/>
+<sememe cn="或" en="or" id="8-2-2"/>
+<sememe cn="但" en="but" id="8-2-3"/>
+<sememe cn="主从" en="CONJ whword" id="8-3"/>
+<sememe cn="让步" en="concession" id="8-3-1"/>
+<sememe cn="递进" en="supplement" id="8-3-2"/>
+<sememe cn="条件" en="condition" id="8-3-3"/>
+<sememe cn="原因" en="cause" id="8-3-4"/>
+<sememe cn="事件结局" en="EventResult" id="8-3-5"/>
+<sememe cn="转折" en="transition" id="8-3-6"/>
+<sememe cn="结果" en="result" id="8-3-7"/>
+<sememe cn="助词" en="STRU particle" id="8-4"/>
+<sememe cn="构助" define="- 结构助词" en="DeChinese" id="8-4-1"/>
+<sememe cn="动助" define="- 动态助词" en="LeChinese" id="8-4-2"/>
+<sememe cn="动趋" en="Vdirection" id="8-4-2-1"/>
+<sememe cn="动程" en="Vprocess" id="8-4-2-2"/>
+<sememe cn="假定" en="Vsuppose" id="8-4-2-2-1"/>
+<sememe cn="发端" en="Vstart" id="8-4-2-2-2"/>
+<sememe cn="进展" en="Vgoingon" id="8-4-2-2-3"/>
+<sememe cn="延续" en="Vcontinue" id="8-4-2-2-4"/>
+<sememe cn="完结" en="Vend" id="8-4-2-2-5"/>
+<sememe cn="动果" en="Vresult" id="8-4-2-3"/>
+<sememe cn="达成" en="Vachieve" id="8-4-2-3-1"/>
+<sememe cn="能力" en="Vable" id="8-4-2-3-2"/>
+<sememe cn="可能" en="Vpossible" id="8-4-2-3-3"/>
+<sememe cn="试试" en="Vtry" id="8-4-2-3-4"/>
+<sememe cn="语助" en="MaChinese" id="8-4-3"/>
+<sememe cn="单位词" en="CLAS classifier" id="8-5"/>
+<sememe cn="单位" en="unit" id="8-5-1"/>
+<sememe cn="名量" en="NounUnit" id="8-5-2"/>
+<sememe cn="动量" en="ActUnit" id="8-5-3"/>
+<sememe cn="Event Role and Features" en="Event Role and Features" id="9"/>
+<sememe cn="动态角色" en="Event Role" id="9-1"/>
+<sememe cn="关系主体" en="relevant" id="9-1-1"/>
+<sememe cn="存现体" en="existent" id="9-1-2"/>
+<sememe cn="经验者" en="experiencer" id="9-1-3"/>
+<sememe cn="施事" en="agent" id="9-1-4"/>
+<sememe cn="合作施事" en="coagent" id="9-1-5"/>
+<sememe cn="占有物" en="possession" id="9-1-6"/>
+<sememe cn="受事" en="patient" id="9-1-7"/>
+<sememe cn="部件受事" en="PatientPartof" id="9-1-8"/>
+<sememe cn="成品受事" en="PatientProduct" id="9-1-9"/>
+<sememe cn="受事属性" en="PatientAttribute" id="9-1-10"/>
+<sememe cn="触及部件" en="PartOfTouch" id="9-1-11"/>
+<sememe cn="内容" en="content" id="9-1-12"/>
+<sememe cn="内容成品" en="ContentProduct" id="9-1-13"/>
+<sememe cn="结果内容" en="ResultContent" id="9-1-14"/>
+<sememe cn="类指" en="isa" id="9-1-15"/>
+<sememe cn="部分" en="partof" id="9-1-16"/>
+<sememe cn="整体" en="whole" id="9-1-17"/>
+<sememe cn="描写体" en="descriptive" id="9-1-18"/>
+<sememe cn="结果" en="result" id="9-1-19"/>
+<sememe cn="结果事件" en="ResultEvent" id="9-1-20"/>
+<sememe cn="结果类指" en="ResultIsa" id="9-1-21"/>
+<sememe cn="结果整体" en="ResultWhole" id="9-1-22"/>
+<sememe cn="原因" en="cause" id="9-1-23"/>
+<sememe cn="相伴体" en="partner" id="9-1-24"/>
+<sememe cn="参照体" en="contrast" id="9-1-25"/>
+<sememe cn="比较内容" en="ContentCompare" id="9-1-26"/>
+<sememe cn="来源" en="source" id="9-1-27"/>
+<sememe cn="来源整体" en="SourceWhole" id="9-1-28"/>
+<sememe cn="目标" en="target" id="9-1-29"/>
+<sememe cn="代价" en="cost" id="9-1-30"/>
+<sememe cn="受益者" en="beneficiary" id="9-1-31"/>
+<sememe cn="原状态" en="StateIni" id="9-1-32"/>
+<sememe cn="终状态" en="StateFin" id="9-1-33"/>
+<sememe cn="处所" en="location" id="9-1-34"/>
+<sememe cn="原处所" en="LocationIni" id="9-1-35"/>
+<sememe cn="终处所" en="LocationFin" id="9-1-36"/>
+<sememe cn="通过处所" en="LocationThru" id="9-1-37"/>
+<sememe cn="方向" en="direction" id="9-1-38"/>
+<sememe cn="时间" en="time" id="9-1-39"/>
+<sememe cn="起始时间" en="TimeIni" id="9-1-40"/>
+<sememe cn="终止时间" en="TimeFin" id="9-1-41"/>
+<sememe cn="进程时段" en="duration" id="9-1-42"/>
+<sememe cn="后延时段" en="DurationAfterEvent" id="9-1-43"/>
+<sememe cn="事件过程" en="EventProcess" id="9-1-44"/>
+<sememe cn="手段" en="means" id="9-1-45"/>
+<sememe cn="工具" en="instrument" id="9-1-46"/>
+<sememe cn="材料" en="material" id="9-1-47"/>
+<sememe cn="程度" en="degree" id="9-1-48"/>
+<sememe cn="幅度" en="range" id="9-1-49"/>
+<sememe cn="方式" en="manner" id="9-1-50"/>
+<sememe cn="时距" en="TimeRange" id="9-1-51"/>
+<sememe cn="频率" en="frequency" id="9-1-52"/>
+<sememe cn="动量" en="times" id="9-1-53"/>
+<sememe cn="目的" en="purpose" id="9-1-54"/>
+<sememe cn="范围" en="scope" id="9-1-55"/>
+<sememe cn="根据" en="AccordingTo" id="9-1-56"/>
+<sememe cn="条件" en="condition" id="9-1-57"/>
+<sememe cn="让步" en="concession" id="9-1-58"/>
+<sememe cn="评论" en="comment" id="9-1-59"/>
+<sememe cn="接续" en="succeeding" id="9-1-60"/>
+<sememe cn="递进" en="besides" id="9-1-61"/>
+<sememe cn="除了" en="except" id="9-1-62"/>
+<sememe cn="伴随" en="accompaniment" id="9-1-63"/>
+<sememe cn="描述" en="modifier" id="9-1-64"/>
+<sememe cn="限定" en="restrictive" id="9-1-65"/>
+<sememe cn="数量" en="quantity" id="9-1-66"/>
+<sememe cn="比较量" en="QuantityCompare" id="9-1-67"/>
+<sememe cn="领有者" en="possessor" id="9-1-68"/>
+<sememe cn="关于" en="concerning" id="9-1-69"/>
+<sememe cn="动态属性" en="Event Features" id="9-2"/>
+<sememe cn="主题" en="topic" id="9-2-1"/>
+<sememe cn="焦点" en="focus" id="9-2-2"/>
+</sememes>

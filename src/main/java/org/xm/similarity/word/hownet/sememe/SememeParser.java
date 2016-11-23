@@ -66,7 +66,7 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
             e.printStackTrace();
         }
         time = System.currentTimeMillis() - time;
-        logger.info("complete! count num:"+ count + ". time spend:" + time + "ms");
+        logger.info("complete! count num:" + count + ". time spend:" + time + "ms");
     }
 
     /**
