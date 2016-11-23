@@ -8,6 +8,7 @@ import java.util.TreeSet;
 
 /**
  * huffman编码
+ *
  * @author xuming
  */
 public class Huffman {
@@ -21,7 +22,7 @@ public class Huffman {
 
     public void buildTree(Collection<Neuron> neurons) {
         set.addAll(neurons);
-        while(set.size()>1) {
+        while (set.size() > 1) {
             merge();
         }
     }

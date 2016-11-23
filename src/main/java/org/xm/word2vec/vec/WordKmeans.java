@@ -63,37 +63,39 @@ public class WordKmeans {
     private HashMap<String, float[]> wordMap;
     private int iter;
     private Classes[] cArray;
-    public WordKmeans(HashMap<String,float[]> wordMap,int c,int iter){
+
+    public WordKmeans(HashMap<String, float[]> wordMap, int c, int iter) {
         this.wordMap = wordMap;
         this.iter = iter;
         this.cArray = new Classes[c];
     }
-    public Classes[] explain(){
-        Iterator<Map.Entry<String,float[]>> iterator = wordMap.entrySet().iterator();
-        for(int i=0;i<cArray.length;i++){
-            Map.Entry<String,float[]> next = iterator.next();
-            cArray[i] = new Classes(i,next.getValue());
+
+    public Classes[] explain() {
+        Iterator<Map.Entry<String, float[]>> iterator = wordMap.entrySet().iterator();
+        for (int i = 0; i < cArray.length; i++) {
+            Map.Entry<String, float[]> next = iterator.next();
+            cArray[i] = new Classes(i, next.getValue());
         }
-        for(int i =0;i<iter;i++){
-            for(Classes classes:cArray){
+        for (int i = 0; i < iter; i++) {
+            for (Classes classes : cArray) {
                 classes.clear();
             }
             iterator = wordMap.entrySet().iterator();
-            while (iterator.hasNext()){
-                Map.Entry<String,float[]> next = iterator.next();
+            while (iterator.hasNext()) {
+                Map.Entry<String, float[]> next = iterator.next();
                 double miniScore = Double.MAX_VALUE;
                 double temp;
                 int classesId = 0;
-                for(Classes classes:cArray){
+                for (Classes classes : cArray) {
                     temp = classes.distance(next.getValue());
-                    if(miniScore>temp){
+                    if (miniScore > temp) {
                         miniScore = temp;
-                        classesId = classes.id  ;
+                        classesId = classes.id;
                     }
                 }
-                cArray[classesId].putValue(next.getKey(),miniScore);
+                cArray[classesId].putValue(next.getKey(), miniScore);
             }
-            for(Classes classes:cArray){
+            for (Classes classes : cArray) {
                 classes.updateCenter(wordMap);
             }
         }
