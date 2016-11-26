@@ -1,7 +1,7 @@
 package org.xm.similarity.sentence.editdistance;
 
 
-import org.xm.similarity.sentence.SegmentTool.Word;
+import org.xm.tokenizer.Tokenizer.Word;
 import org.xm.similarity.word.hownet.concept.ConceptSimilarity;
 
 public class WordEditUnit extends EditUnit {

@@ -2,7 +2,7 @@ package org.xm.classification;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xm.similarity.sentence.SegmentTool;
+import org.xm.tokenizer.Tokenizer;
 
 import java.io.*;
 import java.util.HashSet;
@@ -33,11 +33,11 @@ public class Instance {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(f), encoding))) {
             while ((line = in.readLine()) != null) {
 //                				System.out.println(line);
-                List<SegmentTool.Word> words = SegmentTool.segment(line);
+                List<Tokenizer.Word> words = Tokenizer.segment(line);
                 bag.addAll(words
                         .stream()
                         .filter(w -> w.getPos().endsWith("adj") || w.getPos().startsWith("n") || w.getPos().startsWith("v"))
-                        .map(SegmentTool.Word::getWord)
+                        .map(Tokenizer.Word::getWord)
                         .collect(Collectors.toList())
                 );
             }

@@ -3,7 +3,7 @@ package org.xm.similarity.sentence.morphology;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.similarity.sentence.ISentenceSimilarity;
-import org.xm.similarity.sentence.SegmentTool;
+import org.xm.tokenizer.Tokenizer;
 import org.xm.similarity.word.IWordSimilarity;
 import org.xm.similarity.word.hownet.concept.ConceptSimilarity;
 
@@ -171,7 +171,7 @@ public class SemanticSimilarity implements ISentenceSimilarity {
     }
 
     public String[] segment(String sentence) {
-        List<SegmentTool.Word> list = SegmentTool.segment(sentence);
+        List<Tokenizer.Word> list = Tokenizer.segment(sentence);
         String[] results = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
             results[i] = list.get(i).getWord();
