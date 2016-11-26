@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.similarity.phrase.PhraseSimilarity;
 import org.xm.similarity.sentence.editdistance.EditDistance;
-import org.xm.similarity.sentence.editdistance.EditDistanceSimilarity;
+import org.xm.similarity.sentence.editdistance.NewEditDistanceSimilarity;
 import org.xm.similarity.sentence.editdistance.GregorEditDistanceSimilarity;
 import org.xm.similarity.sentence.editdistance.StandardEditDistanceSimilarity;
 import org.xm.similarity.sentence.morphology.MorphoSimilarity;
@@ -132,7 +132,7 @@ public class Similarity {
      * @return
      */
     public static double editDistanceSimilarity(String sentence1, String sentence2) {
-        EditDistance ed = new EditDistanceSimilarity();
+        EditDistance ed = new NewEditDistanceSimilarity();
         return ed.getSimilarity(sentence1, sentence2);
     }
 

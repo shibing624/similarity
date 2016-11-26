@@ -14,11 +14,11 @@ public class WordEditUnit extends EditUnit {
 
     @Override
     public String getUnitString() {
-        return word.getWord();
+        return word.getName();
     }
 
     /**
-     * 根据此语的相似度获取替换代价
+     * 根据相似度获取替换代价
      */
     @Override
     public double getSubstitutionCost(EditUnit otherUnit) {

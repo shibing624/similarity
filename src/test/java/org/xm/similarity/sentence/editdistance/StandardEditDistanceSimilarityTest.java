@@ -14,6 +14,9 @@ public class StandardEditDistanceSimilarityTest {
         StandardEditDistanceSimilarity ed = new StandardEditDistanceSimilarity();
         s1 = "什么是计算机病毒";
         s2 = "什么是电脑病毒源";
+
+        s1 = "我爱购物";
+        s2 = "我爱读书";
         System.out.println(ed.getEditDistance(SuperString.createCharSuperString(s1),
                 SuperString.createCharSuperString(s2)));
         System.out.println(ed.getEditDistance(SuperString.createWordSuperString(s1),

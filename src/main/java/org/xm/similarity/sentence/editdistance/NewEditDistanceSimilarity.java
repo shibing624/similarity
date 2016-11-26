@@ -4,7 +4,7 @@ package org.xm.similarity.sentence.editdistance;
  * 夏天提出的新的支持非相邻块交互的编辑距离算法
  * @author xiatian
  */
-public class EditDistanceSimilarity extends EditDistance {
+public class NewEditDistanceSimilarity extends EditDistance {
 
     /**
      * 块交换代价

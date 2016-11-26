@@ -13,6 +13,8 @@ public class GregorEditDistanceSimilarityTest {
         s1 = "什么是计算机病毒";
         s2 = "电脑病毒会传染给人吗？";
 
+        s1 = "我爱购物";
+        s2 = "我爱读书";
         GregorEditDistanceSimilarity ed = new GregorEditDistanceSimilarity();
         System.out.println(ed.getEditDistance(SuperString.createCharSuperString(s1),
                 SuperString.createCharSuperString(s2)));

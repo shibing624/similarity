@@ -37,7 +37,7 @@ public class Instance {
                 bag.addAll(words
                         .stream()
                         .filter(w -> w.getPos().endsWith("adj") || w.getPos().startsWith("n") || w.getPos().startsWith("v"))
-                        .map(Tokenizer.Word::getWord)
+                        .map(Tokenizer.Word::getName)
                         .collect(Collectors.toList())
                 );
             }

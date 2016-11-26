@@ -174,7 +174,7 @@ public class SemanticSimilarity implements ISentenceSimilarity {
         List<Tokenizer.Word> list = Tokenizer.segment(sentence);
         String[] results = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
-            results[i] = list.get(i).getWord();
+            results[i] = list.get(i).getName();
         }
         return results;
     }
