@@ -1,11 +1,9 @@
 package org.xm;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.xm.similarity.phrase.PhraseSimilarity;
 import org.xm.similarity.sentence.editdistance.EditDistance;
-import org.xm.similarity.sentence.editdistance.NewEditDistanceSimilarity;
 import org.xm.similarity.sentence.editdistance.GregorEditDistanceSimilarity;
+import org.xm.similarity.sentence.editdistance.NewEditDistanceSimilarity;
 import org.xm.similarity.sentence.editdistance.StandardEditDistanceSimilarity;
 import org.xm.similarity.sentence.morphology.MorphoSimilarity;
 import org.xm.similarity.word.CharBasedSimilarity;
@@ -19,7 +17,6 @@ import org.xm.tendency.word.HownetWordTendency;
  * @author xuming
  */
 public class Similarity {
-    private static final Logger logger = LoggerFactory.getLogger(Similarity.class);
 
     public static final class Config {
         /**

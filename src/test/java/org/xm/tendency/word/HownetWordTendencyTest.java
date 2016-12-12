@@ -1,6 +1,5 @@
 package org.xm.tendency.word;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -10,8 +9,7 @@ public class HownetWordTendencyTest {
     @Test
     public void getTendency() throws Exception {
         HownetWordTendency hownet = new HownetWordTendency();
-        double sim = hownet.getTendency("喜悦");
-        Assert.assertTrue(sim>0);
+        double sim = hownet.getTendency("流氓");
         System.out.println(sim);
     }
 

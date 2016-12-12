@@ -90,7 +90,7 @@ public class JaroDistanceTextSimilarity extends TextSimilarity {
         //换位次数除以2
         //t is half the number of transpositions
         int t = transpositions / 2;
-        ;
+
         //计算距离（这里的距离也就是相似度分值了）
         double distance = (m / (double) shorterText.length() +
                 m / (double) longerText.length() +

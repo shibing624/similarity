@@ -1,7 +1,6 @@
 package org.xm.tokenizer;
 
-import org.xm.ansj.domain.Term;
-import org.xm.ansj.segmentation.StandardSegmentation;
+import org.xm.xmnlp.Xmnlp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -119,20 +118,22 @@ public class Tokenizer {
 
     public static List<Word> segment(String sentence) {
         List<Word> results = new ArrayList<>();
-        List<Term> termList = StandardSegmentation.parse(sentence).getTerms();
+//        List<org.xm.ansj.domain.Term> termList = StandardSegmentation.parse(sentence).getTerms();//ansj
+//        results.addAll(termList
+//                .stream()
+//                .map(term -> new Word(term.getName(), term.getNature().natureStr))
+//                .collect(Collectors.toList())
+//        );
 
+        //Xmnlp
+        List<org.xm.xmnlp.seg.domain.Term> termList = Xmnlp.segment(sentence);
         results.addAll(termList
                 .stream()
-                .map(term -> new Word(term.getName(), term.getNature().natureStr))
+                .map(term -> new Word(term.word, term.getNature().name()))
                 .collect(Collectors.toList())
         );
+
         return results;
     }
 
-    public static String getSegmentResult(String sentence) {
-        List<Word> words = segment(sentence);
-        StringBuilder sb = new StringBuilder();
-        for (Word word : words) sb.append(word.getName() + "/" + word.getPos()).append(" ");
-        return sb.toString();
-    }
 }

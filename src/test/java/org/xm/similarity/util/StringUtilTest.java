@@ -29,4 +29,21 @@ public class StringUtilTest {
         }
     }
 
+    String[] strs = {"hi", "yourname", "qingji", "dedao"};
+
+    private String toString(String[] details) {
+        StringBuilder buffer = new StringBuilder();
+        for (int i = 0; i < details.length; i++) {
+            buffer.append("  ");
+            buffer.append(details[i]);
+        }
+        buffer.append("\n");
+
+        return buffer.toString();
+    }
+
+    @Test
+    public void getTest() {
+        System.out.println(toString(strs));
+    }
 }
