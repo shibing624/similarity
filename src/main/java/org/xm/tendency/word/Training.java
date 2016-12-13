@@ -148,9 +148,6 @@ public class Training {
         training.countSentimentDistribution();
         //        System.out.println("test positive:");
         //        training.test(true);
-        //
-        //        System.out.println("test negative:");
-        // 		  training.test(false);
     }
 
 }
