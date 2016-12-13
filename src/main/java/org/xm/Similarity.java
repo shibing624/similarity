@@ -165,7 +165,7 @@ public class Similarity {
      * @param word
      * @return
      */
-    public static double Tendency(String word) {
+    public static double tendency(String word) {
         HownetWordTendency hownetWordTendency = new HownetWordTendency();
         return hownetWordTendency.getTendency(word);
     }
