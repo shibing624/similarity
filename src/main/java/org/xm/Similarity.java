@@ -22,27 +22,27 @@ public class Similarity {
         /**
          * 词林编码路径
          */
-        public static String CilinPath = "data/cilin.db.gz";
+        public static String CilinPath = "cilin.db.gz";
         /**
          * 拼音词典路径
          */
-        public static String PinyinPath = "data/F02-GB2312-to-PuTongHua-PinYin.txt";
+        public static String PinyinPath = "F02-GB2312-to-PuTongHua-PinYin.txt";
         /**
          * concept路径
          */
-        public static String ConceptPath = "data/concept.dat";
+        public static String ConceptPath = "concept.dat";
         /**
          * concept.xml.gz路径
          */
-        public static String ConceptXmlPath = "data/concept.xml.gz";
+        public static String ConceptXmlPath = "concept.xml.gz";
         /**
          * 义原关系的路径
          */
-        public static String SememePath = "data/sememe.dat";
+        public static String SememePath = "sememe.dat";
         /**
          * 义原数据路径
          */
-        public static String SememeXmlPath = "data/sememe.xml.gz";
+        public static String SememeXmlPath = "sememe.xml.gz";
     }
 
     private Similarity() {

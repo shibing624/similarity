@@ -10,6 +10,7 @@ import org.xm.similarity.util.StringUtil;
 import org.xm.similarity.word.IWordSimilarity;
 import org.xm.similarity.word.hownet.IHownetMeta;
 import org.xm.similarity.word.hownet.sememe.SememeParser;
+import org.xm.xmnlp.dic.DicReader;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -54,7 +55,7 @@ public abstract class ConceptParser implements IHownetMeta, IWordSimilarity {
 
     private static void loadFile() throws IOException {
         CONCEPTS = HashMultimap.create();
-        InputStream inputStream = new GZIPInputStream(new FileInputStream(path));
+        InputStream inputStream = new GZIPInputStream(DicReader.getInputStream(path));
         load(inputStream);
     }
 

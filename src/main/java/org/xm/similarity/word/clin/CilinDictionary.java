@@ -6,8 +6,8 @@ import org.xm.Similarity;
 import org.xm.similarity.util.FileUtil;
 import org.xm.similarity.util.StringUtil;
 import org.xm.similarity.util.TraverseEvent;
+import org.xm.xmnlp.dic.DicReader;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -42,7 +42,7 @@ public class CilinDictionary {
     }
 
     private CilinDictionary() throws IOException {
-        InputStream inputStream = new GZIPInputStream(new FileInputStream(path));
+        InputStream inputStream = new GZIPInputStream(DicReader.getInputStream(path));
         TraverseEvent<String> event = line -> {
             String[] items = line.split(" ");
             Set<String> set = new HashSet<>();

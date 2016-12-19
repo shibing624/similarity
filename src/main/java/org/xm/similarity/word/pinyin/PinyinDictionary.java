@@ -1,11 +1,10 @@
 package org.xm.similarity.word.pinyin;
 
 import org.xm.Similarity;
+import org.xm.xmnlp.dic.DicReader;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -23,7 +22,7 @@ public class PinyinDictionary {
     private static final String path =  Similarity.Config.PinyinPath;
 
     private PinyinDictionary() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(path), "UTF-8"));
+        BufferedReader br = DicReader.getReader(path);
         String line;
         Event event = new Event();
         while ((line = br.readLine()) != null) {

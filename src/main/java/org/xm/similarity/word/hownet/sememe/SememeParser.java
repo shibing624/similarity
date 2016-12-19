@@ -7,13 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.xm.Similarity;
 import org.xm.similarity.ISimilarity;
 import org.xm.similarity.word.hownet.IHownetMeta;
+import org.xm.xmnlp.dic.DicReader;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
@@ -34,7 +34,7 @@ public abstract class SememeParser implements IHownetMeta, ISimilarity {
             return;
         }
         SEMEMES = HashMultimap.create();
-        InputStream inputStream = new GZIPInputStream(new FileInputStream(path));
+        InputStream inputStream = new GZIPInputStream(DicReader.getInputStream(path));
         load(inputStream);
     }
 
