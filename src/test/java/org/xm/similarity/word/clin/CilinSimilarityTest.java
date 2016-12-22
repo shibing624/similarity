@@ -14,6 +14,9 @@ public class CilinSimilarityTest {
 
         String text1 = "词林:" + CilinSimilarity.getInstance().getSimilarity("盲人", "瞎子");
         System.out.println("盲人 vs 瞎子：" + text1);
+
+        String text2 = "词林:" + CilinSimilarity.getInstance().getSimilarity("经贸", "商贸");
+        System.out.println("经贸 vs 商贸：" + text2);
     }
 
 }

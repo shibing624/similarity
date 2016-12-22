@@ -3,9 +3,9 @@ package org.xm.similarity.sentence.morphology;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.similarity.sentence.ISentenceSimilarity;
-import org.xm.tokenizer.Tokenizer;
 import org.xm.similarity.word.IWordSimilarity;
 import org.xm.similarity.word.hownet.concept.ConceptSimilarity;
+import org.xm.tokenizer.Tokenizer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,7 @@ import java.util.List;
  * 基于词形和词序的句子相似度计算算法
  * 在考虑语义时，无法直接获取OnceWS(A, B)， * 为此，通过记录两个句子的词语匹配对中相似度
  * 大于某一阈值的词语对为相同词语，计算次序相似度。
+ *
  * @author xuming
  */
 public class SemanticSimilarity implements ISentenceSimilarity {
@@ -47,7 +48,7 @@ public class SemanticSimilarity implements ISentenceSimilarity {
     }
 
     private SemanticSimilarity() {
-        logger.debug("used hownet wordsimilarity:SemanticSimilarity");
+        logger.debug("used hownet word similarity:SemanticSimilarity");
         this.wordSimilarity = ConceptSimilarity.getInstance();
     }
 

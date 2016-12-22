@@ -53,7 +53,7 @@ public class CosineSimilarity extends TextSimilarity {
                     Float x1 = weightMap1.get(word.getName());
                     Float x2 = weightMap2.get(word.getName());
                     if (x1 != null && x2 != null) {
-                        // x1x2
+                        //x1x2
                         float oneOfTheDimension = x1 * x2;
                         //+
                         ab.addAndGet(oneOfTheDimension);

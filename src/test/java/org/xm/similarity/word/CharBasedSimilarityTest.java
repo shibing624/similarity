@@ -24,6 +24,10 @@ public class CharBasedSimilarityTest {
         String s6 = "电话";
         System.out.println(sim.getSimilarity(s5, s6)+" :"+s5+","+s6);
 
+        String word1 = "经贸";
+        String word2 = "商贸";
+        double wordpk = sim.getSimilarity(word1, word2);
+        System.out.println(word1 + " 和 " + word2 + " 的字面量相似度分值：" + wordpk);
     }
 
 }
