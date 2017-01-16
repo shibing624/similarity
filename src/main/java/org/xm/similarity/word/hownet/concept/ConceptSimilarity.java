@@ -164,10 +164,8 @@ public class ConceptSimilarity extends ConceptParser {
             }
             results.add(token);
             count++;
-            if (count >= top) {
-                break;
-            }
-            word = word.substring(0, newWord.length() - token.length());
+            if (count >= top) break;
+            word = word.substring(0, word.length() - token.length());
         }
         return results;
 
