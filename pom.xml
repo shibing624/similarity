@@ -37,7 +37,7 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <!-- 分词器 -->
+        <!-- 分词器 （可以替换为其他中文分词器）-->
         <dependency>
             <groupId>org.xm</groupId>
             <artifactId>xmnlp</artifactId>
