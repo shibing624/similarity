@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * @author xuming
  */
 public class Tokenizer {
-    public  static class Word implements Comparable {
+    public static class Word implements Comparable {
         // 词名
         private String name;
         // 词性
@@ -22,9 +22,11 @@ public class Tokenizer {
         // 权重，用于词向量分析
         private Float weight;
         private int frequency;
+
         public Word(String name) {
             this.name = name;
         }
+
         public Word(String name, String pos) {
             this.name = name;
             this.pos = pos;

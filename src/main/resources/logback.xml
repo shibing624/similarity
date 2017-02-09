@@ -25,7 +25,7 @@
 			<level>INFO</level>
 		</filter>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>logs/similarity.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
+			<fileNamePattern>logs/similarity.%d{yyyy-MM-dd}.log</fileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
 	</appender>
