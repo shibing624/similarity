@@ -1,6 +1,8 @@
 package org.xm.similarity.word.hownet;
 
 /**
+ * Hownet 接口
+ *
  * @author xuming
  */
 public interface IHownetMeta {

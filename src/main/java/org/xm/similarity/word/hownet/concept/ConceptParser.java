@@ -5,12 +5,12 @@ import com.google.common.collect.Multimap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.Similarity;
+import org.xm.similarity.util.DicReader;
 import org.xm.similarity.util.MathUtil;
 import org.xm.similarity.util.StringUtil;
 import org.xm.similarity.word.IWordSimilarity;
 import org.xm.similarity.word.hownet.IHownetMeta;
 import org.xm.similarity.word.hownet.sememe.SememeParser;
-import org.xm.xmnlp.dic.DicReader;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -25,6 +25,8 @@ import java.util.Collection;
 import java.util.zip.GZIPInputStream;
 
 /**
+ * 概念解析器
+ *
  * @author xuming
  */
 public abstract class ConceptParser implements IHownetMeta, IWordSimilarity {
@@ -95,7 +97,7 @@ public abstract class ConceptParser implements IHownetMeta, IWordSimilarity {
         } catch (Exception e) {
             throw new IOException(e);
         }
-        logger.info("complete! count num:" + count +"，time spend:" + (System.currentTimeMillis() - start) + "ms");
+        logger.info("complete! count num:" + count + "，time spend:" + (System.currentTimeMillis() - start) + "ms");
     }
 
     /**

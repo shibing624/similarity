@@ -1,7 +1,7 @@
 package org.xm.similarity.word.pinyin;
 
 import org.xm.Similarity;
-import org.xm.xmnlp.dic.DicReader;
+import org.xm.similarity.util.DicReader;
 
 import java.io.BufferedReader;
 import java.io.IOException;

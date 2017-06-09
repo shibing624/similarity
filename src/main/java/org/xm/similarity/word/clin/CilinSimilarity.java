@@ -6,7 +6,7 @@ import org.xm.similarity.util.StringUtil;
 import java.util.Set;
 
 /**
- * 词林编码
+ * 词林编码的相似度计算
  *
  * @author xuming
  */
@@ -21,7 +21,6 @@ public class CilinSimilarity implements ISimilarity {
     }
 
     private CilinSimilarity() {
-
     }
 
     @Override
@@ -44,7 +43,7 @@ public class CilinSimilarity implements ISimilarity {
         for (String code1 : codeSet1) {
             for (String code2 : codeSet2) {
                 double s = getSimilarityByCode(code1, code2);
-//                System.out.println(code1 + ":" + code2 + ":" + CilinCode.calculateCommonWeight(code1, code2));
+                //System.out.println(code1 + ":" + code2 + ":" + CilinCode.calculateCommonWeight(code1, code2));
                 if (sim < s) sim = s;
             }
         }

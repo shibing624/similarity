@@ -1,10 +1,10 @@
 package org.xm.similarity.dictionary;
 
+import com.hankcs.hanlp.HanLP;
+import com.hankcs.hanlp.dictionary.py.Pinyin;
 import org.junit.Assert;
 import org.junit.Test;
 import org.xm.similarity.word.pinyin.PinyinDictionary;
-import org.xm.xmnlp.Xmnlp;
-import org.xm.xmnlp.dictionary.pinyin.Pinyin;
 
 import java.util.List;
 import java.util.Set;
@@ -45,12 +45,12 @@ public class PinyinDictionaryTest {
     @Test
     public void getXmnlpPinyin() throws Exception {
         // 胳臂
-        String pinyin1 = Xmnlp.convertToPinyinList("胳臂").toString();
+        String pinyin1 = HanLP.convertToPinyinList("胳臂").toString();
         System.out.println("胳臂:" + pinyin1);
 
         // 划船,计划
-        System.out.println("划船:" + Xmnlp.convertToPinyinList("划船").toString());
-        List<Pinyin> pinyinList = Xmnlp.convertToPinyinList("计划");
+        System.out.println("划船:" + HanLP.convertToPinyinList("划船").toString());
+        List<Pinyin> pinyinList = HanLP.convertToPinyinList("计划");
         System.out.println("计划:" + pinyinList.toString());
     }
 

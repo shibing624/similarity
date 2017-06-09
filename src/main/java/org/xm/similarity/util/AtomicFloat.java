@@ -4,6 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * jdk没有AtomicFloat，写一个
+ *
  * @author xuming
  */
 public class AtomicFloat extends Number {
@@ -17,41 +18,41 @@ public class AtomicFloat extends Number {
         bits = new AtomicInteger(Float.floatToIntBits(initialValue));
     }
 
-    public final float addAndGet(float delta){
+    public final float addAndGet(float delta) {
         float expect;
         float update;
         do {
             expect = get();
             update = expect + delta;
-        } while(!this.compareAndSet(expect, update));
+        } while (!this.compareAndSet(expect, update));
 
         return update;
     }
 
-    public final float getAndAdd(float delta){
+    public final float getAndAdd(float delta) {
         float expect;
         float update;
         do {
             expect = get();
             update = expect + delta;
-        } while(!this.compareAndSet(expect, update));
+        } while (!this.compareAndSet(expect, update));
 
         return expect;
     }
 
-    public final float getAndDecrement(){
+    public final float getAndDecrement() {
         return getAndAdd(-1);
     }
 
-    public final float decrementAndGet(){
+    public final float decrementAndGet() {
         return addAndGet(-1);
     }
 
-    public final float getAndIncrement(){
+    public final float getAndIncrement() {
         return getAndAdd(1);
     }
 
-    public final float incrementAndGet(){
+    public final float incrementAndGet() {
         return addAndGet(1);
     }
 
@@ -59,7 +60,7 @@ public class AtomicFloat extends Number {
         float expect;
         do {
             expect = get();
-        } while(!this.compareAndSet(expect, newValue));
+        } while (!this.compareAndSet(expect, newValue));
 
         return expect;
     }

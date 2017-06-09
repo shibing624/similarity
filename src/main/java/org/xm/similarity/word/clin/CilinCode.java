@@ -4,15 +4,18 @@ package org.xm.similarity.word.clin;
  * 哈工大词林扩展版规则编码表
  * 表中编码位从左到右顺序排列，其中，第8位对应的标记位为“=”、“#”和“@”三种符号之一。其中“=”代表常见的“同义”关系，
  * “#”代表词语之间的相关关系，“@”则代表词语自我封闭的独立性质，它在词典中既没有同义词，也没有相关词。
+ *
  * @author xuming
  */
 public class CilinCode {
-    public static double[] WEIGHT = new double[] { 1.2, 1.2, 1.0, 1.0, 0.8, 0.4 };
+    public static double[] WEIGHT = new double[]{1.2, 1.2, 1.0, 1.0, 0.8, 0.4};
     public static double TOTAL_WEIGHT = 5.6;
-    public static String getCodeLevel(String code,int level){
-        switch (level){
+
+    public static String getCodeLevel(String code, int level) {
+        switch (level) {
             case 1:
-                return code.substring(0,1);case 2:
+                return code.substring(0, 1);
+            case 2:
                 return code.substring(1, 2);
             case 3:
                 return code.substring(2, 4);
@@ -25,8 +28,10 @@ public class CilinCode {
         }
         return "";
     }
+
     /**
      * 获取共同部分编码的权重
+     *
      * @param code1
      * @param code2
      * @return
@@ -47,6 +52,7 @@ public class CilinCode {
 
     /**
      * 打印
+     *
      * @param code
      * @return
      */

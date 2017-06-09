@@ -7,6 +7,7 @@ import java.io.*;
 
 /**
  * 文件工具类
+ *
  * @author xuming
  */
 public class FileUtil {
@@ -14,15 +15,16 @@ public class FileUtil {
 
     /**
      * 从指定流读入每一行文字
-     * @param input 输入流
+     *
+     * @param input    输入流
      * @param encoding 编码
-     * @param event 触发的事件
+     * @param event    触发的事件
      * @throws IOException
      */
     public static void traverseLines(InputStream input, String encoding, TraverseEvent<String> event)
             throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(input, encoding));
-        String line ;
+        String line;
 
         while ((line = in.readLine()) != null) {
             event.visit(line);
@@ -31,8 +33,10 @@ public class FileUtil {
         input.close();
         in.close();
     }
+
     /**
      * 保存字符串到文件中
+     *
      * @param content
      * @param fileName
      * @return

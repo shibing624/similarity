@@ -4,6 +4,7 @@ package org.xm.similarity.word.hownet.sememe;
  * 描述知网义原的基本对象
  * sememe cn="成功" define="{experiencer,scope}" en="succeed" id="1-1-2-1-4-5"/>
  * 义原的id表明了义原之间的上下位关系和义原的深度。
+ *
  * @author xuming
  */
 public class Sememe {
@@ -22,12 +23,13 @@ public class Sememe {
      * <br/>或者 amount|多少
      * <br/>把相应的部分赋予不同的属性
      * 出于性能考虑，把未用到的英文名称、定义等忽略
+     *
      * @param id
      * @param en
      * @param cn
      * @param define
      */
-    public Sememe(String id,String en ,String cn,String define){
+    public Sememe(String id, String en, String cn, String define) {
         this.id = id;
         this.cnWord = cn;
         this.enWord = en;
@@ -66,9 +68,9 @@ public class Sememe {
         this.define = define;
     }
 
-    public int getType(){
+    public int getType() {
         char c = id.charAt(0);
-        switch (c){
+        switch (c) {
             case '1':
                 return SememeType.Event;
             case '2':
@@ -93,7 +95,7 @@ public class Sememe {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("义原编号=");
         sb.append(id);

@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.Similarity;
 import org.xm.similarity.ISimilarity;
+import org.xm.similarity.util.DicReader;
 import org.xm.similarity.word.hownet.IHownetMeta;
-import org.xm.xmnlp.dic.DicReader;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -19,6 +19,8 @@ import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
 
 /**
+ * 义原解析器
+ *
  * @author xuming
  */
 public abstract class SememeParser implements IHownetMeta, ISimilarity {

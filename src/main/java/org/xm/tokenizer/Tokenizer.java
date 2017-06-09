@@ -1,6 +1,7 @@
 package org.xm.tokenizer;
 
-import org.xm.xmnlp.Xmnlp;
+import com.hankcs.hanlp.HanLP;
+import com.hankcs.hanlp.seg.common.Term;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -128,10 +129,18 @@ public class Tokenizer {
 //        );
 
         //Xmnlp
-        List<org.xm.xmnlp.seg.domain.Term> termList = Xmnlp.segment(sentence);
+//        List<org.xm.xmnlp.seg.domain.Term> termList = Xmnlp.segment(sentence);
+//        results.addAll(termList
+//                .stream()
+//                .map(term -> new Word(term.word, term.getNature().name()))
+//                .collect(Collectors.toList())
+//        );
+
+        // HanLP
+        List<Term> termList = HanLP.segment(sentence);
         results.addAll(termList
                 .stream()
-                .map(term -> new Word(term.word, term.getNature().name()))
+                .map(term -> new Word(term.word, term.nature.name()))
                 .collect(Collectors.toList())
         );
 

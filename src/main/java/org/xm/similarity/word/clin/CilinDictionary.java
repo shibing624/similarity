@@ -3,10 +3,10 @@ package org.xm.similarity.word.clin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.Similarity;
+import org.xm.similarity.util.DicReader;
 import org.xm.similarity.util.FileUtil;
 import org.xm.similarity.util.StringUtil;
 import org.xm.similarity.util.TraverseEvent;
-import org.xm.xmnlp.dic.DicReader;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Collection;
 
 /**
+ * 义原相似度计算
+ *
  * @author xuming
  */
 public class SememeSimilarity extends SememeParser {

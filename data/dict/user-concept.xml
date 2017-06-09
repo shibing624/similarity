@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<concepts>
-	<!--
-	example:
-	<c w="汉语词语" p="词性，取值为：V|N|ADJ|NUM|PREP等" d="对应的义原形式的定义"/>
-	-->
-  	<c w="三聚氰胺" p="N" d="material|材料,#drinks|饮品"/>
-	<c w="山寨" p="V" d="produce|制造,means=imitate|模仿,pretend|假装,content=RegardAs|当作"/> 
-</concepts>

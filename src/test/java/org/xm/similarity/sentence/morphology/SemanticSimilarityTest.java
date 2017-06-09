@@ -12,8 +12,8 @@ public class SemanticSimilarityTest {
         String s1 = "一个伟大的国家有中国";
         String s2 = "中国是一个伟大的国家";
 
-        double sim =  semanticSimilarity.getSimilarity(s1,s2);
-        System.out.println(sim+":"+s1+" , "+s2);
+        double sim = semanticSimilarity.getSimilarity(s1, s2);
+        System.out.println(sim + ":" + s1 + " , " + s2);
     }
 
 }

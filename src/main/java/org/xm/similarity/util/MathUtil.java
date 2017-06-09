@@ -1,5 +1,8 @@
 package org.xm.similarity.util;
 
+/**
+ * 简单比较大小
+ */
 public class MathUtil {
 
     public static int min(int... values) {
