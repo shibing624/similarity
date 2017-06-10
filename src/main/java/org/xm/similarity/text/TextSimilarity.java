@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.similarity.util.StringUtil;
 import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.util.HashMap;
 import java.util.List;
@@ -35,13 +36,13 @@ public abstract class TextSimilarity implements ITextSimilarity {
         if (text1.equalsIgnoreCase(text2)) {
             return 1.0;
         }
-        List<Tokenizer.Word> words1 = Tokenizer.segment(text1);
-        List<Tokenizer.Word> words2 = Tokenizer.segment(text2);
+        List<Word> words1 = Tokenizer.segment(text1);
+        List<Word> words2 = Tokenizer.segment(text2);
         return getSimilarity(words1, words2);
     }
 
     @Override
-    public double getSimilarity(List<Tokenizer.Word> words1, List<Tokenizer.Word> words2) {
+    public double getSimilarity(List<Word> words1, List<Word> words2) {
         if (StringUtil.isBlank(words1) && StringUtil.isBlank(words2)) {
             return 1.0;
         }
@@ -66,9 +67,9 @@ public abstract class TextSimilarity implements ITextSimilarity {
         return score;
     }
 
-    protected abstract double getSimilarityImpl(List<Tokenizer.Word> words1, List<Tokenizer.Word> words2);
+    protected abstract double getSimilarityImpl(List<Word> words1, List<Word> words2);
 
-    protected void taggingWeightByFrequency(List<Tokenizer.Word> words1, List<Tokenizer.Word> words2) {
+    protected void taggingWeightByFrequency(List<Word> words1, List<Word> words2) {
         if (words1.get(0).getWeight() != null || words2.get(0).getWeight() != null) {
             return;
         }
@@ -90,7 +91,7 @@ public abstract class TextSimilarity implements ITextSimilarity {
      * @param words 词列表
      * @return 词频统计图
      */
-    private Map<String, AtomicInteger> getFrequency(List<Tokenizer.Word> words) {
+    private Map<String, AtomicInteger> getFrequency(List<Word> words) {
         Map<String, AtomicInteger> freq = new HashMap<>();
         words.forEach(i -> freq.computeIfAbsent(i.getName(), k -> new AtomicInteger()).incrementAndGet());
         return freq;
@@ -128,7 +129,7 @@ public abstract class TextSimilarity implements ITextSimilarity {
      * @param words
      * @return
      */
-    protected Map<String, Float> getFastSearchMap(List<Tokenizer.Word> words) {
+    protected Map<String, Float> getFastSearchMap(List<Word> words) {
         Map<String, Float> weightMap = new ConcurrentHashMap<>();
         if (words == null) return weightMap;
         words.parallelStream().forEach(i -> {

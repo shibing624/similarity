@@ -1,7 +1,7 @@
 package org.xm.similarity.text;
 
 import org.xm.similarity.ISimilarity;
-import org.xm.tokenizer.Tokenizer.Word;
+import org.xm.tokenizer.Word;
 
 import java.util.Arrays;
 import java.util.List;

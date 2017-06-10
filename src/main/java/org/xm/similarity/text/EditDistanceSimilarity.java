@@ -1,6 +1,6 @@
 package org.xm.similarity.text;
 
-import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.util.List;
 
@@ -27,7 +27,7 @@ public class EditDistanceSimilarity extends TextSimilarity {
      * @return 相似度分值
      */
     @Override
-    protected double getSimilarityImpl(List<Tokenizer.Word> words1, List<Tokenizer.Word> words2) {
+    protected double getSimilarityImpl(List<Word> words1, List<Word> words2) {
         //文本1
         StringBuilder text1 = new StringBuilder();
         words1.forEach(word -> text1.append(word.getName()));

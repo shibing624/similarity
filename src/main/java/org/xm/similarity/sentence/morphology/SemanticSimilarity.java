@@ -1,11 +1,10 @@
 package org.xm.similarity.sentence.morphology;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.xm.similarity.sentence.ISentenceSimilarity;
 import org.xm.similarity.word.IWordSimilarity;
 import org.xm.similarity.word.hownet.concept.ConceptSimilarity;
 import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,6 @@ import java.util.List;
  * @author xuming
  */
 public class SemanticSimilarity implements ISentenceSimilarity {
-    private static Logger logger = LoggerFactory.getLogger(SemanticSimilarity.class);
     /**
      * 词形相似度占总相似度的比重
      */
@@ -48,7 +46,6 @@ public class SemanticSimilarity implements ISentenceSimilarity {
     }
 
     private SemanticSimilarity() {
-        logger.debug("used hownet word similarity:SemanticSimilarity");
         this.wordSimilarity = ConceptSimilarity.getInstance();
     }
 
@@ -172,7 +169,7 @@ public class SemanticSimilarity implements ISentenceSimilarity {
     }
 
     public String[] segment(String sentence) {
-        List<Tokenizer.Word> list = Tokenizer.segment(sentence);
+        List<Word> list = Tokenizer.segment(sentence);
         String[] results = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
             results[i] = list.get(i).getName();

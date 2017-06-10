@@ -20,7 +20,7 @@ package org.xm.similarity.text;
 
 
 import org.xm.similarity.util.AtomicFloat;
-import org.xm.tokenizer.Tokenizer.Word;
+import org.xm.tokenizer.Word;
 
 import java.math.BigDecimal;
 import java.util.HashSet;

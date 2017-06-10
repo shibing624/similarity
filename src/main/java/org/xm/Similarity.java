@@ -43,6 +43,11 @@ public class Similarity {
          * 义原数据路径
          */
         public static String SememeXmlPath = "sememe.xml.gz";
+        /**
+         * 词频统计输出路径
+         */
+        public static String StatisticsResultPath = "data/WordFrequencyStatistics-Result.txt";
+
     }
 
     private Similarity() {

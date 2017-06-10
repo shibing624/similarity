@@ -2,6 +2,7 @@ package org.xm.similarity.sentence.editdistance;
 
 
 import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,7 @@ public class SuperString<T> {
     }
 
     public static SuperString<WordEditUnit> createWordSuperString(String sentence) {
-        List<Tokenizer.Word> wordList = Tokenizer.segment(sentence);
+        List<Word> wordList = Tokenizer.segment(sentence);
         List<WordEditUnit> unitList = new ArrayList<>(wordList.size());
         for (int i = 0; i < wordList.size(); i++) {
             unitList.add(new WordEditUnit(wordList.get(i)));

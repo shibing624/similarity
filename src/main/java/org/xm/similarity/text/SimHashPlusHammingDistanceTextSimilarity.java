@@ -20,8 +20,7 @@ package org.xm.similarity.text;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xm.tokenizer.Tokenizer;
-import org.xm.tokenizer.Tokenizer.Word;
+import org.xm.tokenizer.Word;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -74,7 +73,7 @@ public class SimHashPlusHammingDistanceTextSimilarity extends TextSimilarity {
      * @return 相似度分值
      */
     @Override
-    protected double getSimilarityImpl(List<Tokenizer.Word> words1, List<Tokenizer.Word> words2) {
+    protected double getSimilarityImpl(List<Word> words1, List<Word> words2) {
         //用词频来标注词的权重
         taggingWeightByFrequency(words1, words2);
         //计算SimHash

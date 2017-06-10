@@ -3,6 +3,7 @@ package org.xm.classification;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.io.*;
 import java.util.HashSet;
@@ -32,12 +33,11 @@ public class Instance {
 
         try (BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(f), encoding))) {
             while ((line = in.readLine()) != null) {
-//                				System.out.println(line);
-                List<Tokenizer.Word> words = Tokenizer.segment(line);
+                List<Word> words = Tokenizer.segment(line);
                 bag.addAll(words
                         .stream()
                         .filter(w -> w.getPos().endsWith("adj") || w.getPos().startsWith("n") || w.getPos().startsWith("v"))
-                        .map(Tokenizer.Word::getName)
+                        .map(Word::getName)
                         .collect(Collectors.toList())
                 );
             }

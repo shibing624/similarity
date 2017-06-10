@@ -1,7 +1,7 @@
 package org.xm.similarity.text;
 
 import org.xm.similarity.util.AtomicFloat;
-import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
@@ -35,13 +35,13 @@ public class CosineSimilarity extends TextSimilarity {
      * @return 分值
      */
     @Override
-    public double getSimilarityImpl(List<Tokenizer.Word> words1, List<Tokenizer.Word> words2) {
+    public double getSimilarityImpl(List<Word> words1, List<Word> words2) {
         // 词频标注词的权重
         taggingWeightByFrequency(words1, words2);
         // 权重容器
         Map<String, Float> weightMap1 = getFastSearchMap(words1);
         Map<String, Float> weightMap2 = getFastSearchMap(words2);
-        Set<Tokenizer.Word> words = new HashSet<>();
+        Set<Word> words = new HashSet<>();
         words.addAll(words1);
         words.addAll(words2);
         AtomicFloat ab = new AtomicFloat();// a.b

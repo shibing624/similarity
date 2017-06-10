@@ -3,9 +3,10 @@ package org.xm.similarity.sentence.morphology;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.similarity.sentence.ISentenceSimilarity;
-import org.xm.tokenizer.Tokenizer;
 import org.xm.similarity.word.IWordSimilarity;
 import org.xm.similarity.word.hownet.concept.ConceptSimilarity;
+import org.xm.tokenizer.Tokenizer;
+import org.xm.tokenizer.Word;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -127,7 +128,7 @@ public class MorphoSimilarity implements ISentenceSimilarity {
     }
 
     public String[] segment(String sentence) {
-        List<Tokenizer.Word> list = Tokenizer.segment(sentence);
+        List<Word> list = Tokenizer.segment(sentence);
         String[] results = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
             results[i] = list.get(i).getName();

@@ -18,7 +18,8 @@
 
 package org.xm.similarity.text;
 
-import org.xm.tokenizer.Tokenizer.Word;
+
+import org.xm.tokenizer.Word;
 
 import java.util.List;
 
