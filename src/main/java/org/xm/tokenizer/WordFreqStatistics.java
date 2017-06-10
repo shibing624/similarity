@@ -2,11 +2,14 @@ package org.xm.tokenizer;
 
 
 import com.hankcs.hanlp.HanLP;
+import com.hankcs.hanlp.corpus.io.IOUtil;
 import com.hankcs.hanlp.seg.Segment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xm.Similarity;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -130,4 +133,22 @@ public class WordFreqStatistics {
         this.statisticsMap = statisticsMap;
     }
 
+    public static void statistics(Segment segment, String inputFilePath) {
+        try {
+            //词频统计
+            WordFreqStatistics statistic = new WordFreqStatistics(segment);
+            BufferedReader reader = IOUtil.newBufferedReader(inputFilePath);
+            String t;
+            StringBuilder s = new StringBuilder();
+            while ((t = reader.readLine()) != null) {
+                s.append(t);
+            }
+            statistic.seg(s.toString());
+            statistic.setResultPath(inputFilePath.replace(".txt", "") + "-WordFrequencyStatistics-Result.txt");
+            statistic.dump();
+            reader.close();
+        } catch (IOException e) {
+            logger.error("IO error: " + e.getLocalizedMessage());
+        }
+    }
 }

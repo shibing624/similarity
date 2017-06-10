@@ -21,12 +21,13 @@ import java.util.stream.Collectors;
 public class Word2vec {
     private static final Logger logger = LoggerFactory.getLogger(Word2vec.class);
 
-    public static String trainModel(String inputfilePath) throws IOException {
+    public static String trainModel(String inputfilePath, String modelPath) throws IOException {
         File inputfile = new File(inputfilePath);
         if (inputfile == null) {
             return "";
         }
-        String out = inputfile.getPath()  + ".model";
+        String out = inputfile.getPath() + ".model";
+        if (modelPath != null && modelPath.trim().length() > 0) out = modelPath;
         File outFile = new File(out);
         Learn learn = new Learn();
         learn.learnFile(inputfile);
