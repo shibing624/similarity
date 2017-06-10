@@ -8,15 +8,16 @@ import java.util.Arrays;
  * @author xuming
  */
 public class ModelParserTest {
+    private static final String RAW_CORPUS_SPLIT_MODEL = "corpus/tianlongbabu.split.txt.model";
+
     @Test
     public void loadModel() throws Exception {
         ModelParser parser = new ModelParser();
-        String path = "data/seg_result_model";
-        parser.loadModel(path);
-        float[] result = parser.getWordVector("贸易");
-        System.out.println("贸易" + "\t" +Arrays.toString(result));
-        System.out.println("食品" + "\t" +Arrays.toString(parser.getWordVector("食品")));
-        System.out.println("贸易 近似词：" + "\t" +parser.distance("贸易"));
+        parser.loadModel(RAW_CORPUS_SPLIT_MODEL);
+        float[] result = parser.getWordVector("内功");
+        System.out.println("内功" + "\t" + Arrays.toString(result));
+        System.out.println("武学" + "\t" + Arrays.toString(parser.getWordVector("武学")));
+        System.out.println("内功 近似词：" + "\t" + parser.distance("内功"));
 
         /*
         List<String> list = new ArrayList<>();
