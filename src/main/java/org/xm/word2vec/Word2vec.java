@@ -35,7 +35,7 @@ public class Word2vec {
         return out;
     }
 
-    public static float[] Parser(String modelPath, String word) throws IOException {
+    public static float[] parser(String modelPath, String word) throws IOException {
         ModelParser parser = new ModelParser();
         parser.loadModel(modelPath);
         float[] result = parser.getWordVector(word);

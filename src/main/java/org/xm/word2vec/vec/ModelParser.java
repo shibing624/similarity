@@ -7,6 +7,7 @@ import java.util.*;
 
 /**
  * word2vec 模型的使用
+ *
  * @author xuming
  */
 public class ModelParser {
