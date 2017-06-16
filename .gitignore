@@ -5,4 +5,5 @@
 .settings/
 target/
 logs/
-data/
+data/doc/
+data/test/

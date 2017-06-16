@@ -1,0 +1,185 @@
+英文程度级别词语    170
+
+1. “极其|extreme / 最|most”  64
+100 percent
+absolute
+absolutely
+alarmingly
+amazingly
+as fully as possible
+astonishingly
+awfully
+beyond challenge
+beyond compare
+beyond comparison
+beyond measure
+bitterly
+by all means
+completely
+deep-rooted
+deep-seated
+deeply
+definitely
+disastrously
+downright
+entirely
+exceedingly
+excessively
+extreme
+extremely
+fully
+greatest
+greatly
+heinous
+hundred-percent
+immensely
+immoderate
+in a penetrating way
+in every possible way
+in the extreme
+incomparably
+ingrained
+matchlessly
+monstrous
+most
+of the highest degree
+out-and-out
+outstanding
+outstandingly
+reach the limit
+right-down
+sharply
+sheer
+superb
+terribly
+to death
+to the full
+to the letter
+to the limit
+to the marrow
+to the utmost
+totally
+towering
+unusually
+utmost
+utterly
+very much
+most
+
+2. “很|very” 25
+a lot
+awfully
+badly
+better
+by far
+considerably
+deep
+disastrously
+especially
+extraordinarily
+extremely
+greatly
+how
+however
+indeed
+much
+particularly
+really
+terribly
+to a serious degree
+too far
+too much
+unusually
+very
+what a
+
+3. “较|more” 22
+all the more
+as much as
+at the worst
+by far
+comparatively
+even more
+further
+further more
+in that way
+increasingly
+like that
+more
+more and more
+more so
+much more
+plus
+relatively
+slightly more
+so
+still more
+such
+the more ... the more
+
+4. “稍|-ish” 15
+a bit
+a bit too
+a little
+a little bit
+a little more
+fairly
+more or less
+passably
+pretty
+quite
+rather
+slightly
+some
+somewhat
+to some extent
+
+5. “欠|insufficiently” 11
+a little less
+just
+light
+merely
+not particularly
+not too
+not very
+relative
+slight
+slightest degree of
+slightly
+
+6. “超|over” 33
+a little over
+above
+above measure
+above quota
+and more
+excessive
+excessively
+exorbitance
+extra
+far more than
+hyperphysical
+inflated
+inordinate
+not too much
+odd
+outrageousness
+over
+over-
+overdone
+overheated
+plus
+slightly more
+super
+superheated
+superheterodyne
+surplus
+to a fault
+too
+too much
+ultra
+ultrastructural
+undue
+unduly
+
+
