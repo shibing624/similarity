@@ -24,7 +24,7 @@ public class MorphoSimilarity implements ISentenceSimilarity {
     // 词序相似度占比
     private final double LAMBDA2 = 0.0;
     private IWordSimilarity wordSimilarity;
-    private static String FILTER_CHARS = " 　，。；？《》()｜！,.;?<>|_^…!";
+    private static final String FILTER_CHARS = " 　，。；？《》()｜！,.;?<>|_^…!";
     private static MorphoSimilarity instance;
 
     public static MorphoSimilarity getInstance() {
@@ -36,7 +36,7 @@ public class MorphoSimilarity implements ISentenceSimilarity {
 
     private MorphoSimilarity() {
         this.wordSimilarity = ConceptSimilarity.getInstance();
-        logger.debug("used hownet wordsimilarity.");
+        logger.debug("used hownet word similarity.");
     }
 
     private String[] filter(String[] words) {
