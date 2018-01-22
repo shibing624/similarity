@@ -117,10 +117,10 @@ public class SemanticSimilarity implements ISentenceSimilarity {
             int max_col = -1;
 
             //先挑出相似度最大的一对：<row, column, max_score>
-            for (int i = 0; i < scores.length; i++) {
+            for (int i = 0; i < list1.length; i++) {
                 if (firstFlags[i])
                     continue;
-                for (int j = 0; j < scores.length; j++) {
+                for (int j = 0; j < list2.length; j++) {
                     if (secondFlags[j])
                         continue;
 
