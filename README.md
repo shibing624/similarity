@@ -68,7 +68,8 @@ public static void main(String[] args) {
 ```
 demo code position: test/java/org.xm/WordSimilarityDemo.java
 
-result:
+* result:
+
 ![](data/pic/word_sim.png)
 
 ### phrase similarity
@@ -84,7 +85,8 @@ public static void main(String[] args) {
 ```
 demo code position: test/java/org.xm/PhraseSimilarityDemo.java
 
-result:
+* result:
+
 ![](data/pic/phrase_sim.png)
 
 ### sentence similarity
@@ -107,7 +109,8 @@ public static void main(String[] args) {
 ```
 demo code position: test/java/org.xm/SentenceSimilarityDemo.java
 
-result:
+* result:
+
 ![](data/pic/sentence_sim.png)
 
 
@@ -136,13 +139,15 @@ public void getSimilarityScore() throws Exception {
 
 demo code position: test/java/org.xm/similarity/text/CosineSimilarityTest.java
 
-result:
+* result:
+
 ![](data/pic/cos_txt.png)
 
 ### word frequency statistics
 demo code position: test/java/org.xm/tokenizer/WordFreqStatisticsTest.java
 
-result:
+* result:
+
 ![](data/pic/freq.png)
 
 分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用我们NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
@@ -163,7 +168,8 @@ public void getTendency() throws Exception {
 
 demo code position: test/java/org.xm/tendency.word/HownetWordTendencyTest.java
 
-result:
+* result:
+
 ![](data/pic/tendency.png)
 
 本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[classifier-in-action](https://github.com/shibing624/classifier-in-action)，利用深度神经网络模型、SVM分类算法实现的效果更好。
@@ -193,9 +199,13 @@ public void testHomoionymName() throws Exception {
 
 demo code position: test/java/org.xm/word2vec/Word2vecTest.java
 
-train:
+* train:
+
 ![](data/pic/word2v.png)
 
-result:
+* result:
+
 ![](data/pic/word2v_ret.png)
-训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，可以得到近义词（不是同义词）。
+
+训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
+用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
