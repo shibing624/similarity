@@ -6,7 +6,7 @@ package org.xm;
 public class SentenceSimilarityDemo {
     public static void main(String[] args) {
         String sentence1 = "中国人爱吃鱼";
-        String sentence2 = "湖北佬最喜吃鱼";//"电脑病毒是有害的吗";
+        String sentence2 = "湖北佬最喜吃鱼";
 
         double morphoSimilarityResult = Similarity.morphoSimilarity(sentence1, sentence2);
         double editDistanceResult = Similarity.editDistanceSimilarity(sentence1, sentence2);

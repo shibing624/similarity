@@ -30,6 +30,7 @@
 > * 词法分析
   * xmnlp中文分词
   * 分词词性标注
+  * 词频统计
 > * 知网义原
   * 义原树
 > * 情感分析
@@ -46,3 +47,155 @@
 ------
 
 
+## Usage
+
+### word similarity
+```
+public static void main(String[] args) {
+    String word1 = "教师";
+    String word2 = "教授";
+    double cilinSimilarityResult = Similarity.cilinSimilarity(word1, word2);
+    double pinyinSimilarityResult = Similarity.pinyinSimilarity(word1, word2);
+    double conceptSimilarityResult = Similarity.conceptSimilarity(word1, word2);
+    double charBasedSimilarityResult = Similarity.charBasedSimilarity(word1, word2);
+
+    System.out.println(word1 + " vs " + word2 + " 词林相似度值：" + cilinSimilarityResult);
+    System.out.println(word1 + " vs " + word2 + " 拼音相似度值：" + pinyinSimilarityResult);
+    System.out.println(word1 + " vs " + word2 + " 概念相似度值：" + conceptSimilarityResult);
+    System.out.println(word1 + " vs " + word2 + " 字面相似度值：" + charBasedSimilarityResult);
+}
+    
+```
+demo code position: test/java/org.xm/WordSimilarityDemo.java
+
+result:
+![](data/pic/word_sim.png)
+
+### phrase similarity
+```
+public static void main(String[] args) {
+    String phrase1 = "继续努力";
+    String phrase2 = "持续发展";
+    double result = Similarity.phraseSimilarity(phrase1, phrase2);
+
+    System.out.println(phrase1 + " vs " + phrase2 + " 短语相似度值：" + result);
+}
+
+```
+demo code position: test/java/org.xm/PhraseSimilarityDemo.java
+
+result:
+![](data/pic/phrase_sim.png)
+
+### sentence similarity
+```
+public static void main(String[] args) {
+    String sentence1 = "中国人爱吃鱼";
+    String sentence2 = "湖北佬最喜吃鱼";
+
+    double morphoSimilarityResult = Similarity.morphoSimilarity(sentence1, sentence2);
+    double editDistanceResult = Similarity.editDistanceSimilarity(sentence1, sentence2);
+    double standEditDistanceResult = Similarity.standardEditDistanceSimilarity(sentence1,sentence2);
+    double gregeorEditDistanceResult = Similarity.gregorEditDistanceSimilarity(sentence1,sentence2);
+
+    System.out.println(sentence1 + " vs " + sentence2 + " 词形词序句子相似度值：" + morphoSimilarityResult);
+    System.out.println(sentence1 + " vs " + sentence2 + " 优化的编辑距离句子相似度值：" + editDistanceResult);
+    System.out.println(sentence1 + " vs " + sentence2 + " 标准编辑距离句子相似度值：" + standEditDistanceResult);
+    System.out.println(sentence1 + " vs " + sentence2 + " gregeor编辑距离句子相似度值：" + gregeorEditDistanceResult);
+}
+
+```
+demo code position: test/java/org.xm/SentenceSimilarityDemo.java
+
+result:
+![](data/pic/sentence_sim.png)
+
+
+### text similarity
+```
+@Test
+public void getSimilarityScore() throws Exception {
+    String text1 = "我爱购物";
+    String text2 = "我爱读书";
+    String text3 = "他是黑客";
+    TextSimilarity similarity = new CosineSimilarity();
+    double score1pk2 = similarity.getSimilarity(text1, text2);
+    double score1pk3 = similarity.getSimilarity(text1, text3);
+    double score2pk2 = similarity.getSimilarity(text2, text2);
+    double score2pk3 = similarity.getSimilarity(text2, text3);
+    double score3pk3 = similarity.getSimilarity(text3, text3);
+    System.out.println(text1 + " 和 " + text2 + " 的相似度分值：" + score1pk2);
+    System.out.println(text1 + " 和 " + text3 + " 的相似度分值：" + score1pk3);
+    System.out.println(text2 + " 和 " + text2 + " 的相似度分值：" + score2pk2);
+    System.out.println(text2 + " 和 " + text3 + " 的相似度分值：" + score2pk3);
+    System.out.println(text3 + " 和 " + text3 + " 的相似度分值：" + score3pk3);
+
+}
+
+```
+
+demo code position: test/java/org.xm/similarity/text/CosineSimilarityTest.java
+
+result:
+![](data/pic/cos_txt.png)
+
+### word frequency statistics
+demo code position: test/java/org.xm/tokenizer/WordFreqStatisticsTest.java
+
+result:
+![](data/pic/freq.png)
+
+分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用我们NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
+
+
+### sentiment analysis based on words
+```
+@Test
+public void getTendency() throws Exception {
+    HownetWordTendency hownet = new HownetWordTendency();
+    String word = "美好";
+    double sim = hownet.getTendency(word);
+    System.out.println(word + ":" + sim);
+    System.out.println("混蛋:" + hownet.getTendency("混蛋"));
+}
+
+```
+
+demo code position: test/java/org.xm/tendency.word/HownetWordTendencyTest.java
+
+result:
+![](data/pic/tendency.png)
+
+本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[classifier-in-action](https://github.com/shibing624/classifier-in-action)，利用深度神经网络模型、SVM分类算法实现的效果更好。
+
+### homoionym(use word2vec)
+```
+@Test
+public void testHomoionym() throws Exception {
+    List<String> result = Word2vec.getHomoionym(RAW_CORPUS_SPLIT_MODEL, "武功", 10);
+    System.out.println("武功 近似词：" + result);
+}
+
+@Test
+public void testHomoionymName() throws Exception {
+    String model = RAW_CORPUS_SPLIT_MODEL;
+    List<String> result = Word2vec.getHomoionym(model, "乔帮主", 10);
+    System.out.println("乔帮主 近似词：" + result);
+
+    List<String> result2 = Word2vec.getHomoionym(model, "阿朱", 10);
+    System.out.println("阿朱 近似词：" + result2);
+
+    List<String> result3 = Word2vec.getHomoionym(model, "少林寺", 10);
+    System.out.println("少林寺 近似词：" + result3);
+}
+    
+```
+
+demo code position: test/java/org.xm/word2vec/Word2vecTest.java
+
+train:
+![](data/pic/word2v.png)
+
+result:
+![](data/pic/word2v_ret.png)
+训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，可以得到近义词（不是同义词）。

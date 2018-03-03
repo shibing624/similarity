@@ -9,8 +9,10 @@ public class HownetWordTendencyTest {
     @Test
     public void getTendency() throws Exception {
         HownetWordTendency hownet = new HownetWordTendency();
-        double sim = hownet.getTendency("流氓");
-        System.out.println(sim);
+        String word = "美好";
+        double sim = hownet.getTendency(word);
+        System.out.println(word + ":" + sim);
+        System.out.println("混蛋:" + hownet.getTendency("混蛋"));
     }
 
 }
