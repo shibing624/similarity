@@ -25,7 +25,7 @@ public class ConceptSimilarityTest {
         String word2 = "自行车";
         double sim = conceptSimilarity.getSimilarity(word1, word2);
         System.out.println(sim + " :" + word1 + "," + word2);
-        assertTrue(sim>0.2);
+        assertTrue(sim > 0.2);
     }
 
 }
