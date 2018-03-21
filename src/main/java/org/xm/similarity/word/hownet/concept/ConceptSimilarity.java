@@ -29,6 +29,7 @@ public class ConceptSimilarity extends ConceptParser {
         }
         return instance;
     }
+
     private ConceptSimilarity() throws IOException {
         super(new SememeSimilarity());
     }
@@ -114,11 +115,17 @@ public class ConceptSimilarity extends ConceptParser {
      */
     public Collection<Concept> autoCombineConcepts(String newWord, Collection<Concept> refConcepts) {
         ConceptLinkedList newConcepts = new ConceptLinkedList();
-        if (newWord == null) {
+        if (StringUtil.isBlank(newWord)) {
             return newConcepts;
         }
         // 取最可能三个
-        for (String conceptWord : SegmentNewWord(newWord, 3)) {
+        List<String> segmentNewWords = segmentNewWord(newWord, 3);
+        // 过滤未登录单字
+        if (segmentNewWords.size() == 1) {
+            return newConcepts;
+        }
+        // 处理未登录组合词
+        for (String conceptWord : segmentNewWords) {
             Collection<Concept> concepts = getConcepts(conceptWord);
             if (newConcepts.size() == 0) {
                 newConcepts.addAll(concepts);
@@ -153,7 +160,7 @@ public class ConceptSimilarity extends ConceptParser {
      * @param top
      * @return
      */
-    private List<String> SegmentNewWord(String newWord, int top) {
+    private List<String> segmentNewWord(String newWord, int top) {
         List<String> results = new LinkedList<>();
         int count = 0;
         String word = newWord;
@@ -178,9 +185,10 @@ public class ConceptSimilarity extends ConceptParser {
      * 还需要修正第一个概念中的符号义原对于第二个概念主义原的实际关系，当参照概念起作用时，
      * 即大于指定的阈值，则需要判断是否把当前义原并入组合概念中，对于第一个概念，还需要同时修正符号关系，
      * 符合关系与参照概念保持一致
+     *
      * @param head 第一概念
      * @param tail 第二概念
-     * @param ref 参考
+     * @param ref  参考
      * @return
      */
     public Concept autoCombineConcept(Concept head, Concept tail, Concept ref) {
