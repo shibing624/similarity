@@ -193,7 +193,7 @@ demo code position: test/java/org.xm/tendency.word/HownetWordTendencyTest.java
 
 ![](data/pic/tendency.png)
 
-本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[classifier-in-action](https://github.com/shibing624/classifier-in-action)，利用深度神经网络模型、SVM分类算法实现的效果更好。
+本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
 ### homoionym(use word2vec)
 ```
