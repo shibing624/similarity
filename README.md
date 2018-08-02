@@ -45,6 +45,11 @@
 在提供丰富功能的同时，**similarity**内部模块坚持低耦合、模型坚持惰性加载、词典坚持明文发布，使用方便，帮助用户训练自己的语料。
 
 ------
+## demo
+
+http://www.borntowin.cn/word_sim_emb.html
+
+------
 ## Todo
 
 文本相似性度量
