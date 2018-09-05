@@ -47,7 +47,7 @@
 ------
 ## demo
 
-http://www.borntowin.cn/word_sim_emb.html
+http://www.borntowin.cn/nlp
 
 ------
 ## Todo
