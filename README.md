@@ -57,7 +57,7 @@ http://www.borntowin.cn/nlp
 
 - [x] 关键词匹配（TF-IDF、BM25）
 - [x] 浅层语义匹配（WordEmbed隐语义模型，用word2vec或glove词向量直接累加构造的句向量）
-- [] 深度语义匹配模型（DSSM、CLSM、DeepMatch、MatchingFeatures、ARC-II、DeepMind，具体依次参考下面的Reference）
+- [ ] 深度语义匹配模型（DSSM、CLSM、DeepMatch、MatchingFeatures、ARC-II、DeepMind，具体依次参考下面的Reference）
 
 欢迎大家贡献代码及思路，完善本项目
 
