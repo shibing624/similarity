@@ -47,7 +47,7 @@
 ------
 ## demo
 
-http://www.borntowin.cn/product/word_emb_sim
+https://www.borntowin.cn/product/word_emb_sim
 
 ------
 ## Todo
