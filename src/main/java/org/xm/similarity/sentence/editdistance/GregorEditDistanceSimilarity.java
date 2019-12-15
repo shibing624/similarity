@@ -5,7 +5,7 @@ package org.xm.similarity.sentence.editdistance;
  * 时间复杂度为O(m3n3)
  * 具体实现请参考GregorLeusch，Nicola Ueffing的文章《A Novel String-to-String Distance Measure With
  * Application to Machine Translation Evaluation》
- * 问题：<br/>
+ * 问题
  * 相似度计算的问题会影响句子相似度计算的直观结果，例如“什么是计算机病毒”，“电脑病毒是什么”
  * 直觉应该是2，即“什么是计算机病毒”首先变为“计算机病毒什么是”，再变为“计算机病毒是什么”，
  * 编辑代价为2，但实际上，当由“什么是计算机病毒”变为“计算机病毒什么是”后，由于"什么是"与“是什么”的替换代价只有0.2，

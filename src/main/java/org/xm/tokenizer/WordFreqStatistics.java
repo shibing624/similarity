@@ -82,7 +82,7 @@ public class WordFreqStatistics {
             //score rank
             List<String> list = map.entrySet()
                     .parallelStream()
-                    .sorted((a, b) -> new Integer(b.getValue().get()).compareTo(a.getValue().intValue()))
+                    .sorted((a, b) -> Integer.valueOf(b.getValue().get()).compareTo(a.getValue().intValue()))
                     .map(entry -> entry.getKey().toString() + "\t" + entry.getValue().get())
                     .collect(Collectors.toList());
             Files.write(Paths.get(path), list);

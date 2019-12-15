@@ -61,17 +61,21 @@ https://www.borntowin.cn/product/word_emb_sim
 
 欢迎大家贡献代码及思路，完善本项目
 
-## Reference
-
-* [DSSM] Po-Sen Huang, et al., 2013, Learning Deep Structured Semantic Models for Web Search using Clickthrough Data
-* [CLSM] Yelong Shen, et al, 2014, A Latent Semantic Model with Convolutional-Pooling Structure for Information Retrieval 
-* [DeepMatch] Zhengdong Lu & Hang Li, 2013, A Deep Architecture for Matching Short Texts
-* [MatchingFeatures] Zongcheng Ji, et al., 2014, An Information Retrieval Approach to Short Text Conversation
-* [ARC-II] Baotian Hu, et al., 2015, Convolutional Neural Network Architectures for Matching Natural Language Sentences
-* [DeepMind] Aliaksei Severyn, et al., 2015, Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks
-
 
 ------
+## Maven
+```
+<dependency>
+  <groupId>io.github.shibing624</groupId>
+  <artifactId>similarity</artifactId>
+  <version>1.1.2-SNAPSHOT</version>
+</dependency>
+```
+import
+```
+import org.xm.Simiarity;
+
+```
 
 ## Usage
 
@@ -235,3 +239,14 @@ demo code position: test/java/org.xm/word2vec/Word2vecTest.java
 
 训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
 用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
+
+
+## Reference
+
+* [DSSM] Po-Sen Huang, et al., 2013, Learning Deep Structured Semantic Models for Web Search using Clickthrough Data
+* [CLSM] Yelong Shen, et al, 2014, A Latent Semantic Model with Convolutional-Pooling Structure for Information Retrieval 
+* [DeepMatch] Zhengdong Lu & Hang Li, 2013, A Deep Architecture for Matching Short Texts
+* [MatchingFeatures] Zongcheng Ji, et al., 2014, An Information Retrieval Approach to Short Text Conversation
+* [ARC-II] Baotian Hu, et al., 2015, Convolutional Neural Network Architectures for Matching Natural Language Sentences
+* [DeepMind] Aliaksei Severyn, et al., 2015, Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks
+

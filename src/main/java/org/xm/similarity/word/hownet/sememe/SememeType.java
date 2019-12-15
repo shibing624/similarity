@@ -1,7 +1,7 @@
 package org.xm.similarity.word.hownet.sememe;
 
 /**
- * 义原的类型定义<br/>
+ * 义原的类型定义
  * <ul>
  * <li>1：Event|事件</li>
  * <li>2：Entity|实体 </li>
@@ -14,8 +14,8 @@ package org.xm.similarity.word.hownet.sememe;
  * <li>9: EventRole|动态角色</li>
  * <li>10: EventFeatures|动态属性</li>
  * <li>0：未知</li>
- * <p>
- * 其中1~7为基本义元，8为语法义元，9、10为关系义元<br/>
+ *
+ * 其中1~7为基本义元，8为语法义元，9、10为关系义元
  *
  * @author xuming
  */

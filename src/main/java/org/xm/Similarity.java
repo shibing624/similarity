@@ -58,9 +58,9 @@ public class Similarity {
      * 词语相似度
      * 计算词林编码相似度
      *
-     * @param word1
-     * @param word2
-     * @return
+     * @param word1 word
+     * @param word2 word
+     * @return float
      */
     public static double cilinSimilarity(String word1, String word2) {
         return CilinSimilarity.getInstance().getSimilarity(word1, word2);
@@ -70,9 +70,9 @@ public class Similarity {
      * 词语相似度
      * 计算拼音相似度
      *
-     * @param word1
-     * @param word2
-     * @return
+     * @param word1 word
+     * @param word2 word
+     * @return float
      */
     public static double pinyinSimilarity(String word1, String word2) {
         return PhraseSimilarity.getInstance().getSimilarity(word1, word2);
@@ -82,9 +82,9 @@ public class Similarity {
      * 词语相似度
      * 计算字面相似度
      *
-     * @param word1
-     * @param word2
-     * @return
+     * @param word1 word
+     * @param word2 word
+     * @return float
      */
     public static double charBasedSimilarity(String word1, String word2) {
         return CharBasedSimilarity.getInstance().getSimilarity(word1, word2);

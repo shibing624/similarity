@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Word2vecTest {
     private static final Segment SEGMENT = HanLP.newSegment().enableAllNamedEntityRecognize(true)
-            .enableCustomDictionary(true).enableMultithreading(4);
+            .enableCustomDictionary(false).enableMultithreading(4);
     private static final String RAW_CORPUS = "corpus/tianlongbabu.txt";
     private static final String RAW_CORPUS_SPLIT = "corpus/tianlongbabu.split.txt";
     private static final String RAW_CORPUS_SPLIT_MODEL = "corpus/tianlongbabu.split.txt.model";

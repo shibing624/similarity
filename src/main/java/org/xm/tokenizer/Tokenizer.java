@@ -88,8 +88,7 @@ public class Tokenizer {
             reader.close();
             long end = System.currentTimeMillis();
             System.out.println("segment result save：" + outPath);
-            System.out.println("共 " + allCount + " 个字符，共 " + lexCount + " 个词语，用时" + (end - start) + "毫秒，" +
-                    "每秒处理了:" + (allCount * 1000 / (end - start)));
+            System.out.println("total " + allCount + " chars, " + lexCount + " words, spend" + (end - start) + "ms ");
         } catch (IOException e) {
             logger.error("IO error: " + e.getLocalizedMessage());
         }
