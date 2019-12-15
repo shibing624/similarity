@@ -171,14 +171,14 @@ demo code position: test/java/org.xm/similarity/text/CosineSimilarityTest.java
 
 * result:
 
-![](data/pic/cos_txt.png)
+![](./data/pic/cos_txt.png)
 
 ### word frequency statistics
 demo code position: test/java/org.xm/tokenizer/WordFreqStatisticsTest.java
 
 * result:
 
-![](data/pic/freq.png)
+![](./data/pic/freq.png)
 
 分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用我们NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
 
@@ -200,7 +200,7 @@ demo code position: test/java/org.xm/tendency.word/HownetWordTendencyTest.java
 
 * result:
 
-![](data/pic/tendency.png)
+![](./data/pic/tendency.png)
 
 本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
@@ -231,11 +231,11 @@ demo code position: test/java/org.xm/word2vec/Word2vecTest.java
 
 * train:
 
-![](data/pic/word2v.png)
+![](./data/pic/word2v.png)
 
 * result:
 
-![](data/pic/word2v_ret.png)
+![](./data/pic/word2v_ret.png)
 
 训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
 用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
