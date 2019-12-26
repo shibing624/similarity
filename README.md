@@ -65,9 +65,12 @@ https://www.borntowin.cn/product/word_emb_sim
 ------
 ## jar包
 - 离线jar包
+[similarity-1.1.3-jar-with-dependencies.jar](./data/similarity-1.1.3-jar-with-dependencies.jar)
 [similarity-1.1.3.jar](./data/similarity-1.1.3.jar)
 
-```aidl
+下载其中一个，置于项目`Libraries`下，这样加入到项目依赖即可。
+
+```
 由于maven官方库包上传需要审核校对，着实耗时，现提供离线版jar包，方便使用。后续可以切换到maven官方库调用。
 ```
 
@@ -77,7 +80,7 @@ https://www.borntowin.cn/product/word_emb_sim
 <dependency>
   <groupId>io.github.shibing624</groupId>
   <artifactId>similarity</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <version>1.1.3</version>
 </dependency>
 ```
 
@@ -85,7 +88,22 @@ https://www.borntowin.cn/product/word_emb_sim
 
 import
 ```
-import org.xm.Simiarity;
+
+import org.xm.Similarity;
+import org.xm.tendency.word.HownetWordTendency;
+
+public class demo {
+    public static void main(String[] args) {
+        double result = Similarity.cilinSimilarity("电动车", "自行车");
+        System.out.println(result);
+
+        String word = "混蛋";
+        HownetWordTendency hownetWordTendency = new HownetWordTendency();
+        result = hownetWordTendency.getTendency(word);
+        System.out.println(word + "  词语情感趋势值：" + result);
+    }
+}
+
 
 ```
 
