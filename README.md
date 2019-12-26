@@ -63,7 +63,16 @@ https://www.borntowin.cn/product/word_emb_sim
 
 
 ------
-## Maven
+## jar包
+- 离线jar包
+![similarity-1.1.3.jar](./data/similarity-1.1.3.jar)
+
+```aidl
+由于maven官方库包上传需要审核校对，着实耗时，现提供离线版jar包，方便使用。后续可以切换到maven官方库调用。
+```
+
+
+- Maven官方库
 ```
 <dependency>
   <groupId>io.github.shibing624</groupId>
@@ -71,6 +80,9 @@ https://www.borntowin.cn/product/word_emb_sim
   <version>1.1.2-SNAPSHOT</version>
 </dependency>
 ```
+
+
+
 import
 ```
 import org.xm.Simiarity;
