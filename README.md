@@ -75,7 +75,7 @@ https://www.borntowin.cn/product/word_emb_sim
 ```
 
 
-- Maven官方库
+- Maven官方库(未上传，暂不可用)
 ```
 <dependency>
   <groupId>io.github.shibing624</groupId>
