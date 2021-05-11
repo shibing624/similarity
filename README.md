@@ -3,21 +3,27 @@
 
 **similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。
 
+------
+## Feature
+
 **similarity**提供下列功能：
 
-> * 词语相似度计算
+- 词语相似度计算
   * 词林编码法相似度
   * 汉语语义法相似度
   * 知网词语相似度
   * 字面编辑距离法
-> * 短语相似度计算
+  
+- 短语相似度计算
   * 简单短语相似度
-> * 句子相似度计算
+    
+- 句子相似度计算
   * 词性和词序结合法
   * 编辑距离算法
   * Gregor编辑距离法
   * 优化编辑距离法
-> * 文本相似度计算
+  
+- 文本相似度计算
   * 余弦相似度
   * 编辑距离算法
   * 欧几里得距离
@@ -27,39 +33,27 @@
   * 曼哈顿距离
   * SimHash + 汉明距离
   * Sørensen–Dice系数
-> * 词法分析
+
+- 词法分析
   * xmnlp中文分词
   * 分词词性标注
   * 词频统计
-> * 知网义原
+
+- 知网义原
   * 义原树
-> * 情感分析
+
+- 情感分析
   * 正面倾向程度
   * 负面倾向程度
   * 情感倾向性
-> * 近似词
+  
+- 近似词
   * word2vec
 
 
 
 在提供丰富功能的同时，**similarity**内部模块坚持低耦合、模型坚持惰性加载、词典坚持明文发布，使用方便，帮助用户训练自己的语料。
 
-------
-## demo
-
-https://www.borntowin.cn/product/word_emb_sim
-
-------
-## Todo
-
-文本相似性度量
-
-
-- [x] 关键词匹配（TF-IDF、BM25）
-- [x] 浅层语义匹配（WordEmbed隐语义模型，用word2vec或glove词向量直接累加构造的句向量）
-- [ ] 深度语义匹配模型（DSSM、CLSM、DeepMatch、MatchingFeatures、ARC-II、DeepMind，具体依次参考下面的Reference）
-
-欢迎大家贡献代码及思路，完善本项目
 
 
 ------
@@ -270,6 +264,18 @@ demo code position: test/java/org.xm/word2vec/Word2vecTest.java
 训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
 用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
 
+
+------
+## Todo
+
+文本相似性度量
+
+
+- [x] 关键词匹配（TF-IDF、BM25）
+- [x] 浅层语义匹配（WordEmbed隐语义模型，用word2vec或glove词向量直接累加构造的句向量）
+- [ ] 深度语义匹配模型（DSSM、CLSM、DeepMatch、MatchingFeatures、ARC-II、DeepMind，具体依次参考下面的Reference）
+
+欢迎大家贡献代码及思路，完善本项目
 
 ## Reference
 
