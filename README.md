@@ -66,7 +66,7 @@
 
 - jitpack库
 
-```bash
+```xml
 <repositories>
   <repository>
     <id>jitpack.io</id>
@@ -75,7 +75,7 @@
 </repositories>
 ```
 
-```bash
+```xml
 <dependency>
   <groupId>com.github.shibing624</groupId>
   <artifactId>similarity</artifactId>
@@ -86,7 +86,7 @@
 - Maven官方库(未上传，暂不可用)
 
 由于maven官方库包上传需要审核校对，着实耗时，现提供离线版jar包，方便使用。后续可以切换到maven官方库调用。
-```
+```xml
 <dependency>
   <groupId>io.github.shibing624</groupId>
   <artifactId>similarity</artifactId>
