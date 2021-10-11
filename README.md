@@ -59,8 +59,9 @@
 ------
 ## jar包
 - 离线jar包
-[similarity-1.1.3-jar-with-dependencies.jar](./data/similarity-1.1.3-jar-with-dependencies.jar)
-[similarity-1.1.3.jar](./data/similarity-1.1.3.jar)
+
+ - [similarity-1.1.3-jar-with-dependencies.jar](./data/similarity-1.1.3-jar-with-dependencies.jar)
+ - [similarity-1.1.3.jar](./data/similarity-1.1.3.jar)
 
 下载其中一个，置于项目`Libraries`下，这样加入到项目依赖即可。
 
