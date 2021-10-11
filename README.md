@@ -97,8 +97,7 @@
 
 
 导入包，使用示例：
-```
-
+```java
 import org.xm.Similarity;
 import org.xm.tendency.word.HownetWordTendency;
 
@@ -113,15 +112,13 @@ public class demo {
         System.out.println(word + "  词语情感趋势值：" + result);
     }
 }
-
-
 ```
 
 ## Usage
 
 ### word similarity
 demo code: [src/test/java/org.xm/WordSimilarityDemo.java](src/test/java/org/xm/WordSimilarityDemo.java)
-```
+```java
 package org.xm;
 
 public class WordSimilarityDemo {
@@ -149,7 +146,7 @@ public class WordSimilarityDemo {
 ### phrase similarity
 
 demo code : [src/test/java/org.xm/PhraseSimilarityDemo.java](src/test/java/org/xm/PhraseSimilarityDemo.java)
-```
+```java
 public static void main(String[] args) {
     String phrase1 = "继续努力";
     String phrase2 = "持续发展";
@@ -157,7 +154,6 @@ public static void main(String[] args) {
 
     System.out.println(phrase1 + " vs " + phrase2 + " 短语相似度值：" + result);
 }
-
 ```
 
 
@@ -168,7 +164,7 @@ public static void main(String[] args) {
 ### sentence similarity
 demo code : [src/test/java/org.xm/SentenceSimilarityDemo.java](src/test/java/org/xm/SentenceSimilarityDemo.java)
 
-```
+```java
 public static void main(String[] args) {
     String sentence1 = "中国人爱吃鱼";
     String sentence2 = "湖北佬最喜吃鱼";
@@ -183,7 +179,6 @@ public static void main(String[] args) {
     System.out.println(sentence1 + " vs " + sentence2 + " 标准编辑距离句子相似度值：" + standEditDistanceResult);
     System.out.println(sentence1 + " vs " + sentence2 + " gregeor编辑距离句子相似度值：" + gregeorEditDistanceResult);
 }
-
 ```
 
 * result:
@@ -196,7 +191,7 @@ public static void main(String[] args) {
 demo code : [src/test/java/org.xm/similarity/text/CosineSimilarityTest.java](src/test/java/org/xm/similarity/text/CosineSimilarityTest.java)
 
 
-```
+```java
 @Test
 public void getSimilarityScore() throws Exception {
     String text1 = "我爱购物";
@@ -215,7 +210,6 @@ public void getSimilarityScore() throws Exception {
     System.out.println(text3 + " 和 " + text3 + " 的相似度分值：" + score3pk3);
 
 }
-
 ```
 
 
@@ -237,7 +231,7 @@ demo code : [src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java](src/tes
 ### sentiment analysis based on words
 demo code : [src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java](src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java)
 
-```
+```java
 @Test
 public void getTendency() throws Exception {
     HownetWordTendency hownet = new HownetWordTendency();
@@ -246,7 +240,6 @@ public void getTendency() throws Exception {
     System.out.println(word + ":" + sim);
     System.out.println("混蛋:" + hownet.getTendency("混蛋"));
 }
-
 ```
 
 
@@ -259,7 +252,7 @@ public void getTendency() throws Exception {
 ### homoionym(use word2vec)
 demo code : [src/test/java/org/xm/word2vec/Word2vecTest.java](src/test/java/org/xm/word2vec/Word2vecTest.java)
 
-```
+```java
 @Test
 public void testHomoionym() throws Exception {
     List<String> result = Word2vec.getHomoionym(RAW_CORPUS_SPLIT_MODEL, "武功", 10);
@@ -278,7 +271,6 @@ public void testHomoionymName() throws Exception {
     List<String> result3 = Word2vec.getHomoionym(model, "少林寺", 10);
     System.out.println("少林寺 近似词：" + result3);
 }
-    
 ```
 
 * train:
