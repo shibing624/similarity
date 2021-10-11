@@ -50,7 +50,7 @@ public class CharBasedSimilarity implements ISimilarity {
         }
         double dp = Math.min(1.0 * word1.length() / word2.length(), 1.0 * word2.length() / word1.length());
         double part1 = alpha * (1.0 * sameChars.size() / word1.length() + 1.0 * sameChars.size() / word2.length()) / 2.0;
-        double part2 = beta * dp * (getWeightedResult(word1, sameChars) + getWeightedResult(word1, sameChars)) / 2.0;
+        double part2 = beta * dp * (getWeightedResult(word1, sameChars) + getWeightedResult(word2, sameChars)) / 2.0;
 
         return part1 + part2;
     }
