@@ -64,22 +64,22 @@
 
 下载其中一个，置于项目`Libraries`下，这样加入到项目依赖即可。
 
-- 库
+- jitpack库
 
-```
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+```bash
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
 ```
 
-```
+```bash
 <dependency>
-	    <groupId>com.github.shibing624</groupId>
-	    <artifactId>similarity</artifactId>
-	    <version>1.1</version>
+  <groupId>com.github.shibing624</groupId>
+  <artifactId>similarity</artifactId>
+  <version>1.1</version>
 </dependency>
 ```
 
