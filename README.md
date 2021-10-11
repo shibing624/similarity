@@ -64,12 +64,28 @@
 
 下载其中一个，置于项目`Libraries`下，这样加入到项目依赖即可。
 
+- 库
+
 ```
-由于maven官方库包上传需要审核校对，着实耗时，现提供离线版jar包，方便使用。后续可以切换到maven官方库调用。
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 ```
 
+```
+<dependency>
+	    <groupId>com.github.shibing624</groupId>
+	    <artifactId>similarity</artifactId>
+	    <version>1.1</version>
+</dependency>
+```
 
 - Maven官方库(未上传，暂不可用)
+
+由于maven官方库包上传需要审核校对，着实耗时，现提供离线版jar包，方便使用。后续可以切换到maven官方库调用。
 ```
 <dependency>
   <groupId>io.github.shibing624</groupId>
@@ -80,7 +96,7 @@
 
 
 
-import
+导入包，使用示例：
 ```
 
 import org.xm.Similarity;
@@ -104,29 +120,35 @@ public class demo {
 ## Usage
 
 ### word similarity
+demo code: [src/test/java/org.xm/WordSimilarityDemo.java](src/test/java/org/xm/WordSimilarityDemo.java)
 ```
-public static void main(String[] args) {
-    String word1 = "教师";
-    String word2 = "教授";
-    double cilinSimilarityResult = Similarity.cilinSimilarity(word1, word2);
-    double pinyinSimilarityResult = Similarity.pinyinSimilarity(word1, word2);
-    double conceptSimilarityResult = Similarity.conceptSimilarity(word1, word2);
-    double charBasedSimilarityResult = Similarity.charBasedSimilarity(word1, word2);
+package org.xm;
 
-    System.out.println(word1 + " vs " + word2 + " 词林相似度值：" + cilinSimilarityResult);
-    System.out.println(word1 + " vs " + word2 + " 拼音相似度值：" + pinyinSimilarityResult);
-    System.out.println(word1 + " vs " + word2 + " 概念相似度值：" + conceptSimilarityResult);
-    System.out.println(word1 + " vs " + word2 + " 字面相似度值：" + charBasedSimilarityResult);
+public class WordSimilarityDemo {
+
+    public static void main(String[] args) {
+        String word1 = "教师";
+        String word2 = "教授";
+        double cilinSimilarityResult = Similarity.cilinSimilarity(word1, word2);
+        double pinyinSimilarityResult = Similarity.pinyinSimilarity(word1, word2);
+        double conceptSimilarityResult = Similarity.conceptSimilarity(word1, word2);
+        double charBasedSimilarityResult = Similarity.charBasedSimilarity(word1, word2);
+
+        System.out.println(word1 + " vs " + word2 + " 词林相似度值：" + cilinSimilarityResult);
+        System.out.println(word1 + " vs " + word2 + " 拼音相似度值：" + pinyinSimilarityResult);
+        System.out.println(word1 + " vs " + word2 + " 概念相似度值：" + conceptSimilarityResult);
+        System.out.println(word1 + " vs " + word2 + " 字面相似度值：" + charBasedSimilarityResult);
+    }
 }
-    
 ```
-demo code position: test/java/org.xm/WordSimilarityDemo.java
 
 * result:
 
 ![word_sim result](./data/pic/word_sim.png)
 
 ### phrase similarity
+
+demo code : [src/test/java/org.xm/PhraseSimilarityDemo.java](src/test/java/org/xm/PhraseSimilarityDemo.java)
 ```
 public static void main(String[] args) {
     String phrase1 = "继续努力";
@@ -137,13 +159,15 @@ public static void main(String[] args) {
 }
 
 ```
-demo code position: test/java/org.xm/PhraseSimilarityDemo.java
+
 
 * result:
 
 ![phrase sim result](./data/pic/phrase_sim.png)
 
 ### sentence similarity
+demo code : [src/test/java/org.xm/SentenceSimilarityDemo.java](src/test/java/org/xm/SentenceSimilarityDemo.java)
+
 ```
 public static void main(String[] args) {
     String sentence1 = "中国人爱吃鱼";
@@ -161,7 +185,6 @@ public static void main(String[] args) {
 }
 
 ```
-demo code position: test/java/org.xm/SentenceSimilarityDemo.java
 
 * result:
 
@@ -169,6 +192,10 @@ demo code position: test/java/org.xm/SentenceSimilarityDemo.java
 
 
 ### text similarity
+
+demo code : [src/test/java/org.xm/similarity/text/CosineSimilarityTest.java](src/test/java/org/xm/similarity/text/CosineSimilarityTest.java)
+
+
 ```
 @Test
 public void getSimilarityScore() throws Exception {
@@ -191,23 +218,25 @@ public void getSimilarityScore() throws Exception {
 
 ```
 
-demo code position: test/java/org.xm/similarity/text/CosineSimilarityTest.java
 
 * result:
 
 ![cos text result](./data/pic/cos_txt.png)
 
 ### word frequency statistics
-demo code position: test/java/org.xm/tokenizer/WordFreqStatisticsTest.java
+demo code : [src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java](src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java)
+
 
 * result:
 
 ![word freq result](./data/pic/freq.png)
 
-分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用我们NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
+分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
 
 
 ### sentiment analysis based on words
+demo code : [src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java](src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java)
+
 ```
 @Test
 public void getTendency() throws Exception {
@@ -220,7 +249,6 @@ public void getTendency() throws Exception {
 
 ```
 
-demo code position: test/java/org.xm/tendency.word/HownetWordTendencyTest.java
 
 * result:
 
@@ -229,6 +257,8 @@ demo code position: test/java/org.xm/tendency.word/HownetWordTendencyTest.java
 本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
 ### homoionym(use word2vec)
+demo code : [src/test/java/org/xm/word2vec/Word2vecTest.java](src/test/java/org/xm/word2vec/Word2vecTest.java)
+
 ```
 @Test
 public void testHomoionym() throws Exception {
@@ -250,8 +280,6 @@ public void testHomoionymName() throws Exception {
 }
     
 ```
-
-demo code position: test/java/org.xm/word2vec/Word2vecTest.java
 
 * train:
 
