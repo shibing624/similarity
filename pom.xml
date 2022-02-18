@@ -209,10 +209,7 @@
                 </configuration>
             </plugin>
         </plugins>
-
         <finalName>${project.artifactId}-${project.version}</finalName>
-
     </build>
-
 
 </project>
