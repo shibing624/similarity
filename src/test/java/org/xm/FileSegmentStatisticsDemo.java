@@ -18,7 +18,7 @@ public class FileSegmentStatisticsDemo {
             .enablePlaceRecognize(true).enablePartOfSpeechTagging(true).enableMultithreading(4);
 
     public static void main(String[] args) throws IOException {
-        String filePath = "corpus/tianlongbabu.txt";
+        String filePath = "corpus/tianlongbabu_head100.txt";
         Tokenizer.fileSegment(SEGMENT, filePath, null);
     }
 
