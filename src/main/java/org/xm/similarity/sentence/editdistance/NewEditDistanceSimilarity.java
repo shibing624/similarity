@@ -3,6 +3,7 @@ package org.xm.similarity.sentence.editdistance;
 /**
  * 夏天提出的新的支持非相邻块交互的编辑距离算法
  * @author xiatian
+ * bug with: String s = "我要换货怎么处理"
  */
 public class NewEditDistanceSimilarity extends EditDistance {
 
