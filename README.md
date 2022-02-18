@@ -1,4 +1,7 @@
 # similarity
+
+[![](https://jitpack.io/v/shibing624/similarity.svg)](https://jitpack.io/#shibing624/similarity)
+
 用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算。
 
 **similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。
@@ -58,12 +61,6 @@
 
 ------
 ## jar包
-### 离线jar包
-
- - [similarity-1.1.3-jar-with-dependencies.jar](./data/similarity-1.1.3-jar-with-dependencies.jar)
- - [similarity-1.1.3.jar](./data/similarity-1.1.3.jar)
-
-下载其中一个，置于项目`Libraries`下，这样加入到项目依赖即可。
 
 ### jitpack库
 
@@ -80,21 +77,9 @@
 <dependency>
   <groupId>com.github.shibing624</groupId>
   <artifactId>similarity</artifactId>
-  <version>1.1</version>
+  <version>1.1.4</version>
 </dependency>
 ```
-
-### Maven官方库(未上传，暂不可用)
-
-由于maven官方库包上传需要审核校对，着实耗时，现提供离线版jar包，方便使用。后续可以切换到maven官方库调用。
-```xml
-<dependency>
-  <groupId>io.github.shibing624</groupId>
-  <artifactId>similarity</artifactId>
-  <version>1.1.3</version>
-</dependency>
-```
-
 
 
 ### 导入包，使用示例：
