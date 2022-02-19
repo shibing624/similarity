@@ -4,7 +4,7 @@
 
     <groupId>com.github.shibing624</groupId>
     <artifactId>similarity</artifactId>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
     <name>similarity</name>
     <description>compare text similarity for java</description>
     <url>https://github.com/shibing624/similarity</url>
