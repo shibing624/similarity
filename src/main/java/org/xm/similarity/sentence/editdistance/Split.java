@@ -64,7 +64,7 @@ public class Split {
             split(bx.getPrev(), LY);
         }
 
-        if (bx.getNext() != null && !bx.getNext().isDivideFlag()) {
+        if (bx.getNext() != null && !bx.isDivideFlag()) {
             split(bx.getNext(), LY);
         }
     }
@@ -101,5 +101,4 @@ public class Split {
             return "length=" + length + ", x_pos=" + x_pos + ", y_pos=" + y_pos;
         }
     }
-
 }

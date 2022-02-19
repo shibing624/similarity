@@ -18,12 +18,12 @@ public class SuperString<T> {
         this.contents = contents;
     }
 
-    public static SuperString<CharEditUnit> createCharSuperString(String str) {
-        List<CharEditUnit> list = new ArrayList<>(str.length());
-        for (int i = 0; i < str.length(); i++) {
-            list.add(new CharEditUnit(str.charAt(i)));
+    public static SuperString<CharEditUnit> createCharSuperString(String sentence) {
+        List<CharEditUnit> unitList = new ArrayList<>(sentence.length());
+        for (int i = 0; i < sentence.length(); i++) {
+            unitList.add(new CharEditUnit(sentence.charAt(i)));
         }
-        return new SuperString<>(list);
+        return new SuperString<>(unitList);
     }
 
     public static SuperString<WordEditUnit> createWordSuperString(String sentence) {

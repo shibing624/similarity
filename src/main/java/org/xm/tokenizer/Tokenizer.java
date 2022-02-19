@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * 对中文分词的封装，封装了对Xmnlp（xuming对HanLP改进版）的调用
+ * 对中文分词的封装，封装了对HanLP的调用
  * 对分词器的调用采用了单例模式，实现需要时的延迟加载。
  *
  * @author xuming
