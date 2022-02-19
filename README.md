@@ -77,7 +77,7 @@
 <dependency>
   <groupId>com.github.shibing624</groupId>
   <artifactId>similarity</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
 </dependency>
 ```
 
