@@ -1,13 +1,17 @@
-# similarity
+[![jitpack](https://jitpack.io/v/shibing624/similarity.svg)](https://jitpack.io/#shibing624/similarity)
+[![Downloads](https://pepy.tech/badge/similarity)](https://pepy.tech/project/similarity)
+[![License Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/shibing624/similarity.svg)](https://github.com/shibing624/similarity/issues)
+[![Wechat Group](http://vlog.sfyc.ltd/wechat_everyday/wxgroup_logo.png?imageView2/0/w/60/h/20)](#Contact)
 
-[![](https://jitpack.io/v/shibing624/similarity.svg)](https://jitpack.io/#shibing624/similarity)
+# similarity
 
 用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算。
 
 **similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。
 
 ------
-## Feature
+# Feature
 
 **similarity**提供下列功能：
 
@@ -59,7 +63,7 @@
 
 
 
-------
+# Usage
 ## jar包
 
 ### jitpack库
@@ -100,7 +104,7 @@ public class demo {
 }
 ```
 
-## Usage
+## 功能演示
 
 ### word similarity
 demo code: [src/test/java/org.xm/WordSimilarityDemo.java](src/test/java/org/xm/WordSimilarityDemo.java)
@@ -270,12 +274,9 @@ public void testHomoionymName() throws Exception {
 训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
 用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
 
-
-------
 ## Todo
 
 文本相似性度量
-
 
 - [x] 关键词匹配（TF-IDF、BM25）
 - [x] 浅层语义匹配（WordEmbed隐语义模型，用word2vec或glove词向量直接累加构造的句向量）
@@ -283,7 +284,44 @@ public void testHomoionymName() throws Exception {
 
 欢迎大家贡献代码及思路，完善本项目
 
-## Reference
+# Contact
+
+- Issue(建议)：[![GitHub issues](https://img.shields.io/github/issues/shibing624/similarity.svg)](https://github.com/shibing624/similarity/issues)
+- 邮件我：xuming: xuming624@qq.com
+- 微信我：
+  加我*微信号：xuming624, 备注：个人名称-公司-NLP* 进NLP交流群。
+
+<img src="docs/wechat.jpeg" width="200" />
+
+
+# Citation
+
+如果你在研究中使用了*similarity*，请按如下格式引用：
+
+```latex
+@misc{similarity,
+  title={similarity: A Tool for Compute Text Similarity Score},
+  author={Ming Xu},
+  howpublished={https://github.com/shibing624/similarity},
+  year={2022}
+}
+```
+
+# License
+
+
+授权协议为 [The Apache License 2.0](/LICENSE)，可免费用做商业用途。请在产品说明中附加*similarity*的链接和授权协议。
+
+
+# Contribute
+项目代码还很粗糙，如果大家对代码有所改进，欢迎提交回本项目，在提交之前，注意以下两点：
+
+- 在`test`添加相应的单元测试
+- 运行所有单元测试，确保所有单测都是通过的
+
+之后即可提交PR。
+
+# Reference
 
 * [DSSM] Po-Sen Huang, et al., 2013, Learning Deep Structured Semantic Models for Web Search using Clickthrough Data
 * [CLSM] Yelong Shen, et al, 2014, A Latent Semantic Model with Convolutional-Pooling Structure for Information Retrieval 
