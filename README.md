@@ -5,12 +5,12 @@
 [![Wechat Group](http://vlog.sfyc.ltd/wechat_everyday/wxgroup_logo.png?imageView2/0/w/60/h/20)](#Contact)
 
 # similarity
+compute similarity score between texts.
 
 用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算。
 
 **similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。
 
-------
 # Feature
 
 **similarity**提供下列功能：
@@ -131,7 +131,7 @@ public class WordSimilarityDemo {
 
 * result:
 
-![word_sim result](./data/pic/word_sim.png)
+![word_sim result](./docs/pic/word_sim.png)
 
 ### phrase similarity
 
@@ -149,7 +149,7 @@ public static void main(String[] args) {
 
 * result:
 
-![phrase sim result](./data/pic/phrase_sim.png)
+![phrase sim result](./docs/pic/phrase_sim.png)
 
 ### sentence similarity
 demo code : [src/test/java/org.xm/SentenceSimilarityDemo.java](src/test/java/org/xm/SentenceSimilarityDemo.java)
@@ -173,7 +173,7 @@ public static void main(String[] args) {
 
 * result:
 
-![sentence sim result](./data/pic/sentence_sim.png)
+![sentence sim result](./docs/pic/sentence_sim.png)
 
 
 ### text similarity
@@ -205,7 +205,7 @@ public void getSimilarityScore() throws Exception {
 
 * result:
 
-![cos text result](./data/pic/cos_txt.png)
+![cos text result](./docs/pic/cos_txt.png)
 
 ### word frequency statistics
 demo code : [src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java](src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java)
@@ -213,7 +213,7 @@ demo code : [src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java](src/tes
 
 * result:
 
-![word freq result](./data/pic/freq.png)
+![word freq result](./docs/pic/freq.png)
 
 分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
 
@@ -235,7 +235,7 @@ public void getTendency() throws Exception {
 
 * result:
 
-![tendency result](./data/pic/tendency.png)
+![tendency result](./docs/pic/tendency.png)
 
 本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
@@ -265,11 +265,11 @@ public void testHomoionymName() throws Exception {
 
 * train:
 
-![word2vec train](./data/pic/word2v.png)
+![word2vec train](./docs/pic/word2v.png)
 
 * result:
 
-![word2vec result](./data/pic/word2v_ret.png)
+![word2vec result](./docs/pic/word2v_ret.png)
 
 训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
 用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
@@ -303,7 +303,7 @@ public void testHomoionymName() throws Exception {
   title={similarity: A Tool for Compute Text Similarity Score},
   author={Ming Xu},
   howpublished={https://github.com/shibing624/similarity},
-  year={2022}
+  year={2019}
 }
 ```
 
