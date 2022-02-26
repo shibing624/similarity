@@ -4,10 +4,10 @@
 [![GitHub issues](https://img.shields.io/github/issues/shibing624/similarity.svg)](https://github.com/shibing624/similarity/issues)
 [![Wechat Group](http://vlog.sfyc.ltd/wechat_everyday/wxgroup_logo.png?imageView2/0/w/60/h/20)](#Contact)
 
-# similarity
-compute similarity score between texts.
+# Similarity
+similarity, compute similarity score between text strings, Java written.
 
-用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算。
+用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算，Java编写。
 
 **similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。
 
