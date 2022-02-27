@@ -7,7 +7,7 @@
 # Similarity
 similarity, compute similarity score between text strings, Java written.
 
-用于词语、短语、句子、词法分析、情感分析、语义分析等相关的相似度计算，Java编写。
+similarity，相似度计算工具包，可用于文本相似度计算、情感倾向分析等，Java编写。
 
 **similarity**是由一系列算法组成的Java版相似度计算工具包，目标是传播自然语言处理中相似度计算方法。**similarity**具备工具实用、性能高效、架构清晰、语料时新、可自定义的特点。
 
@@ -30,9 +30,9 @@ similarity, compute similarity score between text strings, Java written.
   * Gregor编辑距离法
   * 优化编辑距离法
   
-- 文本相似度计算
+- 相似度计算方法
   * 余弦相似度
-  * 编辑距离算法
+  * 编辑距离
   * 欧几里得距离
   * Jaccard相似性系数
   * Jaro距离
@@ -40,11 +40,6 @@ similarity, compute similarity score between text strings, Java written.
   * 曼哈顿距离
   * SimHash + 汉明距离
   * Sørensen–Dice系数
-
-- 词法分析
-  * 中文分词
-  * 分词词性标注
-  * 词频统计
 
 - 知网义原
   * 义原树
@@ -64,7 +59,9 @@ similarity, compute similarity score between text strings, Java written.
 
 
 # Usage
-## jar包
+引入Java包
+
+## Maven
 
 ### jitpack库
 
@@ -84,6 +81,7 @@ similarity, compute similarity score between text strings, Java written.
   <version>1.1.5</version>
 </dependency>
 ```
+gradle的引入参考：[![jitpack](https://jitpack.io/v/shibing624/similarity.svg)](https://jitpack.io/#shibing624/similarity)
 
 
 ### 导入包，使用示例：
@@ -106,8 +104,13 @@ public class demo {
 
 ## 功能演示
 
-### word similarity
-demo code: [src/test/java/org.xm/WordSimilarityDemo.java](src/test/java/org/xm/WordSimilarityDemo.java)
+### 词语相似度计算
+
+文本长度：词语粒度
+
+**推荐**使用词林相似度：`org.xm.Similarity.cilinSimilarity`
+
+example: [src/test/java/org.xm/WordSimilarityDemo.java](src/test/java/org/xm/WordSimilarityDemo.java)
 ```java
 package org.xm;
 
@@ -133,9 +136,13 @@ public class WordSimilarityDemo {
 
 ![word_sim result](./docs/pic/word_sim.png)
 
-### phrase similarity
+### 短语相似度计算
 
-demo code : [src/test/java/org.xm/PhraseSimilarityDemo.java](src/test/java/org/xm/PhraseSimilarityDemo.java)
+文本长度：短语粒度
+
+**推荐**使用短语相似度：`org.xm.Similarity.phraseSimilarity`，本质是通过两个短语具有的相同字符，和相同字符的位置计算其相似度的方法
+
+example: [src/test/java/org.xm/PhraseSimilarityDemo.java](src/test/java/org/xm/PhraseSimilarityDemo.java)
 ```java
 public static void main(String[] args) {
     String phrase1 = "继续努力";
@@ -151,8 +158,12 @@ public static void main(String[] args) {
 
 ![phrase sim result](./docs/pic/phrase_sim.png)
 
-### sentence similarity
-demo code : [src/test/java/org.xm/SentenceSimilarityDemo.java](src/test/java/org/xm/SentenceSimilarityDemo.java)
+### 句子相似度计算
+文本长度：句子粒度
+
+**推荐**使用词形词序句子相似度：`org.xm.similarity.morphoSimilarity`，一种既考虑两个句子相同文本字面，也考虑相同文本出现的前后顺序的相似度方法
+
+example: [src/test/java/org.xm/SentenceSimilarityDemo.java](src/test/java/org/xm/SentenceSimilarityDemo.java)
 
 ```java
 public static void main(String[] args) {
@@ -176,9 +187,13 @@ public static void main(String[] args) {
 ![sentence sim result](./docs/pic/sentence_sim.png)
 
 
-### text similarity
 
-demo code : [src/test/java/org.xm/similarity/text/CosineSimilarityTest.java](src/test/java/org/xm/similarity/text/CosineSimilarityTest.java)
+### 段落文本相似度计算
+文本长度：段落粒度（一段话，25字符 < length(text) < 500字符）
+
+**推荐**使用词形词序句子相似度：`org.xm.similarity.text.CosineSimilarity`，一种考虑两个段落中相同文本，经过切词，词频和词性权重加权的相似度方法
+
+example: [src/test/java/org.xm/similarity/text/CosineSimilarityTest.java](src/test/java/org/xm/similarity/text/CosineSimilarityTest.java)
 
 
 ```java
@@ -201,6 +216,9 @@ public void getSimilarityScore() throws Exception {
 
 }
 ```
+
+
+CilinSimilarity.getInstance().getSimilarity(word1, word2)
 
 
 * result:
