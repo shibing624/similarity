@@ -16,22 +16,22 @@ similarity，相似度计算工具包，可用于文本相似度计算、情感�
 **similarity**提供下列功能：
 
 - 词语相似度计算
-  * 词林编码法相似度
+  * 词林编码法相似度[推荐]
   * 汉语语义法相似度
   * 知网词语相似度
   * 字面编辑距离法
   
 - 短语相似度计算
-  * 简单短语相似度
+  * 简单短语相似度[推荐]
     
 - 句子相似度计算
-  * 词性和词序结合法
+  * 词性和词序结合法[推荐]
   * 编辑距离算法
   * Gregor编辑距离法
   * 优化编辑距离法
   
-- 相似度计算方法
-  * 余弦相似度
+- 段落相似度计算
+  * 余弦相似度[推荐]
   * 编辑距离
   * 欧几里得距离
   * Jaccard相似性系数
@@ -42,7 +42,7 @@ similarity，相似度计算工具包，可用于文本相似度计算、情感�
   * Sørensen–Dice系数
 
 - 知网义原
-  * 义原树
+  * 词语义原树
 
 - 情感分析
   * 正面倾向程度
@@ -56,14 +56,10 @@ similarity，相似度计算工具包，可用于文本相似度计算、情感�
 
 在提供丰富功能的同时，**similarity**内部模块坚持低耦合、模型坚持惰性加载、词典坚持明文发布，使用方便，帮助用户训练自己的语料。
 
-
-
 # Usage
-引入Java包
+引入Jar包
 
-## Maven
-
-### jitpack库
+### Maven
 
 ```xml
 <repositories>
@@ -81,10 +77,12 @@ similarity，相似度计算工具包，可用于文本相似度计算、情感�
   <version>1.1.5</version>
 </dependency>
 ```
-gradle的引入参考：[![jitpack](https://jitpack.io/v/shibing624/similarity.svg)](https://jitpack.io/#shibing624/similarity)
+
+### Gradle
+gradle的引入：[![jitpack](https://jitpack.io/v/shibing624/similarity.svg)](https://jitpack.io/#shibing624/similarity)
 
 
-### 导入包，使用示例：
+### 使用示例
 ```java
 import org.xm.Similarity;
 import org.xm.tendency.word.HownetWordTendency;
@@ -104,7 +102,7 @@ public class demo {
 
 ## 功能演示
 
-### 词语相似度计算
+### 1.词语相似度计算
 
 文本长度：词语粒度
 
@@ -136,7 +134,7 @@ public class WordSimilarityDemo {
 
 ![word_sim result](./docs/pic/word_sim.png)
 
-### 短语相似度计算
+### 2.短语相似度计算
 
 文本长度：短语粒度
 
@@ -158,7 +156,7 @@ public static void main(String[] args) {
 
 ![phrase sim result](./docs/pic/phrase_sim.png)
 
-### 句子相似度计算
+### 3.句子相似度计算
 文本长度：句子粒度
 
 **推荐**使用词形词序句子相似度：`org.xm.similarity.morphoSimilarity`，一种既考虑两个句子相同文本字面，也考虑相同文本出现的前后顺序的相似度方法
@@ -188,10 +186,10 @@ public static void main(String[] args) {
 
 
 
-### 段落文本相似度计算
+### 4.段落文本相似度计算
 文本长度：段落粒度（一段话，25字符 < length(text) < 500字符）
 
-**推荐**使用词形词序句子相似度：`org.xm.similarity.text.CosineSimilarity`，一种考虑两个段落中相同文本，经过切词，词频和词性权重加权的相似度方法
+**推荐**使用词形词序句子相似度：`org.xm.similarity.text.CosineSimilarity`，一种考虑两个段落中相同的文本，经过切词，词频和词性权重加权，并用余弦计算相似度的方法
 
 example: [src/test/java/org.xm/similarity/text/CosineSimilarityTest.java](src/test/java/org/xm/similarity/text/CosineSimilarityTest.java)
 
@@ -199,44 +197,25 @@ example: [src/test/java/org.xm/similarity/text/CosineSimilarityTest.java](src/te
 ```java
 @Test
 public void getSimilarityScore() throws Exception {
-    String text1 = "我爱购物";
-    String text2 = "我爱读书";
-    String text3 = "他是黑客";
-    TextSimilarity similarity = new CosineSimilarity();
-    double score1pk2 = similarity.getSimilarity(text1, text2);
-    double score1pk3 = similarity.getSimilarity(text1, text3);
-    double score2pk2 = similarity.getSimilarity(text2, text2);
-    double score2pk3 = similarity.getSimilarity(text2, text3);
-    double score3pk3 = similarity.getSimilarity(text3, text3);
-    System.out.println(text1 + " 和 " + text2 + " 的相似度分值：" + score1pk2);
-    System.out.println(text1 + " 和 " + text3 + " 的相似度分值：" + score1pk3);
-    System.out.println(text2 + " 和 " + text2 + " 的相似度分值：" + score2pk2);
-    System.out.println(text2 + " 和 " + text3 + " 的相似度分值：" + score2pk3);
-    System.out.println(text3 + " 和 " + text3 + " 的相似度分值：" + score3pk3);
+        String text1 = "对于俄罗斯来说，最大的战果莫过于夺取乌克兰首都基辅，也就是现任总统泽连斯基和他政府的所在地。目前夺取基辅的战斗已经打响。";
+        String text2 = "迄今为止，俄罗斯的入侵似乎没有完全按计划成功执行——英国国防部情报部门表示，在乌克兰军队激烈抵抗下，俄罗斯军队已经损失数以百计的士兵。尽管如此，俄军在继续推进。";
+        TextSimilarity cosSimilarity = new CosineSimilarity();
+        double score1 = cosSimilarity.getSimilarity(text1, text2);
+        System.out.println("cos相似度分值：" + score1);
 
-}
+        TextSimilarity editSimilarity = new EditDistanceSimilarity();
+        double score2 = editSimilarity.getSimilarity(text1, text2);
+        System.out.println("edit相似度分值：" + score2);
+        }
 ```
 
-
-CilinSimilarity.getInstance().getSimilarity(word1, word2)
-
-
 * result:
+```shell
+cos相似度分值：0.399143
+edit相似度分值：0.0875
+```
 
-![cos text result](./docs/pic/cos_txt.png)
-
-### word frequency statistics
-demo code : [src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java](src/test/java/org/xm/tokenizer/WordFreqStatisticsTest.java)
-
-
-* result:
-
-![word freq result](./docs/pic/freq.png)
-
-分词及词性标注内置调用[HanLP](https://github.com/hankcs/HanLP)，也可以使用NLPchina的[ansj_seg](https://github.com/NLPchina/ansj_seg)分词工具。
-
-
-### sentiment analysis based on words
+### 5.基于义原树的情感分析
 demo code : [src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java](src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java)
 
 ```java
@@ -249,16 +228,14 @@ public void getTendency() throws Exception {
     System.out.println("混蛋:" + hownet.getTendency("混蛋"));
 }
 ```
-
-
 * result:
 
 ![tendency result](./docs/pic/tendency.png)
 
 本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
-### homoionym(use word2vec)
-demo code : [src/test/java/org/xm/word2vec/Word2vecTest.java](src/test/java/org/xm/word2vec/Word2vecTest.java)
+### 6.近义词推荐
+example: [src/test/java/org/xm/word2vec/Word2vecTest.java](src/test/java/org/xm/word2vec/Word2vecTest.java)
 
 ```java
 @Test
@@ -281,7 +258,7 @@ public void testHomoionymName() throws Exception {
 }
 ```
 
-* train:
+* 训练过程:
 
 ![word2vec train](./docs/pic/word2v.png)
 
@@ -289,7 +266,7 @@ public void testHomoionymName() throws Exception {
 
 ![word2vec result](./docs/pic/word2v_ret.png)
 
-训练词向量使用的是阿健实现的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
+Word2vec词向量训练用的java版word2vec训练工具[Word2VEC_java](https://github.com/NLPchina/Word2VEC_java)，训练语料是小说天龙八部，通过词向量实现得到近义词。
 用户可以训练自定义语料，也可以用中文维基百科训练通用词向量。
 
 ## Todo

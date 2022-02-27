@@ -6,23 +6,18 @@ import org.junit.Test;
  * @author xuming
  */
 public class CosineSimilarityTest {
+
     @Test
     public void getSimilarityScore() throws Exception {
-        String text1 = "我爱购物";
-        String text2 = "我爱读书";
-        String text3 = "他是黑客";
-        TextSimilarity similarity = new CosineSimilarity();
-        double score1pk2 = similarity.getSimilarity(text1, text2);
-        double score1pk3 = similarity.getSimilarity(text1, text3);
-        double score2pk2 = similarity.getSimilarity(text2, text2);
-        double score2pk3 = similarity.getSimilarity(text2, text3);
-        double score3pk3 = similarity.getSimilarity(text3, text3);
-        System.out.println(text1 + " 和 " + text2 + " 的相似度分值：" + score1pk2);
-        System.out.println(text1 + " 和 " + text3 + " 的相似度分值：" + score1pk3);
-        System.out.println(text2 + " 和 " + text2 + " 的相似度分值：" + score2pk2);
-        System.out.println(text2 + " 和 " + text3 + " 的相似度分值：" + score2pk3);
-        System.out.println(text3 + " 和 " + text3 + " 的相似度分值：" + score3pk3);
+        String text1 = "对于俄罗斯来说，最大的战果莫过于夺取乌克兰首都基辅，也就是现任总统泽连斯基和他政府的所在地。目前夺取基辅的战斗已经打响。";
+        String text2 = "迄今为止，俄罗斯的入侵似乎没有完全按计划成功执行——英国国防部情报部门表示，在乌克兰军队激烈抵抗下，俄罗斯军队已经损失数以百计的士兵。尽管如此，俄军在继续推进。";
+        TextSimilarity cosSimilarity = new CosineSimilarity();
+        double score1 = cosSimilarity.getSimilarity(text1, text2);
+        System.out.println("cos相似度分值：" + score1);
 
+        TextSimilarity editSimilarity = new EditDistanceSimilarity();
+        double score2 = editSimilarity.getSimilarity(text1, text2);
+        System.out.println("edit相似度分值：" + score2);
     }
 
 }
