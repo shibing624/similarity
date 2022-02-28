@@ -289,19 +289,6 @@ Word2vec词向量训练用的java版word2vec训练工具[Word2VEC_java](https://
 <img src="docs/wechat.jpeg" width="200" />
 
 
-# Citation
-
-如果你在研究中使用了*similarity*，请按如下格式引用：
-
-```latex
-@misc{similarity,
-  title={similarity: A Tool for Compute Text Similarity Score},
-  author={Ming Xu},
-  howpublished={https://github.com/shibing624/similarity},
-  year={2019}
-}
-```
-
 # License
 
 
