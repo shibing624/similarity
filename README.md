@@ -102,11 +102,11 @@ public class demo {
 
 ## 功能演示
 
-### 1.词语相似度计算
+### 1. 词语相似度计算
 
 文本长度：词语粒度
 
-**推荐**使用词林相似度：`org.xm.Similarity.cilinSimilarity`
+**推荐**使用词林相似度：`org.xm.Similarity.cilinSimilarity`，是基于[同义词词林](https://blog.csdn.net/sinat_33741547/article/details/80016713)的相似度计算方法
 
 example: [src/test/java/org.xm/WordSimilarityDemo.java](src/test/java/org/xm/WordSimilarityDemo.java)
 ```java
@@ -134,7 +134,7 @@ public class WordSimilarityDemo {
 
 ![word_sim result](./docs/pic/word_sim.png)
 
-### 2.短语相似度计算
+### 2. 短语相似度计算
 
 文本长度：短语粒度
 
@@ -156,7 +156,7 @@ public static void main(String[] args) {
 
 ![phrase sim result](./docs/pic/phrase_sim.png)
 
-### 3.句子相似度计算
+### 3. 句子相似度计算
 文本长度：句子粒度
 
 **推荐**使用词形词序句子相似度：`org.xm.similarity.morphoSimilarity`，一种既考虑两个句子相同文本字面，也考虑相同文本出现的前后顺序的相似度方法
@@ -186,7 +186,7 @@ public static void main(String[] args) {
 
 
 
-### 4.段落文本相似度计算
+### 4. 段落文本相似度计算
 文本长度：段落粒度（一段话，25字符 < length(text) < 500字符）
 
 **推荐**使用词形词序句子相似度：`org.xm.similarity.text.CosineSimilarity`，一种考虑两个段落中相同的文本，经过切词，词频和词性权重加权，并用余弦计算相似度的方法
@@ -215,8 +215,8 @@ cos相似度分值：0.399143
 edit相似度分值：0.0875
 ```
 
-### 5.基于义原树的情感分析
-demo code : [src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java](src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java)
+### 5. 基于义原树的情感分析
+example: [src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java](src/test/java/org/xm/tendency/word/HownetWordTendencyTest.java)
 
 ```java
 @Test
@@ -234,7 +234,7 @@ public void getTendency() throws Exception {
 
 本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
-### 6.近义词推荐
+### 6. 近义词推荐
 example: [src/test/java/org/xm/word2vec/Word2vecTest.java](src/test/java/org/xm/word2vec/Word2vecTest.java)
 
 ```java
