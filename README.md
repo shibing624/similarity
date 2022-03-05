@@ -232,7 +232,7 @@ public void getTendency() throws Exception {
 
 ![tendency result](./docs/pic/tendency.png)
 
-本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[text-classifier](https://github.com/shibing624/text-classifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
+本例是基于义原树的词语粒度情感极性分析，关于文本情感分析有[pytextclassifier](https://github.com/shibing624/pytextclassifier)，利用深度神经网络模型、SVM分类算法实现的效果更好。
 
 ### 6. 近义词推荐
 example: [src/test/java/org/xm/word2vec/Word2vecTest.java](src/test/java/org/xm/word2vec/Word2vecTest.java)
@@ -275,16 +275,14 @@ Word2vec词向量训练用的java版word2vec训练工具[Word2VEC_java](https://
 
 - [x] 关键词匹配（TF-IDF、BM25）
 - [x] 浅层语义匹配（WordEmbed隐语义模型，用word2vec或glove词向量直接累加构造的句向量）
-- [ ] 深度语义匹配模型（DSSM、CLSM、DeepMatch、MatchingFeatures、ARC-II、DeepMind，具体依次参考下面的Reference）
-
-欢迎大家贡献代码及思路，完善本项目
+- [x] 深度语义匹配模型（DSSM、CLSM、DeepMatch、MatchingFeatures、ARC-II、DeepMind见MatchZoo），BERT类语义匹配模型SentenceBERT、CoSENT见[text2vec](https://github.com/shibing624/text2vec)
 
 # Contact
 
 - Issue(建议)：[![GitHub issues](https://img.shields.io/github/issues/shibing624/similarity.svg)](https://github.com/shibing624/similarity/issues)
 - 邮件我：xuming: xuming624@qq.com
 - 微信我：
-  加我*微信号：xuming624, 备注：个人名称-公司-NLP* 进NLP交流群。
+  加我*微信号：xuming624, 备注：姓名-公司-NLP* 进NLP交流群。
 
 <img src="docs/wechat.jpeg" width="200" />
 
