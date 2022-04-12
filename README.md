@@ -74,7 +74,7 @@ similarity，相似度计算工具包，可用于文本相似度计算、情感�
 <dependency>
   <groupId>com.github.shibing624</groupId>
   <artifactId>similarity</artifactId>
-  <version>1.1.5</version>
+  <version>1.1.6</version>
 </dependency>
 ```
 
