@@ -107,20 +107,20 @@
     <repositories>
         <repository>
             <id>cengtral</id>
-            <url>http://repo1.maven.org/maven2/</url>
+            <url>https://repo1.maven.org/maven2/</url>
         </repository>
         <!-- java.net maven repository, for example java mail -->
         <repository>
             <id>Java.Net</id>
-            <url>http://download.java.net/maven/2/</url>
+            <url>https://download.java.net/maven/2/</url>
         </repository>
         <repository>
             <id>ansj-repo</id>
-            <url>http://maven.ansj.org/</url>
+            <url>https://maven.ansj.org/</url>
         </repository>
         <repository>
             <id>info-bliki-repository</id>
-            <url>http://gwtwiki.googlecode.com/svn/maven-repository/</url>
+            <url>https://gwtwiki.googlecode.com/svn/maven-repository/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
